@@ -96,6 +96,25 @@ aside h2{font:600 17px/1.2 var(--cond);margin:14px 16px 8px;color:var(--muted)}
 .warn summary{cursor:pointer;color:var(--muted)}
 .warn pre{white-space:pre-wrap;font:13px/1.45 var(--body);margin:6px 0 0;color:var(--text)}
 .later{color:var(--muted);font-size:14px;margin:0}
+.stations{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.stations button{background:transparent;border:1px solid var(--panel-edge);border-radius:4px;padding:5px 9px;cursor:pointer;font:600 15px/1.1 var(--cond);color:var(--muted)}
+.stations button[aria-pressed="true"]{background:var(--text);color:var(--sky);border-color:var(--text)}
+.stations button.nofeed{opacity:.5}
+.stations .net{font-weight:500}
+.lead{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.lead strong{color:var(--text);font:700 18px/1.2 var(--cond)}
+.stories{list-style:none;margin:0 0 12px;padding:0}
+.stories li{padding:8px 0;border-bottom:1px solid var(--panel-edge)}
+.stories li:last-child{border-bottom:0}
+.stories a{color:var(--text);font:600 17px/1.25 var(--cond);text-decoration:none}
+.stories a:hover{text-decoration:underline}
+.stories .age{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.stories .shared{font-size:12px;border:1px solid var(--panel-edge);border-radius:3px;padding:1px 5px;margin-left:6px;color:var(--muted)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.watch{display:inline-block;background:var(--text);color:var(--sky);border-radius:4px;padding:7px 12px;font:700 16px/1 var(--cond);text-decoration:none}
+.watch:hover{background:#fff}
+.toggle{background:transparent;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;font-size:13px;padding:0}
+.stale{font-size:13px;color:#f2c14e;margin:0 0 10px}
 
 footer{padding:5px 18px;font-size:12px;color:var(--muted);border-top:1px solid var(--panel-edge);background:#0f1d31}
 
@@ -151,6 +170,9 @@ const CROSSWALK  = 'county-dma-crosswalk.json';  // Drew's Secret export, beside
 const ALERTS_URL = 'https://api.weather.gov/alerts/active?status=actual';
 const REFRESH_MS = 120000;
 const SYD        = 'Australia/Sydney';
+const STORIES    = 'data/stories.json';          // written every 20 minutes by the Station feeds robot
+const STATIONS   = 'data/station-markets.json';  // Drew's Secret station list: networks, rank, stream links
+const STORY_REFRESH_MS = 300000;
 
 /* County code changes between the map's boundary year and newer data.
    Connecticut's planning regions (Census 2022+) fold back to the old counties;
@@ -229,9 +251,19 @@ let marketFeatures = [];
 let alertsByMarket = new Map();   // market id -> [{p, cls, fips}]
 let mode = 'markets';             // or 'counties' when no crosswalk
 let selected = null;
+let storyData = null;            // stories.json
+let marketInfo = new Map();      // market name -> { rank, stations: [{ call, networks, tier, url, note }] }
+let showShared = false;
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+/* "WICHITA FALLS-LAWTON" -> "Wichita Falls-Lawton" for display only; data keeps the original */
+function displayName(n){
+  n = String(n || '');
+  if (n !== n.toUpperCase() || !/[A-Z]{3}/.test(n)) return n;
+  return n.toLowerCase().replace(/(^|[\s\-\/(.])([a-z])/g, (m, a, b) => a + b.toUpperCase());
+}
 
 function notice(msg, isError){
   const n = $('notice');
@@ -254,7 +286,8 @@ function marketTime(iso, tz){
   const m = /T(\d\d):(\d\d).*?([+-]\d\d):?(\d\d)$/.exec(iso);
   if (!m) return '';
   let h = +m[1], ap = h >= 12 ? 'PM' : 'AM'; h = h % 12 || 12;
-  return `${h}:${m[2]} ${ap} (UTC${m[3].replace('-','−')})`;
+  const off = parseInt(m[3], 10), offMin = +m[4];
+  return `${h}:${m[2]} ${ap} (UTC${off < 0 || m[3][0] === '-' ? '−' : '+'}${Math.abs(off)}${offMin ? ':' + m[4] : ''})`;
 }
 
 /* ---------- Data loading ---------- */
@@ -315,6 +348,36 @@ function buildFeatures(){
   marketFeatures = [...byMarket].map(([id, gs]) => ({type:'Feature', id, geometry:topojson.merge(topo, gs)}));
 }
 
+async function loadStationList(){
+  try {
+    const r = await fetch(STATIONS, {cache:'no-cache'});
+    if (!r.ok) return;
+    const raw = await r.json();
+    for (const st of (raw.stations || [])){
+      const name = st.dma, call = String(st.base_callsign || st.callsign || '').toUpperCase();
+      if (!name || !call) continue;
+      if (!marketInfo.has(name)) marketInfo.set(name, {rank: st.dma_rank ?? null, stations: []});
+      const mi = marketInfo.get(name);
+      let row = mi.stations.find(x => x.call === call);
+      if (!row){ row = {call, networks: [], tier: st.tier || '', url: st.feed?.url || '', note: st.feed?.note || ''}; mi.stations.push(row); }
+      if (st.network && !row.networks.includes(st.network)) row.networks.push(st.network);
+      if (!row.url && st.feed?.url) row.url = st.feed.url;
+    }
+    // Ranks from Drew's Secret fill in the panel and the list order
+    for (const [name, mi] of marketInfo){ const m = markets.get(name); if (m && m.rank == null) m.rank = mi.rank; }
+  } catch(e){ /* the map still works without it */ }
+}
+
+async function loadStories(){
+  try {
+    // GitHub Pages caches files for a few minutes; the time stamp asks for the newest copy
+    const r = await fetch(STORIES + '?t=' + Date.now(), {cache:'no-store'});
+    if (!r.ok) return;
+    storyData = await r.json();
+    if (selected) renderPanel(selected);
+  } catch(e){ /* keep whatever we had */ }
+}
+
 async function loadAlerts(){
   let data;
   try {
@@ -358,7 +421,7 @@ async function loadAlerts(){
   alertsByMarket = next;
 
   $('updated').textContent = 'updated ' + sydFmt.format(new Date());
-  $('foot').textContent = `Alerts from the National Weather Service (api.weather.gov), refreshed every 2 minutes. ${used} alerts placed` +
+  $('foot').textContent = `Alerts from the National Weather Service (api.weather.gov), refreshed every 2 minutes. ${used} ${used === 1 ? 'alert' : 'alerts'} placed` +
     (unmatched ? `, ${unmatched} without a matching county (mostly marine and offshore zones).` : '.');
   paint();
 }
@@ -389,7 +452,7 @@ function drawBase(){
     .on('click', (e, d) => select(d.id, false))
     .on('mousemove', (e, d) => {
       const m = markets.get(d.id), list = alertsByMarket.get(d.id);
-      tip.innerHTML = `<b>${esc(m.name)}</b>${list ? esc(list[0].cls.event) + (list.length > 1 ? ` and ${list.length-1} more` : '') : 'No active alerts'}`;
+      tip.innerHTML = `<b>${esc(displayName(m.name))}</b>${list ? esc(list[0].cls.event) + (list.length > 1 ? ` and ${list.length-1} more` : '') : 'No active alerts'}`;
       const r = wrap.getBoundingClientRect();
       tip.style.display = 'block';
       tip.style.left = Math.min(e.clientX - r.left + 14, r.width - 250) + 'px';
@@ -412,14 +475,15 @@ function paint(){
     .sort((a,b) => topAlert(a).cls.p - topAlert(b).cls.p || (markets.get(a).rank ?? 999) - (markets.get(b).rank ?? 999));
 
   const noun = mode === 'counties' ? 'counties' : 'markets';
-  $('count').innerHTML = active.length ? `<strong>${active.length}</strong> ${noun} under alerts` : `No ${noun} under alerts`;
+  const one = mode === 'counties' ? 'county' : 'market';
+  $('count').innerHTML = active.length ? `<strong>${active.length}</strong> ${active.length === 1 ? one : noun} under alerts` : `No ${noun} under alerts`;
 
   // List
   $('mlist').innerHTML = active.length ? active.map(id => {
     const m = markets.get(id), l = alertsByMarket.get(id);
     return `<li><button type="button" data-id="${esc(id)}" aria-current="${id === selected}">
       <span class="bar" style="background:${l[0].cls.color}"></span>
-      <span><span class="nm">${esc(m.name)}</span><span class="ev">${esc(l[0].cls.event)}${l[0].cls.tag ? ' (' + esc(l[0].cls.tag) + ')' : ''}</span></span>
+      <span><span class="nm">${esc(displayName(m.name))}</span><span class="ev">${esc(l[0].cls.event)}${l[0].cls.tag ? ' (' + esc(l[0].cls.tag) + ')' : ''}</span></span>
       <span class="n">${l.length}</span></button></li>`;
   }).join('') : `<li class="empty">Quiet across the country right now.</li>`;
 
@@ -433,6 +497,86 @@ function paint(){
 }
 
 /* ---------- Market panel ---------- */
+const NET_ORDER = ['ABC','CBS','NBC','FOX'];
+function ago(iso){
+  if (!iso) return '';
+  const mins = Math.round((Date.now() - Date.parse(iso)) / 60000);
+  if (mins < 1) return 'just now';
+  if (mins < 60) return `${mins} min ago`;
+  const h = Math.round(mins / 60);
+  if (h < 24) return `${h} hr ago`;
+  const d = Math.round(h / 24);
+  return d === 1 ? 'yesterday' : `${d} days ago`;
+}
+const safeUrl = u => /^https?:\/\//i.test(u || '') ? u : '';
+
+/* Stations in a market, with their stories attached where the robot has them */
+function stationsFor(name){
+  const mi = marketInfo.get(name);
+  const list = (mi ? mi.stations : []).map(st => ({...st}));
+  const sd = storyData && storyData.stations ? storyData.stations : {};
+  // Stations the robot reads that Drew's Secret doesn't list for this market
+  for (const [call, info] of Object.entries(sd))
+    if (info.market === name && !list.some(x => x.call === call)) list.push({call, networks: info.networks || [], tier: info.tier || '', url: '', note: ''});
+  for (const st of list){
+    const info = sd[st.call];
+    const site = info && storyData.sites ? storyData.sites[info.site] : null;
+    st.items = site && site.ok ? site.items : [];
+    st.hasFeed = st.items.length > 0;
+    const dayAgo = Date.now() - 864e5;
+    st.ownToday = st.items.filter(i => i.own && i.published && Date.parse(i.published) > dayAgo).length;
+    st.ownAll = st.items.filter(i => i.own).length;
+  }
+  const netRank = st => Math.min(...st.networks.map(n => NET_ORDER.indexOf(n)).filter(i => i >= 0), 9);
+  return list.sort((a, b) => (b.tier === 'big4') - (a.tier === 'big4') || netRank(a) - netRank(b) || a.call.localeCompare(b.call));
+}
+
+/* Until lead stations are picked properly, default to the busiest newsroom today */
+function defaultStation(list){
+  const withFeed = list.filter(s => s.hasFeed);
+  if (!withFeed.length) return list[0] || null;
+  return withFeed.slice().sort((a, b) => b.ownToday - a.ownToday || b.ownAll - a.ownAll)[0];
+}
+function chosenStation(name, list){
+  let saved = null;
+  try { saved = localStorage.getItem('dsm-station:' + name); } catch(e){}
+  return list.find(s => s.call === saved) || defaultStation(list);
+}
+
+function storiesHTML(name){
+  if (!storyData) return `<p class="later">Stories haven't loaded yet. They come from data/stories.json, which the Station feeds robot writes every 20 minutes.</p>`;
+  const list = stationsFor(name);
+  if (!list.length) return `<p class="later">No stations listed for this market.</p>`;
+  const st = chosenStation(name, list);
+  const auto = (() => { try { return !localStorage.getItem('dsm-station:' + name); } catch(e){ return true; } })();
+
+  const buttons = list.map(x => `<button type="button" data-call="${esc(x.call)}" aria-pressed="${x.call === st.call}" class="${x.hasFeed ? '' : 'nofeed'}" title="${x.hasFeed ? '' : 'No station feed yet'}">${esc(x.call)} <span class="net">${esc(x.networks.join('/'))}</span></button>`).join('');
+
+  let body;
+  if (!st.hasFeed){
+    body = `<p class="later">No station feed for ${esc(st.call)} yet, so there are no stories to show.</p>`;
+  } else {
+    const own = st.items.filter(i => i.own), shared = st.items.filter(i => !i.own);
+    const pool = showShared ? st.items : own;
+    const top = pool.slice(0, 3);
+    body = top.length ? `<ol class="stories">${top.map(i => `<li><a href="${esc(safeUrl(i.link))}" target="_blank" rel="noopener">${esc(i.title)}</a>${i.own ? '' : `<span class="shared" title="${esc(i.why || '')}">shared</span>`}<span class="age">${esc(ago(i.published))}</span></li>`).join('')}</ol>`
+      : `<p class="later">${esc(st.call)}'s feed has only shared or wire stories right now.</p>`;
+    if (shared.length) body += `<button type="button" class="toggle" id="sharedToggle">${showShared ? 'Show own reporting only' : `Include shared and wire stories (${shared.length} hidden)`}</button>`;
+  }
+
+  const url = safeUrl(st.url);
+  const isLive = /live|stream|watch/i.test(url);
+  const watch = url ? `<a class="watch" href="${esc(url)}" target="_blank" rel="noopener">${isLive ? 'Watch ' + esc(st.call) + ' live' : 'Open ' + esc(st.call) + "'s website"}</a>` : '';
+
+  const ageMin = (Date.now() - Date.parse(storyData.generated)) / 60000;
+  const stale = ageMin > 90 ? `<p class="stale">Stories were last collected ${esc(ago(storyData.generated))}. Check the Station feeds robot in the Actions tab.</p>` : '';
+
+  return `${stale}<div class="stations" role="group" aria-label="Choose a station">${buttons}</div>
+    <p class="lead"><strong>${esc(st.call)}</strong> ${esc(st.networks.join('/'))}${auto && st.hasFeed ? ', busiest newsroom today' : ''}</p>
+    ${body}
+    <div class="row" style="margin-top:12px">${watch}</div>`;
+}
+
 function renderPanel(id){
   const m = markets.get(id);
   if (!m) return;
@@ -454,12 +598,12 @@ function renderPanel(id){
   }).join('') : `<p class="later">No active NWS alerts for this market.</p>`;
 
   $('pbody').innerHTML = `
-    <h2>${esc(m.name)}</h2>
+    <h2>${esc(displayName(m.name))}</h2>
     <p class="meta">${esc(metaBits.join(', '))}</p>
     <h3>Active alerts</h3>
     ${warnings}
-    <h3>Top stories and live stream</h3>
-    <p class="later">The lead station, its top three stories and the live stream link go here in the next build.</p>`;
+    <h3>Top stories</h3>
+    ${mode === 'counties' ? '<p class="later">Stories need the market crosswalk loaded.</p>' : storiesHTML(m.name)}`;
 }
 
 function select(id, zoomTo){
@@ -471,8 +615,13 @@ function select(id, zoomTo){
     if (f){
       const [[x0,y0],[x1,y1]] = path.bounds(f);
       const k = Math.min(10, 0.6 / Math.max((x1-x0)/975, (y1-y0)/610));
+      // Centre the market in the part of the map the panel isn't covering
+      const wrap = $('mapwrap').getBoundingClientRect(), pr = $('panel').getBoundingClientRect();
+      const wide = innerWidth > 760;
+      const cx = wide ? 975 * (1 - Math.min(pr.width / wrap.width, .6)) / 2 : 975 / 2;
+      const cy = wide ? 610 / 2 : 610 * (1 - Math.min(pr.height / wrap.height, .7)) / 2;
       svg.transition().duration(matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 600)
-        .call(zoom.transform, d3.zoomIdentity.translate(975/2, 610/2).scale(k).translate(-(x0+x1)/2, -(y0+y1)/2));
+        .call(zoom.transform, d3.zoomIdentity.translate(cx, cy).scale(k * (wide ? .75 : .6)).translate(-(x0+x1)/2, -(y0+y1)/2));
     }
   }
 }
@@ -485,6 +634,15 @@ function closePanel(){
 /* ---------- Wiring ---------- */
 $('mlist').addEventListener('click', e => { const b = e.target.closest('button[data-id]'); if (b) select(b.dataset.id, true); });
 $('close').addEventListener('click', closePanel);
+$('pbody').addEventListener('click', e => {
+  const b = e.target.closest('button[data-call]');
+  if (b && selected){
+    try { localStorage.setItem('dsm-station:' + markets.get(selected).name, b.dataset.call); } catch(err){}
+    renderPanel(selected);
+    return;
+  }
+  if (e.target.id === 'sharedToggle'){ showShared = !showShared; renderPanel(selected); }
+});
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && selected) closePanel(); });
 $('refresh').addEventListener('click', loadAlerts);
 $('zin').addEventListener('click', () => svg.transition().call(zoom.scaleBy, 1.6));
@@ -510,10 +668,12 @@ $('zreset').addEventListener('click', () => svg.transition().call(zoom.transform
     const unassigned = topo.objects.counties.geometries.filter(g => !countyToMarket.has(g.id)).length;
     if (unassigned) notice(`${markets.size} markets loaded. ${unassigned} counties on the map aren't in the crosswalk and are left uncoloured.`);
   }
+  if (mode !== 'counties') await loadStationList();
   buildFeatures();
   drawBase();
   await loadAlerts();
   setInterval(loadAlerts, REFRESH_MS);
+  if (mode !== 'counties'){ loadStories(); setInterval(loadStories, STORY_REFRESH_MS); }
 })();
 </script>
 </body>
