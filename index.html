@@ -63,9 +63,13 @@ aside h2{font:600 17px/1.2 var(--cond);margin:14px 16px 8px;color:var(--muted)}
 #map{width:100%;height:100%;display:block;cursor:grab}
 #map:active{cursor:grabbing}
 .county{fill:var(--land);stroke:none}
-.mkt{fill:transparent;stroke:var(--land-edge);stroke-width:.6;vector-effect:non-scaling-stroke;cursor:pointer}
-.mkt:hover{stroke:var(--text);stroke-width:1.2}
-.mkt.sel{stroke:var(--select);stroke-width:2.4}
+.cty{stroke:rgba(255,255,255,.08);stroke-width:.4;vector-effect:non-scaling-stroke;cursor:pointer}
+.cty:hover{stroke:var(--text);stroke-width:1.2}
+.cty.picked{stroke:var(--select);stroke-width:2}
+.mkt{fill:none;stroke:#8ea4c4;stroke-width:.9;vector-effect:non-scaling-stroke;pointer-events:none}
+.mkt.sel{stroke:var(--select);stroke-width:2.6}
+.warn .here{font:600 12px/1 var(--body);border:1px solid var(--text);color:var(--text);border-radius:3px;padding:2px 5px;margin-left:6px;vertical-align:2px}
+.picked-note{font-size:14px;margin:-12px 0 16px;color:var(--text)}
 .states{fill:none;stroke:var(--state);stroke-width:.9;vector-effect:non-scaling-stroke;pointer-events:none}
 .tip{position:absolute;pointer-events:none;background:#0f1d31;border:1px solid var(--panel-edge);border-radius:4px;padding:6px 9px;font-size:13px;display:none;max-width:240px}
 .tip b{font:600 15px/1.2 var(--cond);display:block}
@@ -295,6 +299,8 @@ let marketFeatures = [];
 let alertsByMarket = new Map();   // market id -> [{p, cls, fips}]
 let mode = 'markets';             // or 'counties' when no crosswalk
 let selected = null;
+let pickedCounty = null;          // fips of the county clicked, highlighted in the panel
+let alertsByCounty = new Map();   // fips -> [{ p, cls }]
 let marketInfo = new Map();      // market name -> { rank, stations: [{ call, networks, tier, url, note }] }
 let alertMarkets = new Map();    // alert id -> [market ids], for "also covers"
 let polygons = [];               // storm-based warning shapes: [{ geometry, cls }]
@@ -535,7 +541,7 @@ async function loadAlerts(){
   const replaced = new Set();
   for (const f of data.features) for (const ref of (f.properties.references || [])) replaced.add(ref['@id'] || ref.identifier);
 
-  const next = new Map(), nextAlso = new Map(), nextPolys = [];
+  const next = new Map(), nextAlso = new Map(), nextPolys = [], nextCounty = new Map();
   let unmatched = 0, used = 0;
   for (const f of data.features){
     const p = f.properties;
@@ -557,12 +563,18 @@ async function loadAlerts(){
     for (const [m, set] of hit){
       if (!next.has(m)) next.set(m, []);
       next.get(m).push({p, cls, fips:[...set]});
+      for (const f of set){
+        if (!nextCounty.has(f)) nextCounty.set(f, []);
+        nextCounty.get(f).push({p, cls});
+      }
     }
   }
   for (const list of next.values())
     list.sort((a,b) => a.cls.p - b.cls.p || new Date(a.p.ends || a.p.expires) - new Date(b.p.ends || b.p.expires));
   alertsByMarket = next;
   alertMarkets = nextAlso;
+  for (const list of nextCounty.values()) list.sort((a, b) => a.cls.p - b.cls.p);
+  alertsByCounty = nextCounty;
   polygons = nextPolys.sort((a, b) => b.cls.p - a.cls.p);   // most serious drawn last, on top
 
   $('updated').textContent = 'updated ' + sydFmt.format(new Date());
@@ -576,7 +588,8 @@ const svg = d3.select('#map');
 const root = svg.append('g');
 const gCounties = root.append('g');
 const gSPC = root.append('g').attr('opacity', .5);
-const gMarkets = root.append('g');
+const gCty = root.append('g');      // every county: shaded by its own alert, and what you click
+const gMarkets = root.append('g');  // market borders drawn over the counties
 const gStates = root.append('g');
 const gPolys = root.append('g');
 const path = d3.geoPath();
@@ -595,21 +608,33 @@ function drawBase(){
     .attr('d', path(topojson.mesh(topo, topo.objects.nation)));
 
   const tip = $('tip'), wrap = $('mapwrap');
-  gMarkets.selectAll('path')
-    .data(marketFeatures, d => d.id)
-    .join('path').attr('class','mkt').attr('d', path)
-    .on('click', (e, d) => select(d.id, false))
+  gCty.selectAll('path')
+    .data(countyFeats.map(f => ({fips: norm(f.id), geometry: f.geometry, type: 'Feature'})))
+    .join('path').attr('class','cty').attr('d', path)
+    .on('click', (e, d) => {
+      const m = countyToMarket.get(d.fips);
+      if (!m) return;
+      pickedCounty = d.fips;
+      select(m, false);
+    })
     .on('mousemove', (e, d) => {
-      const m = markets.get(d.id), list = visible(d.id);
-      tip.innerHTML = `<b>${esc(displayName(m.name))}</b>${list.length ? esc(list[0].cls.event) + (list.length > 1 ? ` and ${list.length-1} more` : '') : 'No alerts at the levels shown'}`;
+      const m = markets.get(countyToMarket.get(d.fips));
+      const list = countyVisible(d.fips);
+      const name = `${countyName.get(d.fips) || d.fips}, ${stateName.get(d.fips.slice(0,2)) || ''}`;
+      tip.innerHTML = `<b>${esc(name)}</b>${m && mode !== 'counties' ? esc(displayName(m.name)) + '<br>' : ''}${list.length ? esc(list[0].cls.event) + (list.length > 1 ? ` and ${list.length-1} more` : '') : 'No alerts at the levels shown'}`;
       const r = wrap.getBoundingClientRect();
       tip.style.display = 'block';
       tip.style.left = Math.min(e.clientX - r.left + 14, r.width - 250) + 'px';
       tip.style.top = (e.clientY - r.top + 14) + 'px';
     })
     .on('mouseleave', () => { tip.style.display = 'none'; });
+
+  gMarkets.selectAll('path')
+    .data(marketFeatures, d => d.id)
+    .join('path').attr('class','mkt').attr('d', path);
 }
 
+function countyVisible(f){ return (alertsByCounty.get(f) || []).filter(a => levels.has(a.cls.level)); }
 function visible(id){ return (alertsByMarket.get(id) || []).filter(a => levels.has(a.cls.level)); }
 function topAlert(id){ const l = visible(id); return l.length ? l[0] : null; }
 
@@ -619,11 +644,12 @@ function levelWords(){
 }
 
 function paint(){
-  gMarkets.selectAll('path')
-    .style('fill', d => { const a = topAlert(d.id); return a ? a.cls.color : 'transparent'; })
-    .style('fill-opacity', d => topAlert(d.id) ? .45 : 0)   // dimmed so the actual warning polygons stand out
-    .classed('sel', d => d.id === selected);
-  // keep the selected outline on top
+  gCty.selectAll('path')
+    .style('fill', d => { const l = countyVisible(d.fips); return l.length ? l[0].cls.color : 'transparent'; })
+    .style('fill-opacity', d => countyVisible(d.fips).length ? .5 : 0)   // dimmed so the actual warning polygons stand out
+    .classed('picked', d => d.fips === pickedCounty);
+  gCty.selectAll('path.picked').raise();
+  gMarkets.selectAll('path').classed('sel', d => d.id === selected);
   gMarkets.selectAll('path.sel').raise();
 
   const spc = spcDay && spcData[spcDay] && !spcData[spcDay].failed ? spcData[spcDay].features : [];
@@ -723,6 +749,8 @@ function renderPanel(id){
   if (mode !== 'counties') metaBits.push(`${m.fips.length} ${m.fips.length === 1 ? 'county' : 'counties'}`);
   if (m.tz) metaBits.push(m.tz.replace('America/','').replace('Pacific/','').replace(/_/g,' ') + ' time');
 
+  const picked = pickedCounty && countyToMarket.get(pickedCounty) === id ? pickedCounty : null;
+  const pickedName = picked ? `${countyName.get(picked) || picked} County` : '';
   const warnings = list.length ? list.map(({p, cls, fips}) => {
     const names = fips.map(f => countyName.get(f) || f).sort();
     const end = p.ends || p.expires;
@@ -730,7 +758,7 @@ function renderPanel(id){
     const also = others.length && mode !== 'counties'
       ? `<p class="also">Also covers ${others.map(x => `<button type="button" class="mlink" data-market="${esc(x)}">${esc(displayName(markets.get(x)?.name || x))}</button>`).join(', ')}</p>` : '';
     return `<div class="warn" style="border-color:${cls.color}">
-      <div class="ev">${esc(cls.event)}${cls.tags.map(t => `<span class="tag">${esc(t)}</span>`).join('')}</div>
+      <div class="ev">${esc(cls.event)}${cls.tags.map(t => `<span class="tag">${esc(t)}</span>`).join('')}${picked && fips.includes(picked) ? `<span class="here">${esc(pickedName)}</span>` : ''}</div>
       <p class="when">Until ${esc(marketTime(end, m.tz))}, ${esc(sydDayFmt.format(new Date(end)))} Sydney</p>
       <p class="issued">Issued ${esc(marketTime(p.sent, m.tz))}, ${esc(ago(p.sent))}</p>
       <p class="small">${mode === 'counties' ? '' : esc(names.join(', ')) + '<br>'}${esc(p.senderName || '')}</p>
@@ -744,6 +772,7 @@ function renderPanel(id){
   $('pbody').innerHTML = `
     <h2>${esc(displayName(m.name))}</h2>
     <p class="meta">${esc(metaBits.join(', '))}</p>
+    ${picked && mode !== 'counties' ? `<p class="picked-note">You clicked ${esc(pickedName)}${countyVisible(picked).length ? `, under ${countyVisible(picked).length} ${countyVisible(picked).length === 1 ? 'alert' : 'alerts'}` : ', no alerts there at the levels shown'}.</p>` : ''}
     ${spcHTML(id)}
     <h3>Active alerts</h3>
     ${warnings}
@@ -772,16 +801,17 @@ function select(id, zoomTo){
 }
 function closePanel(){
   selected = null;
+  pickedCounty = null;
   $('panel').classList.remove('open');
   paint();
 }
 
 /* ---------- Wiring ---------- */
-$('mlist').addEventListener('click', e => { const b = e.target.closest('button[data-id]'); if (b) select(b.dataset.id, true); });
+$('mlist').addEventListener('click', e => { const b = e.target.closest('button[data-id]'); if (b){ pickedCounty = null; select(b.dataset.id, true); } });
 $('close').addEventListener('click', closePanel);
 $('pbody').addEventListener('click', e => {
   const b = e.target.closest('button[data-market]');
-  if (b) select(b.dataset.market, true);
+  if (b){ pickedCounty = null; select(b.dataset.market, true); }
 });
 function syncLevels(){
   document.querySelectorAll('.levels button').forEach(b => b.setAttribute('aria-pressed', levels.has(b.dataset.level)));
