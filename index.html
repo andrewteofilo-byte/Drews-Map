@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Drew's Secret Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#13233a;
+  --land:#2b3e57;
+  --land-edge:#3d5577;
+  --state:#7d93b3;
+  --panel:#1a2d47;
+  --panel-edge:#2c4466;
+  --text:#e9eff7;
+  --muted:#a3b3c9;
+  --select:#ffffff;
+  --cond:"Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body:"Barlow", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html,body{height:100%;margin:0}
+body{background:var(--sky);color:var(--text);font:400 15px/1.45 var(--body);display:flex;flex-direction:column;overflow:hidden}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--select);outline-offset:2px}
+
+/* Header bar, styled like a station's on-air ticker strip */
+header{display:flex;align-items:center;gap:20px;padding:10px 18px;border-bottom:1px solid var(--panel-edge);background:#0f1d31;flex-wrap:wrap}
+.mark{font:700 26px/1 var(--cond);letter-spacing:.01em;margin:0}
+.count{font:600 18px/1 var(--cond);color:var(--muted)}
+.count strong{color:var(--text);font-weight:700}
+.clock{margin-left:auto;display:flex;align-items:center;gap:14px;color:var(--muted);font-size:14px}
+.clock .syd{font:600 20px/1 var(--cond);color:var(--text)}
+.refresh{background:transparent;border:1px solid var(--panel-edge);border-radius:4px;padding:6px 12px;cursor:pointer}
+.refresh:hover{border-color:var(--state)}
+
+.notice{display:none;padding:8px 18px;font-size:14px;background:#24364f;border-bottom:1px solid var(--panel-edge)}
+.notice.show{display:block}
+.notice.error{background:#4a1f26}
+
+main{flex:1;display:grid;grid-template-columns:270px 1fr;min-height:0;position:relative}
+
+/* Active markets list */
+aside{border-right:1px solid var(--panel-edge);overflow-y:auto;min-height:0}
+aside h2{font:600 17px/1.2 var(--cond);margin:14px 16px 8px;color:var(--muted)}
+.mlist{list-style:none;margin:0;padding:0 8px 16px}
+.mlist button{display:grid;grid-template-columns:6px 1fr auto;gap:10px;align-items:center;width:100%;text-align:left;background:transparent;border:0;border-radius:4px;padding:7px 8px;cursor:pointer}
+.mlist button:hover,.mlist button[aria-current="true"]{background:var(--panel)}
+.mlist .bar{align-self:stretch;border-radius:2px}
+.mlist .nm{font:600 16px/1.15 var(--cond)}
+.mlist .ev{display:block;font-size:13px;color:var(--muted)}
+.mlist .n{font:600 15px/1 var(--cond);color:var(--muted)}
+.empty{margin:0 16px;color:var(--muted);font-size:14px}
+
+/* Map */
+.mapwrap{position:relative;min-height:0}
+#map{width:100%;height:100%;display:block;cursor:grab}
+#map:active{cursor:grabbing}
+.county{fill:var(--land);stroke:none}
+.mkt{fill:transparent;stroke:var(--land-edge);stroke-width:.6;vector-effect:non-scaling-stroke;cursor:pointer}
+.mkt:hover{stroke:var(--text);stroke-width:1.2}
+.mkt.sel{stroke:var(--select);stroke-width:2.4}
+.states{fill:none;stroke:var(--state);stroke-width:.9;vector-effect:non-scaling-stroke;pointer-events:none}
+.tip{position:absolute;pointer-events:none;background:#0f1d31;border:1px solid var(--panel-edge);border-radius:4px;padding:6px 9px;font-size:13px;display:none;max-width:240px}
+.tip b{font:600 15px/1.2 var(--cond);display:block}
+
+.legend{position:absolute;left:14px;bottom:14px;background:rgba(15,29,49,.88);border:1px solid var(--panel-edge);border-radius:4px;padding:8px 10px;font-size:13px;max-width:min(320px,70%);max-height:40%;overflow-y:auto}
+.legend:empty{display:none}
+.legend div{display:flex;align-items:center;gap:8px;line-height:1.7}
+.swatch{width:14px;height:10px;border-radius:2px;flex:none}
+.legend .c{margin-left:auto;color:var(--muted);padding-left:10px}
+
+.zoomctl{position:absolute;right:14px;bottom:14px;display:flex;flex-direction:column;gap:4px}
+.zoomctl button{width:34px;height:34px;background:#0f1d31;border:1px solid var(--panel-edge);border-radius:4px;cursor:pointer;font-size:18px}
+
+/* Market panel: slides over the map from the right */
+.panel{position:absolute;top:0;right:0;bottom:0;width:min(380px,100%);background:var(--panel);border-left:1px solid var(--panel-edge);overflow-y:auto;transform:translateX(100%);transition:transform .22s ease;padding:18px 20px 28px}
+.panel.open{transform:none}
+.panel .close{position:absolute;top:12px;right:12px;background:transparent;border:1px solid var(--panel-edge);border-radius:4px;width:32px;height:32px;cursor:pointer;font-size:18px;line-height:1}
+.panel h2{font:700 30px/1.05 var(--cond);margin:0 40px 4px 0}
+.panel .meta{color:var(--muted);margin:0 0 18px;font-size:14px}
+.panel h3{font:600 19px/1.2 var(--cond);margin:22px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--panel-edge)}
+.warn{border-left:5px solid;padding:2px 0 2px 12px;margin:0 0 16px}
+.warn .ev{font:700 20px/1.15 var(--cond)}
+.warn .tag{font:600 13px/1 var(--body);background:var(--text);color:var(--sky);border-radius:3px;padding:2px 5px;margin-left:6px;vertical-align:2px}
+.warn p{margin:3px 0;font-size:14px}
+.warn .when{color:var(--text)}
+.warn .small{color:var(--muted)}
+.warn details{margin-top:6px;font-size:13.5px}
+.warn summary{cursor:pointer;color:var(--muted)}
+.warn pre{white-space:pre-wrap;font:13px/1.45 var(--body);margin:6px 0 0;color:var(--text)}
+.later{color:var(--muted);font-size:14px;margin:0}
+
+footer{padding:5px 18px;font-size:12px;color:var(--muted);border-top:1px solid var(--panel-edge);background:#0f1d31}
+
+@media (max-width:760px){
+  main{grid-template-columns:1fr;grid-template-rows:1fr auto}
+  aside{grid-row:2;border-right:0;border-top:1px solid var(--panel-edge);max-height:34vh}
+  .panel{top:auto;height:72%;width:100%;border-left:0;border-top:1px solid var(--panel-edge);transform:translateY(100%)}
+  .clock{margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){.panel{transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <h1 class="mark">Drew's Secret Map</h1>
+  <span class="count" id="count">Loading warnings…</span>
+  <div class="clock">
+    <span>Sydney <span class="syd" id="syd">--:--</span></span>
+    <span id="updated"></span>
+    <button class="refresh" id="refresh" type="button">Refresh now</button>
+  </div>
+</header>
+<div class="notice" id="notice" role="status"></div>
+
+<main>
+  <aside aria-label="Markets with active alerts">
+    <h2>Markets under alerts</h2>
+    <ul class="mlist" id="mlist"></ul>
+  </aside>
+  <div class="mapwrap" id="mapwrap">
+    <svg id="map" viewBox="0 0 975 610" preserveAspectRatio="xMidYMid meet" aria-label="Map of US television markets coloured by most serious active NWS alert"></svg>
+    <div class="tip" id="tip"></div>
+    <div class="legend" id="legend" aria-label="Alert types on the map"></div>
+    <div class="zoomctl">
+      <button type="button" id="zin" aria-label="Zoom in">+</button>
+      <button type="button" id="zout" aria-label="Zoom out">−</button>
+      <button type="button" id="zreset" aria-label="Reset view">⤢</button>
+    </div>
+    <section class="panel" id="panel" aria-live="polite" aria-label="Market details">
+      <button class="close" id="close" type="button" aria-label="Close market panel">×</button>
+      <div id="pbody"></div>
+    </section>
+  </div>
+</main>
+<footer id="foot">Alerts from the National Weather Service (api.weather.gov), refreshed every 2 minutes.</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+/* ---------- Settings ---------- */
+const ATLAS_URL  = 'https://cdn.jsdelivr.net/npm/us-atlas@3/counties-albers-10m.json'; // pre-projected, Alaska + Hawaii inset
+const CROSSWALK  = 'county-dma-crosswalk.json';  // Drew's Secret export, beside index.html on GitHub Pages
+const ALERTS_URL = 'https://api.weather.gov/alerts/active?status=actual';
+const REFRESH_MS = 120000;
+const SYD        = 'Australia/Sydney';
+
+/* County code changes between the map's boundary year and newer data.
+   Connecticut's planning regions (Census 2022+) fold back to the old counties;
+   every CT county is Hartford & New Haven except Fairfield (New York), and the
+   regions below don't cross that line. Valdez-Cordova split in 2019. */
+const FIPS_ALIASES = {
+  '09110':'09003','09120':'09001','09130':'09007','09140':'09009','09150':'09015',
+  '09160':'09005','09170':'09009','09180':'09011','09190':'09001',
+  '02063':'02261','02066':'02261'
+};
+const norm = f => { f = String(f).padStart(5,'0').slice(-5); return FIPS_ALIASES[f] || f; };
+
+/* Alert priority, most serious first. Colours follow the NWS hazard map. */
+const HAZARDS = [
+  ['Tornado Emergency','#ff00ff'],
+  ['Flash Flood Emergency','#ff00ff'],
+  ['Tsunami Warning','#fd6347'],
+  ['Tornado Warning','#ff0000'],
+  ['Extreme Wind Warning','#ff8c00'],
+  ['Severe Thunderstorm Warning','#ffa500'],
+  ['Flash Flood Warning','#8b0000'],
+  ['Hurricane Warning','#dc143c'],
+  ['Storm Surge Warning','#b524f7'],
+  ['Blizzard Warning','#ff4500'],
+  ['Ice Storm Warning','#8b008b'],
+  ['Winter Storm Warning','#ff69b4'],
+  ['Tropical Storm Warning','#b22222'],
+  ['High Wind Warning','#daa520'],
+  ['Extreme Heat Warning','#c71585'],
+  ['Excessive Heat Warning','#c71585'],
+  ['Red Flag Warning','#ff1493'],
+  ['Dust Storm Warning','#ffe4c4'],
+  ['Flood Warning','#00ff00'],
+  ['Freeze Warning','#483d8b'],
+  ['Tornado Watch','#ffff00'],
+  ['Severe Thunderstorm Watch','#db7093'],
+  ['Hurricane Watch','#ff00ff'],
+  ['Tropical Storm Watch','#f08080'],
+  ['Flash Flood Watch','#2e8b57'],
+  ['Winter Storm Watch','#4682b4'],
+  ['Flood Advisory','#00ff7f'],
+  ['Special Weather Statement','#ffe4b5'],
+  ['Winter Weather Advisory','#7b68ee'],
+  ['Wind Advisory','#d2b48c'],
+  ['Heat Advisory','#ff7f50'],
+  ['Dense Fog Advisory','#708090'],
+  ['Frost Advisory','#6495ed']
+];
+const PRIORITY = new Map(HAZARDS.map(([e,c],i)=>[e,{p:i,color:c}]));
+function hazardInfo(event){
+  if (PRIORITY.has(event)) return PRIORITY.get(event);
+  // Anything not listed sorts by its kind, with a muted colour
+  if (/Warning$/.test(event))   return {p:1000,color:'#c9a0a0'};
+  if (/Watch$/.test(event))     return {p:2000,color:'#b8b880'};
+  if (/Advisory$/.test(event))  return {p:3000,color:'#8fa8a0'};
+  return {p:4000,color:'#8a96a8'};
+}
+function classify(p){
+  const params = p.parameters || {};
+  const tdt = (params.tornadoDamageThreat || []).join(' ');
+  const fdt = (params.flashFloodDamageThreat || []).join(' ');
+  let event = p.event, tag = '';
+  if (event === 'Tornado Warning' && /CATASTROPHIC/i.test(tdt)) event = 'Tornado Emergency';
+  else if (event === 'Tornado Warning' && /CONSIDERABLE/i.test(tdt)) tag = 'PDS';
+  if (event === 'Flash Flood Warning' && /CATASTROPHIC/i.test(fdt)) event = 'Flash Flood Emergency';
+  else if (event === 'Flash Flood Warning' && /CONSIDERABLE/i.test(fdt)) tag = 'Considerable';
+  if (/OBSERVED/i.test((params.tornadoDetection||[]).join(' '))) tag = tag ? tag + ', observed' : 'Observed';
+  return {event, tag, ...hazardInfo(event)};
+}
+
+/* ---------- State ---------- */
+let topo, countyName = new Map(), stateName = new Map();
+let markets = new Map();          // id -> {id,name,rank,tz,fips:[]}
+let countyToMarket = new Map();   // fips -> market id
+let marketFeatures = [];
+let alertsByMarket = new Map();   // market id -> [{p, cls, fips}]
+let mode = 'markets';             // or 'counties' when no crosswalk
+let selected = null;
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function notice(msg, isError){
+  const n = $('notice');
+  n.textContent = msg || '';
+  n.className = 'notice' + (msg ? ' show' : '') + (isError ? ' error' : '');
+}
+
+/* ---------- Time ---------- */
+const sydFmt = new Intl.DateTimeFormat('en-AU',{timeZone:SYD,hour:'numeric',minute:'2-digit'});
+const sydDayFmt = new Intl.DateTimeFormat('en-AU',{timeZone:SYD,weekday:'short',hour:'numeric',minute:'2-digit'});
+function tickClock(){ $('syd').textContent = sydFmt.format(new Date()); }
+function marketTime(iso, tz){
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (tz) {
+    try { return new Intl.DateTimeFormat('en-US',{timeZone:tz,weekday:'short',hour:'numeric',minute:'2-digit',timeZoneName:'short'}).format(d); }
+    catch(e){ /* bad tz string: fall through */ }
+  }
+  // No market time zone: read the clock time and offset straight from the NWS timestamp
+  const m = /T(\d\d):(\d\d).*?([+-]\d\d):?(\d\d)$/.exec(iso);
+  if (!m) return '';
+  let h = +m[1], ap = h >= 12 ? 'PM' : 'AM'; h = h % 12 || 12;
+  return `${h}:${m[2]} ${ap} (UTC${m[3].replace('-','−')})`;
+}
+
+/* ---------- Data loading ---------- */
+async function loadCrosswalk(){
+  try {
+    const r = await fetch(CROSSWALK, {cache:'no-cache'});
+    if (!r.ok) throw new Error(r.status);
+    return await r.json();
+  } catch(e){ return null; }
+}
+
+/* Reads the Drew's Secret export:
+   { "_about":..., "crosswalk": { "48485":"Wichita Falls & Lawton", ... } }
+   Optional extra block, used for the panel and sorting if present:
+   "markets": { "Wichita Falls & Lawton": { "rank": 0, "tz": "America/Chicago" } }
+   Also accepts a bare county-to-market lookup. Keys starting with _ are notes. */
+function buildMarkets(cw){
+  markets.clear(); countyToMarket.clear();
+  const lookup = cw && (cw.crosswalk || cw);
+  const meta = (cw && cw.markets && !Array.isArray(cw.markets)) ? cw.markets : {};
+  if (lookup && typeof lookup === 'object') {
+    for (const [f, name] of Object.entries(lookup)){
+      if (f.startsWith('_') || typeof name !== 'string') continue;
+      const nf = norm(f);
+      if (!markets.has(name)) {
+        const m = meta[name] || {};
+        markets.set(name, {id:name, name, rank:m.rank ?? null, tz:m.tz || null, fips:[]});
+      }
+      const mk = markets.get(name);
+      if (!mk.fips.includes(nf)) mk.fips.push(nf);
+      countyToMarket.set(nf, name);
+    }
+  }
+  if (!markets.size){
+    mode = 'counties';
+    for (const g of topo.objects.counties.geometries){
+      const f = g.id;
+      markets.set(f, {id:f, name:`${countyName.get(f)} County, ${stateName.get(f.slice(0,2)) || ''}`, rank:null, tz:null, fips:[f]});
+      countyToMarket.set(f, f);
+    }
+  }
+}
+
+function buildFeatures(){
+  const geoms = topo.objects.counties.geometries;
+  if (mode === 'counties'){
+    marketFeatures = topojson.feature(topo, topo.objects.counties).features
+      .map(f => ({type:'Feature', id:f.id, geometry:f.geometry}));
+    return;
+  }
+  const byMarket = new Map();
+  for (const g of geoms){
+    const m = countyToMarket.get(g.id);
+    if (!m) continue;
+    if (!byMarket.has(m)) byMarket.set(m, []);
+    byMarket.get(m).push(g);
+  }
+  marketFeatures = [...byMarket].map(([id, gs]) => ({type:'Feature', id, geometry:topojson.merge(topo, gs)}));
+}
+
+async function loadAlerts(){
+  let data;
+  try {
+    const r = await fetch(ALERTS_URL, {headers:{Accept:'application/geo+json'}, cache:'no-store'});
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    data = await r.json();
+  } catch(e){
+    notice(`Couldn't reach the NWS alerts feed (${e.message}). Trying again in 2 minutes.`, true);
+    return;
+  }
+  if (mode !== 'counties') notice('');
+
+  // Drop alerts that a newer active alert has replaced
+  const replaced = new Set();
+  for (const f of data.features) for (const ref of (f.properties.references || [])) replaced.add(ref['@id'] || ref.identifier);
+
+  const next = new Map();
+  let unmatched = 0, used = 0;
+  for (const f of data.features){
+    const p = f.properties;
+    if (p.messageType === 'Cancel' || replaced.has(p['@id']) || replaced.has(p.id)) continue;
+    const same = (p.geocode && p.geocode.SAME) || [];
+    const hit = new Map();
+    for (const s of same){
+      const fips = norm(s);
+      const m = countyToMarket.get(fips);
+      if (!m) continue;
+      if (!hit.has(m)) hit.set(m, new Set());
+      hit.get(m).add(fips);
+    }
+    if (!hit.size){ unmatched++; continue; }
+    used++;
+    const cls = classify(p);
+    for (const [m, set] of hit){
+      if (!next.has(m)) next.set(m, []);
+      next.get(m).push({p, cls, fips:[...set]});
+    }
+  }
+  for (const list of next.values())
+    list.sort((a,b) => a.cls.p - b.cls.p || new Date(a.p.ends || a.p.expires) - new Date(b.p.ends || b.p.expires));
+  alertsByMarket = next;
+
+  $('updated').textContent = 'updated ' + sydFmt.format(new Date());
+  $('foot').textContent = `Alerts from the National Weather Service (api.weather.gov), refreshed every 2 minutes. ${used} alerts placed` +
+    (unmatched ? `, ${unmatched} without a matching county (mostly marine and offshore zones).` : '.');
+  paint();
+}
+
+/* ---------- Drawing ---------- */
+const svg = d3.select('#map');
+const root = svg.append('g');
+const gCounties = root.append('g');
+const gMarkets = root.append('g');
+const gStates = root.append('g');
+const path = d3.geoPath();
+const zoom = d3.zoom().scaleExtent([1, 14]).on('zoom', e => root.attr('transform', e.transform));
+svg.call(zoom).on('dblclick.zoom', null);
+
+function drawBase(){
+  gCounties.selectAll('path')
+    .data(topojson.feature(topo, topo.objects.counties).features)
+    .join('path').attr('class','county').attr('d', path);
+  gStates.append('path').attr('class','states')
+    .attr('d', path(topojson.mesh(topo, topo.objects.states, (a,b) => a !== b)));
+  gStates.append('path').attr('class','states')
+    .attr('d', path(topojson.mesh(topo, topo.objects.nation)));
+
+  const tip = $('tip'), wrap = $('mapwrap');
+  gMarkets.selectAll('path')
+    .data(marketFeatures, d => d.id)
+    .join('path').attr('class','mkt').attr('d', path)
+    .on('click', (e, d) => select(d.id, false))
+    .on('mousemove', (e, d) => {
+      const m = markets.get(d.id), list = alertsByMarket.get(d.id);
+      tip.innerHTML = `<b>${esc(m.name)}</b>${list ? esc(list[0].cls.event) + (list.length > 1 ? ` and ${list.length-1} more` : '') : 'No active alerts'}`;
+      const r = wrap.getBoundingClientRect();
+      tip.style.display = 'block';
+      tip.style.left = Math.min(e.clientX - r.left + 14, r.width - 250) + 'px';
+      tip.style.top = (e.clientY - r.top + 14) + 'px';
+    })
+    .on('mouseleave', () => { tip.style.display = 'none'; });
+}
+
+function topAlert(id){ const l = alertsByMarket.get(id); return l ? l[0] : null; }
+
+function paint(){
+  gMarkets.selectAll('path')
+    .style('fill', d => { const a = topAlert(d.id); return a ? a.cls.color : 'transparent'; })
+    .style('fill-opacity', d => topAlert(d.id) ? .82 : 0)
+    .classed('sel', d => d.id === selected);
+  // keep the selected outline on top
+  gMarkets.selectAll('path.sel').raise();
+
+  const active = [...alertsByMarket.keys()]
+    .sort((a,b) => topAlert(a).cls.p - topAlert(b).cls.p || (markets.get(a).rank ?? 999) - (markets.get(b).rank ?? 999));
+
+  const noun = mode === 'counties' ? 'counties' : 'markets';
+  $('count').innerHTML = active.length ? `<strong>${active.length}</strong> ${noun} under alerts` : `No ${noun} under alerts`;
+
+  // List
+  $('mlist').innerHTML = active.length ? active.map(id => {
+    const m = markets.get(id), l = alertsByMarket.get(id);
+    return `<li><button type="button" data-id="${esc(id)}" aria-current="${id === selected}">
+      <span class="bar" style="background:${l[0].cls.color}"></span>
+      <span><span class="nm">${esc(m.name)}</span><span class="ev">${esc(l[0].cls.event)}${l[0].cls.tag ? ' (' + esc(l[0].cls.tag) + ')' : ''}</span></span>
+      <span class="n">${l.length}</span></button></li>`;
+  }).join('') : `<li class="empty">Quiet across the country right now.</li>`;
+
+  // Legend: only types that are currently the top alert somewhere
+  const counts = new Map();
+  for (const id of active){ const a = topAlert(id).cls; counts.set(a.event, {color:a.color, p:a.p, n:(counts.get(a.event)?.n || 0) + 1}); }
+  $('legend').innerHTML = [...counts].sort((a,b) => a[1].p - b[1].p)
+    .map(([ev, v]) => `<div><span class="swatch" style="background:${v.color}"></span>${esc(ev)}<span class="c">${v.n}</span></div>`).join('');
+
+  if (selected) renderPanel(selected);
+}
+
+/* ---------- Market panel ---------- */
+function renderPanel(id){
+  const m = markets.get(id);
+  if (!m) return;
+  const list = alertsByMarket.get(id) || [];
+  const metaBits = [];
+  if (m.rank) metaBits.push(`Market #${m.rank}`);
+  if (mode !== 'counties') metaBits.push(`${m.fips.length} ${m.fips.length === 1 ? 'county' : 'counties'}`);
+  if (m.tz) metaBits.push(m.tz.replace('America/','').replace('Pacific/','').replace(/_/g,' ') + ' time');
+
+  const warnings = list.length ? list.map(({p, cls, fips}) => {
+    const names = fips.map(f => countyName.get(f) || f).sort();
+    const end = p.ends || p.expires;
+    return `<div class="warn" style="border-color:${cls.color}">
+      <div class="ev">${esc(cls.event)}${cls.tag ? `<span class="tag">${esc(cls.tag)}</span>` : ''}</div>
+      <p class="when">Until ${esc(marketTime(end, m.tz))}, ${esc(sydDayFmt.format(new Date(end)))} Sydney</p>
+      <p class="small">${mode === 'counties' ? '' : esc(names.join(', ')) + '<br>'}${esc(p.senderName || '')}</p>
+      ${p.description ? `<details><summary>Full text</summary><pre>${esc(p.description)}${p.instruction ? '\n\n' + esc(p.instruction) : ''}</pre></details>` : ''}
+    </div>`;
+  }).join('') : `<p class="later">No active NWS alerts for this market.</p>`;
+
+  $('pbody').innerHTML = `
+    <h2>${esc(m.name)}</h2>
+    <p class="meta">${esc(metaBits.join(', '))}</p>
+    <h3>Active alerts</h3>
+    ${warnings}
+    <h3>Top stories and live stream</h3>
+    <p class="later">The lead station, its top three stories and the live stream link go here in the next build.</p>`;
+}
+
+function select(id, zoomTo){
+  selected = id;
+  $('panel').classList.add('open');
+  paint();
+  if (zoomTo){
+    const f = marketFeatures.find(d => d.id === id);
+    if (f){
+      const [[x0,y0],[x1,y1]] = path.bounds(f);
+      const k = Math.min(10, 0.6 / Math.max((x1-x0)/975, (y1-y0)/610));
+      svg.transition().duration(matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 600)
+        .call(zoom.transform, d3.zoomIdentity.translate(975/2, 610/2).scale(k).translate(-(x0+x1)/2, -(y0+y1)/2));
+    }
+  }
+}
+function closePanel(){
+  selected = null;
+  $('panel').classList.remove('open');
+  paint();
+}
+
+/* ---------- Wiring ---------- */
+$('mlist').addEventListener('click', e => { const b = e.target.closest('button[data-id]'); if (b) select(b.dataset.id, true); });
+$('close').addEventListener('click', closePanel);
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && selected) closePanel(); });
+$('refresh').addEventListener('click', loadAlerts);
+$('zin').addEventListener('click', () => svg.transition().call(zoom.scaleBy, 1.6));
+$('zout').addEventListener('click', () => svg.transition().call(zoom.scaleBy, 1/1.6));
+$('zreset').addEventListener('click', () => svg.transition().call(zoom.transform, d3.zoomIdentity));
+
+(async function start(){
+  tickClock(); setInterval(tickClock, 15000);
+  try {
+    topo = await (await fetch(ATLAS_URL)).json();
+  } catch(e){
+    notice("The county boundaries didn't load, so the map can't be drawn. Check the connection and reload.", true);
+    return;
+  }
+  for (const g of topo.objects.counties.geometries) countyName.set(g.id, g.properties.name);
+  for (const g of topo.objects.states.geometries) stateName.set(g.id, g.properties.name);
+
+  const cw = await loadCrosswalk();
+  buildMarkets(cw);
+  if (mode === 'counties')
+    notice('Showing individual counties for now. Upload county-dma-crosswalk.json beside this page to draw the 210 markets.');
+  else {
+    const unassigned = topo.objects.counties.geometries.filter(g => !countyToMarket.has(g.id)).length;
+    if (unassigned) notice(`${markets.size} markets loaded. ${unassigned} counties on the map aren't in the crosswalk and are left uncoloured.`);
+  }
+  buildFeatures();
+  drawBase();
+  await loadAlerts();
+  setInterval(loadAlerts, REFRESH_MS);
+})();
+</script>
+</body>
+</html>
