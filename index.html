@@ -107,6 +107,16 @@ aside h2{font:600 17px/1.2 var(--cond);margin:14px 16px 8px;color:var(--muted)}
 .watch{display:inline-block;background:transparent;border:1px solid var(--panel-edge);color:var(--text);border-radius:4px;padding:6px 10px;font:600 15px/1 var(--cond);text-decoration:none}
 .watch:hover{border-color:var(--text)}
 .watch .net{color:var(--muted);font-weight:500}
+.outlook{display:flex;gap:6px;align-items:center}
+.outlook span{font:600 15px/1 var(--cond);color:var(--muted);margin-right:2px}
+.outlook button{background:transparent;border:1px solid var(--panel-edge);border-radius:4px;padding:5px 9px;cursor:pointer;font:600 15px/1 var(--cond);color:var(--muted)}
+.outlook button[aria-pressed="true"]{background:var(--text);color:var(--sky);border-color:var(--text)}
+.outlook button:disabled{opacity:.4;cursor:not-allowed}
+.spc{stroke:rgba(0,0,0,.35);stroke-width:.6;vector-effect:non-scaling-stroke;pointer-events:none}
+.spcbox{border-left:5px solid;padding:2px 0 2px 12px;margin:0 0 6px}
+.spcbox b{font:700 19px/1.2 var(--cond)}
+.spcbox p{margin:2px 0;font-size:13.5px;color:var(--muted)}
+.legend .head{font:600 14px/1.6 var(--cond);color:var(--muted);margin-top:4px}
 .hidden-note{font-size:13px;color:var(--muted);margin:-6px 0 12px}
 
 footer{padding:5px 18px;font-size:12px;color:var(--muted);border-top:1px solid var(--panel-edge);background:#0f1d31}
@@ -128,6 +138,13 @@ footer{padding:5px 18px;font-size:12px;color:var(--muted);border-top:1px solid v
     <button type="button" data-level="warning" aria-pressed="true">Warnings</button>
     <button type="button" data-level="watch" aria-pressed="true">Watches</button>
     <button type="button" data-level="other" aria-pressed="false">Advisories</button>
+  </div>
+  <div class="outlook" role="group" aria-label="SPC convective outlook">
+    <span>SPC</span>
+    <button type="button" data-day="0">Off</button>
+    <button type="button" data-day="1">Day 1</button>
+    <button type="button" data-day="2">Day 2</button>
+    <button type="button" data-day="3">Day 3</button>
   </div>
   <div class="clock">
     <span>Sydney <span class="syd" id="syd">--:--</span></span>
@@ -168,7 +185,22 @@ const CROSSWALK  = 'county-dma-crosswalk.json';  // Drew's Secret export, beside
 const ALERTS_URL = 'https://api.weather.gov/alerts/active?status=actual';
 const REFRESH_MS = 120000;
 const SYD        = 'Australia/Sydney';
-const STATIONS   = 'data/station-markets.json';  // Drew's Secret station list: networks, rank, stream links
+const STATIONS   = 'data/station-markets.json';
+/* SPC categorical outlooks: SPC's own files first, NOAA's map server copy if those are blocked */
+const SPC_SOURCES = {
+  1: ['https://www.spc.noaa.gov/products/outlook/day1otlk_cat.lyr.geojson', 'https://mapservices.weather.noaa.gov/vector/rest/services/outlooks/SPC_wx_outlks/MapServer/1/query?where=1%3D1&outFields=*&f=geojson'],
+  2: ['https://www.spc.noaa.gov/products/outlook/day2otlk_cat.lyr.geojson', 'https://mapservices.weather.noaa.gov/vector/rest/services/outlooks/SPC_wx_outlks/MapServer/9/query?where=1%3D1&outFields=*&f=geojson'],
+  3: ['https://www.spc.noaa.gov/products/outlook/day3otlk_cat.lyr.geojson']
+};
+const SPC_REFRESH_MS = 900000;
+const SPC_CATS = [   // lowest to highest, SPC's standard colours
+  {code:'TSTM', name:'General thunderstorms', level:0, color:'#c1e9c1'},
+  {code:'MRGL', name:'Marginal risk',  level:1, color:'#66a366'},
+  {code:'SLGT', name:'Slight risk',    level:2, color:'#f6f67f'},
+  {code:'ENH',  name:'Enhanced risk',  level:3, color:'#e6c27f'},
+  {code:'MDT',  name:'Moderate risk',  level:4, color:'#e67f7f'},
+  {code:'HIGH', name:'High risk',      level:5, color:'#ff7fff'}
+];  // Drew's Secret station list: networks, rank, stream links
 
 /* County code changes between the map's boundary year and newer data.
    Connecticut's planning regions (Census 2022+) fold back to the old counties;
@@ -267,6 +299,11 @@ let marketInfo = new Map();      // market name -> { rank, stations: [{ call, ne
 let alertMarkets = new Map();    // alert id -> [market ids], for "also covers"
 let polygons = [];               // storm-based warning shapes: [{ geometry, cls }]
 let levels = new Set(['warning','watch']);
+let spcDay = 1;                  // 0 = off
+try { const d = +localStorage.getItem('dsm-spc'); if ([0,1,2,3].includes(d) && localStorage.getItem('dsm-spc') !== null) spcDay = d; } catch(e){}
+const spcData = {};              // day -> { features: [{ cat, geometry, rings }], issued, valid, expires } or { failed:true }
+const spcByMarket = new Map();   // market id -> highest SPC category for the day shown
+let countyCentroids = new Map(); // county fips -> [x, y] on the map
 try { const saved = JSON.parse(localStorage.getItem('dsm-levels')); if (Array.isArray(saved)) levels = new Set(saved); } catch(e){}
 
 const $ = id => document.getElementById(id);
@@ -390,6 +427,98 @@ function rewind(g){
                               : {type:'MultiPolygon', coordinates: g.coordinates.map(fix)};
 }
 
+/* ---------- SPC outlooks ---------- */
+function spcCategory(props){
+  const vals = Object.values(props || {});
+  for (const v of vals){
+    const t = String(v ?? '').trim().toUpperCase();
+    const c = SPC_CATS.find(x => x.code === t);
+    if (c) return c;
+  }
+  for (const v of vals){
+    const t = String(v ?? '');
+    if (/general thunder/i.test(t)) return SPC_CATS[0];
+    for (const c of SPC_CATS.slice(1)) if (new RegExp('^' + c.name.split(' ')[0] + '\\b', 'i').test(t)) return c;
+  }
+  const dn = +(props.DN ?? props.dn);   // SPC numbering: 2 thunder, 3 marginal ... 6 moderate, 8 high
+  return {2:SPC_CATS[0],3:SPC_CATS[1],4:SPC_CATS[2],5:SPC_CATS[3],6:SPC_CATS[4],8:SPC_CATS[5]}[dn] || null;
+}
+function spcTime(v){
+  if (v == null || v === '') return null;
+  if (typeof v === 'number') return new Date(v);
+  const m = /^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})$/.exec(String(v));   // 202610021200, in UTC
+  if (m) return new Date(Date.UTC(+m[1], m[2]-1, +m[3], +m[4], +m[5]));
+  const d = new Date(v);
+  return isNaN(d) ? null : d;
+}
+const spcProj = d3.geoAlbersUsa().scale(1300).translate([487.5, 305]);
+
+async function loadSPC(day){
+  for (const url of SPC_SOURCES[day]){
+    try {
+      const r = await fetch(url, {cache:'no-cache'});
+      if (!r.ok) continue;
+      const gj = await r.json();
+      const features = [];
+      let issued = null, valid = null, expires = null;
+      for (const f of (gj.features || [])){
+        if (!f.geometry || !/Polygon/.test(f.geometry.type)) continue;
+        const cat = spcCategory(f.properties);
+        if (!cat) continue;
+        const p = f.properties || {};
+        issued  ||= spcTime(p.ISSUE  ?? p.issue  ?? p.idp_issueddate);
+        valid   ||= spcTime(p.VALID  ?? p.valid  ?? p.idp_validtime);
+        expires ||= spcTime(p.EXPIRE ?? p.expire ?? p.idp_expiretime);
+        const geometry = rewind(f.geometry);
+        // Rings projected onto the map, for working out which markets sit inside
+        const polys = geometry.type === 'Polygon' ? [geometry.coordinates] : geometry.coordinates;
+        const rings = polys.map(poly => poly.map(ring => ring.map(pt => spcProj(pt)).filter(Boolean)));
+        features.push({cat, geometry, rings});
+      }
+      features.sort((a, b) => a.cat.level - b.cat.level);   // higher risks drawn on top
+      spcData[day] = {features, issued, valid, expires, source: url};
+      return;
+    } catch(e){ /* try the next source */ }
+  }
+  spcData[day] = {failed: true};
+}
+
+function inRings(pt, polyRings){
+  // inside the outer ring and not inside a hole
+  if (!polyRings[0] || polyRings[0].length < 3 || !d3.polygonContains(polyRings[0], pt)) return false;
+  return !polyRings.slice(1).some(h => h.length > 2 && d3.polygonContains(h, pt));
+}
+function computeSPCByMarket(){
+  spcByMarket.clear();
+  const data = spcData[spcDay];
+  if (!spcDay || !data || data.failed) return;
+  for (const [id, m] of markets){
+    let best = null;
+    for (const f of m.fips){
+      const c = countyCentroids.get(f);
+      if (!c) continue;
+      for (let i = data.features.length - 1; i >= 0; i--){   // highest first
+        const ft = data.features[i];
+        if (best && ft.cat.level <= best.level) break;
+        if (ft.rings.some(pr => inRings(c, pr))){ best = ft.cat; break; }
+      }
+    }
+    if (best) spcByMarket.set(id, best);
+  }
+}
+
+async function refreshSPC(){
+  await Promise.all([1,2,3].map(loadSPC));
+  document.querySelectorAll('.outlook button[data-day]').forEach(b => {
+    const d = +b.dataset.day;
+    if (d && spcData[d]?.failed){ b.disabled = true; b.title = "Couldn't load this outlook"; }
+    else { b.disabled = false; b.title = ''; }
+  });
+  if (spcDay && spcData[spcDay]?.failed) notice("The SPC outlook couldn't be loaded. Warnings are unaffected.", false);
+  computeSPCByMarket();
+  paint();
+}
+
 async function loadAlerts(){
   let data;
   try {
@@ -446,6 +575,7 @@ async function loadAlerts(){
 const svg = d3.select('#map');
 const root = svg.append('g');
 const gCounties = root.append('g');
+const gSPC = root.append('g').attr('opacity', .5);
 const gMarkets = root.append('g');
 const gStates = root.append('g');
 const gPolys = root.append('g');
@@ -456,9 +586,9 @@ const zoom = d3.zoom().scaleExtent([1, 14]).on('zoom', e => root.attr('transform
 svg.call(zoom).on('dblclick.zoom', null);
 
 function drawBase(){
-  gCounties.selectAll('path')
-    .data(topojson.feature(topo, topo.objects.counties).features)
-    .join('path').attr('class','county').attr('d', path);
+  const countyFeats = topojson.feature(topo, topo.objects.counties).features;
+  gCounties.selectAll('path').data(countyFeats).join('path').attr('class','county').attr('d', path);
+  countyCentroids = new Map(countyFeats.map(f => [norm(f.id), path.centroid(f)]));
   gStates.append('path').attr('class','states')
     .attr('d', path(topojson.mesh(topo, topo.objects.states, (a,b) => a !== b)));
   gStates.append('path').attr('class','states')
@@ -496,6 +626,10 @@ function paint(){
   // keep the selected outline on top
   gMarkets.selectAll('path.sel').raise();
 
+  const spc = spcDay && spcData[spcDay] && !spcData[spcDay].failed ? spcData[spcDay].features : [];
+  gSPC.selectAll('path').data(spc).join('path').attr('class','spc')
+    .attr('d', d => polyPath(d.geometry)).style('fill', d => d.cat.color);
+
   gPolys.selectAll('path')
     .data(polygons.filter(x => levels.has(x.cls.level)))
     .join('path').attr('class','poly').attr('d', d => polyPath(d.geometry))
@@ -528,8 +662,13 @@ function paint(){
       counts.set(a.event, {color:a.color, p:a.p, n:(counts.get(a.event)?.n || 0) + 1});
     }
   }
+  const spcCounts = new Map();
+  for (const c of spcByMarket.values()) spcCounts.set(c.code, (spcCounts.get(c.code) || 0) + 1);
+  const spcRows = SPC_CATS.filter(c => spc.some(f => f.cat.code === c.code)).reverse()
+    .map(c => `<div><span class="swatch" style="background:${c.color}"></span>${esc(c.name)}<span class="c">${spcCounts.get(c.code) || 0}</span></div>`).join('');
   $('legend').innerHTML = [...counts].sort((a,b) => a[1].p - b[1].p)
-    .map(([ev, v]) => `<div><span class="swatch" style="background:${v.color}"></span>${esc(ev)}<span class="c">${v.n}</span></div>`).join('');
+    .map(([ev, v]) => `<div><span class="swatch" style="background:${v.color}"></span>${esc(ev)}<span class="c">${v.n}</span></div>`).join('')
+    + (spcRows ? `<div class="head">SPC Day ${spcDay} outlook, markets</div>${spcRows}` : '');
 
   if (selected) renderPanel(selected);
 }
@@ -558,6 +697,20 @@ function watchHTML(name){
   if (!list.length) return '';
   return `<h3>Watch coverage</h3><div class="watchlist">${list.map(st =>
     `<a class="watch" href="${esc(st.url)}" target="_blank" rel="noopener" title="${/live|stream|watch/i.test(st.url) ? 'Live stream' : 'Station website'}">${esc(st.call)} <span class="net">${esc(st.networks.join('/'))}</span></a>`).join('')}</div>`;
+}
+
+function spcHTML(id){
+  if (!spcDay) return '';
+  const data = spcData[spcDay];
+  if (!data) return '';
+  if (data.failed) return `<h3>SPC Day ${spcDay} outlook</h3><p class="later">Couldn't load the outlook.</p>`;
+  const c = spcByMarket.get(id);
+  const times = [data.valid && `Valid from ${sydDayFmt.format(data.valid)}`, data.expires && `to ${sydDayFmt.format(data.expires)} Sydney`].filter(Boolean).join(' ');
+  return `<h3>SPC Day ${spcDay} outlook</h3>
+    <div class="spcbox" style="border-color:${c ? c.color : 'var(--panel-edge)'}">
+      <b>${c ? esc(c.name) + (c.level ? ` (${c.level} of 5)` : '') : 'No severe risk outlined'}</b>
+      ${times ? `<p>${esc(times)}</p>` : ''}
+    </div>`;
 }
 
 function renderPanel(id){
@@ -591,6 +744,7 @@ function renderPanel(id){
   $('pbody').innerHTML = `
     <h2>${esc(displayName(m.name))}</h2>
     <p class="meta">${esc(metaBits.join(', '))}</p>
+    ${spcHTML(id)}
     <h3>Active alerts</h3>
     ${warnings}
     ${hidden}
@@ -642,6 +796,20 @@ document.querySelector('.levels').addEventListener('click', e => {
   paint();
 });
 syncLevels();
+
+function syncSPC(){
+  document.querySelectorAll('.outlook button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.day === spcDay));
+}
+document.querySelector('.outlook').addEventListener('click', e => {
+  const b = e.target.closest('button[data-day]');
+  if (!b || b.disabled) return;
+  spcDay = +b.dataset.day;
+  try { localStorage.setItem('dsm-spc', spcDay); } catch(err){}
+  syncSPC();
+  computeSPCByMarket();
+  paint();
+});
+syncSPC();
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && selected) closePanel(); });
 $('refresh').addEventListener('click', loadAlerts);
 $('zin').addEventListener('click', () => svg.transition().call(zoom.scaleBy, 1.6));
@@ -672,6 +840,8 @@ $('zreset').addEventListener('click', () => svg.transition().call(zoom.transform
   drawBase();
   await loadAlerts();
   setInterval(loadAlerts, REFRESH_MS);
+  refreshSPC();
+  setInterval(refreshSPC, SPC_REFRESH_MS);
 })();
 </script>
 </body>
