@@ -1,0 +1,52 @@
+name: Station feeds
+
+on:
+  schedule:
+    - cron: '*/20 * * * *'      # read feeds every 20 minutes (GitHub sometimes runs these a few minutes late)
+    - cron: '7 18 * * 0'        # recheck which feeds work, weekly: Monday about 5am Sydney
+  workflow_dispatch:
+    inputs:
+      discover:
+        description: 'Find feeds for every station first (slow; run after replacing station-feeds.json)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: station-feeds
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40   # finding feeds for ~800 stations can take a while
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install --no-audit --no-fund
+
+      - name: Find feeds
+        if: (github.event_name == 'workflow_dispatch' && inputs.discover) || github.event.schedule == '7 18 * * 0' || hashFiles('data/feeds-found.json') == ''
+        run: node scripts/discover.mjs
+
+      - name: Read station feeds
+        run: node scripts/fetch.mjs
+
+      - name: Save results
+        run: |
+          git config user.name "station-feeds-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Station stories $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git pull --rebase --autostash
+            git push
+          fi
