@@ -1,0 +1,13 @@
+{
+  "name": "drews-secret-map-feeds",
+  "private": true,
+  "type": "module",
+  "description": "Collects US local TV station RSS feeds for Drew's Secret Map",
+  "scripts": {
+    "discover": "node scripts/discover.mjs",
+    "fetch": "node scripts/fetch.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.4.1"
+  }
+}

@@ -1,0 +1,100 @@
+{
+ "_about": "Stations whose local news lives in a section of a shared site. The section keeps national stories out: a feed only counts if most of its stories sit inside the section.",
+ "_check": "KXLN, KUVN and KTVW sections come from Drew's Secret. KMEX, WXTV and WLTV are best guesses: if wrong they show as 'no feed' in feed-report.md and never fall back to national news.",
+ "WCBS": {
+  "site": "www.cbsnews.com/newyork",
+  "feeds": [
+   "https://www.cbsnews.com/newyork/latest/rss/main"
+  ]
+ },
+ "KCBS": {
+  "site": "www.cbsnews.com/losangeles",
+  "feeds": [
+   "https://www.cbsnews.com/losangeles/latest/rss/main"
+  ]
+ },
+ "KCAL": {
+  "site": "www.cbsnews.com/losangeles",
+  "feeds": [
+   "https://www.cbsnews.com/losangeles/latest/rss/main"
+  ]
+ },
+ "WBBM": {
+  "site": "www.cbsnews.com/chicago",
+  "feeds": [
+   "https://www.cbsnews.com/chicago/latest/rss/main"
+  ]
+ },
+ "KYW": {
+  "site": "www.cbsnews.com/philadelphia",
+  "feeds": [
+   "https://www.cbsnews.com/philadelphia/latest/rss/main"
+  ]
+ },
+ "KPIX": {
+  "site": "www.cbsnews.com/sanfrancisco",
+  "feeds": [
+   "https://www.cbsnews.com/sanfrancisco/latest/rss/main"
+  ]
+ },
+ "WFOR": {
+  "site": "www.cbsnews.com/miami",
+  "feeds": [
+   "https://www.cbsnews.com/miami/latest/rss/main"
+  ]
+ },
+ "KTVT": {
+  "site": "www.cbsnews.com/texas",
+  "feeds": [
+   "https://www.cbsnews.com/texas/latest/rss/main"
+  ]
+ },
+ "WBZ": {
+  "site": "www.cbsnews.com/boston",
+  "feeds": [
+   "https://www.cbsnews.com/boston/latest/rss/main"
+  ]
+ },
+ "WWJ": {
+  "site": "www.cbsnews.com/detroit",
+  "feeds": [
+   "https://www.cbsnews.com/detroit/latest/rss/main"
+  ]
+ },
+ "WCCO": {
+  "site": "www.cbsnews.com/minnesota",
+  "feeds": [
+   "https://www.cbsnews.com/minnesota/latest/rss/main"
+  ]
+ },
+ "KCNC": {
+  "site": "www.cbsnews.com/colorado",
+  "feeds": [
+   "https://www.cbsnews.com/colorado/latest/rss/main"
+  ]
+ },
+ "KOVR": {
+  "site": "www.cbsnews.com/sacramento",
+  "feeds": [
+   "https://www.cbsnews.com/sacramento/latest/rss/main"
+  ]
+ },
+ "KDKA": {
+  "site": "www.cbsnews.com/pittsburgh",
+  "feeds": [
+   "https://www.cbsnews.com/pittsburgh/latest/rss/main"
+  ]
+ },
+ "WJZ": {
+  "site": "www.cbsnews.com/baltimore",
+  "feeds": [
+   "https://www.cbsnews.com/baltimore/latest/rss/main"
+  ]
+ },
+ "KMEX": "www.univision.com/local/los-angeles-kmex",
+ "WXTV": "www.univision.com/local/nueva-york-wxtv",
+ "WLTV": "www.univision.com/local/miami-wltv",
+ "KXLN": "www.univision.com/local/houston-kxln",
+ "KUVN": "www.univision.com/local/dallas-kuvn",
+ "KTVW": "www.univision.com/local/phoenix-ktvw"
+}

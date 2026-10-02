@@ -1,0 +1,5981 @@
+{
+ "station_sites": {
+  "KFDX": "texomashomepage.com",
+  "KJTL": "texomashomepage.com",
+  "KTAB": "bigcountryhomepage.com",
+  "KRBC": "bigcountryhomepage.com",
+  "WKBW": "wkbw.com",
+  "KKTV": "kktv.com",
+  "KELO": "keloland.com",
+  "KETK": "ketk.com",
+  "KFXK": "ketk.com",
+  "WGAL": "wgal.com",
+  "KLTV": "kltv.com",
+  "WKTV": "wktv.com",
+  "WBTV": "wbtv.com",
+  "WSMV": "wsmv.com",
+  "WDTV": "wdtv.com",
+  "KFVS": "kfvs12.com",
+  "WCSC": "live5news.com",
+  "KCTV": "kctv5.com",
+  "WSFA": "wsfa.com",
+  "WAFF": "waff.com",
+  "WAFB": "wafb.com",
+  "WTVY": "wtvy.com",
+  "KSLA": "ksla.com",
+  "WNEM": "wnem.com",
+  "WOWT": "wowt.com",
+  "KOLO": "kolotv.com",
+  "WVLT": "wvlt.tv",
+  "KBTX": "kbtx.com",
+  "KWTX": "kwtx.com",
+  "KXII": "kxii.com",
+  "KAUZ": "newschannel6now.com",
+  "KSWO": "kswo.com",
+  "KTRE": "ktre.com",
+  "KCBD": "kcbd.com",
+  "KGNS": "kgns.tv",
+  "KFDA": "newschannel10.com",
+  "WCAX": "wcax.com",
+  "WVVA": "wvva.com",
+  "WSAZ": "wsaz.com",
+  "WTAP": "wtap.com",
+  "WEAU": "weau.com",
+  "WBAY": "wbay.com",
+  "WSAW": "wsaw.com",
+  "WILX": "wilx.com",
+  "WJHG": "wjhg.com",
+  "WCTV": "wctv.tv",
+  "WALB": "walb.com",
+  "WTOC": "wtoc.com",
+  "WTVM": "wtvm.com",
+  "WRDW": "wrdw.com",
+  "WLOX": "wlox.com",
+  "WLBT": "wlbt.com",
+  "WDAM": "wdam.com",
+  "WTOK": "wtok.com",
+  "WTVA": "wtva.com",
+  "WTHI": "wthitv.com",
+  "WLFI": "wlfi.com",
+  "WNDU": "wndu.com",
+  "KCRG": "kcrg.com",
+  "KWQC": "kwqc.com",
+  "KTIV": "ktiv.com",
+  "WIBW": "wibw.com",
+  "KWCH": "kwch.com",
+  "WBKO": "wbko.com",
+  "WKYT": "wkyt.com",
+  "WAVE": "wave3.com",
+  "KNOE": "knoe.com",
+  "KPLC": "kplctv.com",
+  "WAGM": "wagmtv.com",
+  "KEYC": "keyc.com",
+  "KTTC": "kttc.com",
+  "WFIE": "14news.com",
+  "WPTA": "wpta21.com",
+  "WIFR": "wifr.com",
+  "WABI": "wabi.tv",
+  "KMVT": "kmvt.com",
+  "WHSV": "whsv.com",
+  "WVIR": "nbc29.com",
+  "WWBT": "nbc12.com",
+  "WDBJ": "wdbj7.com",
+  "WMTV": "nbc15.com",
+  "KOSA": "cbs7.com",
+  "KAIT": "kait8.com",
+  "KALB": "kalb.com",
+  "KKCO": "nbc11news.com",
+  "KJCT": "nbc11news.com",
+  "WITN": "witn.com",
+  "WECT": "wect.com",
+  "WBNG": "wbng.com",
+  "WWNY": "wwnytv.com",
+  "KYTV": "ky3.com",
+  "KOLN": "1011now.com",
+  "KSNB": "1011now.com",
+  "KNOP": "knopnews2.com",
+  "WEEK": "25newsnow.com",
+  "WGEM": "wgem.com",
+  "KYOU": "kyoutv.com",
+  "WFSB": "wfsb.com",
+  "WWSB": "mysuncoast.com",
+  "WFLX": "wflx.com",
+  "KPHO": "azfamily.com",
+  "KTVK": "azfamily.com",
+  "KOLD": "kold.com",
+  "KVVU": "fox5vegas.com",
+  "WVUE": "fox8live.com",
+  "WXIX": "fox19.com",
+  "WOIO": "cleveland19.com",
+  "WTVG": "13abc.com",
+  "KPTV": "kptv.com",
+  "WIS": "wistv.com",
+  "WMBF": "wmbfnews.com",
+  "WMC": "actionnews5.com",
+  "KOTA": "blackhillsfox.com",
+  "KEVN": "blackhillsfox.com",
+  "KSFY": "dakotanewsnow.com",
+  "KDLT": "dakotanewsnow.com",
+  "KFYR": "kfyrtv.com",
+  "KVLY": "valleynewslive.com",
+  "KBJR": "northernnewsnow.com",
+  "KDLH": "northernnewsnow.com",
+  "KGMB": "hawaiinewsnow.com",
+  "KHNL": "hawaiinewsnow.com",
+  "KTUU": "alaskasnewssource.com",
+  "KAUU": "alaskasnewssource.com",
+  "KTVF": "webcenterfairbanks.com",
+  "WGGB": "westernmassnews.com",
+  "WSHM": "westernmassnews.com",
+  "WLUC": "uppermichiganssource.com",
+  "WBRC": "wbrc.com",
+  "WALA": "fox10tv.com",
+  "WPCH": "atlantanewsfirst.com",
+  "WANF": "atlantanewsfirst.com",
+  "WSMV2": "wsmv.com",
+  "KHSD": "blackhillsfox.com",
+  "KGPE": "yourcentralvalley.com",
+  "KSEE": "yourcentralvalley.com",
+  "WHTM": "abc27.com",
+  "WPMT": "fox43.com",
+  "WOOD": "woodtv.com",
+  "WOTV": "woodtv.com",
+  "WAVY": "wavy.com",
+  "WVBT": "wavy.com",
+  "KFOR": "kfor.com",
+  "KAUT": "freedom43tv.com",
+  "WIAT": "alabamas42.com",
+  "WGHP": "myfox8.com",
+  "WHAS": "whas11.com",
+  "KRQE": "krqe.com",
+  "WGNO": "wgno.com",
+  "WREG": "wreg.com",
+  "WATN": "localmemphis.com",
+  "WPRI": "wpri.com",
+  "WNAC": "foxprovidence.com",
+  "WRIC": "wric.com",
+  "WIVB": "wivb.com",
+  "WNLO": "cw23.com",
+  "WKRG": "wkrg.com",
+  "WBRE": "pahomepage.com",
+  "WYOU": "pahomepage.com",
+  "KARK": "kark.com",
+  "KLRT": "fox16.com",
+  "WGN": "wgntv.com",
+  "KTLA": "ktla.com",
+  "WPIX": "pix11.com",
+  "KLBK": "everythinglubbock.com",
+  "KAMC": "everythinglubbock.com",
+  "KMID": "yourbasin.com",
+  "KPEJ": "yourbasin.com",
+  "KAMR": "myhighplains.com",
+  "KCIT": "myhighplains.com",
+  "WJTV": "wjtv.com",
+  "WSPA": "wspa.com",
+  "WKBN": "wkbn.com",
+  "WYTV": "wytv.com",
+  "WLNS": "wlns.com",
+  "KLAS": "8newsnow.com",
+  "KTSM": "ktsm.com",
+  "WNCT": "wnct.com",
+  "WTEN": "news10.com",
+  "KLST": "conchovalleyhomepage.com",
+  "KSAN": "conchovalleyhomepage.com",
+  "WHBF": "ourquadcities.com",
+  "KLJB": "ourquadcities.com",
+  "WJET": "yourerie.com",
+  "WFXP": "yourerie.com",
+  "WTAJ": "wtaj.com",
+  "KSNT": "ksnt.com",
+  "KTKA": "ksnt.com",
+  "KARD": "myarklamiss.com",
+  "KTVE": "myarklamiss.com",
+  "WTVO": "mystateline.com",
+  "WQRF": "mystateline.com",
+  "WQOW": "wqow.com",
+  "WXOW": "wxow.com",
+  "WCIA": "wcia.com",
+  "WMBD": "centralillinoisproud.com",
+  "WNCN": "cbs17.com",
+  "WFRV": "wearegreenbay.com",
+  "KOIN": "koin.com",
+  "WTRF": "wtrf.com",
+  "WBOY": "wboy.com",
+  "KREX": "westernslopenow.com",
+  "KHON": "khon2.com",
+  "KDVR": "kdvr.com",
+  "WTTV": "cbs4indy.com",
+  "WWLP": "wwlp.com",
+  "WSYR": "localsyr.com",
+  "WWTI": "informnny.com",
+  "KDAF": "cw33.com",
+  "WNEP": "wnep.com",
+  "WCVB": "wcvb.com",
+  "WBAL": "wbaltv.com",
+  "WTAE": "wtae.com",
+  "WISN": "wisn.com",
+  "WESH": "wesh.com",
+  "WMUR": "wmur.com",
+  "KCRA": "kcra.com",
+  "KOAT": "koat.com",
+  "WVTM": "wvtm13.com",
+  "WYFF": "wyff4.com",
+  "WAPT": "wapt.com",
+  "KSBW": "ksbw.com",
+  "WXII": "wxii12.com",
+  "WLWT": "wlwt.com",
+  "WDSU": "wdsu.com",
+  "KMBC": "kmbc.com",
+  "WPBF": "wpbf.com",
+  "KETV": "ketv.com",
+  "WLKY": "wlky.com",
+  "KCCI": "kcci.com",
+  "KOCO": "koco.com",
+  "WMTW": "wmtw.com",
+  "WBBH": "nbc-2.com",
+  "KHBS": "4029tv.com",
+  "WPTZ": "mynbc5.com",
+  "WFAA": "wfaa.com",
+  "KHOU": "khou.com",
+  "WUSA": "wusa9.com",
+  "KSDK": "ksdk.com",
+  "WTSP": "wtsp.com",
+  "WTHR": "wthr.com",
+  "KGW": "kgw.com",
+  "KENS": "kens5.com",
+  "WBIR": "wbir.com",
+  "WCNC": "wcnc.com",
+  "WWL": "wwltv.com",
+  "WVEC": "13newsnow.com",
+  "KVUE": "kvue.com",
+  "KIII": "kiiitv.com",
+  "WZZM": "wzzm13.com",
+  "WGRZ": "wgrz.com",
+  "WXIA": "11alive.com",
+  "KARE": "kare11.com",
+  "KING": "king5.com",
+  "KPNX": "12news.com",
+  "KFMB": "cbs8.com",
+  "KUSA": "9news.com",
+  "WKYC": "wkyc.com",
+  "WTLV": "firstcoastnews.com",
+  "WMAZ": "13wmaz.com",
+  "KTHV": "thv11.com",
+  "KTVB": "ktvb.com",
+  "KCEN": "kcentv.com",
+  "WCSH": "newscentermaine.com",
+  "WLBZ": "newscentermaine.com",
+  "WQAD": "wqad.com",
+  "WXYZ": "wxyz.com",
+  "WEWS": "news5cleveland.com",
+  "WCPO": "wcpo.com",
+  "WMAR": "wmar2news.com",
+  "KNXV": "abc15.com",
+  "KJRH": "kjrh.com",
+  "KSHB": "kshb.com",
+  "WFTS": "abcactionnews.com",
+  "WPTV": "wptv.com",
+  "KGTV": "10news.com",
+  "KMGH": "denver7.com",
+  "WRTV": "wrtv.com",
+  "WTMJ": "tmj4.com",
+  "KERO": "23abc.com",
+  "WTXL": "wtxl.com",
+  "KRIS": "kristv.com",
+  "WTVQ": "wtvq.com",
+  "KOAA": "koaa.com",
+  "KPAX": "kpax.com",
+  "KRTV": "krtv.com",
+  "KTVQ": "ktvq.com",
+  "KXLF": "kxlf.com",
+  "KBZK": "kbzk.com",
+  "KOMO": "komonews.com",
+  "WJLA": "wjla.com",
+  "KATU": "katu.com",
+  "WKRC": "local12.com",
+  "KUTV": "kutv.com",
+  "WSYX": "abc6onyourside.com",
+  "WBFF": "foxbaltimore.com",
+  "WPGH": "wpxi.com",
+  "KTUL": "ktul.com",
+  "WHAM": "13wham.com",
+  "WCYB": "wcyb.com",
+  "KVAL": "kval.com",
+  "KTVL": "ktvl.com",
+  "WJAC": "wjactv.com",
+  "KBAK": "bakersfieldnow.com",
+  "WLOS": "wlos.com",
+  "WGME": "wgme.com",
+  "WJAR": "turnto10.com",
+  "KRCR": "krcrtv.com",
+  "WOAI": "news4sanantonio.com",
+  "KFDM": "kfdm.com",
+  "KVII": "abc7amarillo.com",
+  "KTXS": "ktxs.com",
+  "WABC": "abc7ny.com",
+  "WCBS": "cbsnews.com",
+  "WNBC": "nbcnewyork.com",
+  "WNYW": "fox5ny.com",
+  "KABC": "abc7.com",
+  "KCBS": "cbsnews.com",
+  "KNBC": "nbclosangeles.com",
+  "KTTV": "foxla.com",
+  "WLS": "abc7chicago.com",
+  "WBBM": "cbsnews.com",
+  "WMAQ": "nbcchicago.com",
+  "WFLD": "fox32chicago.com",
+  "WPVI": "6abc.com",
+  "KYW": "cbsnews.com",
+  "WCAU": "nbcphiladelphia.com",
+  "WTXF": "fox29.com",
+  "KGO": "abc7news.com",
+  "KPIX": "cbsnews.com",
+  "KNTV": "nbcbayarea.com",
+  "KTVU": "ktvu.com",
+  "WPLG": "local10.com",
+  "WFOR": "cbsnews.com",
+  "WTVJ": "nbcmiami.com",
+  "WSVN": "wsvn.com",
+  "WHIO": "whio.com",
+  "WDTN": "wdtn.com",
+  "WKEF": "dayton247now.com",
+  "KXLY": "kxly.com",
+  "KREM": "krem.com",
+  "KHQ": "khq.com",
+  "KAYU": "fox28spokane.com",
+  "WTVC": "newschannel9.com",
+  "WDEF": "wdef.com",
+  "WRCB": "local3news.com",
+  "KRGV": "krgv.com",
+  "KVEO": "valleycentral.com",
+  "WWTV": "9and10news.com",
+  "WPBN": "upnorthlive.com",
+  "WGTU": "upnorthlive.com",
+  "KAPP": "kapptv.com",
+  "KIMA": "kimatv.com",
+  "KNDO": "nonstoplocal.com",
+  "KEYT": "keyt.com",
+  "KSBY": "ksby.com",
+  "KATC": "katc.com",
+  "KLFY": "klfy.com",
+  "KADN": "kadn.com",
+  "KMIZ": "abc17news.com",
+  "KRCG": "krcgtv.com",
+  "KOMU": "komu.com",
+  "WBOC": "wboc.com",
+  "WMDT": "wmdt.com",
+  "KESQ": "kesq.com",
+  "KMIR": "kmir6.com",
+  "KODE": "fourstateshomepage.com",
+  "KSNF": "fourstateshomepage.com",
+  "KOAM": "koamnewsnow.com",
+  "WCJB": "wcjb.com",
+  "KIFI": "localnews8.com",
+  "KPVI": "kpvi.com",
+  "KYMA": "kyma.com",
+  "WBBJ": "wbbjtv.com",
+  "WETM": "mytwintiers.com",
+  "WENY": "weny.com",
+  "KTVZ": "ktvz.com",
+  "KOHD": "centraloregondaily.com",
+  "KIEM": "redwoodnewschannel.com",
+  "WLIO": "hometownstations.com",
+  "KGWN": "wyomingnewsnow.com",
+  "KCWY": "wyomingnewsnow.com",
+  "KQTV": "kq2.com",
+  "KNPN": "newspressnow.com",
+  "WHIZ": "whiznews.com",
+  "KAVU": "crossroadstoday.com",
+  "KTVH": "ktvh.com",
+  "KXLH": "kxlh.com",
+  "KJUD": "alaskasnewssource.com",
+  "KXGN": "kxgn.com",
+  "WABG": "deltanews.tv",
+  "WXVT": "deltanews.tv",
+  "KABB": "foxsanantonio.com",
+  "KEYE": "cbsaustin.com",
+  "KDBC": "cbs4local.com",
+  "KFOX": "kfoxtv.com",
+  "KMPH": "kmph.com",
+  "KATV": "katv.com",
+  "KBOI": "idahonews.com",
+  "WSBT": "wsbt.com",
+  "KGAN": "cbs2iowa.com",
+  "WEYI": "nbc25news.com",
+  "WWMT": "wwmt.com",
+  "KSNV": "news3lv.com",
+  "WRGB": "cbs6albany.com",
+  "WSTM": "cnycentral.com",
+  "WCHS": "wchstv.com",
+  "WLUK": "fox11online.com",
+  "WEAR": "weartv.com",
+  "WPMI": "local15tv.com",
+  "WBMA": "abc3340.com",
+  "WPDE": "wpde.com",
+  "WACH": "wach.com",
+  "WCIV": "abcnews4.com",
+  "WZTV": "fox17.com",
+  "KOKH": "okcfox.com",
+  "WNWO": "nbc24.com",
+  "WHP": "local21news.com",
+  "KEPR": "keprtv.com",
+  "WGXA": "wgxa.tv",
+  "WFXL": "wfxl.com",
+  "KECI": "nbcmontana.com",
+  "KMTR": "nbc16.com",
+  "KRNV": "mynews4.com",
+  "KRXI": "foxreno.com",
+  "KDNL": "abcstlouis.com",
+  "WVUE2": "fox8live.com",
+  "KOTA2": "blackhillsfox.com",
+  "WDBD": "wlbt.com",
+  "WLOO": "wlbt.com",
+  "KWES": "newswest9.com",
+  "WCTI": "wcti12.com",
+  "KGWC": "wyomingnewsnow.com",
+  "KTWO": "k2radio.com",
+  "WPTA2": "wpta21.com",
+  "WISE": "wpta21.com",
+  "KTVM": "nbcmontana.com",
+  "KCFW": "nbcmontana.com",
+  "KFBB": "kfbb.com",
+  "KTGF": "nbcmontana.com",
+  "KSTP": "kstp.com",
+  "KAAL": "kaaltv.com",
+  "WDIO": "wdio.com",
+  "KOB": "kob.com",
+  "WNYT": "wnyt.com",
+  "WHEC": "whec.com",
+  "WDAY": "wday.com",
+  "WDAZ": "wday.com",
+  "KBMY": "kbmy.com",
+  "KNBN": "newscenter1.tv",
+  "WKBT": "wkbt.com",
+  "WBUP": "abc10up.com",
+  "KGWN2": "wyomingnewsnow.com",
+  "KJNB": "kjnbtv.com",
+  "KTBY": "youralaskalink.com",
+  "KYUR": "youralaskalink.com",
+  "WGBC": "wgbctv.com",
+  "WSB": "wsbtv.com",
+  "WFTV": "wftv.com",
+  "WHIO2": "whio.com",
+  "KIRO": "kiro7.com",
+  "WPXI": "wpxi.com",
+  "WSOC": "wsoctv.com",
+  "WJAX": "actionnewsjax.com",
+  "WFOX": "actionnewsjax.com",
+  "KOKI2": "fox23.com",
+  "WHBQ": "fox13memphis.com",
+  "KWTV": "news9.com",
+  "KFOR2": "kfor.com",
+  "WPVI2": "6abc.com",
+  "KEZI": "kezi.com",
+  "KDRV": "kdrv.com",
+  "WCAU2": "nbcphiladelphia.com",
+  "KOIN2": "koin.com",
+  "WPRI2": "wpri.com",
+  "KTVT": "cbsnews.com",
+  "KXAS": "nbcdfw.com",
+  "KDFW": "fox4news.com",
+  "KTRK": "abc13.com",
+  "KPRC": "click2houston.com",
+  "KRIV": "fox26houston.com",
+  "WAGA": "fox5atlanta.com",
+  "WRC": "nbcwashington.com",
+  "WTTG": "fox5dc.com",
+  "WBZ": "cbsnews.com",
+  "WBTS": "nbcboston.com",
+  "WFXT": "boston25news.com",
+  "KSAZ": "fox10phoenix.com",
+  "WFLA": "wfla.com",
+  "WTVT": "fox13news.com",
+  "KCPQ": "fox13seattle.com",
+  "WWJ": "cbsnews.com",
+  "WDIV": "clickondetroit.com",
+  "WJBK": "fox2detroit.com",
+  "WCCO": "cbsnews.com",
+  "KMSP": "fox9.com",
+  "KCNC": "cbsnews.com",
+  "WKMG": "clickorlando.com",
+  "WOFL": "fox35orlando.com",
+  "WJW": "fox8.com",
+  "KXTV": "abc10.com",
+  "KOVR": "cbsnews.com",
+  "KTXL": "fox40.com",
+  "WJZY": "qcnews.com",
+  "KMOV": "firstalert4.com",
+  "KTVI": "fox2now.com",
+  "KDKA": "cbsnews.com",
+  "WTVD": "abc11.com",
+  "WRAL": "wral.com",
+  "WRAZ": "wral.com",
+  "WXIN": "fox59.com",
+  "KNSD": "nbcsandiego.com",
+  "KSWB": "fox5sandiego.com",
+  "WKRN": "wkrn.com",
+  "WTVF": "newschannel5.com",
+  "WJZ": "cbsnews.com",
+  "KTVX": "abc4.com",
+  "KSL": "ksl.com",
+  "KSTU": "fox13now.com",
+  "KSAT": "ksat.com",
+  "WBNS": "10tv.com",
+  "WCMH": "nbc4i.com",
+  "WDAF": "fox4kc.com",
+  "WDJT": "cbs58.com",
+  "WITI": "fox6now.com",
+  "WTNH": "wtnh.com",
+  "WVIT": "nbcconnecticut.com",
+  "WTIC": "fox61.com",
+  "KTNV": "ktnv.com",
+  "WHNS": "foxcarolina.com",
+  "KXAN": "kxan.com",
+  "KTBC": "fox7austin.com",
+  "WPEC": "cbs12.com",
+  "WJXX": "firstcoastnews.com",
+  "WXMI": "fox17online.com",
+  "WTKR": "wtkr.com",
+  "WFMY": "wfmynews2.com",
+  "WXLV": "abc45.com",
+  "WDRB": "wdrb.com",
+  "WLNE": "abc6.com",
+  "KFSN": "abc30.com",
+  "WTVR": "wtvr.com",
+  "WOLF": "fox56.com",
+  "WXXA": "fox23news.com",
+  "WATE": "wate.com",
+  "WLEX": "lex18.com",
+  "WDKY": "foxlexington.com",
+  "KGUN": "kgun9.com",
+  "KVOA": "kvoa.com",
+  "KITV": "kitv.com",
+  "WOI": "weareiowa.com",
+  "WHO": "who13.com",
+  "WGBA": "nbc26.com",
+  "KSNW": "ksn.com",
+  "WSET": "wset.com",
+  "WSLS": "wsls.com",
+  "WFXR": "wfxrtv.com",
+  "WKOW": "wkow.com",
+  "WISC": "channel3000.com",
+  "KMTV": "3newsnow.com",
+  "WJRT": "abc12.com",
+  "KOLR": "ozarksfirst.com",
+  "KSPR": "ozarksfirst.com",
+  "WLTX": "wltx.com",
+  "WOLO": "wolo.com",
+  "WROC": "rochesterfirst.com",
+  "WOWK": "wowktv.com",
+  "WTOL": "wtol.com",
+  "WHNT": "whnt.com",
+  "WZDX": "rocketcitynow.com",
+  "WPSD": "wpsdlocal6.com",
+  "KXXV": "kxxv.com",
+  "KWKT": "fox44news.com",
+  "WTVH": "cnycentral.com",
+  "KRDO": "krdo.com",
+  "KXRM": "fox21news.com",
+  "WICS": "newschannel20.com",
+  "WAND": "wandtv.com",
+  "WRSP": "foxillinois.com",
+  "KTBS": "ktbs.com",
+  "KTAL": "ktalnews.com",
+  "KMSS": "arklatexhomepage.com",
+  "KIVI": "idahonews.com",
+  "WJCL": "wjcl.com",
+  "WSAV": "wsav.com",
+  "KWWL": "kwwl.com",
+  "KVIA": "kvia.com",
+  "WBRZ": "wbrz.com",
+  "WVLA": "louisianafirstnews.com",
+  "WBND": "abc57.com",
+  "WCBD": "counton2.com",
+  "KNWA": "nwahomepage.com",
+  "KFTA": "nwahomepage.com",
+  "WVNY": "mychamplainvalley.com",
+  "WFFF": "mychamplainvalley.com",
+  "WBTW": "wbtw.com",
+  "WJHL": "wjhl.com",
+  "KTVN": "2news.com",
+  "WINK": "winknews.com",
+  "WZVN": "abc-7.com",
+  "WFTX": "fox4now.com",
+  "WEHT": "tristatehomepage.com",
+  "KLKN": "klkntv.com",
+  "WANE": "wane.com",
+  "WJBF": "wjbf.com",
+  "WFXG": "wfxg.com",
+  "KYTX": "cbs19.tv",
+  "KVRR": "kvrr.com",
+  "WFMJ": "wfmj.com",
+  "WMGT": "41nbc.com",
+  "WAKA": "wakatv.com",
+  "WNCF": "alabamanews.net",
+  "KGET": "kget.com",
+  "KION": "kion546.com",
+  "WRBL": "wrbl.com",
+  "WLTZ": "wltz.com",
+  "WXTX": "wtvm.com",
+  "WEVV": "wevv.com",
+  "WLAJ": "wlns.com",
+  "WSYM": "fox47.com",
+  "WFQX": "upnorthlive.com",
+  "KLSR": "kval.com",
+  "KFFX": "kapptv.com",
+  "KCOY": "keyt.com",
+  "KKFX": "keyt.com",
+  "KLAF": "kadn.com",
+  "KCBA": "kion546.com",
+  "WATM": "wjactv.com",
+  "WWCP": "wjactv.com",
+  "WTLH": "wtxl.com",
+  "WEMT": "wcyb.com",
+  "WFXI": "wcti12.com",
+  "WYFX": "wkbn.com",
+  "WYZZ": "centralillinoisproud.com",
+  "WKMG2": "clickorlando.com",
+  "KBSI": "kbsi23.com",
+  "WSIL": "wsiltv.com",
+  "WAAY": "waaytv.com",
+  "WFFT": "wfft.com",
+  "WCOV": "wcov.com",
+  "KNIN": "kivitv.com",
+  "KSAS": "foxkansas.com",
+  "KAKE": "kake.com",
+  "WMSN": "fox47madison.com",
+  "KPTM": "fox42kptm.com",
+  "WSMH": "nbc25news.com",
+  "WUHF": "13wham.com",
+  "WSYT": "cnycentral.com",
+  "WTNZ": "fox43knoxville.com",
+  "WRLH": "foxrichmond.com",
+  "WUTV": "wutv.com",
+  "WPFO": "wgme.com",
+  "WUPW": "nbc24.com",
+  "KDSM": "kdsm.com",
+  "KRBK": "ozarksfirst.com",
+  "WFXB": "wbtw.com",
+  "KFXV": "valleycentral.com",
+  "WJHL2": "wjhl.com",
+  "WEVV2": "wevv.com",
+  "WGMB": "louisianafirstnews.com",
+  "WTTE": "abc6onyourside.com",
+  "WRGT": "dayton247now.com",
+  "WVAH": "wchstv.com",
+  "KFXA": "cbs2iowa.com",
+  "WTAT": "abcnews4.com",
+  "WTGS": "wtgs.com",
+  "KMSB": "kold.com",
+  "WTWC": "wtwc40.com",
+  "KHGI": "nebraska.tv",
+  "KFXL": "nebraska.tv",
+  "KBFX": "bakersfieldnow.com",
+  "WLAX": "weau.com",
+  "WEUX": "weau.com",
+  "WWAY": "wwaytv3.com",
+  "WSFX": "wect.com",
+  "KZTV": "kztv10.com",
+  "KHSL": "actionnewsnow.com",
+  "KNVN": "actionnewsnow.com",
+  "KCVU": "actionnewsnow.com",
+  "WCBI": "wcbi.com",
+  "WLOV": "wtva.com",
+  "WREX": "wrex.com",
+  "WAOW": "waow.com",
+  "WJFW": "wjfw.com",
+  "WZAW": "wsaw.com",
+  "KTMJ": "ksnt.com",
+  "KQFX": "abc17news.com",
+  "KOBI": "kobi5.com",
+  "KMVU": "kobi5.com",
+  "KBMT": "12newsnow.com",
+  "KBTV": "kfdm.com",
+  "KQDS": "kqdsfox21.com",
+  "WRDE": "wboc.com",
+  "KCAU": "siouxlandproud.com",
+  "KMEG": "siouxlandnews.com",
+  "KPTH": "siouxlandnews.com",
+  "KPSP": "kesq.com",
+  "KDFX": "kesq.com",
+  "WSEE": "erienewsnow.com",
+  "WICU": "erienewsnow.com",
+  "KFJX": "koamnewsnow.com",
+  "KJTV": "kcbd.com",
+  "WSWG": "wctv.tv",
+  "WTWO": "mywabashvalley.com",
+  "WAWV": "mywabashvalley.com",
+  "WOAY": "woay.com",
+  "WVNS": "wvnstv.com",
+  "WVII": "foxbangor.com",
+  "WFVX": "foxbangor.com",
+  "KIMT": "kimt.com",
+  "KXLT": "kttc.com",
+  "WTOV": "wtov9.com",
+  "WIVT": "binghamtonhomepage.com",
+  "WBGH": "binghamtonhomepage.com",
+  "WICZ": "wicz.com",
+  "WMBB": "mypanhandle.com",
+  "WECP": "mypanhandle.com",
+  "WPGX": "wjhg.com",
+  "WXXV": "wxxv25.com",
+  "KNDX": "kfyrtv.com",
+  "KXND": "kfyrtv.com",
+  "KTEN": "kten.com",
+  "WOGX": "fox35orlando.com",
+  "WGFL": "wgfltv.com",
+  "KIDK": "localnews8.com",
+  "KXPI": "localnews8.com",
+  "WVFX": "wdtv.com",
+  "WUTR": "cnyhomepage.com",
+  "WFXV": "cnyhomepage.com",
+  "KIDY": "foxwesttexas.com",
+  "KXVA": "foxwesttexas.com",
+  "WYDC": "wetmtv.com",
+  "KECY": "kyma.com",
+  "KYMA2": "kyma.com",
+  "WNBW": "wcjb.com",
+  "KSCC": "kztv10.com",
+  "WILM": "wwaytv3.com",
+  "KOKI": "fox23.com",
+  "WHLT": "wjtv.com",
+  "WHPM": "wdam.com",
+  "KTMF": "nbcmontana.com",
+  "KSVI": "yourbigsky.com",
+  "KHMT": "yourbigsky.com",
+  "KULR": "kulr8.com",
+  "KHQA": "khqa.com",
+  "WDHN": "wdhn.com",
+  "WRGX": "wsfa.com",
+  "WDFX": "wdhn.com",
+  "WNBJ": "wbbjtv.com",
+  "WJKT": "wbbjtv.com",
+  "WVNC": "wwnytv.com",
+  "WNYF": "wwnytv.com",
+  "WSVF": "whsv.com",
+  "KLAX": "klax-tv.com",
+  "WNTZ": "klax-tv.com",
+  "WZMQ": "uppermichiganssource.com",
+  "WNKY": "wnky.com",
+  "WCAV": "cbs19news.com",
+  "WVAW": "cbs19news.com",
+  "WAHU": "cbs19news.com",
+  "KFQX": "westernslopenow.com",
+  "WMDN": "wgbctv.com",
+  "KYLX": "kgns.tv",
+  "KXOF": "kgns.tv",
+  "KVHP": "kplctv.com",
+  "KSWL": "kplctv.com",
+  "KWYB": "abcfoxmontana.com",
+  "WNBD": "deltanews.tv",
+  "KBNZ": "centraloregondaily.com",
+  "KFXO": "ktvz.com",
+  "WOVA": "wtap.com",
+  "KTFT": "ktvb.com",
+  "KSVT": "kmvt.com",
+  "KAEF": "krcrtv.com",
+  "KVIQ": "redwoodnewschannel.com",
+  "KBVU": "krcrtv.com",
+  "KBGF": "kfbb.com",
+  "WLQP": "hometownstations.com",
+  "WOHL": "hometownstations.com",
+  "KCHY": "wyomingnewsnow.com",
+  "KLWY": "wyomingnewsnow.com",
+  "KTXE": "ktxs.com",
+  "KFNB": "wyomingnewsnow.com",
+  "KMNF": "keyc.com",
+  "KTVO": "ktvo.com",
+  "KCJO": "newspressnow.com",
+  "KNPG": "newspressnow.com",
+  "KATN": "alaskasnewssource.com",
+  "KXDF": "webcenterfairbanks.com",
+  "KXTS": "crossroadstoday.com",
+  "KMOL": "crossroadstoday.com",
+  "KVCT": "crossroadstoday.com",
+  "KHBB": "ktvh.com",
+  "KXLJ": "alaskasnewssource.com",
+  "KNPL": "knopnews2.com",
+  "KIIT": "knopnews2.com",
+  "WJXT": "news4jax.com",
+  "WHDH": "whdh.com",
+  "KCAL": "cbsnews.com",
+  "KMEX": "univision.com",
+  "WXTV": "univision.com",
+  "KUSI": "kusi.com",
+  "KRON": "kron4.com",
+  "WLTV": "univision.com",
+  "WSCV": "telemundo51.com",
+  "KXLN": "univision.com",
+  "KUVN": "univision.com",
+  "KTVW": "univision.com",
+  "WFMZ": "wfmz.com",
+  "WBKB": "wbkb11.com"
+ },
+ "domain_to_call": {
+  "texomashomepage.com": "KFDX",
+  "kswo.com": "KSWO",
+  "newschannel6now.com": "KAUZ",
+  "abc7ny.com": "WABC",
+  "abc7.com": "KABC",
+  "abc7chicago.com": "WLS",
+  "6abc.com": "WPVI",
+  "abc13.com": "KTRK",
+  "abc7news.com": "KGO",
+  "abc11.com": "WTVD",
+  "abc30.com": "KFSN",
+  "nbcnewyork.com": "WNBC",
+  "nbclosangeles.com": "KNBC",
+  "nbcchicago.com": "WMAQ",
+  "nbcdfw.com": "KXAS",
+  "nbcphiladelphia.com": "WCAU",
+  "nbcwashington.com": "WRC",
+  "nbcboston.com": "WBTS",
+  "nbcbayarea.com": "KNTV",
+  "nbcmiami.com": "WTVJ",
+  "nbcsandiego.com": "KNSD",
+  "nbcconnecticut.com": "WVIT",
+  "fox5ny.com": "WNYW",
+  "foxla.com": "KTTV",
+  "fox32chicago.com": "WFLD",
+  "fox4news.com": "KDFW",
+  "fox29.com": "WTXF",
+  "fox26houston.com": "KRIV",
+  "fox5atlanta.com": "WAGA",
+  "fox5dc.com": "WTTG",
+  "boston25news.com": "WFXT",
+  "fox10phoenix.com": "KSAZ",
+  "fox13news.com": "WTVT",
+  "fox13seattle.com": "KCPQ",
+  "fox2detroit.com": "WJBK",
+  "fox9.com": "KMSP",
+  "fox35orlando.com": "WOFL",
+  "fox7austin.com": "KTBC",
+  "fox4kc.com": "WDAF",
+  "fox8.com": "WJW",
+  "fox2now.com": "KTVI",
+  "fox17.com": "WZTV",
+  "fox59.com": "WXIN",
+  "fox40.com": "KTXL",
+  "fox43.com": "WPMT",
+  "fox5sandiego.com": "KSWB",
+  "kptv.com": "KPTV",
+  "11alive.com": "WXIA",
+  "9news.com": "KUSA",
+  "12news.com": "KPNX",
+  "king5.com": "KING",
+  "kare11.com": "KARE",
+  "wusa9.com": "WUSA",
+  "wfaa.com": "WFAA",
+  "khou.com": "KHOU",
+  "click2houston.com": "KPRC",
+  "clickondetroit.com": "WDIV",
+  "clickorlando.com": "WKMG",
+  "local10.com": "WPLG",
+  "news4jax.com": "WJXT",
+  "wsbtv.com": "WSB",
+  "wsoctv.com": "WSOC",
+  "wftv.com": "WFTV",
+  "wcvb.com": "WCVB",
+  "kcra.com": "KCRA",
+  "koat.com": "KOAT",
+  "wlky.com": "WLKY",
+  "wisn.com": "WISN",
+  "who13.com": "WHO",
+  "wistv.com": "WIS",
+  "kdka.com": "KDKA",
+  "13newsnow.com": "WVEC",
+  "wtkr.com": "WTKR",
+  "wavy.com": "WAVY",
+  "news9.com": "KWTV",
+  "kfor.com": "KFOR",
+  "koco.com": "KOCO",
+  "ksat.com": "KSAT",
+  "kens5.com": "KENS",
+  "news4sanantonio.com": "WOAI",
+  "kvue.com": "KVUE",
+  "kxan.com": "KXAN",
+  "keyetv.com": "KEYE",
+  "wral.com": "WRAL",
+  "cbs17.com": "WNCN",
+  "wbtv.com": "WBTV",
+  "wcnc.com": "WCNC",
+  "qcnews.com": "WJZY",
+  "wtae.com": "WTAE",
+  "wpxi.com": "WPXI",
+  "wkyc.com": "WKYC",
+  "news5cleveland.com": "WEWS",
+  "cleveland19.com": "WOIO",
+  "fox8.com ": "WJW",
+  "wtol.com": "WTOL",
+  "13abc.com": "WTVG",
+  "nbc4i.com": "WCMH",
+  "10tv.com": "WBNS",
+  "abc6onyourside.com": "WSYX",
+  "wcpo.com": "WCPO",
+  "local12.com": "WKRC",
+  "wlwt.com": "WLWT",
+  "fox19.com": "WXIX",
+  "wthr.com": "WTHR",
+  "wrtv.com": "WRTV",
+  "cbs4indy.com": "WTTV",
+  "wsmv.com": "WSMV",
+  "newschannel5.com": "WTVF",
+  "wkrn.com": "WKRN",
+  "wmcactionnews5.com": "WMC",
+  "wreg.com": "WREG",
+  "localmemphis.com": "WATN",
+  "wwltv.com": "WWL",
+  "wdsu.com": "WDSU",
+  "fox8live.com": "WVUE",
+  "wafb.com": "WAFB",
+  "wbrz.com": "WBRZ",
+  "ksla.com": "KSLA",
+  "ktbs.com": "KTBS",
+  "kwtx.com": "KWTX",
+  "kxxv.com": "KXXV",
+  "kcentv.com": "KCEN",
+  "kcbd.com": "KCBD",
+  "everythinglubbock.com": "KLBK",
+  "newschannel10.com": "KFDA",
+  "abc7amarillo.com": "KVII",
+  "myhighplains.com": "KAMR",
+  "kltv.com": "KLTV",
+  "cbs19.tv": "KYTX",
+  "ketk.com": "KETK",
+  "12newsnow.com": "KBMT",
+  "kfdm.com": "KFDM",
+  "kiiitv.com": "KIII",
+  "kristv.com": "KRIS",
+  "krgv.com": "KRGV",
+  "valleycentral.com": "KVEO",
+  "kvia.com": "KVIA",
+  "ktsm.com": "KTSM",
+  "kfoxtv.com": "KFOX",
+  "newswest9.com": "KWES",
+  "yourbasin.com": "KMID",
+  "cbs7.com": "KOSA",
+  "kxii.com": "KXII",
+  "kten.com": "KTEN",
+  "ktxs.com": "KTXS",
+  "bigcountryhomepage.com": "KTAB",
+  "conchovalleyhomepage.com": "KLST",
+  "kgns.tv": "KGNS",
+  "crossroadstoday.com": "KAVU",
+  "kjrh.com": "KJRH",
+  "newson6.com": "KOTV",
+  "ktul.com": "KTUL",
+  "fox23.com": "KOKI",
+  "katv.com": "KATV",
+  "thv11.com": "KTHV",
+  "kark.com": "KARK",
+  "kait8.com": "KAIT",
+  "5newsonline.com": "KFSM",
+  "nwahomepage.com": "KNWA",
+  "kake.com": "KAKE",
+  "kwch.com": "KWCH",
+  "ksn.com": "KSNW",
+  "wibw.com": "WIBW",
+  "ksnt.com": "KSNT",
+  "ketv.com": "KETV",
+  "wowt.com": "WOWT",
+  "3newsnow.com": "KMTV",
+  "kcci.com": "KCCI",
+  "weareiowa.com": "WOI",
+  "kcrg.com": "KCRG",
+  "kwwl.com": "KWWL",
+  "cbs2iowa.com": "KGAN",
+  "wqad.com": "WQAD",
+  "kwqc.com": "KWQC",
+  "ourquadcities.com": "WHBF",
+  "kelo.com": "KELO",
+  "dakotanewsnow.com": "KSFY",
+  "valleynewslive.com": "KVLY",
+  "wday.com": "WDAY",
+  "kfyrtv.com": "KFYR",
+  "kotatv.com": "KOTA",
+  "kstp.com": "KSTP",
+  "wcco.com": "WCCO",
+  "kttc.com": "KTTC",
+  "kimt.com": "KIMT",
+  "keyc.com": "KEYC",
+  "wdio.com": "WDIO",
+  "northernnewsnow.com": "KBJR",
+  "wbay.com": "WBAY",
+  "wearegreenbay.com": "WFRV",
+  "fox11online.com": "WLUK",
+  "tmj4.com": "WTMJ",
+  "fox6now.com": "WITI",
+  "cbs58.com": "WDJT",
+  "channel3000.com": "WISC",
+  "wkow.com": "WKOW",
+  "nbc15.com": "WMTV",
+  "wsaw.com": "WSAW",
+  "waow.com": "WAOW",
+  "weau.com": "WEAU",
+  "news8000.com": "WKBT",
+  "wxow.com": "WXOW",
+  "wzzm13.com": "WZZM",
+  "woodtv.com": "WOOD",
+  "wwmt.com": "WWMT",
+  "fox17online.com": "WXMI",
+  "wilx.com": "WILX",
+  "wlns.com": "WLNS",
+  "abc12.com": "WJRT",
+  "wnem.com": "WNEM",
+  "wjrt.com": "WJRT",
+  "9and10news.com": "WWTV",
+  "upnorthlive.com": "WPBN",
+  "abc10up.com": "WBUP",
+  "wluc.com": "WLUC",
+  "wane.com": "WANE",
+  "wpta21.com": "WPTA",
+  "wndu.com": "WNDU",
+  "wsbt.com": "WSBT",
+  "abc57.com": "WBND",
+  "14news.com": "WFIE",
+  "wthitv.com": "WTHI",
+  "mywabashvalley.com": "WTWO",
+  "wlfi.com": "WLFI",
+  "wdrb.com": "WDRB",
+  "whas11.com": "WHAS",
+  "wave3.com": "WAVE",
+  "wkyt.com": "WKYT",
+  "lex18.com": "WLEX",
+  "wtvq.com": "WTVQ",
+  "wbko.com": "WBKO",
+  "wpsdlocal6.com": "WPSD",
+  "kfvs12.com": "KFVS",
+  "wsiltv.com": "WSIL",
+  "wsaz.com": "WSAZ",
+  "wchstv.com": "WCHS",
+  "wowktv.com": "WOWK",
+  "wvva.com": "WVVA",
+  "wboy.com": "WBOY",
+  "wdtv.com": "WDTV",
+  "wtap.com": "WTAP",
+  "wtov9.com": "WTOV",
+  "wtrf.com": "WTRF",
+  "wkbn.com": "WKBN",
+  "wfmj.com": "WFMJ",
+  "whio.com": "WHIO",
+  "wdtn.com": "WDTN",
+  "dayton247now.com": "WKEF",
+  "hometownstations.com": "WLIO",
+  "whiznews.com": "WHIZ",
+  "wnep.com": "WNEP",
+  "pahomepage.com": "WBRE",
+  "wgal.com": "WGAL",
+  "abc27.com": "WHTM",
+  "local21news.com": "WHP",
+  "wjactv.com": "WJAC",
+  "wtaj.com": "WTAJ",
+  "yourerie.com": "WJET",
+  "erienewsnow.com": "WICU",
+  "wivb.com": "WIVB",
+  "wgrz.com": "WGRZ",
+  "wkbw.com": "WKBW",
+  "whec.com": "WHEC",
+  "13wham.com": "WHAM",
+  "rochesterfirst.com": "WROC",
+  "localsyr.com": "WSYR",
+  "cnycentral.com": "WSTM",
+  "wbng.com": "WBNG",
+  "wktv.com": "WKTV",
+  "wwnytv.com": "WWNY",
+  "weny.com": "WENY",
+  "mytwintiers.com": "WETM",
+  "news10.com": "WTEN",
+  "wnyt.com": "WNYT",
+  "cbs6albany.com": "WRGB",
+  "wcax.com": "WCAX",
+  "mynbc5.com": "WPTZ",
+  "wmtw.com": "WMTW",
+  "wmtw.com ": "WMTW",
+  "newscentermaine.com": "WCSH",
+  "wgme.com": "WGME",
+  "wabi.tv": "WABI",
+  "wagmtv.com": "WAGM",
+  "wjar.com": "WJAR",
+  "wpri.com": "WPRI",
+  "abc6.com": "WLNE",
+  "wfsb.com": "WFSB",
+  "wtnh.com": "WTNH",
+  "wwlp.com": "WWLP",
+  "westernmassnews.com": "WSHM",
+  "wwaytv3.com": "WWAY",
+  "wect.com": "WECT",
+  "witn.com": "WITN",
+  "wnct.com": "WNCT",
+  "wcti12.com": "WCTI",
+  "wfmynews2.com": "WFMY",
+  "wxii12.com": "WXII",
+  "myfox8.com": "WGHP",
+  "wlos.com": "WLOS",
+  "wyff4.com": "WYFF",
+  "foxcarolina.com": "WHNS",
+  "wspa.com": "WSPA",
+  "wltx.com": "WLTX",
+  "wistv.com ": "WIS",
+  "counton2.com": "WCBD",
+  "live5news.com": "WCSC",
+  "abcnews4.com": "WCIV",
+  "wpde.com": "WPDE",
+  "wbtw.com": "WBTW",
+  "wmbfnews.com": "WMBF",
+  "wtoc.com": "WTOC",
+  "wsav.com": "WSAV",
+  "wjcl.com": "WJCL",
+  "wrdw.com": "WRDW",
+  "wjbf.com": "WJBF",
+  "13wmaz.com": "WMAZ",
+  "41nbc.com": "WMGT",
+  "walb.com": "WALB",
+  "wtvm.com": "WTVM",
+  "wrbl.com": "WRBL",
+  "wctv.tv": "WCTV",
+  "wtxl.com": "WTXL",
+  "wjhg.com": "WJHG",
+  "mypanhandle.com": "WMBB",
+  "wcjb.com": "WCJB",
+  "firstcoastnews.com": "WTLV",
+  "actionnewsjax.com": "WJAX",
+  "wesh.com": "WESH",
+  "wtsp.com": "WTSP",
+  "wfla.com": "WFLA",
+  "abcactionnews.com": "WFTS",
+  "winknews.com": "WINK",
+  "nbc-2.com": "WBBH",
+  "gulfcoastnewsnow.com": "WZVN",
+  "fox4now.com": "WFTX",
+  "wpbf.com": "WPBF",
+  "cbs12.com": "WPEC",
+  "wptv.com": "WPTV",
+  "wsvn.com": "WSVN",
+  "wkrg.com": "WKRG",
+  "weartv.com": "WEAR",
+  "fox10tv.com": "WALA",
+  "wpmi.com": "WPMI",
+  "wsfa.com": "WSFA",
+  "alabamanews.net": "WAKA",
+  "wbrc.com": "WBRC",
+  "wvtm13.com": "WVTM",
+  "cbs42.com": "WIAT",
+  "abc3340.com": "WBMA",
+  "whnt.com": "WHNT",
+  "waaytv.com": "WAAY",
+  "waff.com": "WAFF",
+  "wdhn.com": "WDHN",
+  "wtvy.com": "WTVY",
+  "wlox.com": "WLOX",
+  "wxxv25.com": "WXXV",
+  "wdam.com": "WDAM",
+  "wjtv.com": "WJTV",
+  "wlbt.com": "WLBT",
+  "16wapt.com": "WAPT",
+  "wtva.com": "WTVA",
+  "wcbi.com": "WCBI",
+  "wtok.com": "WTOK",
+  "wbbjtv.com": "WBBJ",
+  "wbir.com": "WBIR",
+  "wate.com": "WATE",
+  "wvlt.tv": "WVLT",
+  "wrcbtv.com": "WRCB",
+  "newschannel9.com": "WTVC",
+  "local3news.com": "WRCB",
+  "wdef.com": "WDEF",
+  "wjhl.com": "WJHL",
+  "wcyb.com": "WCYB",
+  "wdbj7.com": "WDBJ",
+  "wsls.com": "WSLS",
+  "wset.com": "WSET",
+  "wfxrtv.com": "WFXR",
+  "whsv.com": "WHSV",
+  "nbc29.com": "WVIR",
+  "cbs19news.com": "WCAV",
+  "wtvr.com": "WTVR",
+  "nbc12.com": "WWBT",
+  "wric.com": "WRIC",
+  "wbaltv.com": "WBAL",
+  "wmar2news.com": "WMAR",
+  "foxbaltimore.com": "WBFF",
+  "wboc.com": "WBOC",
+  "wmdt.com": "WMDT",
+  "wjla.com": "WJLA",
+  "ksl.com": "KSL",
+  "kutv.com": "KUTV",
+  "abc4.com": "KTVX",
+  "fox13now.com": "KSTU",
+  "kivitv.com": "KIVI",
+  "ktvb.com": "KTVB",
+  "idahonews.com": "KBOI",
+  "localnews8.com": "KIFI",
+  "kmvt.com": "KMVT",
+  "kxly.com": "KXLY",
+  "krem.com": "KREM",
+  "khq.com": "KHQ",
+  "komonews.com": "KOMO",
+  "kiro7.com": "KIRO",
+  "q13fox.com": "KCPQ",
+  "kimatv.com": "KIMA",
+  "kndo.com": "KNDO",
+  "kvewtv.com": "KVEW",
+  "katu.com": "KATU",
+  "koin.com": "KOIN",
+  "kgw.com": "KGW",
+  "kezi.com": "KEZI",
+  "kval.com": "KVAL",
+  "kdrv.com": "KDRV",
+  "kobi5.com": "KOBI",
+  "ktvl.com": "KTVL",
+  "ktvz.com": "KTVZ",
+  "centraloregondaily.com": "KOHD",
+  "krcrtv.com": "KRCR",
+  "actionnewsnow.com": "KHSL",
+  "kcra.com ": "KCRA",
+  "abc10.com": "KXTV",
+  "fox40.com ": "KTXL",
+  "ktvu.com": "KTVU",
+  "kgw.com ": "KGW",
+  "ksbw.com": "KSBW",
+  "kionrightnow.com": "KION",
+  "yourcentralvalley.com": "KSEE",
+  "kmph.com": "KMPH",
+  "turnto23.com": "KERO",
+  "kget.com": "KGET",
+  "bakersfieldnow.com": "KBAK",
+  "keyt.com": "KEYT",
+  "ksby.com": "KSBY",
+  "kesq.com": "KESQ",
+  "nbcpalmsprings.com": "KMIR",
+  "10news.com": "KGTV",
+  "cbs8.com": "KFMB",
+  "kyma.com": "KYMA",
+  "kgun9.com": "KGUN",
+  "kold.com": "KOLD",
+  "kvoa.com": "KVOA",
+  "abc15.com": "KNXV",
+  "azfamily.com": "KPHO",
+  "8newsnow.com": "KLAS",
+  "ktnv.com": "KTNV",
+  "news3lv.com": "KSNV",
+  "fox5vegas.com": "KVVU",
+  "kolotv.com": "KOLO",
+  "ktvn.com": "KTVN",
+  "mynews4.com": "KRNV",
+  "kob.com": "KOB",
+  "krqe.com": "KRQE",
+  "denver7.com": "KMGH",
+  "kdvr.com": "KDVR",
+  "krdo.com": "KRDO",
+  "kktv.com": "KKTV",
+  "koaa.com": "KOAA",
+  "kjct8.com": "KJCT",
+  "kkco11news.com": "KKCO",
+  "krextv.com": "KREX",
+  "ktvq.com": "KTVQ",
+  "kulr8.com": "KULR",
+  "kpax.com": "KPAX",
+  "nbcmontana.com": "KECI",
+  "krtv.com": "KRTV",
+  "kfbb.com": "KFBB",
+  "kxlf.com": "KXLF",
+  "kxlh.com": "KXLH",
+  "kbzk.com": "KXLF",
+  "k2tv.com": "KTWO",
+  "kgwn.tv": "KGWN",
+  "kcautv.com": "KCAU",
+  "ktiv.com": "KTIV",
+  "siouxlandproud.com": "KCAU",
+  "kolnkgin.com": "KOLN",
+  "klkntv.com": "KLKN",
+  "knopnews2.com": "KNOP",
+  "kmbc.com": "KMBC",
+  "kctv5.com": "KCTV",
+  "kshb.com": "KSHB",
+  "ksdk.com": "KSDK",
+  "kmov.com": "KMOV",
+  "ktvi.com": "KTVI",
+  "kdnl.com": "KDNL",
+  "ky3.com": "KYTV",
+  "ozarksfirst.com": "KOLR",
+  "koamnewsnow.com": "KOAM",
+  "fourstateshomepage.com": "KSNF",
+  "kq2.com": "KQTV",
+  "abc17news.com": "KMIZ",
+  "komu.com": "KOMU",
+  "krcgtv.com": "KRCG",
+  "khqa.com": "KHQA",
+  "wgem.com": "WGEM",
+  "ktvo.com": "KTVO",
+  "wcia.com": "WCIA",
+  "wandtv.com": "WAND",
+  "week.com": "WEEK",
+  "centralillinoisproud.com": "WMBD",
+  "wrex.com": "WREX",
+  "wifr.com": "WIFR",
+  "mystateline.com": "WTVO",
+  "kalb.com": "KALB",
+  "kplctv.com": "KPLC",
+  "katc.com": "KATC",
+  "klfy.com": "KLFY",
+  "knoe.com": "KNOE",
+  "myarklamiss.com": "KARD",
+  "ktve.com": "KTVE",
+  "kbmt.com": "KBMT",
+  "ktuu.com": "KTUU",
+  "alaskasnewssource.com": "KTUU",
+  "webcenterfairbanks.com": "KTVF",
+  "hawaiinewsnow.com": "KHNL",
+  "kitv.com": "KITV",
+  "khon2.com": "KHON",
+  "nbc4dc.com": "WRC",
+  "atlantanewsfirst.com": "WANF",
+  "wjxt.com": "WJXT",
+  "whdh.com": "WHDH",
+  "7news.com": "WHDH",
+  "kron4.com": "KRON",
+  "kusi.com": "KUSI",
+  "wccbcharlotte.com": "WCCB",
+  "ktla.com": "KTLA",
+  "pix11.com": "WPIX",
+  "wgntv.com": "WGN",
+  "telemundo52.com": "KVEA",
+  "telemundo47.com": "WNJU",
+  "telemundochicago.com": "WSNS",
+  "telemundo51.com": "WSCV",
+  "telemundo48.com": "KSTS",
+  "telemundo44.com": "WZDC",
+  "telemundo62.com": "WWSI",
+  "telemundo39.com": "KXTX",
+  "telemundohouston.com": "KTMD",
+  "telemundoareadelabahia.com": "KSTS",
+  "wral.com ": "WRAL",
+  "wnky.com": "WNKY",
+  "wymt.com": "WYMT",
+  "wkrg.com ": "WKRG"
+ },
+ "owner_feed_paths": {
+  "Gray": [
+   "/arc/outboundfeeds/rss/?outputType=xml",
+   "/rss/"
+  ],
+  "Graham": [
+   "/arc/outboundfeeds/rss/?outputType=xml",
+   "/feed/"
+  ],
+  "Sinclair": [
+   "/news/local/index.rss",
+   "/news/index.rss"
+  ],
+  "Nexstar": [
+   "/feed/",
+   "/?feed=rss2"
+  ],
+  "Tegna": [
+   "/feeds/syndication/rss/news",
+   "/feeds/syndication/rss/news/local"
+  ],
+  "Scripps": [
+   "/news.rss",
+   "/news/local-news.rss"
+  ],
+  "Hearst": [
+   "/feed/",
+   "/rss/"
+  ],
+  "Fox O&O": [
+   "/rss/",
+   "/feed/"
+  ],
+  "CBS O&O": [
+   "/latest/rss/",
+   "/feed/"
+  ],
+  "NBC O&O": [
+   "/?rss=y",
+   "/feed/"
+  ],
+  "Telemundo": [
+   "/?rss=y",
+   "/feed/"
+  ],
+  "ABC O&O": [
+   "/feed",
+   "/rss/"
+  ],
+  "Allen Media": [
+   "/feed/"
+  ],
+  "Cowles": [
+   "/feed/"
+  ],
+  "Marquee": [
+   "/feed/"
+  ],
+  "Deltavision": [
+   "/feed/"
+  ],
+  "Forum": [
+   "/feed/"
+  ],
+  "Waterman": [
+   "/feed/"
+  ],
+  "Fort Myers": [
+   "/feed/"
+  ],
+  "Cox": [
+   "/feed/",
+   "/rss/"
+  ],
+  "Morgan": [
+   "/feed/"
+  ],
+  "News-Press": [
+   "/feed/"
+  ]
+ },
+ "generic_feed_paths": [
+  "/index.xml",
+  "/feed/",
+  "/rss",
+  "/rss.xml",
+  "/feed",
+  "/en/rss",
+  "/en/feed/",
+  "/rss/news",
+  "/news/rss",
+  "/rssfeeds/",
+  "/feed/rss",
+  "/?feed=rss2",
+  "/feeds/posts/default",
+  "/rss/all.xml",
+  "/rss/index.xml",
+  "/arc/outboundfeeds/rss/?outputType=xml",
+  "/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+ ],
+ "newspapers": {
+  "New York": [
+   [
+    "New York Daily News",
+    "nydailynews.com"
+   ],
+   [
+    "amNewYork",
+    "amny.com"
+   ]
+  ],
+  "Los Angeles": [
+   [
+    "Los Angeles Times",
+    "latimes.com"
+   ],
+   [
+    "Daily News",
+    "dailynews.com"
+   ]
+  ],
+  "Chicago": [
+   [
+    "Chicago Sun-Times",
+    "suntimes.com"
+   ],
+   [
+    "Chicago Tribune",
+    "chicagotribune.com"
+   ]
+  ],
+  "Philadelphia": [
+   [
+    "Philadelphia Inquirer",
+    "inquirer.com"
+   ],
+   [
+    "Delaware County Daily Times",
+    "delcotimes.com"
+   ]
+  ],
+  "Dallas-Ft. Worth": [
+   [
+    "Dallas Morning News",
+    "dallasnews.com"
+   ],
+   [
+    "Fort Worth Star-Telegram",
+    "star-telegram.com"
+   ]
+  ],
+  "Houston": [
+   [
+    "Houston Chronicle",
+    "chron.com"
+   ],
+   [
+    "Community Impact",
+    "communityimpact.com"
+   ]
+  ],
+  "Atlanta": [
+   [
+    "Atlanta Journal-Constitution",
+    "ajc.com"
+   ],
+   [
+    "Atlanta Civic Circle",
+    "atlantaciviccircle.org"
+   ]
+  ],
+  "Washington DC": [
+   [
+    "Washington Post",
+    "washingtonpost.com"
+   ],
+   [
+    "DCist",
+    "dcist.com"
+   ]
+  ],
+  "Boston": [
+   [
+    "Boston Herald",
+    "bostonherald.com"
+   ],
+   [
+    "Boston Globe",
+    "bostonglobe.com"
+   ]
+  ],
+  "San Francisco-Oak-San Jose": [
+   [
+    "San Francisco Chronicle",
+    "sfchronicle.com"
+   ],
+   [
+    "Mercury News",
+    "mercurynews.com"
+   ]
+  ],
+  "Phoenix": [
+   [
+    "Arizona Republic",
+    "azcentral.com"
+   ],
+   [
+    "Arizona Mirror",
+    "azmirror.com"
+   ]
+  ],
+  "Tampa-St. Petersburg": [
+   [
+    "Tampa Bay Times",
+    "tampabay.com"
+   ],
+   [
+    "Tampa Bay Business Journal",
+    "bizjournals.com"
+   ]
+  ],
+  "Seattle-Tacoma": [
+   [
+    "Seattle Times",
+    "seattletimes.com"
+   ],
+   [
+    "The News Tribune",
+    "thenewstribune.com"
+   ]
+  ],
+  "Detroit": [
+   [
+    "Detroit Free Press",
+    "freep.com"
+   ],
+   [
+    "Detroit News",
+    "detroitnews.com"
+   ]
+  ],
+  "Minneapolis-St. Paul": [
+   [
+    "Star Tribune",
+    "startribune.com"
+   ],
+   [
+    "Pioneer Press",
+    "twincities.com"
+   ]
+  ],
+  "Denver": [
+   [
+    "Denver Post",
+    "denverpost.com"
+   ],
+   [
+    "Colorado Sun",
+    "coloradosun.com"
+   ]
+  ],
+  "Orlando-Daytona-Melbourne": [
+   [
+    "Orlando Sentinel",
+    "orlandosentinel.com"
+   ],
+   [
+    "Daytona Beach News-Journal",
+    "news-journalonline.com"
+   ]
+  ],
+  "Miami-Ft. Lauderdale": [
+   [
+    "Miami Herald",
+    "miamiherald.com"
+   ],
+   [
+    "Sun Sentinel",
+    "sun-sentinel.com"
+   ]
+  ],
+  "Cleveland-Akron": [
+   [
+    "Cleveland.com",
+    "cleveland.com"
+   ],
+   [
+    "Akron Beacon Journal",
+    "beaconjournal.com"
+   ]
+  ],
+  "Sacramento-Stockton-Modesto": [
+   [
+    "Sacramento Bee",
+    "sacbee.com"
+   ],
+   [
+    "Modesto Bee",
+    "modbee.com"
+   ]
+  ],
+  "Charlotte": [
+   [
+    "Charlotte Observer",
+    "charlotteobserver.com"
+   ],
+   [
+    "Axios Charlotte",
+    "axios.com"
+   ]
+  ],
+  "Portland, OR": [
+   [
+    "The Oregonian",
+    "oregonlive.com"
+   ],
+   [
+    "Willamette Week",
+    "wweek.com"
+   ]
+  ],
+  "St. Louis": [
+   [
+    "St. Louis Post-Dispatch",
+    "stltoday.com"
+   ],
+   [
+    "St. Louis Public Radio",
+    "stlpr.org"
+   ]
+  ],
+  "Pittsburgh": [
+   [
+    "Post-Gazette",
+    "post-gazette.com"
+   ],
+   [
+    "TribLIVE",
+    "triblive.com"
+   ]
+  ],
+  "Raleigh-Durham": [
+   [
+    "News & Observer",
+    "newsobserver.com"
+   ],
+   [
+    "Herald-Sun",
+    "heraldsun.com"
+   ]
+  ],
+  "Indianapolis": [
+   [
+    "Indianapolis Star",
+    "indystar.com"
+   ],
+   [
+    "Mirror Indy",
+    "mirrorindy.org"
+   ]
+  ],
+  "San Diego": [
+   [
+    "San Diego Union-Tribune",
+    "sandiegouniontribune.com"
+   ],
+   [
+    "Times of San Diego",
+    "timesofsandiego.com"
+   ]
+  ],
+  "Nashville": [
+   [
+    "The Tennessean",
+    "tennessean.com"
+   ],
+   [
+    "Nashville Banner",
+    "nashvillebanner.com"
+   ]
+  ],
+  "Baltimore": [
+   [
+    "Baltimore Sun",
+    "baltimoresun.com"
+   ],
+   [
+    "Baltimore Banner",
+    "thebaltimorebanner.com"
+   ]
+  ],
+  "Salt Lake City": [
+   [
+    "Salt Lake Tribune",
+    "sltrib.com"
+   ],
+   [
+    "Deseret News",
+    "deseret.com"
+   ]
+  ],
+  "San Antonio": [
+   [
+    "San Antonio Express-News",
+    "expressnews.com"
+   ],
+   [
+    "San Antonio Report",
+    "sanantonioreport.org"
+   ]
+  ],
+  "Columbus, OH": [
+   [
+    "Columbus Dispatch",
+    "dispatch.com"
+   ],
+   [
+    "Columbus Underground",
+    "columbusunderground.com"
+   ]
+  ],
+  "Kansas City": [
+   [
+    "Kansas City Star",
+    "kansascity.com"
+   ],
+   [
+    "The Beacon",
+    "kcbeacon.org"
+   ]
+  ],
+  "Milwaukee": [
+   [
+    "Journal Sentinel",
+    "jsonline.com"
+   ],
+   [
+    "Urban Milwaukee",
+    "urbanmilwaukee.com"
+   ]
+  ],
+  "Hartford-New Haven": [
+   [
+    "Hartford Courant",
+    "courant.com"
+   ],
+   [
+    "New Haven Register",
+    "nhregister.com"
+   ]
+  ],
+  "Las Vegas": [
+   [
+    "Las Vegas Review-Journal",
+    "reviewjournal.com"
+   ],
+   [
+    "Las Vegas Sun",
+    "lasvegassun.com"
+   ]
+  ],
+  "Cincinnati": [
+   [
+    "Cincinnati Enquirer",
+    "cincinnati.com"
+   ],
+   [
+    "Cincinnati Business Courier",
+    "bizjournals.com"
+   ]
+  ],
+  "Greenville-Spartanburg-Asheville": [
+   [
+    "Greenville News",
+    "greenvilleonline.com"
+   ],
+   [
+    "Asheville Citizen-Times",
+    "citizen-times.com"
+   ]
+  ],
+  "Austin": [
+   [
+    "Austin American-Statesman",
+    "statesman.com"
+   ],
+   [
+    "Austin Monitor",
+    "austinmonitor.com"
+   ]
+  ],
+  "Oklahoma City": [
+   [
+    "The Oklahoman",
+    "oklahoman.com"
+   ],
+   [
+    "NonDoc",
+    "nondoc.com"
+   ]
+  ],
+  "Harrisburg-Lancaster-York": [
+   [
+    "PennLive",
+    "pennlive.com"
+   ],
+   [
+    "LancasterOnline",
+    "lancasteronline.com"
+   ]
+  ],
+  "Jacksonville": [
+   [
+    "Florida Times-Union",
+    "jacksonville.com"
+   ],
+   [
+    "Jacksonville Today",
+    "jaxtoday.org"
+   ]
+  ],
+  "Greensboro-Winston-Salem": [
+   [
+    "News & Record",
+    "greensboro.com"
+   ],
+   [
+    "Winston-Salem Journal",
+    "journalnow.com"
+   ]
+  ],
+  "West Palm Beach-Ft. Pierce": [
+   [
+    "Palm Beach Post",
+    "palmbeachpost.com"
+   ],
+   [
+    "TCPalm",
+    "tcpalm.com"
+   ]
+  ],
+  "Grand Rapids-Kalamazoo": [
+   [
+    "MLive",
+    "mlive.com"
+   ],
+   [
+    "Kalamazoo Gazette",
+    "mlive.com"
+   ]
+  ],
+  "Norfolk-Portsmouth-Newport News": [
+   [
+    "The Virginian-Pilot",
+    "pilotonline.com"
+   ],
+   [
+    "Daily Press",
+    "dailypress.com"
+   ]
+  ],
+  "Albuquerque-Santa Fe": [
+   [
+    "Albuquerque Journal",
+    "abqjournal.com"
+   ],
+   [
+    "Santa Fe New Mexican",
+    "santafenewmexican.com"
+   ]
+  ],
+  "Memphis": [
+   [
+    "Commercial Appeal",
+    "commercialappeal.com"
+   ],
+   [
+    "Daily Memphian",
+    "dailymemphian.com"
+   ]
+  ],
+  "Buffalo": [
+   [
+    "Buffalo News",
+    "buffalonews.com"
+   ],
+   [
+    "Investigative Post",
+    "investigativepost.org"
+   ]
+  ],
+  "Louisville": [
+   [
+    "Courier Journal",
+    "courier-journal.com"
+   ],
+   [
+    "Louisville Public Media",
+    "lpm.org"
+   ]
+  ],
+  "New Orleans": [
+   [
+    "NOLA.com",
+    "nola.com"
+   ],
+   [
+    "Louisiana Illuminator",
+    "lailluminator.com"
+   ]
+  ],
+  "Fresno-Visalia": [
+   [
+    "Fresno Bee",
+    "fresnobee.com"
+   ],
+   [
+    "Fresnoland",
+    "fresnoland.org"
+   ]
+  ],
+  "Richmond-Petersburg": [
+   [
+    "Richmond Times-Dispatch",
+    "richmond.com"
+   ],
+   [
+    "Virginia Mercury",
+    "virginiamercury.com"
+   ]
+  ],
+  "Providence-New Bedford": [
+   [
+    "Providence Journal",
+    "providencejournal.com"
+   ],
+   [
+    "Rhode Island Current",
+    "rhodeislandcurrent.com"
+   ]
+  ],
+  "Ft. Myers-Naples": [
+   [
+    "News-Press",
+    "news-press.com"
+   ],
+   [
+    "Naples Daily News",
+    "naplesnews.com"
+   ],
+   [
+    "News-Press",
+    "news-press.com"
+   ],
+   [
+    "Gulfshore Business",
+    "gulfshorebusiness.com"
+   ]
+  ],
+  "Wilkes-Barre-Scranton": [
+   [
+    "Times Leader",
+    "timesleader.com"
+   ],
+   [
+    "The Citizens' Voice",
+    "citizensvoice.com"
+   ]
+  ],
+  "Little Rock-Pine Bluff": [
+   [
+    "Arkansas Democrat-Gazette",
+    "arkansasonline.com"
+   ],
+   [
+    "Arkansas Advocate",
+    "arkansasadvocate.com"
+   ]
+  ],
+  "Albany-Schenectady-Troy": [
+   [
+    "Times Union",
+    "timesunion.com"
+   ],
+   [
+    "Daily Gazette",
+    "dailygazette.com"
+   ]
+  ],
+  "Knoxville": [
+   [
+    "Knoxville News Sentinel",
+    "knoxnews.com"
+   ],
+   [
+    "Compass",
+    "compassknox.com"
+   ]
+  ],
+  "Tulsa": [
+   [
+    "Tulsa World",
+    "tulsaworld.com"
+   ],
+   [
+    "The Frontier",
+    "readfrontier.org"
+   ]
+  ],
+  "Mobile-Pensacola": [
+   [
+    "Pensacola News Journal",
+    "pnj.com"
+   ],
+   [
+    "Lagniappe",
+    "lagniappemobile.com"
+   ]
+  ],
+  "Dayton": [
+   [
+    "Dayton Daily News",
+    "daytondailynews.com"
+   ],
+   [
+    "Springfield News-Sun",
+    "springfieldnewssun.com"
+   ]
+  ],
+  "Lexington": [
+   [
+    "Lexington Herald-Leader",
+    "kentucky.com"
+   ],
+   [
+    "Kentucky Lantern",
+    "kentuckylantern.com"
+   ]
+  ],
+  "Ft. Smith-Fayetteville": [
+   [
+    "Northwest Arkansas Democrat-Gazette",
+    "nwaonline.com"
+   ],
+   [
+    "Fort Smith Times Record",
+    "swtimes.com"
+   ]
+  ],
+  "Charleston-Huntington, WV": [
+   [
+    "Charleston Gazette-Mail",
+    "wvgazettemail.com"
+   ],
+   [
+    "Herald-Dispatch",
+    "herald-dispatch.com"
+   ]
+  ],
+  "Flint-Saginaw-Bay City": [
+   [
+    "MLive Flint",
+    "mlive.com"
+   ],
+   [
+    "Midland Daily News",
+    "ourmidland.com"
+   ]
+  ],
+  "Wichita-Hutchinson": [
+   [
+    "Wichita Eagle",
+    "kansas.com"
+   ],
+   [
+    "Kansas Reflector",
+    "kansasreflector.com"
+   ]
+  ],
+  "Roanoke-Lynchburg": [
+   [
+    "Roanoke Times",
+    "roanoke.com"
+   ],
+   [
+    "News & Advance",
+    "newsadvance.com"
+   ]
+  ],
+  "Green Bay-Appleton": [
+   [
+    "Green Bay Press-Gazette",
+    "greenbaypressgazette.com"
+   ],
+   [
+    "Appleton Post-Crescent",
+    "postcrescent.com"
+   ]
+  ],
+  "Tucson": [
+   [
+    "Arizona Daily Star",
+    "tucson.com"
+   ],
+   [
+    "Tucson Sentinel",
+    "tucsonsentinel.com"
+   ]
+  ],
+  "Honolulu": [
+   [
+    "Honolulu Star-Advertiser",
+    "staradvertiser.com"
+   ],
+   [
+    "Civil Beat",
+    "civilbeat.org"
+   ]
+  ],
+  "Des Moines-Ames": [
+   [
+    "Des Moines Register",
+    "desmoinesregister.com"
+   ],
+   [
+    "Iowa Capital Dispatch",
+    "iowacapitaldispatch.com"
+   ]
+  ],
+  "Springfield, MO": [
+   [
+    "Springfield News-Leader",
+    "news-leader.com"
+   ],
+   [
+    "Springfield Daily Citizen",
+    "sgfcitizen.org"
+   ]
+  ],
+  "Omaha": [
+   [
+    "Omaha World-Herald",
+    "omaha.com"
+   ],
+   [
+    "Nebraska Examiner",
+    "nebraskaexaminer.com"
+   ]
+  ],
+  "Rochester, NY": [
+   [
+    "Democrat and Chronicle",
+    "democratandchronicle.com"
+   ],
+   [
+    "Rochester Beacon",
+    "rochesterbeacon.com"
+   ]
+  ],
+  "Columbia, SC": [
+   [
+    "The State",
+    "thestate.com"
+   ],
+   [
+    "SC Daily Gazette",
+    "scdailygazette.com"
+   ]
+  ],
+  "Portland-Auburn, ME": [
+   [
+    "Portland Press Herald",
+    "pressherald.com"
+   ],
+   [
+    "Sun Journal",
+    "sunjournal.com"
+   ]
+  ],
+  "Paducah-Cape Girardeau-Harrisburg": [
+   [
+    "Southeast Missourian",
+    "semissourian.com"
+   ],
+   [
+    "The Paducah Sun",
+    "paducahsun.com"
+   ]
+  ],
+  "Toledo": [
+   [
+    "The Blade",
+    "toledoblade.com"
+   ],
+   [
+    "Sentinel-Tribune",
+    "sent-trib.com"
+   ]
+  ],
+  "Huntsville-Decatur": [
+   [
+    "AL.com Huntsville",
+    "al.com"
+   ],
+   [
+    "Decatur Daily",
+    "decaturdaily.com"
+   ]
+  ],
+  "Spokane": [
+   [
+    "Spokesman-Review",
+    "spokesman.com"
+   ],
+   [
+    "RANGE Media",
+    "rangemedia.co"
+   ]
+  ],
+  "Syracuse": [
+   [
+    "Syracuse.com",
+    "syracuse.com"
+   ],
+   [
+    "Central Current",
+    "centralcurrent.org"
+   ]
+  ],
+  "Champaign-Springfield-Decatur": [
+   [
+    "News-Gazette",
+    "news-gazette.com"
+   ],
+   [
+    "Herald & Review",
+    "herald-review.com"
+   ]
+  ],
+  "Harlingen-Weslaco-McAllen": [
+   [
+    "The Monitor",
+    "myrgv.com"
+   ],
+   [
+    "Brownsville Herald",
+    "myrgv.com"
+   ]
+  ],
+  "Madison": [
+   [
+    "Wisconsin State Journal",
+    "madison.com"
+   ],
+   [
+    "Cap Times",
+    "captimes.com"
+   ]
+  ],
+  "Chattanooga": [
+   [
+    "Times Free Press",
+    "timesfreepress.com"
+   ],
+   [
+    "Chattanooga Times",
+    "timesfreepress.com"
+   ]
+  ],
+  "Shreveport": [
+   [
+    "Shreveport Times",
+    "shreveporttimes.com"
+   ],
+   [
+    "Louisiana Illuminator",
+    "lailluminator.com"
+   ]
+  ],
+  "Colorado Springs-Pueblo": [
+   [
+    "The Gazette",
+    "gazette.com"
+   ],
+   [
+    "Pueblo Chieftain",
+    "chieftain.com"
+   ]
+  ],
+  "Cedar Rapids-Waterloo-Dubuque": [
+   [
+    "The Gazette",
+    "thegazette.com"
+   ],
+   [
+    "Waterloo Courier",
+    "wcfcourier.com"
+   ]
+  ],
+  "Savannah": [
+   [
+    "Savannah Morning News",
+    "savannahnow.com"
+   ],
+   [
+    "The Current",
+    "thecurrentga.org"
+   ]
+  ],
+  "Charleston, SC": [
+   [
+    "Post and Courier",
+    "postandcourier.com"
+   ],
+   [
+    "Charleston City Paper",
+    "charlestoncitypaper.com"
+   ]
+  ],
+  "Jackson, MS": [
+   [
+    "Clarion Ledger",
+    "clarionledger.com"
+   ],
+   [
+    "Mississippi Today",
+    "mississippitoday.org"
+   ]
+  ],
+  "Baton Rouge": [
+   [
+    "The Advocate",
+    "theadvocate.com"
+   ],
+   [
+    "Louisiana Illuminator",
+    "lailluminator.com"
+   ]
+  ],
+  "Tri-Cities, TN-VA": [
+   [
+    "Johnson City Press",
+    "johnsoncitypress.com"
+   ],
+   [
+    "Bristol Herald Courier",
+    "heraldcourier.com"
+   ]
+  ],
+  "Burlington-Plattsburgh": [
+   [
+    "Burlington Free Press",
+    "burlingtonfreepress.com"
+   ],
+   [
+    "VTDigger",
+    "vtdigger.org"
+   ]
+  ],
+  "Waco-Temple-Bryan": [
+   [
+    "Waco Tribune-Herald",
+    "wacotrib.com"
+   ],
+   [
+    "The Eagle",
+    "theeagle.com"
+   ]
+  ],
+  "Ft. Wayne": [
+   [
+    "Journal Gazette",
+    "journalgazette.net"
+   ],
+   [
+    "The Journal Gazette",
+    "journalgazette.net"
+   ]
+  ],
+  "Boise": [
+   [
+    "Idaho Statesman",
+    "idahostatesman.com"
+   ],
+   [
+    "Idaho Capital Sun",
+    "idahocapitalsun.com"
+   ]
+  ],
+  "Greenville-New Bern-Washington": [
+   [
+    "The Daily Reflector",
+    "reflector.com"
+   ],
+   [
+    "Sun Journal",
+    "newbernsj.com"
+   ]
+  ],
+  "Myrtle Beach-Florence": [
+   [
+    "Myrtle Beach Sun News",
+    "myrtlebeachonline.com"
+   ],
+   [
+    "SC Daily Gazette",
+    "scdailygazette.com"
+   ]
+  ],
+  "Lincoln-Hastings-Kearney": [
+   [
+    "Lincoln Journal Star",
+    "journalstar.com"
+   ],
+   [
+    "Nebraska Examiner",
+    "nebraskaexaminer.com"
+   ]
+  ],
+  "Evansville": [
+   [
+    "Evansville Courier & Press",
+    "courierpress.com"
+   ],
+   [
+    "Indiana Capital Chronicle",
+    "indianacapitalchronicle.com"
+   ]
+  ],
+  "Davenport-Rock Island-Moline": [
+   [
+    "Quad-City Times",
+    "qctimes.com"
+   ],
+   [
+    "Dispatch-Argus",
+    "qconline.com"
+   ]
+  ],
+  "Tallahassee-Thomasville": [
+   [
+    "Tallahassee Democrat",
+    "tallahassee.com"
+   ],
+   [
+    "Florida Phoenix",
+    "floridaphoenix.com"
+   ]
+  ],
+  "Johnstown-Altoona-State College": [
+   [
+    "Altoona Mirror",
+    "altoonamirror.com"
+   ],
+   [
+    "Centre Daily Times",
+    "centredaily.com"
+   ]
+  ],
+  "South Bend-Elkhart": [
+   [
+    "South Bend Tribune",
+    "southbendtribune.com"
+   ],
+   [
+    "Indiana Capital Chronicle",
+    "indianacapitalchronicle.com"
+   ]
+  ],
+  "Augusta-Aiken": [
+   [
+    "Augusta Chronicle",
+    "augustachronicle.com"
+   ],
+   [
+    "Aiken Standard",
+    "postandcourier.com"
+   ]
+  ],
+  "Springfield-Holyoke": [
+   [
+    "The Republican",
+    "masslive.com"
+   ],
+   [
+    "Daily Hampshire Gazette",
+    "gazettenet.com"
+   ]
+  ],
+  "Sioux Falls-Mitchell": [
+   [
+    "Argus Leader",
+    "argusleader.com"
+   ],
+   [
+    "South Dakota Searchlight",
+    "southdakotasearchlight.com"
+   ]
+  ],
+  "Lansing": [
+   [
+    "Lansing State Journal",
+    "lansingstatejournal.com"
+   ],
+   [
+    "Michigan Advance",
+    "michiganadvance.com"
+   ]
+  ],
+  "Youngstown": [
+   [
+    "The Vindicator",
+    "vindy.com"
+   ],
+   [
+    "Tribune Chronicle",
+    "tribtoday.com"
+   ]
+  ],
+  "Peoria-Bloomington": [
+   [
+    "Peoria Journal Star",
+    "pjstar.com"
+   ],
+   [
+    "The Pantagraph",
+    "pantagraph.com"
+   ]
+  ],
+  "Traverse City-Cadillac": [
+   [
+    "Traverse City Record-Eagle",
+    "record-eagle.com"
+   ],
+   [
+    "Interlochen Public Radio",
+    "interlochenpublicradio.org"
+   ]
+  ],
+  "Tyler-Longview": [
+   [
+    "Tyler Morning Telegraph",
+    "tylerpaper.com"
+   ],
+   [
+    "Longview News-Journal",
+    "news-journal.com"
+   ]
+  ],
+  "Fargo-Valley City": [
+   [
+    "The Forum",
+    "inforum.com"
+   ],
+   [
+    "North Dakota Monitor",
+    "northdakotamonitor.com"
+   ]
+  ],
+  "Montgomery-Selma": [
+   [
+    "Montgomery Advertiser",
+    "montgomeryadvertiser.com"
+   ],
+   [
+    "Alabama Reflector",
+    "alabamareflector.com"
+   ]
+  ],
+  "Reno": [
+   [
+    "Reno Gazette-Journal",
+    "rgj.com"
+   ],
+   [
+    "This Is Reno",
+    "thisisreno.com"
+   ]
+  ],
+  "Yakima-Pasco-Richland": [
+   [
+    "Yakima Herald-Republic",
+    "yakimaherald.com"
+   ],
+   [
+    "Tri-City Herald",
+    "tri-cityherald.com"
+   ]
+  ],
+  "Eugene": [
+   [
+    "Register-Guard",
+    "registerguard.com"
+   ],
+   [
+    "Eugene Weekly",
+    "eugeneweekly.com"
+   ]
+  ],
+  "Santa Barbara-San Luis Obispo": [
+   [
+    "Santa Barbara Independent",
+    "independent.com"
+   ],
+   [
+    "The Tribune",
+    "sanluisobispo.com"
+   ]
+  ],
+  "Macon": [
+   [
+    "The Telegraph",
+    "macon.com"
+   ],
+   [
+    "Georgia Recorder",
+    "georgiarecorder.com"
+   ]
+  ],
+  "Lafayette, LA": [
+   [
+    "The Acadiana Advocate",
+    "theadvocate.com"
+   ],
+   [
+    "Daily Advertiser",
+    "theadvertiser.com"
+   ]
+  ],
+  "Bakersfield": [
+   [
+    "Bakersfield Californian",
+    "bakersfield.com"
+   ],
+   [
+    "CalMatters",
+    "calmatters.org"
+   ]
+  ],
+  "Monterey-Salinas": [
+   [
+    "Monterey Herald",
+    "montereyherald.com"
+   ],
+   [
+    "The Californian",
+    "thecalifornian.com"
+   ]
+  ],
+  "La Crosse-Eau Claire": [
+   [
+    "La Crosse Tribune",
+    "lacrossetribune.com"
+   ],
+   [
+    "Leader-Telegram",
+    "leadertelegram.com"
+   ]
+  ],
+  "Corpus Christi": [
+   [
+    "Corpus Christi Caller-Times",
+    "caller.com"
+   ],
+   [
+    "Texas Tribune",
+    "texastribune.org"
+   ]
+  ],
+  "Amarillo": [
+   [
+    "Amarillo Globe-News",
+    "amarillo.com"
+   ],
+   [
+    "Texas Tribune",
+    "texastribune.org"
+   ]
+  ],
+  "Chico-Redding": [
+   [
+    "Chico Enterprise-Record",
+    "chicoer.com"
+   ],
+   [
+    "Record Searchlight",
+    "redding.com"
+   ]
+  ],
+  "Columbus, GA": [
+   [
+    "Ledger-Enquirer",
+    "ledger-enquirer.com"
+   ],
+   [
+    "Georgia Recorder",
+    "georgiarecorder.com"
+   ]
+  ],
+  "Wausau-Rhinelander": [
+   [
+    "Wausau Daily Herald",
+    "wausaudailyherald.com"
+   ],
+   [
+    "Wisconsin Examiner",
+    "wisconsinexaminer.com"
+   ]
+  ],
+  "Wilmington, NC": [
+   [
+    "StarNews",
+    "starnewsonline.com"
+   ],
+   [
+    "Port City Daily",
+    "portcitydaily.com"
+   ]
+  ],
+  "Columbia-Jefferson City": [
+   [
+    "Columbia Missourian",
+    "columbiamissourian.com"
+   ],
+   [
+    "Missouri Independent",
+    "missouriindependent.com"
+   ]
+  ],
+  "Rockford": [
+   [
+    "Rockford Register Star",
+    "rrstar.com"
+   ],
+   [
+    "Illinois Answers",
+    "illinoisanswers.org"
+   ]
+  ],
+  "Duluth-Superior": [
+   [
+    "Duluth News Tribune",
+    "duluthnewstribune.com"
+   ],
+   [
+    "Minnesota Reformer",
+    "minnesotareformer.com"
+   ]
+  ],
+  "Salisbury": [
+   [
+    "Salisbury Daily Times",
+    "delmarvanow.com"
+   ],
+   [
+    "Delaware News Journal",
+    "delawareonline.com"
+   ]
+  ],
+  "Terre Haute": [
+   [
+    "Tribune-Star",
+    "tribstar.com"
+   ],
+   [
+    "Indiana Capital Chronicle",
+    "indianacapitalchronicle.com"
+   ]
+  ],
+  "Medford-Klamath Falls": [
+   [
+    "Rogue Valley Times",
+    "roguevalleytimes.com"
+   ],
+   [
+    "Herald and News",
+    "heraldandnews.com"
+   ]
+  ],
+  "Beaumont-Port Arthur": [
+   [
+    "Beaumont Enterprise",
+    "beaumontenterprise.com"
+   ],
+   [
+    "Port Arthur News",
+    "panews.com"
+   ]
+  ],
+  "Sioux City": [
+   [
+    "Sioux City Journal",
+    "siouxcityjournal.com"
+   ],
+   [
+    "Iowa Capital Dispatch",
+    "iowacapitaldispatch.com"
+   ]
+  ],
+  "Minot-Bismarck-Dickinson": [
+   [
+    "Bismarck Tribune",
+    "bismarcktribune.com"
+   ],
+   [
+    "Minot Daily News",
+    "minotdailynews.com"
+   ]
+  ],
+  "Erie": [
+   [
+    "Erie Times-News",
+    "goerie.com"
+   ],
+   [
+    "Erie Reader",
+    "eriereader.com"
+   ]
+  ],
+  "Joplin-Pittsburg": [
+   [
+    "Joplin Globe",
+    "joplinglobe.com"
+   ],
+   [
+    "Missouri Independent",
+    "missouriindependent.com"
+   ]
+  ],
+  "Lubbock": [
+   [
+    "Lubbock Avalanche-Journal",
+    "lubbockonline.com"
+   ],
+   [
+    "Texas Tribune",
+    "texastribune.org"
+   ]
+  ],
+  "Albany, GA": [
+   [
+    "Albany Herald",
+    "albanyherald.com"
+   ],
+   [
+    "Georgia Recorder",
+    "georgiarecorder.com"
+   ]
+  ],
+  "Bangor": [
+   [
+    "Bangor Daily News",
+    "bangordailynews.com"
+   ],
+   [
+    "Maine Morning Star",
+    "mainemorningstar.com"
+   ]
+  ],
+  "Rochester-Mason City-Austin": [
+   [
+    "Post Bulletin",
+    "postbulletin.com"
+   ],
+   [
+    "Globe Gazette",
+    "globegazette.com"
+   ]
+  ],
+  "Odessa-Midland": [
+   [
+    "Odessa American",
+    "oaoa.com"
+   ],
+   [
+    "Midland Reporter-Telegram",
+    "mrt.com"
+   ]
+  ],
+  "Panama City": [
+   [
+    "Panama City News Herald",
+    "newsherald.com"
+   ],
+   [
+    "Florida Phoenix",
+    "floridaphoenix.com"
+   ]
+  ],
+  "Binghamton": [
+   [
+    "Press & Sun-Bulletin",
+    "pressconnects.com"
+   ],
+   [
+    "New York Focus",
+    "nysfocus.com"
+   ]
+  ],
+  "Sherman-Ada": [
+   [
+    "Herald Democrat",
+    "heralddemocrat.com"
+   ],
+   [
+    "The Ada News",
+    "theadanews.com"
+   ]
+  ],
+  "Biloxi-Gulfport": [
+   [
+    "Sun Herald",
+    "sunherald.com"
+   ],
+   [
+    "Mississippi Today",
+    "mississippitoday.org"
+   ]
+  ],
+  "Gainesville": [
+   [
+    "Gainesville Sun",
+    "gainesville.com"
+   ],
+   [
+    "Florida Phoenix",
+    "floridaphoenix.com"
+   ]
+  ],
+  "Idaho Falls-Pocatello": [
+   [
+    "Post Register",
+    "postregister.com"
+   ],
+   [
+    "Idaho Capital Sun",
+    "idahocapitalsun.com"
+   ]
+  ],
+  "Abilene-Sweetwater": [
+   [
+    "Abilene Reporter-News",
+    "reporternews.com"
+   ],
+   [
+    "Texas Tribune",
+    "texastribune.org"
+   ]
+  ],
+  "Hattiesburg-Laurel": [
+   [
+    "Hattiesburg American",
+    "hattiesburgamerican.com"
+   ],
+   [
+    "Mississippi Today",
+    "mississippitoday.org"
+   ]
+  ],
+  "Missoula": [
+   [
+    "Missoulian",
+    "missoulian.com"
+   ],
+   [
+    "Montana Free Press",
+    "montanafreepress.org"
+   ]
+  ],
+  "Yuma-El Centro": [
+   [
+    "Yuma Sun",
+    "yumasun.com"
+   ],
+   [
+    "Imperial Valley Press",
+    "ivpressonline.com"
+   ]
+  ],
+  "Billings": [
+   [
+    "Billings Gazette",
+    "billingsgazette.com"
+   ],
+   [
+    "Montana Free Press",
+    "montanafreepress.org"
+   ]
+  ],
+  "Rapid City": [
+   [
+    "Rapid City Journal",
+    "rapidcityjournal.com"
+   ],
+   [
+    "South Dakota Searchlight",
+    "southdakotasearchlight.com"
+   ]
+  ],
+  "Clarksburg-Weston": [
+   [
+    "The Exponent Telegram",
+    "wvnews.com"
+   ],
+   [
+    "West Virginia Watch",
+    "westvirginiawatch.com"
+   ]
+  ],
+  "Quincy-Hannibal-Keokuk": [
+   [
+    "Herald-Whig",
+    "whig.com"
+   ],
+   [
+    "Hannibal Courier-Post",
+    "hannibal.net"
+   ]
+  ],
+  "Dothan": [
+   [
+    "Dothan Eagle",
+    "dothaneagle.com"
+   ],
+   [
+    "Alabama Reflector",
+    "alabamareflector.com"
+   ]
+  ],
+  "Utica": [
+   [
+    "Observer-Dispatch",
+    "uticaod.com"
+   ],
+   [
+    "New York Focus",
+    "nysfocus.com"
+   ]
+  ],
+  "Jackson, TN": [
+   [
+    "Jackson Sun",
+    "jacksonsun.com"
+   ],
+   [
+    "Tennessee Lookout",
+    "tennesseelookout.com"
+   ]
+  ],
+  "Lake Charles": [
+   [
+    "American Press",
+    "americanpress.com"
+   ],
+   [
+    "Louisiana Illuminator",
+    "lailluminator.com"
+   ]
+  ],
+  "Watertown": [
+   [
+    "Watertown Daily Times",
+    "nny360.com"
+   ],
+   [
+    "New York Focus",
+    "nysfocus.com"
+   ]
+  ],
+  "Elmira-Corning": [
+   [
+    "Star-Gazette",
+    "stargazette.com"
+   ],
+   [
+    "New York Focus",
+    "nysfocus.com"
+   ]
+  ],
+  "Harrisonburg": [
+   [
+    "Daily News-Record",
+    "dnronline.com"
+   ],
+   [
+    "Virginia Mercury",
+    "virginiamercury.com"
+   ]
+  ],
+  "Alexandria, LA": [
+   [
+    "The Town Talk",
+    "thetowntalk.com"
+   ],
+   [
+    "Louisiana Illuminator",
+    "lailluminator.com"
+   ]
+  ],
+  "Marquette": [
+   [
+    "The Mining Journal",
+    "miningjournal.net"
+   ],
+   [
+    "Michigan Advance",
+    "michiganadvance.com"
+   ]
+  ],
+  "Bowling Green": [
+   [
+    "Bowling Green Daily News",
+    "bgdailynews.com"
+   ],
+   [
+    "Kentucky Lantern",
+    "kentuckylantern.com"
+   ]
+  ],
+  "Jonesboro": [
+   [
+    "Jonesboro Sun",
+    "jonesborosun.com"
+   ],
+   [
+    "Arkansas Advocate",
+    "arkansasadvocate.com"
+   ]
+  ],
+  "Charlottesville": [
+   [
+    "The Daily Progress",
+    "dailyprogress.com"
+   ],
+   [
+    "Charlottesville Tomorrow",
+    "cvilletomorrow.org"
+   ]
+  ],
+  "Laredo": [
+   [
+    "Laredo Morning Times",
+    "lmtonline.com"
+   ],
+   [
+    "Texas Tribune",
+    "texastribune.org"
+   ]
+  ],
+  "Grand Junction-Montrose": [
+   [
+    "The Daily Sentinel",
+    "gjsentinel.com"
+   ],
+   [
+    "Colorado Sun",
+    "coloradosun.com"
+   ]
+  ],
+  "Meridian": [
+   [
+    "Meridian Star",
+    "meridianstar.com"
+   ],
+   [
+    "Mississippi Today",
+    "mississippitoday.org"
+   ]
+  ],
+  "Lafayette, IN": [
+   [
+    "Journal & Courier",
+    "jconline.com"
+   ],
+   [
+    "Indiana Capital Chronicle",
+    "indianacapitalchronicle.com"
+   ]
+  ],
+  "Butte-Bozeman": [
+   [
+    "Bozeman Daily Chronicle",
+    "bozemandailychronicle.com"
+   ],
+   [
+    "Montana Free Press",
+    "montanafreepress.org"
+   ]
+  ],
+  "Twin Falls": [
+   [
+    "Times-News",
+    "magicvalley.com"
+   ],
+   [
+    "Idaho Capital Sun",
+    "idahocapitalsun.com"
+   ]
+  ],
+  "Great Falls": [
+   [
+    "Great Falls Tribune",
+    "greatfallstribune.com"
+   ],
+   [
+    "Montana Free Press",
+    "montanafreepress.org"
+   ]
+  ],
+  "Parkersburg": [
+   [
+    "Parkersburg News and Sentinel",
+    "newsandsentinel.com"
+   ],
+   [
+    "West Virginia Watch",
+    "westvirginiawatch.com"
+   ]
+  ],
+  "Bend": [
+   [
+    "The Bulletin",
+    "bendbulletin.com"
+   ],
+   [
+    "Oregon Capital Chronicle",
+    "oregoncapitalchronicle.com"
+   ]
+  ],
+  "Eureka": [
+   [
+    "Times-Standard",
+    "times-standard.com"
+   ],
+   [
+    "Lost Coast Outpost",
+    "lostcoastoutpost.com"
+   ]
+  ],
+  "Casper-Riverton": [
+   [
+    "Casper Star-Tribune",
+    "trib.com"
+   ],
+   [
+    "WyoFile",
+    "wyofile.com"
+   ]
+  ],
+  "Cheyenne-Scottsbluff": [
+   [
+    "Wyoming Tribune Eagle",
+    "wyomingnews.com"
+   ],
+   [
+    "Star-Herald",
+    "starherald.com"
+   ]
+  ],
+  "San Angelo": [
+   [
+    "San Angelo Standard-Times",
+    "gosanangelo.com"
+   ],
+   [
+    "Texas Tribune",
+    "texastribune.org"
+   ]
+  ],
+  "Mankato": [
+   [
+    "Mankato Free Press",
+    "mankatofreepress.com"
+   ],
+   [
+    "Minnesota Reformer",
+    "minnesotareformer.com"
+   ]
+  ],
+  "Ottumwa-Kirksville": [
+   [
+    "Ottumwa Courier",
+    "ottumwacourier.com"
+   ],
+   [
+    "Kirksville Daily Express",
+    "kirksvilledailyexpress.com"
+   ]
+  ],
+  "St. Joseph": [
+   [
+    "St. Joseph News-Press",
+    "newspressnow.com"
+   ],
+   [
+    "Missouri Independent",
+    "missouriindependent.com"
+   ]
+  ],
+  "Fairbanks": [
+   [
+    "Fairbanks Daily News-Miner",
+    "newsminer.com"
+   ],
+   [
+    "Alaska Beacon",
+    "alaskabeacon.com"
+   ]
+  ],
+  "Zanesville": [
+   [
+    "Zanesville Times Recorder",
+    "zanesvilletimesrecorder.com"
+   ],
+   [
+    "Ohio Capital Journal",
+    "ohiocapitaljournal.com"
+   ]
+  ],
+  "Presque Isle": [
+   [
+    "Aroostook Republican",
+    "fiddleheadfocus.com"
+   ],
+   [
+    "Maine Morning Star",
+    "mainemorningstar.com"
+   ]
+  ],
+  "Victoria": [
+   [
+    "Victoria Advocate",
+    "victoriaadvocate.com"
+   ],
+   [
+    "Texas Tribune",
+    "texastribune.org"
+   ]
+  ],
+  "Helena": [
+   [
+    "Helena Independent Record",
+    "helenair.com"
+   ],
+   [
+    "Montana Free Press",
+    "montanafreepress.org"
+   ]
+  ],
+  "Juneau": [
+   [
+    "Juneau Empire",
+    "juneauempire.com"
+   ],
+   [
+    "Alaska Beacon",
+    "alaskabeacon.com"
+   ]
+  ],
+  "Alpena": [
+   [
+    "The Alpena News",
+    "thealpenanews.com"
+   ],
+   [
+    "Michigan Advance",
+    "michiganadvance.com"
+   ]
+  ],
+  "North Platte": [
+   [
+    "North Platte Telegraph",
+    "nptelegraph.com"
+   ],
+   [
+    "Nebraska Examiner",
+    "nebraskaexaminer.com"
+   ]
+  ],
+  "Glendive": [
+   [
+    "Glendive Ranger-Review",
+    "rangerreview.com"
+   ],
+   [
+    "Montana Free Press",
+    "montanafreepress.org"
+   ]
+  ],
+  "Anchorage": [
+   [
+    "Anchorage Daily News",
+    "adn.com"
+   ],
+   [
+    "Alaska Beacon",
+    "alaskabeacon.com"
+   ]
+  ],
+  "Topeka": [
+   [
+    "Topeka Capital-Journal",
+    "cjonline.com"
+   ],
+   [
+    "Kansas Reflector",
+    "kansasreflector.com"
+   ]
+  ],
+  "Monroe-El Dorado": [
+   [
+    "The News-Star",
+    "thenewsstar.com"
+   ],
+   [
+    "Louisiana Illuminator",
+    "lailluminator.com"
+   ]
+  ],
+  "Palm Springs": [
+   [
+    "The Desert Sun",
+    "desertsun.com"
+   ],
+   [
+    "CalMatters",
+    "calmatters.org"
+   ]
+  ],
+  "Bluefield-Beckley-Oak Hill": [
+   [
+    "The Register-Herald",
+    "register-herald.com"
+   ],
+   [
+    "West Virginia Watch",
+    "westvirginiawatch.com"
+   ]
+  ],
+  "Greenwood-Greenville": [
+   [
+    "Greenwood Commonwealth",
+    "gwcommonwealth.com"
+   ],
+   [
+    "Mississippi Today",
+    "mississippitoday.org"
+   ]
+  ],
+  "Wheeling-Steubenville": [
+   [
+    "The Intelligencer",
+    "theintelligencer.net"
+   ],
+   [
+    "Herald-Star",
+    "heraldstaronline.com"
+   ]
+  ],
+  "Columbus-Tupelo-West Point": [
+   [
+    "Northeast Mississippi Daily Journal",
+    "djournal.com"
+   ],
+   [
+    "The Dispatch",
+    "cdispatch.com"
+   ]
+  ],
+  "Lima": [
+   [
+    "The Lima News",
+    "limaohio.com"
+   ],
+   [
+    "Ohio Capital Journal",
+    "ohiocapitaljournal.com"
+   ]
+  ],
+  "Birmingham": [
+   [
+    "AL.com",
+    "al.com"
+   ],
+   [
+    "Birmingham Times",
+    "birminghamtimes.com"
+   ]
+  ],
+  "El Paso": [
+   [
+    "El Paso Times",
+    "elpasotimes.com"
+   ],
+   [
+    "El Paso Matters",
+    "elpasomatters.org"
+   ]
+  ],
+  "WICHITA FALLS-LAWTON": [
+   [
+    "Times Record News",
+    "timesrecordnews.com"
+   ],
+   [
+    "The Lawton Constitution",
+    "swoknews.com"
+   ]
+  ]
+ },
+ "world_outlets": {
+  "AF": {
+   "o": [
+    [
+     "Tolo News",
+     "tolonews.com"
+    ],
+    [
+     "Ariana News",
+     "ariananews.af"
+    ]
+   ],
+   "l": "en"
+  },
+  "AL": {
+   "o": [
+    [
+     "Albanian Daily News",
+     "albaniandailynews.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "DZ": {
+   "o": [
+    [
+     "Algeria Press Service",
+     "aps.dz"
+    ]
+   ],
+   "l": "fr"
+  },
+  "AD": {
+   "o": [
+    [
+     "Diari d'Andorra",
+     "diariandorra.ad"
+    ]
+   ],
+   "l": "ca"
+  },
+  "AO": {
+   "o": [
+    [
+     "Angola Press",
+     "angop.ao"
+    ]
+   ],
+   "l": "pt"
+  },
+  "AG": {
+   "o": [
+    [
+     "Antigua Observer",
+     "antiguaobserver.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "AR": {
+   "o": [
+    [
+     "Buenos Aires Herald",
+     "buenosairesherald.com"
+    ],
+    [
+     "Infobae",
+     "infobae.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "AM": {
+   "o": [
+    [
+     "Armenpress",
+     "armenpress.am"
+    ]
+   ],
+   "l": "en"
+  },
+  "AU": {
+   "o": [
+    [
+     "ABC News",
+     "abc.net.au"
+    ],
+    [
+     "news.com.au",
+     "news.com.au"
+    ]
+   ],
+   "l": "en"
+  },
+  "AT": {
+   "o": [
+    [
+     "The Local Austria",
+     "thelocal.at"
+    ],
+    [
+     "ORF",
+     "orf.at"
+    ]
+   ],
+   "l": "en"
+  },
+  "AZ": {
+   "o": [
+    [
+     "Trend News",
+     "en.trend.az"
+    ]
+   ],
+   "l": "en"
+  },
+  "BS": {
+   "o": [
+    [
+     "Nassau Guardian",
+     "thenassauguardian.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "BH": {
+   "o": [
+    [
+     "Gulf Daily News",
+     "gdnonline.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "BD": {
+   "o": [
+    [
+     "The Daily Star",
+     "thedailystar.net"
+    ],
+    [
+     "Dhaka Tribune",
+     "dhakatribune.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "BB": {
+   "o": [
+    [
+     "Barbados Today",
+     "barbadostoday.bb"
+    ]
+   ],
+   "l": "en"
+  },
+  "BY": {
+   "o": [
+    [
+     "Belta",
+     "eng.belta.by"
+    ]
+   ],
+   "l": "en"
+  },
+  "BE": {
+   "o": [
+    [
+     "The Brussels Times",
+     "brusselstimes.com"
+    ],
+    [
+     "VRT News",
+     "vrt.be"
+    ]
+   ],
+   "l": "en"
+  },
+  "BZ": {
+   "o": [
+    [
+     "Amandala",
+     "amandala.com.bz"
+    ]
+   ],
+   "l": "en"
+  },
+  "BJ": {
+   "o": [
+    [
+     "La Nation",
+     "lanationbenin.info"
+    ]
+   ],
+   "l": "fr"
+  },
+  "BT": {
+   "o": [
+    [
+     "Kuensel",
+     "kuenselonline.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "BO": {
+   "o": [
+    [
+     "La Razon",
+     "la-razon.com"
+    ]
+   ],
+   "l": "es"
+  },
+  "BA": {
+   "o": [
+    [
+     "Sarajevo Times",
+     "sarajevotimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "BW": {
+   "o": [
+    [
+     "Mmegi",
+     "mmegi.bw"
+    ]
+   ],
+   "l": "en"
+  },
+  "BR": {
+   "o": [
+    [
+     "Agencia Brasil",
+     "agenciabrasil.ebc.com.br"
+    ],
+    [
+     "G1",
+     "g1.globo.com"
+    ]
+   ],
+   "l": "pt"
+  },
+  "BN": {
+   "o": [
+    [
+     "Borneo Bulletin",
+     "borneobulletin.com.bn"
+    ]
+   ],
+   "l": "en"
+  },
+  "BG": {
+   "o": [
+    [
+     "Novinite",
+     "novinite.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "BF": {
+   "o": [
+    [
+     "Burkina24",
+     "burkina24.com"
+    ]
+   ],
+   "l": "fr"
+  },
+  "BI": {
+   "o": [
+    [
+     "Iwacu",
+     "iwacu-burundi.org"
+    ]
+   ],
+   "l": "fr"
+  },
+  "KH": {
+   "o": [
+    [
+     "Khmer Times",
+     "khmertimeskh.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "CM": {
+   "o": [
+    [
+     "Journal du Cameroun",
+     "journalducameroun.com"
+    ]
+   ],
+   "l": "fr"
+  },
+  "CA": {
+   "o": [
+    [
+     "CBC News",
+     "cbc.ca"
+    ],
+    [
+     "CTV News",
+     "ctvnews.ca"
+    ]
+   ],
+   "l": "en"
+  },
+  "CV": {
+   "o": [
+    [
+     "Expresso das Ilhas",
+     "expressodasilhas.cv"
+    ]
+   ],
+   "l": "pt"
+  },
+  "CF": {
+   "o": [
+    [
+     "Radio Ndeke Luka",
+     "radiondekeluka.org"
+    ]
+   ],
+   "l": "fr"
+  },
+  "TD": {
+   "o": [
+    [
+     "Alwihda Info",
+     "alwihdainfo.com"
+    ]
+   ],
+   "l": "fr"
+  },
+  "CL": {
+   "o": [
+    [
+     "BioBioChile",
+     "biobiochile.cl"
+    ]
+   ],
+   "l": "es"
+  },
+  "CN": {
+   "o": [
+    [
+     "Global Times",
+     "globaltimes.cn"
+    ],
+    [
+     "South China Morning Post",
+     "scmp.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "CO": {
+   "o": [
+    [
+     "El Tiempo",
+     "eltiempo.com"
+    ]
+   ],
+   "l": "es"
+  },
+  "KM": {
+   "o": [
+    [
+     "Al-Watwan",
+     "alwatwan.net"
+    ]
+   ],
+   "l": "fr"
+  },
+  "CG": {
+   "o": [
+    [
+     "Les Depeches de Brazzaville",
+     "adiac-congo.com"
+    ]
+   ],
+   "l": "fr"
+  },
+  "CD": {
+   "o": [
+    [
+     "Radio Okapi",
+     "radiookapi.net"
+    ]
+   ],
+   "l": "fr"
+  },
+  "CR": {
+   "o": [
+    [
+     "Tico Times",
+     "ticotimes.net"
+    ]
+   ],
+   "l": "en"
+  },
+  "HR": {
+   "o": [
+    [
+     "Total Croatia News",
+     "total-croatia-news.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "CU": {
+   "o": [
+    [
+     "Granma",
+     "en.granma.cu"
+    ]
+   ],
+   "l": "en"
+  },
+  "CY": {
+   "o": [
+    [
+     "Cyprus Mail",
+     "cyprus-mail.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "CZ": {
+   "o": [
+    [
+     "Expats.cz",
+     "expats.cz"
+    ],
+    [
+     "Prague Morning",
+     "praguemorning.cz"
+    ]
+   ],
+   "l": "en"
+  },
+  "DK": {
+   "o": [
+    [
+     "The Local Denmark",
+     "thelocal.dk"
+    ],
+    [
+     "DR",
+     "dr.dk"
+    ]
+   ],
+   "l": "en"
+  },
+  "DJ": {
+   "o": [
+    [
+     "La Nation Djibouti",
+     "lanationdj.com"
+    ]
+   ],
+   "l": "fr"
+  },
+  "DM": {
+   "o": [
+    [
+     "Dominica News Online",
+     "dominicanewsonline.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "DO": {
+   "o": [
+    [
+     "Diario Libre",
+     "diariolibre.com"
+    ]
+   ],
+   "l": "es"
+  },
+  "EC": {
+   "o": [
+    [
+     "El Universo",
+     "eluniverso.com"
+    ]
+   ],
+   "l": "es"
+  },
+  "EG": {
+   "o": [
+    [
+     "Egypt Independent",
+     "egyptindependent.com"
+    ],
+    [
+     "Ahram Online",
+     "english.ahram.org.eg"
+    ]
+   ],
+   "l": "en"
+  },
+  "SV": {
+   "o": [
+    [
+     "El Diario de Hoy",
+     "elsalvador.com"
+    ]
+   ],
+   "l": "es"
+  },
+  "GQ": {
+   "o": [
+    [
+     "Ahora EG",
+     "ahoraeg.com"
+    ]
+   ],
+   "l": "es"
+  },
+  "ER": {
+   "o": [
+    [
+     "Shabait",
+     "shabait.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "EE": {
+   "o": [
+    [
+     "ERR News",
+     "news.err.ee"
+    ]
+   ],
+   "l": "en"
+  },
+  "SZ": {
+   "o": [
+    [
+     "Times of Eswatini",
+     "times.co.sz"
+    ]
+   ],
+   "l": "en"
+  },
+  "ET": {
+   "o": [
+    [
+     "Addis Standard",
+     "addisstandard.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "FJ": {
+   "o": [
+    [
+     "Fiji Times",
+     "fijitimes.com.fj"
+    ]
+   ],
+   "l": "en"
+  },
+  "FI": {
+   "o": [
+    [
+     "Yle News",
+     "yle.fi"
+    ]
+   ],
+   "l": "en"
+  },
+  "FR": {
+   "o": [
+    [
+     "France 24",
+     "france24.com"
+    ],
+    [
+     "Le Monde",
+     "lemonde.fr"
+    ]
+   ],
+   "l": "en"
+  },
+  "GA": {
+   "o": [
+    [
+     "Gabon Review",
+     "gabonreview.com"
+    ]
+   ],
+   "l": "fr"
+  },
+  "GM": {
+   "o": [
+    [
+     "The Point",
+     "thepoint.gm"
+    ]
+   ],
+   "l": "en"
+  },
+  "GE": {
+   "o": [
+    [
+     "Agenda.ge",
+     "agenda.ge"
+    ]
+   ],
+   "l": "en"
+  },
+  "DE": {
+   "o": [
+    [
+     "Deutsche Welle",
+     "dw.com"
+    ],
+    [
+     "Der Spiegel",
+     "spiegel.de"
+    ]
+   ],
+   "l": "en"
+  },
+  "GH": {
+   "o": [
+    [
+     "GhanaWeb",
+     "ghanaweb.com"
+    ],
+    [
+     "MyJoyOnline",
+     "myjoyonline.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "GR": {
+   "o": [
+    [
+     "Ekathimerini",
+     "ekathimerini.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "GD": {
+   "o": [
+    [
+     "NOW Grenada",
+     "nowgrenada.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "GT": {
+   "o": [
+    [
+     "Prensa Libre",
+     "prensalibre.com"
+    ]
+   ],
+   "l": "es"
+  },
+  "GN": {
+   "o": [
+    [
+     "Guinee News",
+     "guineenews.org"
+    ]
+   ],
+   "l": "fr"
+  },
+  "GW": {
+   "o": [
+    [
+     "O Democrata",
+     "odemocratagb.com"
+    ]
+   ],
+   "l": "pt"
+  },
+  "GY": {
+   "o": [
+    [
+     "Stabroek News",
+     "stabroeknews.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "HT": {
+   "o": [
+    [
+     "Le Nouvelliste",
+     "lenouvelliste.com"
+    ]
+   ],
+   "l": "fr"
+  },
+  "HN": {
+   "o": [
+    [
+     "La Prensa",
+     "laprensa.hn"
+    ]
+   ],
+   "l": "es"
+  },
+  "HU": {
+   "o": [
+    [
+     "Hungary Today",
+     "hungarytoday.hu"
+    ]
+   ],
+   "l": "en"
+  },
+  "IS": {
+   "o": [
+    [
+     "Iceland Monitor",
+     "icelandmonitor.mbl.is"
+    ]
+   ],
+   "l": "en"
+  },
+  "IN": {
+   "o": [
+    [
+     "The Hindu",
+     "thehindu.com"
+    ],
+    [
+     "NDTV",
+     "ndtv.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "ID": {
+   "o": [
+    [
+     "Jakarta Post",
+     "thejakartapost.com"
+    ],
+    [
+     "Antara News",
+     "en.antaranews.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "IR": {
+   "o": [
+    [
+     "Tehran Times",
+     "tehrantimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "IQ": {
+   "o": [
+    [
+     "Rudaw",
+     "rudaw.net"
+    ],
+    [
+     "Shafaq News",
+     "shafaq.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "IE": {
+   "o": [
+    [
+     "RTE News",
+     "rte.ie"
+    ],
+    [
+     "Irish Times",
+     "irishtimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "IL": {
+   "o": [
+    [
+     "Times of Israel",
+     "timesofisrael.com"
+    ],
+    [
+     "Haaretz",
+     "haaretz.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "IT": {
+   "o": [
+    [
+     "ANSA English",
+     "ansa.it"
+    ],
+    [
+     "Corriere",
+     "corriere.it"
+    ]
+   ],
+   "l": "en"
+  },
+  "CI": {
+   "o": [
+    [
+     "Abidjan.net",
+     "news.abidjan.net"
+    ]
+   ],
+   "l": "fr"
+  },
+  "JM": {
+   "o": [
+    [
+     "Jamaica Gleaner",
+     "jamaica-gleaner.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "JP": {
+   "o": [
+    [
+     "NHK World",
+     "www3.nhk.or.jp"
+    ],
+    [
+     "Japan Times",
+     "japantimes.co.jp"
+    ]
+   ],
+   "l": "en"
+  },
+  "JO": {
+   "o": [
+    [
+     "Jordan Times",
+     "jordantimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "KZ": {
+   "o": [
+    [
+     "Astana Times",
+     "astanatimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "KE": {
+   "o": [
+    [
+     "Daily Nation",
+     "nation.africa"
+    ],
+    [
+     "The Standard",
+     "standardmedia.co.ke"
+    ]
+   ],
+   "l": "en"
+  },
+  "KI": {
+   "o": [
+    [
+     "Kiribati Newstar",
+     "kiribatinewstar.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "XK": {
+   "o": [
+    [
+     "Kosovo Online",
+     "kosovo-online.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "KW": {
+   "o": [
+    [
+     "Kuwait Times",
+     "kuwaittimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "KG": {
+   "o": [
+    [
+     "24.kg",
+     "24.kg"
+    ]
+   ],
+   "l": "en"
+  },
+  "LA": {
+   "o": [
+    [
+     "Vientiane Times",
+     "vientianetimes.org.la"
+    ]
+   ],
+   "l": "en"
+  },
+  "LV": {
+   "o": [
+    [
+     "LSM",
+     "eng.lsm.lv"
+    ]
+   ],
+   "l": "en"
+  },
+  "LB": {
+   "o": [
+    [
+     "L'Orient Today",
+     "today.lorientlejour.com"
+    ],
+    [
+     "Naharnet",
+     "naharnet.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "LS": {
+   "o": [
+    [
+     "Lesotho Times",
+     "lestimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "LR": {
+   "o": [
+    [
+     "FrontPage Africa",
+     "frontpageafricaonline.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "LY": {
+   "o": [
+    [
+     "Libya Observer",
+     "libyaobserver.ly"
+    ]
+   ],
+   "l": "en"
+  },
+  "LI": {
+   "o": [
+    [
+     "Vaterland",
+     "vaterland.li"
+    ]
+   ],
+   "l": "de"
+  },
+  "LT": {
+   "o": [
+    [
+     "LRT English",
+     "lrt.lt"
+    ]
+   ],
+   "l": "en"
+  },
+  "LU": {
+   "o": [
+    [
+     "Luxembourg Times",
+     "luxtimes.lu"
+    ]
+   ],
+   "l": "en"
+  },
+  "MG": {
+   "o": [
+    [
+     "L'Express de Madagascar",
+     "lexpress.mg"
+    ]
+   ],
+   "l": "fr"
+  },
+  "MW": {
+   "o": [
+    [
+     "Nyasa Times",
+     "nyasatimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "MY": {
+   "o": [
+    [
+     "The Star",
+     "thestar.com.my"
+    ],
+    [
+     "Malay Mail",
+     "malaymail.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "MV": {
+   "o": [
+    [
+     "Maldives Times",
+     "maldivestimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "ML": {
+   "o": [
+    [
+     "Maliweb",
+     "maliweb.net"
+    ]
+   ],
+   "l": "fr"
+  },
+  "MT": {
+   "o": [
+    [
+     "Times of Malta",
+     "timesofmalta.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "MH": {
+   "o": [
+    [
+     "Marshall Islands Journal",
+     "marshallislandsjournal.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "MR": {
+   "o": [
+    [
+     "Sahara Media",
+     "saharamedias.net"
+    ]
+   ],
+   "l": "fr"
+  },
+  "MU": {
+   "o": [
+    [
+     "Le Mauricien",
+     "lemauricien.com"
+    ]
+   ],
+   "l": "fr"
+  },
+  "MX": {
+   "o": [
+    [
+     "El Universal",
+     "eluniversal.com.mx"
+    ],
+    [
+     "Mexico News Daily",
+     "mexiconewsdaily.com"
+    ]
+   ],
+   "l": "es"
+  },
+  "FM": {
+   "o": [
+    [
+     "FSM Information",
+     "gov.fm"
+    ]
+   ],
+   "l": "en"
+  },
+  "MD": {
+   "o": [
+    [
+     "Moldova 1",
+     "moldova1.md"
+    ]
+   ],
+   "l": "ro"
+  },
+  "MC": {
+   "o": [
+    [
+     "Monaco Tribune",
+     "monacotribune.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "MN": {
+   "o": [
+    [
+     "Montsame",
+     "montsame.mn"
+    ]
+   ],
+   "l": "en"
+  },
+  "ME": {
+   "o": [
+    [
+     "Vijesti",
+     "vijesti.me"
+    ]
+   ],
+   "l": "sr"
+  },
+  "MA": {
+   "o": [
+    [
+     "Morocco World News",
+     "moroccoworldnews.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "MZ": {
+   "o": [
+    [
+     "Club of Mozambique",
+     "clubofmozambique.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "MM": {
+   "o": [
+    [
+     "Irrawaddy",
+     "irrawaddy.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "NA": {
+   "o": [
+    [
+     "New Era",
+     "neweralive.na"
+    ]
+   ],
+   "l": "en"
+  },
+  "NR": {
+   "o": [
+    [
+     "Nauru Bulletin",
+     "naurubulletin.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "NP": {
+   "o": [
+    [
+     "Kathmandu Post",
+     "kathmandupost.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "NL": {
+   "o": [
+    [
+     "NL Times",
+     "nltimes.nl"
+    ],
+    [
+     "NOS",
+     "nos.nl"
+    ]
+   ],
+   "l": "en"
+  },
+  "NZ": {
+   "o": [
+    [
+     "RNZ",
+     "rnz.co.nz"
+    ],
+    [
+     "NZ Herald",
+     "nzherald.co.nz"
+    ]
+   ],
+   "l": "en"
+  },
+  "NI": {
+   "o": [
+    [
+     "La Prensa Nicaragua",
+     "laprensani.com"
+    ]
+   ],
+   "l": "es"
+  },
+  "NE": {
+   "o": [
+    [
+     "ActuNiger",
+     "actuniger.com"
+    ]
+   ],
+   "l": "fr"
+  },
+  "NG": {
+   "o": [
+    [
+     "Premium Times",
+     "premiumtimesng.com"
+    ],
+    [
+     "Punch",
+     "punchng.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "KP": {
+   "o": [
+    [
+     "NK News",
+     "nknews.org"
+    ]
+   ],
+   "l": "en"
+  },
+  "MK": {
+   "o": [
+    [
+     "Republika",
+     "republika.mk"
+    ]
+   ],
+   "l": "mk"
+  },
+  "NO": {
+   "o": [
+    [
+     "Norway Today",
+     "norwaytoday.info"
+    ],
+    [
+     "NRK",
+     "nrk.no"
+    ]
+   ],
+   "l": "en"
+  },
+  "OM": {
+   "o": [
+    [
+     "Times of Oman",
+     "timesofoman.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "PK": {
+   "o": [
+    [
+     "Dawn",
+     "dawn.com"
+    ],
+    [
+     "Geo News",
+     "geo.tv"
+    ]
+   ],
+   "l": "en"
+  },
+  "PW": {
+   "o": [
+    [
+     "Island Times",
+     "islandtimes.org"
+    ]
+   ],
+   "l": "en"
+  },
+  "PS": {
+   "o": [
+    [
+     "Wafa",
+     "english.wafa.ps"
+    ],
+    [
+     "Maan News",
+     "maannews.net"
+    ]
+   ],
+   "l": "en"
+  },
+  "PA": {
+   "o": [
+    [
+     "La Prensa Panama",
+     "prensa.com"
+    ]
+   ],
+   "l": "es"
+  },
+  "PG": {
+   "o": [
+    [
+     "Post-Courier",
+     "postcourier.com.pg"
+    ]
+   ],
+   "l": "en"
+  },
+  "PY": {
+   "o": [
+    [
+     "ABC Color",
+     "abc.com.py"
+    ]
+   ],
+   "l": "es"
+  },
+  "PE": {
+   "o": [
+    [
+     "El Comercio",
+     "elcomercio.pe"
+    ]
+   ],
+   "l": "es"
+  },
+  "PH": {
+   "o": [
+    [
+     "Rappler",
+     "rappler.com"
+    ],
+    [
+     "Inquirer",
+     "inquirer.net"
+    ]
+   ],
+   "l": "en"
+  },
+  "PL": {
+   "o": [
+    [
+     "Notes from Poland",
+     "notesfrompoland.com"
+    ],
+    [
+     "TVP World",
+     "tvpworld.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "PT": {
+   "o": [
+    [
+     "Publico",
+     "publico.pt"
+    ]
+   ],
+   "l": "pt"
+  },
+  "QA": {
+   "o": [
+    [
+     "Al Jazeera",
+     "aljazeera.com"
+    ],
+    [
+     "Peninsula",
+     "thepeninsulaqatar.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "RO": {
+   "o": [
+    [
+     "Romania Insider",
+     "romania-insider.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "RU": {
+   "o": [
+    [
+     "Moscow Times",
+     "themoscowtimes.com"
+    ],
+    [
+     "TASS",
+     "tass.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "RW": {
+   "o": [
+    [
+     "New Times Rwanda",
+     "newtimes.co.rw"
+    ]
+   ],
+   "l": "en"
+  },
+  "KN": {
+   "o": [
+    [
+     "SKN Vibes",
+     "sknvibes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "LC": {
+   "o": [
+    [
+     "St Lucia Times",
+     "stluciatimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "VC": {
+   "o": [
+    [
+     "Searchlight",
+     "searchlight.vc"
+    ]
+   ],
+   "l": "en"
+  },
+  "WS": {
+   "o": [
+    [
+     "Samoa Observer",
+     "samoaobserver.ws"
+    ]
+   ],
+   "l": "en"
+  },
+  "SM": {
+   "o": [
+    [
+     "San Marino RTV",
+     "sanmarinortv.sm"
+    ]
+   ],
+   "l": "it"
+  },
+  "ST": {
+   "o": [
+    [
+     "STP Press",
+     "stp-press.st"
+    ]
+   ],
+   "l": "pt"
+  },
+  "SA": {
+   "o": [
+    [
+     "Arab News",
+     "arabnews.com"
+    ],
+    [
+     "Saudi Gazette",
+     "saudigazette.com.sa"
+    ]
+   ],
+   "l": "en"
+  },
+  "SN": {
+   "o": [
+    [
+     "Seneweb",
+     "seneweb.com"
+    ]
+   ],
+   "l": "fr"
+  },
+  "RS": {
+   "o": [
+    [
+     "N1",
+     "n1info.rs"
+    ]
+   ],
+   "l": "sr"
+  },
+  "SC": {
+   "o": [
+    [
+     "Seychelles Nation",
+     "nation.sc"
+    ]
+   ],
+   "l": "en"
+  },
+  "SL": {
+   "o": [
+    [
+     "Sierra Leone Telegraph",
+     "thesierraleonetelegraph.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "SG": {
+   "o": [
+    [
+     "Straits Times",
+     "straitstimes.com"
+    ],
+    [
+     "CNA",
+     "channelnewsasia.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "SK": {
+   "o": [
+    [
+     "Slovak Spectator",
+     "spectator.sme.sk"
+    ]
+   ],
+   "l": "en"
+  },
+  "SI": {
+   "o": [
+    [
+     "Slovenia Times",
+     "sloveniatimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "SB": {
+   "o": [
+    [
+     "Solomon Star",
+     "solomonstarnews.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "SO": {
+   "o": [
+    [
+     "Hiiraan",
+     "hiiraan.com"
+    ],
+    [
+     "Garowe Online",
+     "garoweonline.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "ZA": {
+   "o": [
+    [
+     "News24",
+     "news24.com"
+    ],
+    [
+     "Daily Maverick",
+     "dailymaverick.co.za"
+    ]
+   ],
+   "l": "en"
+  },
+  "KR": {
+   "o": [
+    [
+     "Yonhap",
+     "en.yna.co.kr"
+    ],
+    [
+     "Korea Herald",
+     "koreaherald.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "SS": {
+   "o": [
+    [
+     "Radio Tamazuj",
+     "radiotamazuj.org"
+    ]
+   ],
+   "l": "en"
+  },
+  "ES": {
+   "o": [
+    [
+     "El Pais",
+     "elpais.com"
+    ],
+    [
+     "RTVE",
+     "rtve.es"
+    ]
+   ],
+   "l": "es"
+  },
+  "LK": {
+   "o": [
+    [
+     "Daily Mirror",
+     "dailymirror.lk"
+    ]
+   ],
+   "l": "en"
+  },
+  "SD": {
+   "o": [
+    [
+     "Sudan Tribune",
+     "sudantribune.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "SR": {
+   "o": [
+    [
+     "Starnieuws",
+     "starnieuws.com"
+    ]
+   ],
+   "l": "nl"
+  },
+  "SE": {
+   "o": [
+    [
+     "The Local Sweden",
+     "thelocal.se"
+    ],
+    [
+     "SVT",
+     "svt.se"
+    ]
+   ],
+   "l": "en"
+  },
+  "CH": {
+   "o": [
+    [
+     "Swissinfo",
+     "swissinfo.ch"
+    ]
+   ],
+   "l": "en"
+  },
+  "SY": {
+   "o": [
+    [
+     "Syria Direct",
+     "syriadirect.org"
+    ]
+   ],
+   "l": "en"
+  },
+  "TW": {
+   "o": [
+    [
+     "Taipei Times",
+     "taipeitimes.com"
+    ],
+    [
+     "Focus Taiwan",
+     "focustaiwan.tw"
+    ]
+   ],
+   "l": "en"
+  },
+  "TJ": {
+   "o": [
+    [
+     "Asia-Plus",
+     "asiaplustj.info"
+    ]
+   ],
+   "l": "en"
+  },
+  "TZ": {
+   "o": [
+    [
+     "The Citizen",
+     "thecitizen.co.tz"
+    ]
+   ],
+   "l": "en"
+  },
+  "TH": {
+   "o": [
+    [
+     "Bangkok Post",
+     "bangkokpost.com"
+    ],
+    [
+     "Nation Thailand",
+     "nationthailand.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "TL": {
+   "o": [
+    [
+     "Tatoli",
+     "tatoli.tl"
+    ]
+   ],
+   "l": "pt"
+  },
+  "TG": {
+   "o": [
+    [
+     "Togo Breaking News",
+     "togobreakingnews.info"
+    ]
+   ],
+   "l": "fr"
+  },
+  "TO": {
+   "o": [
+    [
+     "Matangi Tonga",
+     "matangitonga.to"
+    ]
+   ],
+   "l": "en"
+  },
+  "TT": {
+   "o": [
+    [
+     "Trinidad Guardian",
+     "guardian.co.tt"
+    ]
+   ],
+   "l": "en"
+  },
+  "TN": {
+   "o": [
+    [
+     "Tunis Afrique Presse",
+     "tap.info.tn"
+    ]
+   ],
+   "l": "fr"
+  },
+  "TR": {
+   "o": [
+    [
+     "Hurriyet Daily News",
+     "hurriyetdailynews.com"
+    ],
+    [
+     "Daily Sabah",
+     "dailysabah.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "TM": {
+   "o": [
+    [
+     "Turkmenportal",
+     "turkmenportal.com"
+    ]
+   ],
+   "l": "ru"
+  },
+  "TV": {
+   "o": [
+    [
+     "Tuvalu Paradise",
+     "tuvaluparadise.tv"
+    ]
+   ],
+   "l": "en"
+  },
+  "UG": {
+   "o": [
+    [
+     "Daily Monitor",
+     "monitor.co.ug"
+    ]
+   ],
+   "l": "en"
+  },
+  "UA": {
+   "o": [
+    [
+     "Kyiv Independent",
+     "kyivindependent.com"
+    ],
+    [
+     "Ukrinform",
+     "ukrinform.net"
+    ]
+   ],
+   "l": "en"
+  },
+  "AE": {
+   "o": [
+    [
+     "The National",
+     "thenationalnews.com"
+    ],
+    [
+     "Khaleej Times",
+     "khaleejtimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "GB": {
+   "o": [
+    [
+     "BBC News",
+     "bbc.co.uk"
+    ],
+    [
+     "Sky News",
+     "news.sky.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "UY": {
+   "o": [
+    [
+     "El Pais Uruguay",
+     "elpais.com.uy"
+    ]
+   ],
+   "l": "es"
+  },
+  "UZ": {
+   "o": [
+    [
+     "Gazeta.uz",
+     "gazeta.uz"
+    ]
+   ],
+   "l": "ru"
+  },
+  "VU": {
+   "o": [
+    [
+     "Vanuatu Daily Post",
+     "dailypost.vu"
+    ]
+   ],
+   "l": "en"
+  },
+  "VA": {
+   "o": [
+    [
+     "Vatican News",
+     "vaticannews.va"
+    ]
+   ],
+   "l": "en"
+  },
+  "VE": {
+   "o": [
+    [
+     "Efecto Cocuyo",
+     "efectococuyo.com"
+    ]
+   ],
+   "l": "es"
+  },
+  "VN": {
+   "o": [
+    [
+     "VnExpress International",
+     "e.vnexpress.net"
+    ],
+    [
+     "Tuoi Tre News",
+     "tuoitrenews.vn"
+    ]
+   ],
+   "l": "en"
+  },
+  "YE": {
+   "o": [
+    [
+     "Yemen Online",
+     "yemenonline.info"
+    ]
+   ],
+   "l": "en"
+  },
+  "ZM": {
+   "o": [
+    [
+     "Lusaka Times",
+     "lusakatimes.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "ZW": {
+   "o": [
+    [
+     "NewsDay",
+     "newsday.co.zw"
+    ]
+   ],
+   "l": "en"
+  },
+  "HK": {
+   "o": [
+    [
+     "Hong Kong Free Press",
+     "hongkongfp.com"
+    ]
+   ],
+   "l": "en"
+  },
+  "PR": {
+   "o": [
+    [
+     "El Nuevo Dia",
+     "elnuevodia.com"
+    ]
+   ],
+   "l": "es"
+  },
+  "GL": {
+   "o": [
+    [
+     "Sermitsiaq",
+     "sermitsiaq.ag"
+    ]
+   ],
+   "l": "da"
+  }
+ },
+ "world_known_feeds": {
+  "AU": [
+   "https://www.abc.net.au/news/feed/51120/rss.xml",
+   "https://www.sbs.com.au/news/feed",
+   "https://www.news.com.au/content-feeds/latest-news-national/"
+  ],
+  "NZ": [
+   "https://www.rnz.co.nz/rss/national.xml",
+   "https://www.nzherald.co.nz/arc/outboundfeeds/rss/?outputType=xml"
+  ],
+  "GB": [
+   "https://feeds.bbci.co.uk/news/rss.xml",
+   "https://www.theguardian.com/uk/rss",
+   "https://news.sky.com/feeds/rss/home.xml"
+  ],
+  "ES": [
+   "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+   "https://www.20minutos.es/rss/"
+  ],
+  "RU": [
+   "https://www.themoscowtimes.com/rss/news",
+   "https://meduza.io/rss/en/all",
+   "https://tass.com/rss/v2.xml"
+  ],
+  "KR": [
+   "https://en.yna.co.kr/RSS/news.xml",
+   "https://www.koreaherald.com/rss/newsAll.xml",
+   "https://www.koreatimes.co.kr/www/rss/nation.xml",
+   "https://english.hani.co.kr/rss/",
+   "https://rss.donga.com/english.xml",
+   "https://feed.koreatimes.co.kr/k/allnews.xml",
+   "https://feed.koreatimes.co.kr/k/southkorea.xml",
+   "https://koreajoongangdaily.joins.com/xmls/joins-news.xml"
+  ],
+  "TW": [
+   "https://focustaiwan.tw/rss/news",
+   "https://www.taipeitimes.com/xml/index.rss",
+   "https://www.taiwannews.com.tw/en/rss",
+   "https://international.thenewslens.com/rss",
+   "https://focustaiwan.tw/rss/all",
+   "https://news.ltn.com.tw/rss/all.xml",
+   "https://news.ltn.com.tw/rss/politics.xml",
+   "https://english.president.gov.tw/RSSNEWS.aspx"
+  ],
+  "TH": [
+   "https://www.bangkokpost.com/rss/data/most-recent.xml",
+   "https://www.nationthailand.com/rss"
+  ],
+  "MY": [
+   "https://www.thestar.com.my/rss/news",
+   "https://www.malaymail.com/feed/rss"
+  ],
+  "TR": [
+   "https://www.hurriyetdailynews.com/rss",
+   "https://www.dailysabah.com/rss/homepage"
+  ],
+  "GR": [
+   "https://www.ekathimerini.com/feed/",
+   "https://greekreporter.com/feed/",
+   "https://www.protothema.gr/rss/",
+   "https://www.tovima.com/feed/",
+   "https://greekcitytimes.com/feed/"
+  ],
+  "PT": [
+   "https://www.publico.pt/rss",
+   "https://observador.pt/feed/"
+  ],
+  "CH": [
+   "https://www.swissinfo.ch/service/rss/all/rss.xml",
+   "https://www.thelocal.ch/feeds/rss.php"
+  ],
+  "FI": [
+   "https://feeds.yle.fi/uutiset/v1/majorHeadlines/YLE_NEWS.rss",
+   "https://www.helsinkitimes.fi/?format=feed&type=rss"
+  ],
+  "LT": [
+   "https://www.lrt.lt/en/rss",
+   "https://www.delfi.lt/rss/feeds/daily.xml"
+  ],
+  "SI": [
+   "https://www.total-slovenia-news.com/feed",
+   "https://www.rtvslo.si/feeds/00.xml"
+  ],
+  "BG": [
+   "https://www.novinite.com/services/news_rdf.php",
+   "https://sofiaglobe.com/feed/"
+  ],
+  "AL": [
+   "https://albaniandailynews.com/rss",
+   "https://exit.al/en/feed/",
+   "https://top-channel.tv/feed/",
+   "https://www.reporter.al/feed/",
+   "https://euronews.al/en/feed/"
+  ],
+  "AM": [
+   "https://armenpress.am/eng/rss/news/",
+   "https://news.am/eng/rss/"
+  ],
+  "GE": [
+   "https://civil.ge/feed",
+   "https://agenda.ge/rss"
+  ],
+  "BY": [
+   "https://eng.belta.by/rss",
+   "https://belsat.eu/en/feed/",
+   "https://euroradio.fm/en/rss.xml",
+   "https://charter97.org/en/rss/",
+   "https://eng.belta.by/rss/all",
+   "https://news.zerkalo.io/feed/",
+   "https://www.rferl.org/api/zrqiteuuir",
+   "https://nashaniva.com/rss"
+  ],
+  "BE": [
+   "https://www.brusselstimes.com/feed",
+   "https://www.vrt.be/vrtnws/en.rss.articles.xml"
+  ],
+  "BZ": [
+   "https://www.breakingbelizenews.com/feed/",
+   "https://amandala.com.bz/feed/"
+  ],
+  "BT": [
+   "https://kuenselonline.com/feed/",
+   "https://thebhutanese.bt/feed/"
+  ],
+  "BO": [
+   "https://eju.tv/feed/",
+   "https://www.la-razon.com/feed/"
+  ],
+  "BN": [
+   "https://borneobulletin.com.bn/feed/",
+   "https://thescoop.co/feed/",
+   "https://www.rtbnews.rtb.gov.bn/feed/"
+  ],
+  "KH": [
+   "https://www.khmertimeskh.com/feed/",
+   "https://cambodianess.com/feed",
+   "https://www.phnompenhpost.com/rss.xml",
+   "https://vodenglish.news/feed/",
+   "https://cambojanews.com/feed/"
+  ],
+  "CL": [
+   "https://www.latercera.com/feed/",
+   "https://www.biobiochile.cl/rss/",
+   "https://www.emol.com/rss/rss.asp",
+   "https://www.24horas.cl/rss",
+   "https://santiagotimes.cl/feed/"
+  ],
+  "CO": [
+   "https://www.eltiempo.com/rss/colombia.xml",
+   "https://www.elespectador.com/arcio/rss/"
+  ],
+  "DM": [
+   "https://dominicanewsonline.com/feed/",
+   "https://www.dominicavibes.dm/feed/",
+   "https://dominicanewsonline.com/news/feed/"
+  ],
+  "SZ": [
+   "https://www.times.co.sz/feed/",
+   "https://eswatinifinancialtimes.co.sz/feed/"
+  ],
+  "FJ": [
+   "https://www.fijitimes.com.fj/feed/",
+   "https://fijivillage.com/feed/",
+   "https://www.fbcnews.com.fj/feed/",
+   "https://fijione.tv/feed/",
+   "https://www.fijivillage.com/rss/"
+  ],
+  "GL": [
+   "https://knr.gl/en/rss.xml",
+   "https://sermitsiaq.ag/rss",
+   "https://knr.gl/kl/rss.xml",
+   "https://www.arctictoday.com/feed/",
+   "https://sermitsiaq.ag/rss.xml",
+   "https://knr.gl/da/rss.xml",
+   "https://www.highnorthnews.com/en/rss.xml"
+  ],
+  "GY": [
+   "https://www.stabroeknews.com/feed/",
+   "https://newsroom.gy/feed/",
+   "https://demerarawaves.com/feed/",
+   "https://guyanachronicle.com/feed/",
+   "https://www.kaieteurnewsonline.com/feed/"
+  ],
+  "HN": [
+   "https://proceso.hn/feed/",
+   "https://www.laprensa.hn/rss/"
+  ],
+  "IQ": [
+   "https://www.rudaw.net/rss/english",
+   "https://shafaq.com/en/rss",
+   "https://www.kurdistan24.net/en/rss",
+   "https://www.iraqinews.com/feed/",
+   "https://www.rudaw.net/rss",
+   "https://www.kurdistan24.net/rss"
+  ],
+  "JM": [
+   "https://jamaica-gleaner.com/feed/rss.xml",
+   "https://www.jamaicaobserver.com/feed/"
+  ],
+  "JO": [
+   "https://jordantimes.com/rss.xml",
+   "https://en.royanews.tv/rss"
+  ],
+  "KW": [
+   "https://kuwaittimes.com/feed/",
+   "https://www.arabtimesonline.com/news/feed/",
+   "https://www.kuna.net.kw/rss/rss.aspx?language=en",
+   "https://timeskuwait.com/feed/",
+   "https://www.kuna.net.kw/RSS/rssFeed.aspx?language=en",
+   "https://www.alqabas.com/feed"
+  ],
+  "LA": [
+   "https://laotiantimes.com/feed/"
+  ],
+  "LB": [
+   "https://www.naharnet.com/rss/news",
+   "https://today.lorientlejour.com/feed"
+  ],
+  "LI": [
+   "https://www.volksblatt.li/feed",
+   "https://www.vaterland.li/rss",
+   "https://www.volksblatt.li/rss",
+   "https://www.vaterland.li/rss.xml",
+   "https://www.volksblatt.li/rss.xml",
+   "https://www.liechtensteiner-vaterland.li/rss"
+  ],
+  "MT": [
+   "https://timesofmalta.com/rss",
+   "https://www.maltatoday.com.mt/rss"
+  ],
+  "MC": [
+   "https://www.monacotribune.com/feed/",
+   "https://en.monacolife.net/feed/",
+   "https://www.monaco-tribune.com/en/feed/"
+  ],
+  "MN": [
+   "https://montsame.mn/en/rss",
+   "https://news.mn/feed/",
+   "https://www.gogo.mn/rss",
+   "https://ubposts.com/feed/",
+   "https://montsame.mn/en/rss/",
+   "https://news.mn/rss/",
+   "https://montsame.mn/rss/",
+   "https://www.zarig.mn/feed"
+  ],
+  "MM": [
+   "https://www.irrawaddy.com/feed",
+   "https://www.mizzima.com/feed",
+   "https://english.dvb.no/feed/",
+   "https://www.myanmar-now.org/en/feed",
+   "https://www.frontiermyanmar.net/en/feed/"
+  ],
+  "NI": [
+   "https://confidencial.digital/feed/",
+   "https://www.laprensani.com/feed/"
+  ],
+  "OM": [
+   "https://timesofoman.com/rss",
+   "https://www.muscatdaily.com/feed/",
+   "https://www.omanobserver.om/feed/",
+   "https://timesofoman.com/rss/articles",
+   "https://www.omanobserver.om/rss",
+   "https://www.omandaily.om/feed",
+   "https://www.zawya.com/en/rss/country/oman"
+  ],
+  "PE": [
+   "https://larepublica.pe/rss/",
+   "https://elcomercio.pe/arcio/rss/"
+  ],
+  "KN": [
+   "https://www.thestkittsnevisobserver.com/feed/",
+   "https://zizonline.com/feed/"
+  ],
+  "WS": [
+   "https://www.samoaobserver.ws/feed",
+   "https://samoaglobalnews.com/feed/",
+   "https://talamua.com/feed/",
+   "https://www.samoaobserver.ws/rss",
+   "https://samoaglobalnews.com/rss",
+   "https://www.samoaobserver.ws/feed/rss",
+   "https://samoanews.com/rss.xml",
+   "https://www.rnz.co.nz/rss/pacific.xml"
+  ],
+  "SB": [
+   "https://www.solomonstarnews.com/feed/",
+   "https://www.sibconline.com.sb/feed/"
+  ],
+  "LK": [
+   "https://www.adaderana.lk/rss.php",
+   "https://www.dailymirror.lk/rss"
+  ],
+  "TT": [
+   "https://newsday.co.tt/feed/",
+   "https://www.guardian.co.tt/feed",
+   "https://trinidadexpress.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss",
+   "https://tt.loopnews.com/feed",
+   "https://www.looptt.com/rss.xml"
+  ],
+  "TM": [
+   "https://turkmenportal.com/rss",
+   "https://en.turkmenistan.gov.tm/rss",
+   "https://turkmen.news/feed/",
+   "https://en.hronikatm.com/feed/",
+   "https://www.turkmenportal.com/rss/rss.xml"
+  ],
+  "VU": [
+   "https://www.dailypost.vu/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+  ],
+  "VA": [
+   "https://www.vaticannews.va/en.rss.xml"
+  ],
+  "BS": [
+   "https://ewnews.com/feed",
+   "https://thenassauguardian.com/feed/"
+  ],
+  "BH": [
+   "https://www.newsofbahrain.com/rss",
+   "https://www.gdnonline.com/rss",
+   "https://www.bna.bh/rss.ashx?lang=en",
+   "https://www.newsofbahrain.com/feed",
+   "https://timesofbahrain.com/feed/",
+   "https://www.bna.bh/RSS.aspx?lang=en",
+   "https://www.tradearabia.com/rss/BAHRAIN.xml"
+  ],
+  "KI": [
+   "https://www.kiribatinewstoday.com/feed/",
+   "https://www.pina.com.fj/feed/",
+   "https://kiribati.gov.ki/feed/"
+  ],
+  "NR": [
+   "https://www.nauru.news/feed/",
+   "https://www.pina.com.fj/feed/",
+   "https://www.nauru.news/rss"
+  ],
+  "BW": [
+   "https://www.mmegi.bw/feed"
+  ],
+  "CU": [
+   "https://oncubanews.com/feed/",
+   "https://en.granma.cu/rss"
+  ]
+ },
+ "allafrica_slugs": {
+  "DZ": "algeria",
+  "AO": "angola",
+  "BJ": "benin",
+  "BW": "botswana",
+  "BF": "burkinafaso",
+  "BI": "burundi",
+  "CM": "cameroon",
+  "CV": "capeverde",
+  "CF": "centralafricanrepublic",
+  "TD": "chad",
+  "KM": "comoros",
+  "CG": "congo_brazzaville",
+  "CD": "congo_kinshasa",
+  "CI": "cotedivoire",
+  "DJ": "djibouti",
+  "EG": "egypt",
+  "GQ": "equatorialguinea",
+  "ER": "eritrea",
+  "SZ": "swaziland",
+  "ET": "ethiopia",
+  "GA": "gabon",
+  "GM": "gambia",
+  "GH": "ghana",
+  "GN": "guinea",
+  "GW": "guineabissau",
+  "KE": "kenya",
+  "LS": "lesotho",
+  "LR": "liberia",
+  "LY": "libya",
+  "MG": "madagascar",
+  "MW": "malawi",
+  "ML": "mali",
+  "MR": "mauritania",
+  "MU": "mauritius",
+  "MA": "morocco",
+  "MZ": "mozambique",
+  "NA": "namibia",
+  "NE": "niger",
+  "NG": "nigeria",
+  "RW": "rwanda",
+  "ST": "saotomeandprincipe",
+  "SN": "senegal",
+  "SC": "seychelles",
+  "SL": "sierraleone",
+  "SO": "somalia",
+  "ZA": "southafrica",
+  "SS": "southsudan",
+  "SD": "sudan",
+  "TZ": "tanzania",
+  "TG": "togo",
+  "TN": "tunisia",
+  "UG": "uganda",
+  "ZM": "zambia",
+  "ZW": "zimbabwe"
+ },
+ "networks": {
+  "ABC": [
+   "https://feeds.abcnews.com/abcnews/topstories",
+   "https://abcnews.go.com/abcnews/topstories"
+  ],
+  "CBS": [
+   "https://www.cbsnews.com/latest/rss/main",
+   "https://www.cbsnews.com/latest/rss/us"
+  ],
+  "NBC": [
+   "https://feeds.nbcnews.com/nbcnews/public/news",
+   "https://feeds.nbcnews.com/nbcnews/public/top-stories"
+  ],
+  "FOX": [
+   "https://moxie.foxnews.com/google-publisher/latest.xml",
+   "https://moxie.foxnews.com/google-publisher/us.xml"
+  ]
+ },
+ "_about": {
+  "source": "Drew's Secret Hyperlocal",
+  "what": "The feed registers the page uses: station websites, the feed path each owner group uses, newspapers per market, world outlets and the addresses known to work.",
+  "note": "Paths are what the page tries; what actually worked on a given device lives in that device's own export."
+ }
+}
