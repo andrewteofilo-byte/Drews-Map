@@ -1,0 +1,9123 @@
+{
+ "generated": "2026-10-02T02:06:55.828Z",
+ "stations": [
+  {
+   "call": "KFDX",
+   "market": "WICHITA FALLS-LAWTON",
+   "owner": "Nexstar",
+   "site": "https://texomashomepage.com",
+   "aliases": [],
+   "siblings": [
+    "KJTL"
+   ],
+   "feeds": [
+    "https://www.texomashomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "KJTL",
+   "market": "WICHITA FALLS-LAWTON",
+   "owner": "Mission (Nexstar-operated)",
+   "site": "https://texomashomepage.com",
+   "aliases": [],
+   "siblings": [
+    "KFDX"
+   ],
+   "feeds": [
+    "https://www.texomashomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "KTAB",
+   "market": "Abilene-Sweetwater",
+   "owner": "Nexstar",
+   "site": "https://bigcountryhomepage.com",
+   "aliases": [],
+   "siblings": [
+    "KRBC"
+   ],
+   "feeds": [
+    "https://www.bigcountryhomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "KRBC",
+   "market": "Abilene-Sweetwater",
+   "owner": "Nexstar",
+   "site": "https://bigcountryhomepage.com",
+   "aliases": [],
+   "siblings": [
+    "KTAB"
+   ],
+   "feeds": [
+    "https://www.bigcountryhomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "WKBW",
+   "market": "Buffalo",
+   "owner": "Scripps",
+   "site": "https://wkbw.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wkbw.com/index.rss"
+   ]
+  },
+  {
+   "call": "KKTV",
+   "market": "Colorado Springs-Pueblo",
+   "owner": "Scripps (ex-Gray)",
+   "site": "https://kktv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kktv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KELO",
+   "market": "Sioux Falls-Mitchell",
+   "owner": "Nexstar",
+   "site": "https://keloland.com",
+   "aliases": [
+    "kelo.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.keloland.com/feed/"
+   ]
+  },
+  {
+   "call": "KETK",
+   "market": "Tyler-Longview",
+   "owner": "Nexstar",
+   "site": "https://ketk.com",
+   "aliases": [],
+   "siblings": [
+    "KFXK"
+   ],
+   "feeds": [
+    "https://www.ketk.com/feed/"
+   ]
+  },
+  {
+   "call": "KFXK",
+   "market": "Tyler-Longview",
+   "owner": "Nexstar",
+   "site": "https://ketk.com",
+   "aliases": [],
+   "siblings": [
+    "KETK"
+   ],
+   "feeds": [
+    "https://www.ketk.com/feed/"
+   ]
+  },
+  {
+   "call": "WGAL",
+   "market": "Harrisburg-Lancaster-York",
+   "owner": "Hearst",
+   "site": "https://wgal.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KLTV",
+   "market": "Tyler-Longview",
+   "owner": "Gray",
+   "site": "https://kltv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kltv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WKTV",
+   "market": "Utica",
+   "owner": "",
+   "site": "https://wktv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WBTV",
+   "market": "Charlotte",
+   "owner": "Gray",
+   "site": "https://wbtv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wbtv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WSMV",
+   "market": "Nashville",
+   "owner": "Gray",
+   "site": "https://wsmv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wsmv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WDTV",
+   "market": "Clarksburg-Weston",
+   "owner": "Gray",
+   "site": "https://wdtv.com",
+   "aliases": [],
+   "siblings": [
+    "WVFX"
+   ],
+   "feeds": [
+    "https://www.wdtv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KFVS",
+   "market": "Paducah-Cape Girardeau-Harrisburg",
+   "owner": "Gray",
+   "site": "https://kfvs12.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kfvs12.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WCSC",
+   "market": "Charleston, SC",
+   "owner": "Gray",
+   "site": "https://live5news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.live5news.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KCTV",
+   "market": "Kansas City",
+   "owner": "Gray",
+   "site": "https://kctv5.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kctv5.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WSFA",
+   "market": "Montgomery-Selma",
+   "owner": "Gray",
+   "site": "https://wsfa.com",
+   "aliases": [],
+   "siblings": [
+    "WRGX"
+   ],
+   "feeds": [
+    "https://www.wsfa.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WAFF",
+   "market": "Huntsville-Decatur",
+   "owner": "Gray",
+   "site": "https://waff.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.waff.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WAFB",
+   "market": "Baton Rouge",
+   "owner": "Gray",
+   "site": "https://wafb.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wafb.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WTVY",
+   "market": "Dothan",
+   "owner": "",
+   "site": "https://wtvy.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wtvy.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KSLA",
+   "market": "Shreveport",
+   "owner": "Gray",
+   "site": "https://ksla.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ksla.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WNEM",
+   "market": "Flint-Saginaw-Bay City",
+   "owner": "Gray",
+   "site": "https://wnem.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wnem.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WOWT",
+   "market": "Omaha",
+   "owner": "Gray",
+   "site": "https://wowt.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wowt.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KOLO",
+   "market": "Reno",
+   "owner": "Gray",
+   "site": "https://kolotv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kolotv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WVLT",
+   "market": "Knoxville",
+   "owner": "Gray",
+   "site": "https://wvlt.tv",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wvlt.tv/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KBTX",
+   "market": "",
+   "owner": "",
+   "site": "https://kbtx.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kbtx.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KWTX",
+   "market": "Waco-Temple-Bryan",
+   "owner": "Gray",
+   "site": "https://kwtx.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kwtx.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KXII",
+   "market": "Sherman-Ada",
+   "owner": "Gray",
+   "site": "https://kxii.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kxii.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KAUZ",
+   "market": "WICHITA FALLS-LAWTON",
+   "owner": "Gray",
+   "site": "https://newschannel6now.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.newschannel6now.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KSWO",
+   "market": "WICHITA FALLS-LAWTON",
+   "owner": "Gray",
+   "site": "https://kswo.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kswo.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTRE",
+   "market": "",
+   "owner": "",
+   "site": "https://ktre.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ktre.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KCBD",
+   "market": "Lubbock",
+   "owner": "Gray",
+   "site": "https://kcbd.com",
+   "aliases": [],
+   "siblings": [
+    "KJTV"
+   ],
+   "feeds": [
+    "https://www.kcbd.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KGNS",
+   "market": "Laredo",
+   "owner": "Gray",
+   "site": "https://kgns.tv",
+   "aliases": [],
+   "siblings": [
+    "KYLX",
+    "KXOF"
+   ],
+   "feeds": [
+    "https://www.kgns.tv/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KFDA",
+   "market": "Amarillo",
+   "owner": "Gray",
+   "site": "https://newschannel10.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.newschannel10.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WCAX",
+   "market": "Burlington-Plattsburgh",
+   "owner": "Gray",
+   "site": "https://wcax.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wcax.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WVVA",
+   "market": "Bluefield-Beckley-Oak Hill",
+   "owner": "Gray",
+   "site": "https://wvva.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wvva.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WSAZ",
+   "market": "Charleston-Huntington, WV",
+   "owner": "Gray",
+   "site": "https://wsaz.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wsaz.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WTAP",
+   "market": "Parkersburg",
+   "owner": "Gray",
+   "site": "https://wtap.com",
+   "aliases": [],
+   "siblings": [
+    "WOVA"
+   ],
+   "feeds": [
+    "https://www.wtap.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WEAU",
+   "market": "La Crosse-Eau Claire",
+   "owner": "Gray",
+   "site": "https://weau.com",
+   "aliases": [],
+   "siblings": [
+    "WLAX",
+    "WEUX"
+   ],
+   "feeds": [
+    "https://www.weau.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WBAY",
+   "market": "Green Bay-Appleton",
+   "owner": "Gray",
+   "site": "https://wbay.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wbay.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WSAW",
+   "market": "Wausau-Rhinelander",
+   "owner": "Gray",
+   "site": "https://wsaw.com",
+   "aliases": [],
+   "siblings": [
+    "WZAW"
+   ],
+   "feeds": [
+    "https://www.wsaw.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WILX",
+   "market": "Lansing",
+   "owner": "Gray",
+   "site": "https://wilx.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wilx.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WJHG",
+   "market": "Panama City",
+   "owner": "Gray",
+   "site": "https://wjhg.com",
+   "aliases": [],
+   "siblings": [
+    "WPGX"
+   ],
+   "feeds": [
+    "https://www.wjhg.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WCTV",
+   "market": "Tallahassee-Thomasville",
+   "owner": "Gray",
+   "site": "https://wctv.tv",
+   "aliases": [],
+   "siblings": [
+    "WSWG"
+   ],
+   "feeds": [
+    "https://www.wctv.tv/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WALB",
+   "market": "Albany, GA",
+   "owner": "Gray",
+   "site": "https://walb.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.walb.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WTOC",
+   "market": "Savannah",
+   "owner": "Gray",
+   "site": "https://wtoc.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wtoc.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WTVM",
+   "market": "Columbus, GA",
+   "owner": "Gray",
+   "site": "https://wtvm.com",
+   "aliases": [],
+   "siblings": [
+    "WXTX"
+   ],
+   "feeds": [
+    "https://www.wtvm.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WRDW",
+   "market": "Augusta-Aiken",
+   "owner": "Gray",
+   "site": "https://wrdw.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wrdw.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WLOX",
+   "market": "Biloxi-Gulfport",
+   "owner": "",
+   "site": "https://wlox.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wlox.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WLBT",
+   "market": "Jackson, MS",
+   "owner": "Gray",
+   "site": "https://wlbt.com",
+   "aliases": [],
+   "siblings": [
+    "WDBD",
+    "WLOO"
+   ],
+   "feeds": [
+    "https://www.wlbt.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WDAM",
+   "market": "Hattiesburg-Laurel",
+   "owner": "",
+   "site": "https://wdam.com",
+   "aliases": [],
+   "siblings": [
+    "WHPM"
+   ],
+   "feeds": [
+    "https://www.wdam.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WTOK",
+   "market": "Meridian",
+   "owner": "Gray",
+   "site": "https://wtok.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wtok.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WTVA",
+   "market": "Columbus-Tupelo-West Point",
+   "owner": "Gray (ex-Allen)",
+   "site": "https://wtva.com",
+   "aliases": [],
+   "siblings": [
+    "WLOV"
+   ],
+   "feeds": [
+    "https://www.wtva.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WTHI",
+   "market": "Terre Haute",
+   "owner": "Gray (ex-Allen)",
+   "site": "https://wthitv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wthitv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WLFI",
+   "market": "Lafayette, IN",
+   "owner": "Gray (ex-Allen)",
+   "site": "https://wlfi.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wlfi.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WNDU",
+   "market": "South Bend-Elkhart",
+   "owner": "Gray",
+   "site": "https://wndu.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wndu.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KCRG",
+   "market": "Cedar Rapids-Waterloo-Dubuque",
+   "owner": "Gray",
+   "site": "https://kcrg.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kcrg.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KWQC",
+   "market": "Davenport-Rock Island-Moline",
+   "owner": "Gray",
+   "site": "https://kwqc.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kwqc.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTIV",
+   "market": "Sioux City",
+   "owner": "Gray",
+   "site": "https://ktiv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ktiv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WIBW",
+   "market": "Topeka",
+   "owner": "Gray",
+   "site": "https://wibw.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wibw.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KWCH",
+   "market": "Wichita-Hutchinson",
+   "owner": "Gray",
+   "site": "https://kwch.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kwch.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WBKO",
+   "market": "Bowling Green",
+   "owner": "Gray",
+   "site": "https://wbko.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wbko.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WKYT",
+   "market": "Lexington",
+   "owner": "Gray",
+   "site": "https://wkyt.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wkyt.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WAVE",
+   "market": "Louisville",
+   "owner": "Gray",
+   "site": "https://wave3.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KNOE",
+   "market": "Monroe-El Dorado",
+   "owner": "",
+   "site": "https://knoe.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.knoe.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KPLC",
+   "market": "Lake Charles",
+   "owner": "",
+   "site": "https://kplctv.com",
+   "aliases": [],
+   "siblings": [
+    "KVHP",
+    "KSWL"
+   ],
+   "feeds": [
+    "https://www.kplctv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WAGM",
+   "market": "Presque Isle",
+   "owner": "Gray",
+   "site": "https://wagmtv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wagmtv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KEYC",
+   "market": "Mankato",
+   "owner": "Gray",
+   "site": "https://keyc.com",
+   "aliases": [],
+   "siblings": [
+    "KMNF"
+   ],
+   "feeds": [
+    "https://www.keyc.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTTC",
+   "market": "Rochester-Mason City-Austin",
+   "owner": "Gray",
+   "site": "https://kttc.com",
+   "aliases": [],
+   "siblings": [
+    "KXLT"
+   ],
+   "feeds": [
+    "https://www.kttc.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WFIE",
+   "market": "Evansville",
+   "owner": "",
+   "site": "https://14news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.14news.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WPTA",
+   "market": "Ft. Wayne",
+   "owner": "",
+   "site": "https://wpta21.com",
+   "aliases": [],
+   "siblings": [
+    "WISE"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WIFR",
+   "market": "Rockford",
+   "owner": "Gray",
+   "site": "https://wifr.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WABI",
+   "market": "Bangor",
+   "owner": "Gray",
+   "site": "https://wabi.tv",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wabi.tv/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KMVT",
+   "market": "Twin Falls",
+   "owner": "Scripps",
+   "site": "https://kmvt.com",
+   "aliases": [],
+   "siblings": [
+    "KSVT"
+   ],
+   "feeds": [
+    "https://www.kmvt.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WHSV",
+   "market": "Harrisonburg",
+   "owner": "Gray",
+   "site": "https://whsv.com",
+   "aliases": [],
+   "siblings": [
+    "WSVF"
+   ],
+   "feeds": [
+    "https://www.whsv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WVIR",
+   "market": "Charlottesville",
+   "owner": "",
+   "site": "https://nbc29.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WWBT",
+   "market": "Richmond-Petersburg",
+   "owner": "Gray",
+   "site": "https://nbc12.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WDBJ",
+   "market": "Roanoke-Lynchburg",
+   "owner": "Gray",
+   "site": "https://wdbj7.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wdbj7.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WMTV",
+   "market": "Madison",
+   "owner": "Gray",
+   "site": "https://nbc15.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KOSA",
+   "market": "Odessa-Midland",
+   "owner": "Gray",
+   "site": "https://cbs7.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KAIT",
+   "market": "Jonesboro",
+   "owner": "Gray",
+   "site": "https://kait8.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kait8.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KALB",
+   "market": "Alexandria, LA",
+   "owner": "Gray",
+   "site": "https://kalb.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kalb.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KKCO",
+   "market": "Grand Junction-Montrose",
+   "owner": "Scripps (ex-Gray)",
+   "site": "https://nbc11news.com",
+   "aliases": [
+    "kkco11news.com"
+   ],
+   "siblings": [
+    "KJCT"
+   ],
+   "feeds": [
+    "https://www.kkco11news.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KJCT",
+   "market": "Grand Junction-Montrose",
+   "owner": "",
+   "site": "https://nbc11news.com",
+   "aliases": [
+    "kjct8.com"
+   ],
+   "siblings": [
+    "KKCO"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WITN",
+   "market": "Greenville-New Bern-Washington",
+   "owner": "Gray",
+   "site": "https://witn.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.witn.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WECT",
+   "market": "Wilmington, NC",
+   "owner": "Gray",
+   "site": "https://wect.com",
+   "aliases": [],
+   "siblings": [
+    "WSFX"
+   ],
+   "feeds": [
+    "https://www.wect.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WBNG",
+   "market": "Binghamton",
+   "owner": "Gray",
+   "site": "https://wbng.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wbng.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WWNY",
+   "market": "Watertown",
+   "owner": "Gray",
+   "site": "https://wwnytv.com",
+   "aliases": [],
+   "siblings": [
+    "WVNC",
+    "WNYF"
+   ],
+   "feeds": [
+    "https://www.wwnytv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KYTV",
+   "market": "Springfield, MO",
+   "owner": "Gray",
+   "site": "https://ky3.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ky3.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KOLN",
+   "market": "Lincoln-Hastings-Kearney",
+   "owner": "Gray",
+   "site": "https://1011now.com",
+   "aliases": [
+    "kolnkgin.com"
+   ],
+   "siblings": [
+    "KSNB"
+   ],
+   "feeds": [
+    "https://www.1011now.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KSNB",
+   "market": "Lincoln-Hastings-Kearney",
+   "owner": "Gray",
+   "site": "https://1011now.com",
+   "aliases": [],
+   "siblings": [
+    "KOLN"
+   ],
+   "feeds": [
+    "https://www.1011now.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KNOP",
+   "market": "North Platte",
+   "owner": "Gray",
+   "site": "https://knopnews2.com",
+   "aliases": [],
+   "siblings": [
+    "KNPL",
+    "KIIT"
+   ],
+   "feeds": [
+    "https://www.knopnews2.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WEEK",
+   "market": "Peoria-Bloomington",
+   "owner": "Gray",
+   "site": "https://25newsnow.com",
+   "aliases": [
+    "week.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.25newsnow.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WGEM",
+   "market": "Quincy-Hannibal-Keokuk",
+   "owner": "Quincy Media/Gray",
+   "site": "https://wgem.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wgem.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KYOU",
+   "market": "Ottumwa-Kirksville",
+   "owner": "Gray",
+   "site": "https://kyoutv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kyoutv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WFSB",
+   "market": "Hartford-New Haven",
+   "owner": "Gray",
+   "site": "https://wfsb.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wfsb.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WWSB",
+   "market": "",
+   "owner": "",
+   "site": "https://mysuncoast.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.mysuncoast.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WFLX",
+   "market": "West Palm Beach-Ft. Pierce",
+   "owner": "Gray",
+   "site": "https://wflx.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wflx.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KPHO",
+   "market": "Phoenix",
+   "owner": "Gray",
+   "site": "https://azfamily.com",
+   "aliases": [],
+   "siblings": [
+    "KTVK"
+   ],
+   "feeds": [
+    "https://www.azfamily.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTVK",
+   "market": "",
+   "owner": "",
+   "site": "https://azfamily.com",
+   "aliases": [],
+   "siblings": [
+    "KPHO"
+   ],
+   "feeds": [
+    "https://www.azfamily.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KOLD",
+   "market": "Tucson",
+   "owner": "Gray",
+   "site": "https://kold.com",
+   "aliases": [],
+   "siblings": [
+    "KMSB"
+   ],
+   "feeds": [
+    "https://www.kold.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KVVU",
+   "market": "Las Vegas",
+   "owner": "Gray",
+   "site": "https://fox5vegas.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox5vegas.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WVUE",
+   "market": "New Orleans",
+   "owner": "Gray",
+   "site": "https://fox8live.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox8live.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WXIX",
+   "market": "Cincinnati",
+   "owner": "Gray",
+   "site": "https://fox19.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox19.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WOIO",
+   "market": "Cleveland-Akron",
+   "owner": "Gray",
+   "site": "https://cleveland19.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cleveland19.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WTVG",
+   "market": "Toledo",
+   "owner": "Gray",
+   "site": "https://13abc.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.13abc.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KPTV",
+   "market": "Portland, OR",
+   "owner": "Gray",
+   "site": "https://kptv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kptv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WIS",
+   "market": "Columbia, SC",
+   "owner": "Gray",
+   "site": "https://wistv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wistv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WMBF",
+   "market": "Myrtle Beach-Florence",
+   "owner": "Gray",
+   "site": "https://wmbfnews.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wmbfnews.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WMC",
+   "market": "Memphis",
+   "owner": "Gray",
+   "site": "https://actionnews5.com",
+   "aliases": [
+    "wmcactionnews5.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.actionnews5.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KOTA",
+   "market": "Rapid City",
+   "owner": "Gray",
+   "site": "https://blackhillsfox.com",
+   "aliases": [
+    "kotatv.com"
+   ],
+   "siblings": [
+    "KEVN",
+    "KHSD"
+   ],
+   "feeds": [
+    "https://www.kotatv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KEVN",
+   "market": "Rapid City",
+   "owner": "Gray",
+   "site": "https://blackhillsfox.com",
+   "aliases": [],
+   "siblings": [
+    "KOTA",
+    "KHSD"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KSFY",
+   "market": "Sioux Falls-Mitchell",
+   "owner": "Gray",
+   "site": "https://dakotanewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KDLT"
+   ],
+   "feeds": [
+    "https://www.dakotanewsnow.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KDLT",
+   "market": "Sioux Falls-Mitchell",
+   "owner": "Gray",
+   "site": "https://dakotanewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KSFY"
+   ],
+   "feeds": [
+    "https://www.dakotanewsnow.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KFYR",
+   "market": "Minot-Bismarck-Dickinson",
+   "owner": "Gray",
+   "site": "https://kfyrtv.com",
+   "aliases": [],
+   "siblings": [
+    "KNDX",
+    "KXND"
+   ],
+   "feeds": [
+    "https://www.kfyrtv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KVLY",
+   "market": "Fargo-Valley City",
+   "owner": "Forum",
+   "site": "https://valleynewslive.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.valleynewslive.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KBJR",
+   "market": "Duluth-Superior",
+   "owner": "Gray",
+   "site": "https://northernnewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KDLH"
+   ],
+   "feeds": [
+    "https://www.northernnewsnow.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KDLH",
+   "market": "",
+   "owner": "",
+   "site": "https://northernnewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KBJR"
+   ],
+   "feeds": [
+    "https://www.northernnewsnow.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KGMB",
+   "market": "Honolulu",
+   "owner": "Gray",
+   "site": "https://hawaiinewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KHNL"
+   ],
+   "feeds": [
+    "https://www.hawaiinewsnow.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KHNL",
+   "market": "Honolulu",
+   "owner": "Gray",
+   "site": "https://hawaiinewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KGMB"
+   ],
+   "feeds": [
+    "https://www.hawaiinewsnow.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTUU",
+   "market": "Anchorage",
+   "owner": "Gray",
+   "site": "https://alaskasnewssource.com",
+   "aliases": [
+    "ktuu.com"
+   ],
+   "siblings": [
+    "KAUU",
+    "KJUD",
+    "KATN",
+    "KXLJ"
+   ],
+   "feeds": [
+    "https://www.alaskasnewssource.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KAUU",
+   "market": "Anchorage",
+   "owner": "Gray",
+   "site": "https://alaskasnewssource.com",
+   "aliases": [],
+   "siblings": [
+    "KTUU",
+    "KJUD",
+    "KATN",
+    "KXLJ"
+   ],
+   "feeds": [
+    "https://www.alaskasnewssource.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTVF",
+   "market": "Fairbanks",
+   "owner": "Gray",
+   "site": "https://webcenterfairbanks.com",
+   "aliases": [],
+   "siblings": [
+    "KXDF"
+   ],
+   "feeds": [
+    "https://www.webcenterfairbanks.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WGGB",
+   "market": "Springfield-Holyoke",
+   "owner": "Gray",
+   "site": "https://westernmassnews.com",
+   "aliases": [],
+   "siblings": [
+    "WSHM"
+   ],
+   "feeds": [
+    "https://www.westernmassnews.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WSHM",
+   "market": "Springfield-Holyoke",
+   "owner": "Gray",
+   "site": "https://westernmassnews.com",
+   "aliases": [],
+   "siblings": [
+    "WGGB"
+   ],
+   "feeds": [
+    "https://www.westernmassnews.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WLUC",
+   "market": "Marquette",
+   "owner": "",
+   "site": "https://uppermichiganssource.com",
+   "aliases": [
+    "wluc.com"
+   ],
+   "siblings": [
+    "WZMQ"
+   ],
+   "feeds": [
+    "https://www.uppermichiganssource.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WBRC",
+   "market": "Birmingham",
+   "owner": "Gray",
+   "site": "https://wbrc.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wbrc.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WALA",
+   "market": "Mobile-Pensacola",
+   "owner": "Gray",
+   "site": "https://fox10tv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox10tv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WPCH",
+   "market": "",
+   "owner": "",
+   "site": "https://atlantanewsfirst.com",
+   "aliases": [],
+   "siblings": [
+    "WANF"
+   ],
+   "feeds": [
+    "https://www.atlantanewsfirst.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WANF",
+   "market": "Atlanta",
+   "owner": "Gray",
+   "site": "https://atlantanewsfirst.com",
+   "aliases": [],
+   "siblings": [
+    "WPCH"
+   ],
+   "feeds": [
+    "https://www.atlantanewsfirst.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KHSD",
+   "market": "",
+   "owner": "",
+   "site": "https://blackhillsfox.com",
+   "aliases": [],
+   "siblings": [
+    "KOTA",
+    "KEVN"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KGPE",
+   "market": "Fresno-Visalia",
+   "owner": "Nexstar",
+   "site": "https://yourcentralvalley.com",
+   "aliases": [],
+   "siblings": [
+    "KSEE"
+   ],
+   "feeds": [
+    "https://www.yourcentralvalley.com/feed/"
+   ]
+  },
+  {
+   "call": "KSEE",
+   "market": "Fresno-Visalia",
+   "owner": "Nexstar",
+   "site": "https://yourcentralvalley.com",
+   "aliases": [],
+   "siblings": [
+    "KGPE"
+   ],
+   "feeds": [
+    "https://www.yourcentralvalley.com/feed/"
+   ]
+  },
+  {
+   "call": "WHTM",
+   "market": "Harrisburg-Lancaster-York",
+   "owner": "",
+   "site": "https://abc27.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.abc27.com/feed/"
+   ]
+  },
+  {
+   "call": "WPMT",
+   "market": "Harrisburg-Lancaster-York",
+   "owner": "",
+   "site": "https://fox43.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox43.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WOOD",
+   "market": "Grand Rapids-Kalamazoo",
+   "owner": "",
+   "site": "https://woodtv.com",
+   "aliases": [],
+   "siblings": [
+    "WOTV"
+   ],
+   "feeds": [
+    "https://www.woodtv.com/feed/"
+   ]
+  },
+  {
+   "call": "WOTV",
+   "market": "",
+   "owner": "",
+   "site": "https://woodtv.com",
+   "aliases": [],
+   "siblings": [
+    "WOOD"
+   ],
+   "feeds": [
+    "https://www.woodtv.com/feed/"
+   ]
+  },
+  {
+   "call": "WAVY",
+   "market": "Norfolk-Portsmouth-Newport News",
+   "owner": "",
+   "site": "https://wavy.com",
+   "aliases": [],
+   "siblings": [
+    "WVBT"
+   ],
+   "feeds": [
+    "https://www.wavy.com/feed/"
+   ]
+  },
+  {
+   "call": "WVBT",
+   "market": "Norfolk-Portsmouth-Newport News",
+   "owner": "",
+   "site": "https://wavy.com",
+   "aliases": [],
+   "siblings": [
+    "WAVY"
+   ],
+   "feeds": [
+    "https://www.wavy.com/feed/"
+   ]
+  },
+  {
+   "call": "KFOR",
+   "market": "Oklahoma City",
+   "owner": "",
+   "site": "https://kfor.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://kfor.com/feed/"
+   ]
+  },
+  {
+   "call": "KAUT",
+   "market": "",
+   "owner": "",
+   "site": "https://freedom43tv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WIAT",
+   "market": "",
+   "owner": "",
+   "site": "https://alabamas42.com",
+   "aliases": [
+    "cbs42.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.alabamas42.com/feed/"
+   ]
+  },
+  {
+   "call": "WGHP",
+   "market": "Greensboro-Winston-Salem",
+   "owner": "",
+   "site": "https://myfox8.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://myfox8.com/feed/"
+   ]
+  },
+  {
+   "call": "WHAS",
+   "market": "Louisville",
+   "owner": "",
+   "site": "https://whas11.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.whas11.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KRQE",
+   "market": "Albuquerque-Santa Fe",
+   "owner": "Nexstar",
+   "site": "https://krqe.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.krqe.com/feed/"
+   ]
+  },
+  {
+   "call": "WGNO",
+   "market": "New Orleans",
+   "owner": "",
+   "site": "https://wgno.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://wgno.com/feed/"
+   ]
+  },
+  {
+   "call": "WREG",
+   "market": "Memphis",
+   "owner": "",
+   "site": "https://wreg.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://wreg.com/feed/"
+   ]
+  },
+  {
+   "call": "WATN",
+   "market": "Memphis",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://localmemphis.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.localmemphis.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WPRI",
+   "market": "Providence-New Bedford",
+   "owner": "",
+   "site": "https://wpri.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wpri.com/feed/"
+   ]
+  },
+  {
+   "call": "WNAC",
+   "market": "Providence-New Bedford",
+   "owner": "",
+   "site": "https://foxprovidence.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WRIC",
+   "market": "Richmond-Petersburg",
+   "owner": "",
+   "site": "https://wric.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wric.com/feed/"
+   ]
+  },
+  {
+   "call": "WIVB",
+   "market": "Buffalo",
+   "owner": "",
+   "site": "https://wivb.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wivb.com/feed/"
+   ]
+  },
+  {
+   "call": "WNLO",
+   "market": "",
+   "owner": "",
+   "site": "https://cw23.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WKRG",
+   "market": "Mobile-Pensacola",
+   "owner": "",
+   "site": "https://wkrg.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wkrg.com/feed/"
+   ]
+  },
+  {
+   "call": "WBRE",
+   "market": "Wilkes-Barre-Scranton",
+   "owner": "",
+   "site": "https://pahomepage.com",
+   "aliases": [],
+   "siblings": [
+    "WYOU"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WYOU",
+   "market": "Wilkes-Barre-Scranton",
+   "owner": "",
+   "site": "https://pahomepage.com",
+   "aliases": [],
+   "siblings": [
+    "WBRE"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KARK",
+   "market": "Little Rock-Pine Bluff",
+   "owner": "",
+   "site": "https://kark.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kark.com/feed/"
+   ]
+  },
+  {
+   "call": "KLRT",
+   "market": "Little Rock-Pine Bluff",
+   "owner": "",
+   "site": "https://fox16.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox16.com/feed/"
+   ]
+  },
+  {
+   "call": "WGN",
+   "market": "Chicago",
+   "owner": "Nexstar",
+   "site": "https://wgntv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://wgntv.com/feed/"
+   ]
+  },
+  {
+   "call": "KTLA",
+   "market": "Los Angeles",
+   "owner": "Nexstar",
+   "site": "https://ktla.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://ktla.com/feed/"
+   ]
+  },
+  {
+   "call": "WPIX",
+   "market": "",
+   "owner": "",
+   "site": "https://pix11.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://pix11.com/feed/"
+   ]
+  },
+  {
+   "call": "KLBK",
+   "market": "Lubbock",
+   "owner": "Nexstar",
+   "site": "https://everythinglubbock.com",
+   "aliases": [],
+   "siblings": [
+    "KAMC"
+   ],
+   "feeds": [
+    "https://www.everythinglubbock.com/feed/"
+   ]
+  },
+  {
+   "call": "KAMC",
+   "market": "Lubbock",
+   "owner": "Nexstar",
+   "site": "https://everythinglubbock.com",
+   "aliases": [],
+   "siblings": [
+    "KLBK"
+   ],
+   "feeds": [
+    "https://www.everythinglubbock.com/feed/"
+   ]
+  },
+  {
+   "call": "KMID",
+   "market": "Odessa-Midland",
+   "owner": "Nexstar",
+   "site": "https://yourbasin.com",
+   "aliases": [],
+   "siblings": [
+    "KPEJ"
+   ],
+   "feeds": [
+    "https://www.yourbasin.com/feed/"
+   ]
+  },
+  {
+   "call": "KPEJ",
+   "market": "Odessa-Midland",
+   "owner": "Nexstar",
+   "site": "https://yourbasin.com",
+   "aliases": [],
+   "siblings": [
+    "KMID"
+   ],
+   "feeds": [
+    "https://www.yourbasin.com/feed/"
+   ]
+  },
+  {
+   "call": "KAMR",
+   "market": "Amarillo",
+   "owner": "Nexstar",
+   "site": "https://myhighplains.com",
+   "aliases": [],
+   "siblings": [
+    "KCIT"
+   ],
+   "feeds": [
+    "https://www.myhighplains.com/feed/"
+   ]
+  },
+  {
+   "call": "KCIT",
+   "market": "Amarillo",
+   "owner": "Nexstar",
+   "site": "https://myhighplains.com",
+   "aliases": [],
+   "siblings": [
+    "KAMR"
+   ],
+   "feeds": [
+    "https://www.myhighplains.com/feed/"
+   ]
+  },
+  {
+   "call": "WJTV",
+   "market": "",
+   "owner": "",
+   "site": "https://wjtv.com",
+   "aliases": [],
+   "siblings": [
+    "WHLT"
+   ],
+   "feeds": [
+    "https://www.wjtv.com/feed/"
+   ]
+  },
+  {
+   "call": "WSPA",
+   "market": "",
+   "owner": "",
+   "site": "https://wspa.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wspa.com/feed/"
+   ]
+  },
+  {
+   "call": "WKBN",
+   "market": "Youngstown",
+   "owner": "Nexstar",
+   "site": "https://wkbn.com",
+   "aliases": [],
+   "siblings": [
+    "WYFX"
+   ],
+   "feeds": [
+    "https://www.wkbn.com/feed/"
+   ]
+  },
+  {
+   "call": "WYTV",
+   "market": "Youngstown",
+   "owner": "Nexstar",
+   "site": "https://wytv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wytv.com/feed/"
+   ]
+  },
+  {
+   "call": "WLNS",
+   "market": "Lansing",
+   "owner": "Nexstar",
+   "site": "https://wlns.com",
+   "aliases": [],
+   "siblings": [
+    "WLAJ"
+   ],
+   "feeds": [
+    "https://www.wlns.com/feed/"
+   ]
+  },
+  {
+   "call": "KLAS",
+   "market": "Las Vegas",
+   "owner": "",
+   "site": "https://8newsnow.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.8newsnow.com/feed/"
+   ]
+  },
+  {
+   "call": "KTSM",
+   "market": "El Paso",
+   "owner": "",
+   "site": "https://ktsm.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ktsm.com/feed/"
+   ]
+  },
+  {
+   "call": "WNCT",
+   "market": "Greenville-New Bern-Washington",
+   "owner": "Gray",
+   "site": "https://wnct.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wnct.com/feed/"
+   ]
+  },
+  {
+   "call": "WTEN",
+   "market": "Albany-Schenectady-Troy",
+   "owner": "Nexstar",
+   "site": "https://news10.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.news10.com/feed/"
+   ]
+  },
+  {
+   "call": "KLST",
+   "market": "San Angelo",
+   "owner": "",
+   "site": "https://conchovalleyhomepage.com",
+   "aliases": [],
+   "siblings": [
+    "KSAN"
+   ],
+   "feeds": [
+    "https://www.conchovalleyhomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "KSAN",
+   "market": "San Angelo",
+   "owner": "",
+   "site": "https://conchovalleyhomepage.com",
+   "aliases": [],
+   "siblings": [
+    "KLST"
+   ],
+   "feeds": [
+    "https://www.conchovalleyhomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "WHBF",
+   "market": "Davenport-Rock Island-Moline",
+   "owner": "Nexstar",
+   "site": "https://ourquadcities.com",
+   "aliases": [],
+   "siblings": [
+    "KLJB"
+   ],
+   "feeds": [
+    "https://www.ourquadcities.com/feed/"
+   ]
+  },
+  {
+   "call": "KLJB",
+   "market": "Davenport-Rock Island-Moline",
+   "owner": "Nexstar",
+   "site": "https://ourquadcities.com",
+   "aliases": [],
+   "siblings": [
+    "WHBF"
+   ],
+   "feeds": [
+    "https://www.ourquadcities.com/feed/"
+   ]
+  },
+  {
+   "call": "WJET",
+   "market": "Erie",
+   "owner": "Nexstar",
+   "site": "https://yourerie.com",
+   "aliases": [],
+   "siblings": [
+    "WFXP"
+   ],
+   "feeds": [
+    "https://www.yourerie.com/feed/"
+   ]
+  },
+  {
+   "call": "WFXP",
+   "market": "Erie",
+   "owner": "Mission (Nexstar-operated)",
+   "site": "https://yourerie.com",
+   "aliases": [],
+   "siblings": [
+    "WJET"
+   ],
+   "feeds": [
+    "https://www.yourerie.com/feed/"
+   ]
+  },
+  {
+   "call": "WTAJ",
+   "market": "Johnstown-Altoona-State College",
+   "owner": "Nexstar",
+   "site": "https://wtaj.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wtaj.com/feed/"
+   ]
+  },
+  {
+   "call": "KSNT",
+   "market": "Topeka",
+   "owner": "Nexstar",
+   "site": "https://ksnt.com",
+   "aliases": [],
+   "siblings": [
+    "KTKA",
+    "KTMJ"
+   ],
+   "feeds": [
+    "https://www.ksnt.com/feed/"
+   ]
+  },
+  {
+   "call": "KTKA",
+   "market": "Topeka",
+   "owner": "Nexstar",
+   "site": "https://ksnt.com",
+   "aliases": [],
+   "siblings": [
+    "KSNT",
+    "KTMJ"
+   ],
+   "feeds": [
+    "https://www.ksnt.com/feed/"
+   ]
+  },
+  {
+   "call": "KARD",
+   "market": "Monroe-El Dorado",
+   "owner": "Nexstar",
+   "site": "https://myarklamiss.com",
+   "aliases": [],
+   "siblings": [
+    "KTVE"
+   ],
+   "feeds": [
+    "https://www.myarklamiss.com/feed/"
+   ]
+  },
+  {
+   "call": "KTVE",
+   "market": "Monroe-El Dorado",
+   "owner": "Nexstar",
+   "site": "https://myarklamiss.com",
+   "aliases": [
+    "ktve.com"
+   ],
+   "siblings": [
+    "KARD"
+   ],
+   "feeds": [
+    "https://www.myarklamiss.com/feed/"
+   ]
+  },
+  {
+   "call": "WTVO",
+   "market": "Rockford",
+   "owner": "Nexstar",
+   "site": "https://mystateline.com",
+   "aliases": [],
+   "siblings": [
+    "WQRF"
+   ],
+   "feeds": [
+    "https://www.mystateline.com/feed/"
+   ]
+  },
+  {
+   "call": "WQRF",
+   "market": "Rockford",
+   "owner": "Nexstar",
+   "site": "https://mystateline.com",
+   "aliases": [],
+   "siblings": [
+    "WTVO"
+   ],
+   "feeds": [
+    "https://www.mystateline.com/feed/"
+   ]
+  },
+  {
+   "call": "WQOW",
+   "market": "La Crosse-Eau Claire",
+   "owner": "Nexstar",
+   "site": "https://wqow.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wqow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "WXOW",
+   "market": "",
+   "owner": "",
+   "site": "https://wxow.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WCIA",
+   "market": "Champaign-Springfield-Decatur",
+   "owner": "Nexstar",
+   "site": "https://wcia.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wcia.com/feed/"
+   ]
+  },
+  {
+   "call": "WMBD",
+   "market": "Peoria-Bloomington",
+   "owner": "Nexstar",
+   "site": "https://centralillinoisproud.com",
+   "aliases": [],
+   "siblings": [
+    "WYZZ"
+   ],
+   "feeds": [
+    "https://www.centralillinoisproud.com/feed/"
+   ]
+  },
+  {
+   "call": "WNCN",
+   "market": "Raleigh-Durham",
+   "owner": "Nexstar",
+   "site": "https://cbs17.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbs17.com/feed/"
+   ]
+  },
+  {
+   "call": "WFRV",
+   "market": "Green Bay-Appleton",
+   "owner": "Nexstar",
+   "site": "https://wearegreenbay.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wearegreenbay.com/feed/"
+   ]
+  },
+  {
+   "call": "KOIN",
+   "market": "Portland, OR",
+   "owner": "Nexstar",
+   "site": "https://koin.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.koin.com/feed/"
+   ]
+  },
+  {
+   "call": "WTRF",
+   "market": "Wheeling-Steubenville",
+   "owner": "Nexstar",
+   "site": "https://wtrf.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wtrf.com/feed/"
+   ]
+  },
+  {
+   "call": "WBOY",
+   "market": "Clarksburg-Weston",
+   "owner": "Nexstar",
+   "site": "https://wboy.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wboy.com/feed/"
+   ]
+  },
+  {
+   "call": "KREX",
+   "market": "Grand Junction-Montrose",
+   "owner": "Nexstar",
+   "site": "https://westernslopenow.com",
+   "aliases": [
+    "krextv.com"
+   ],
+   "siblings": [
+    "KFQX"
+   ],
+   "feeds": [
+    "https://www.westernslopenow.com/feed/"
+   ]
+  },
+  {
+   "call": "KHON",
+   "market": "Honolulu",
+   "owner": "Nexstar",
+   "site": "https://khon2.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.khon2.com/feed/"
+   ]
+  },
+  {
+   "call": "KDVR",
+   "market": "Denver",
+   "owner": "Nexstar",
+   "site": "https://kdvr.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://kdvr.com/feed/"
+   ]
+  },
+  {
+   "call": "WTTV",
+   "market": "Indianapolis",
+   "owner": "Nexstar",
+   "site": "https://cbs4indy.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WWLP",
+   "market": "Springfield-Holyoke",
+   "owner": "Nexstar",
+   "site": "https://wwlp.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wwlp.com/feed/"
+   ]
+  },
+  {
+   "call": "WSYR",
+   "market": "Syracuse",
+   "owner": "Nexstar",
+   "site": "https://localsyr.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.localsyr.com/feed/"
+   ]
+  },
+  {
+   "call": "WWTI",
+   "market": "Watertown",
+   "owner": "Nexstar \\u2014 WSYR semi-satellite",
+   "site": "https://informnny.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.informnny.com/feed/"
+   ]
+  },
+  {
+   "call": "KDAF",
+   "market": "",
+   "owner": "",
+   "site": "https://cw33.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://cw33.com/feed/"
+   ]
+  },
+  {
+   "call": "WNEP",
+   "market": "Wilkes-Barre-Scranton",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://wnep.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wnep.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WCVB",
+   "market": "Boston",
+   "owner": "Hearst",
+   "site": "https://wcvb.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WBAL",
+   "market": "Baltimore",
+   "owner": "Hearst",
+   "site": "https://wbaltv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WTAE",
+   "market": "Pittsburgh",
+   "owner": "Hearst",
+   "site": "https://wtae.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WISN",
+   "market": "Milwaukee",
+   "owner": "Hearst",
+   "site": "https://wisn.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WESH",
+   "market": "Orlando-Daytona-Melbourne",
+   "owner": "Hearst",
+   "site": "https://wesh.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WMUR",
+   "market": "",
+   "owner": "",
+   "site": "https://wmur.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KCRA",
+   "market": "Sacramento-Stockton-Modesto",
+   "owner": "Hearst",
+   "site": "https://kcra.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KOAT",
+   "market": "Albuquerque-Santa Fe",
+   "owner": "Hearst",
+   "site": "https://koat.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WVTM",
+   "market": "Birmingham",
+   "owner": "Hearst",
+   "site": "https://wvtm13.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WYFF",
+   "market": "Greenville-Spartanburg-Asheville",
+   "owner": "Hearst",
+   "site": "https://wyff4.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WAPT",
+   "market": "Jackson, MS",
+   "owner": "Hearst",
+   "site": "https://wapt.com",
+   "aliases": [
+    "16wapt.com"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KSBW",
+   "market": "Monterey-Salinas",
+   "owner": "Hearst",
+   "site": "https://ksbw.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WXII",
+   "market": "Greensboro-Winston-Salem",
+   "owner": "Hearst",
+   "site": "https://wxii12.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WLWT",
+   "market": "Cincinnati",
+   "owner": "Hearst",
+   "site": "https://wlwt.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WDSU",
+   "market": "New Orleans",
+   "owner": "Hearst",
+   "site": "https://wdsu.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KMBC",
+   "market": "Kansas City",
+   "owner": "Hearst",
+   "site": "https://kmbc.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WPBF",
+   "market": "West Palm Beach-Ft. Pierce",
+   "owner": "Hearst",
+   "site": "https://wpbf.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KETV",
+   "market": "Omaha",
+   "owner": "Hearst",
+   "site": "https://ketv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WLKY",
+   "market": "Louisville",
+   "owner": "Hearst",
+   "site": "https://wlky.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KCCI",
+   "market": "Des Moines-Ames",
+   "owner": "",
+   "site": "https://kcci.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KOCO",
+   "market": "Oklahoma City",
+   "owner": "",
+   "site": "https://koco.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WMTW",
+   "market": "Portland-Auburn, ME",
+   "owner": "",
+   "site": "https://wmtw.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WBBH",
+   "market": "Ft. Myers-Naples",
+   "owner": "",
+   "site": "https://nbc-2.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KHBS",
+   "market": "Ft. Smith-Fayetteville",
+   "owner": "Hearst",
+   "site": "https://4029tv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WPTZ",
+   "market": "Burlington-Plattsburgh",
+   "owner": "",
+   "site": "https://mynbc5.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WFAA",
+   "market": "Dallas-Ft. Worth",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://wfaa.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wfaa.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KHOU",
+   "market": "Houston",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://khou.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.khou.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WUSA",
+   "market": "Washington DC",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://wusa9.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wusa9.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KSDK",
+   "market": "St. Louis",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://ksdk.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ksdk.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WTSP",
+   "market": "Tampa-St. Petersburg",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://wtsp.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wtsp.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WTHR",
+   "market": "Indianapolis",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://wthr.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wthr.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KGW",
+   "market": "Portland, OR",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://kgw.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kgw.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KENS",
+   "market": "San Antonio",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://kens5.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kens5.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WBIR",
+   "market": "Knoxville",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://wbir.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wbir.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WCNC",
+   "market": "Charlotte",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://wcnc.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wcnc.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WWL",
+   "market": "New Orleans",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://wwltv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wwltv.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WVEC",
+   "market": "Norfolk-Portsmouth-Newport News",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://13newsnow.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.13newsnow.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KVUE",
+   "market": "Austin",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://kvue.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kvue.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KIII",
+   "market": "Corpus Christi",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://kiiitv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kiiitv.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WZZM",
+   "market": "Grand Rapids-Kalamazoo",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://wzzm13.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wzzm13.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WGRZ",
+   "market": "Buffalo",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://wgrz.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wgrz.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WXIA",
+   "market": "Atlanta",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://11alive.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.11alive.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KARE",
+   "market": "Minneapolis-St. Paul",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://kare11.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kare11.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KING",
+   "market": "Seattle-Tacoma",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://king5.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.king5.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KPNX",
+   "market": "Phoenix",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://12news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.12news.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KFMB",
+   "market": "San Diego",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://cbs8.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbs8.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KUSA",
+   "market": "Denver",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://9news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.9news.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WKYC",
+   "market": "Cleveland-Akron",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://wkyc.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wkyc.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WTLV",
+   "market": "Jacksonville",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://firstcoastnews.com",
+   "aliases": [],
+   "siblings": [
+    "WJXX"
+   ],
+   "feeds": [
+    "https://www.firstcoastnews.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WMAZ",
+   "market": "Macon",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://13wmaz.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.13wmaz.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KTHV",
+   "market": "Little Rock-Pine Bluff",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://thv11.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.thv11.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KTVB",
+   "market": "Boise",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://ktvb.com",
+   "aliases": [],
+   "siblings": [
+    "KTFT"
+   ],
+   "feeds": [
+    "https://www.ktvb.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KCEN",
+   "market": "Waco-Temple-Bryan",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://kcentv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kcentv.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WCSH",
+   "market": "Portland-Auburn, ME",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://newscentermaine.com",
+   "aliases": [],
+   "siblings": [
+    "WLBZ"
+   ],
+   "feeds": [
+    "https://www.newscentermaine.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WLBZ",
+   "market": "Bangor",
+   "owner": "Tegna \\u2014 WCSH semi-satellite",
+   "site": "https://newscentermaine.com",
+   "aliases": [],
+   "siblings": [
+    "WCSH"
+   ],
+   "feeds": [
+    "https://www.newscentermaine.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WQAD",
+   "market": "Davenport-Rock Island-Moline",
+   "owner": "Tegna\\u2192Nexstar",
+   "site": "https://wqad.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wqad.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WXYZ",
+   "market": "Detroit",
+   "owner": "Scripps",
+   "site": "https://wxyz.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wxyz.com/index.rss"
+   ]
+  },
+  {
+   "call": "WEWS",
+   "market": "Cleveland-Akron",
+   "owner": "Scripps",
+   "site": "https://news5cleveland.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.news5cleveland.com/index.rss"
+   ]
+  },
+  {
+   "call": "WCPO",
+   "market": "Cincinnati",
+   "owner": "Scripps",
+   "site": "https://wcpo.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wcpo.com/index.rss"
+   ]
+  },
+  {
+   "call": "WMAR",
+   "market": "Baltimore",
+   "owner": "Scripps",
+   "site": "https://wmar2news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wmar2news.com/index.rss"
+   ]
+  },
+  {
+   "call": "KNXV",
+   "market": "Phoenix",
+   "owner": "Scripps",
+   "site": "https://abc15.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.abc15.com/index.rss"
+   ]
+  },
+  {
+   "call": "KJRH",
+   "market": "Tulsa",
+   "owner": "Scripps",
+   "site": "https://kjrh.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kjrh.com/index.rss"
+   ]
+  },
+  {
+   "call": "KSHB",
+   "market": "Kansas City",
+   "owner": "Scripps",
+   "site": "https://kshb.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kshb.com/index.rss"
+   ]
+  },
+  {
+   "call": "WFTS",
+   "market": "Tampa-St. Petersburg",
+   "owner": "Scripps",
+   "site": "https://abcactionnews.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WPTV",
+   "market": "West Palm Beach-Ft. Pierce",
+   "owner": "Scripps",
+   "site": "https://wptv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wptv.com/index.rss"
+   ]
+  },
+  {
+   "call": "KGTV",
+   "market": "San Diego",
+   "owner": "Scripps",
+   "site": "https://10news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.10news.com/index.rss"
+   ]
+  },
+  {
+   "call": "KMGH",
+   "market": "Denver",
+   "owner": "Scripps",
+   "site": "https://denver7.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.denver7.com/index.rss"
+   ]
+  },
+  {
+   "call": "WRTV",
+   "market": "Indianapolis",
+   "owner": "Scripps",
+   "site": "https://wrtv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wrtv.com/feed/"
+   ]
+  },
+  {
+   "call": "WTMJ",
+   "market": "Milwaukee",
+   "owner": "Scripps",
+   "site": "https://tmj4.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.tmj4.com/index.rss"
+   ]
+  },
+  {
+   "call": "KERO",
+   "market": "Bakersfield",
+   "owner": "Scripps",
+   "site": "https://23abc.com",
+   "aliases": [
+    "turnto23.com"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WTXL",
+   "market": "Tallahassee-Thomasville",
+   "owner": "Scripps",
+   "site": "https://wtxl.com",
+   "aliases": [],
+   "siblings": [
+    "WTLH"
+   ],
+   "feeds": [
+    "https://www.wtxl.com/index.rss"
+   ]
+  },
+  {
+   "call": "KRIS",
+   "market": "Corpus Christi",
+   "owner": "Scripps",
+   "site": "https://kristv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kristv.com/index.rss"
+   ]
+  },
+  {
+   "call": "WTVQ",
+   "market": "Lexington",
+   "owner": "Scripps",
+   "site": "https://wtvq.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wtvq.com/feed/",
+    "https://www.wtvq.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "KOAA",
+   "market": "Colorado Springs-Pueblo",
+   "owner": "Scripps",
+   "site": "https://koaa.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.koaa.com/index.rss"
+   ]
+  },
+  {
+   "call": "KPAX",
+   "market": "Missoula",
+   "owner": "Scripps",
+   "site": "https://kpax.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kpax.com/index.rss"
+   ]
+  },
+  {
+   "call": "KRTV",
+   "market": "Great Falls",
+   "owner": "Scripps",
+   "site": "https://krtv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.krtv.com/index.rss"
+   ]
+  },
+  {
+   "call": "KTVQ",
+   "market": "Billings",
+   "owner": "Scripps",
+   "site": "https://ktvq.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ktvq.com/index.rss"
+   ]
+  },
+  {
+   "call": "KXLF",
+   "market": "Butte-Bozeman",
+   "owner": "Scripps",
+   "site": "https://kxlf.com",
+   "aliases": [
+    "kbzk.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.kxlf.com/index.rss"
+   ]
+  },
+  {
+   "call": "KBZK",
+   "market": "",
+   "owner": "",
+   "site": "https://kbzk.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kbzk.com/index.rss"
+   ]
+  },
+  {
+   "call": "KOMO",
+   "market": "Seattle-Tacoma",
+   "owner": "Sinclair",
+   "site": "https://komonews.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WJLA",
+   "market": "Washington DC",
+   "owner": "Sinclair",
+   "site": "https://wjla.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KATU",
+   "market": "Portland, OR",
+   "owner": "Sinclair",
+   "site": "https://katu.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WKRC",
+   "market": "Cincinnati",
+   "owner": "Sinclair",
+   "site": "https://local12.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KUTV",
+   "market": "Salt Lake City",
+   "owner": "Sinclair",
+   "site": "https://kutv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WSYX",
+   "market": "Columbus, OH",
+   "owner": "Sinclair",
+   "site": "https://abc6onyourside.com",
+   "aliases": [],
+   "siblings": [
+    "WTTE"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WBFF",
+   "market": "Baltimore",
+   "owner": "Sinclair",
+   "site": "https://foxbaltimore.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WPGH",
+   "market": "Pittsburgh",
+   "owner": "Sinclair",
+   "site": "https://wpxi.com",
+   "aliases": [],
+   "siblings": [
+    "WPXI"
+   ],
+   "feeds": [
+    "https://www.wpxi.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTUL",
+   "market": "Tulsa",
+   "owner": "Sinclair",
+   "site": "https://ktul.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WHAM",
+   "market": "Rochester, NY",
+   "owner": "Sinclair",
+   "site": "https://13wham.com",
+   "aliases": [],
+   "siblings": [
+    "WUHF"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WCYB",
+   "market": "Tri-Cities, TN-VA",
+   "owner": "Sinclair",
+   "site": "https://wcyb.com",
+   "aliases": [],
+   "siblings": [
+    "WEMT"
+   ],
+   "feeds": [
+    "https://wcyb.com/news.rss"
+   ]
+  },
+  {
+   "call": "KVAL",
+   "market": "Eugene",
+   "owner": "Sinclair",
+   "site": "https://kval.com",
+   "aliases": [],
+   "siblings": [
+    "KLSR"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KTVL",
+   "market": "Medford-Klamath Falls",
+   "owner": "Sinclair",
+   "site": "https://ktvl.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WJAC",
+   "market": "Johnstown-Altoona-State College",
+   "owner": "Sinclair",
+   "site": "https://wjactv.com",
+   "aliases": [],
+   "siblings": [
+    "WATM",
+    "WWCP"
+   ],
+   "feeds": [
+    "https://wjactv.com/news.rss"
+   ]
+  },
+  {
+   "call": "KBAK",
+   "market": "Bakersfield",
+   "owner": "Sinclair",
+   "site": "https://bakersfieldnow.com",
+   "aliases": [],
+   "siblings": [
+    "KBFX"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WLOS",
+   "market": "Greenville-Spartanburg-Asheville",
+   "owner": "Sinclair",
+   "site": "https://wlos.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WGME",
+   "market": "Portland-Auburn, ME",
+   "owner": "Sinclair",
+   "site": "https://wgme.com",
+   "aliases": [],
+   "siblings": [
+    "WPFO"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WJAR",
+   "market": "Providence-New Bedford",
+   "owner": "Sinclair",
+   "site": "https://turnto10.com",
+   "aliases": [
+    "wjar.com"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KRCR",
+   "market": "Chico-Redding",
+   "owner": "Sinclair",
+   "site": "https://krcrtv.com",
+   "aliases": [],
+   "siblings": [
+    "KAEF",
+    "KBVU"
+   ],
+   "feeds": [
+    "https://krcrtv.com/news.rss"
+   ]
+  },
+  {
+   "call": "WOAI",
+   "market": "San Antonio",
+   "owner": "Sinclair",
+   "site": "https://news4sanantonio.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KFDM",
+   "market": "Beaumont-Port Arthur",
+   "owner": "Sinclair",
+   "site": "https://kfdm.com",
+   "aliases": [],
+   "siblings": [
+    "KBTV"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KVII",
+   "market": "Amarillo",
+   "owner": "Sinclair",
+   "site": "https://abc7amarillo.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KTXS",
+   "market": "Abilene-Sweetwater",
+   "owner": "",
+   "site": "https://ktxs.com",
+   "aliases": [],
+   "siblings": [
+    "KTXE"
+   ],
+   "feeds": [
+    "https://ktxs.com/news.rss"
+   ]
+  },
+  {
+   "call": "WABC",
+   "market": "New York",
+   "owner": "ABC O&O",
+   "site": "https://abc7ny.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://abc7ny.com/feed/"
+   ]
+  },
+  {
+   "call": "WCBS",
+   "market": "New York",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/newyork",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/newyork/latest/rss/main"
+   ]
+  },
+  {
+   "call": "WNBC",
+   "market": "New York",
+   "owner": "NBC O&O",
+   "site": "https://nbcnewyork.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbcnewyork.com/?rss=y"
+   ]
+  },
+  {
+   "call": "WNYW",
+   "market": "New York",
+   "owner": "FOX O&O",
+   "site": "https://fox5ny.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox5ny.com/rss/category/news",
+    "https://www.fox5ny.com/rss/category/fox-local-new-york-24-7-live-schedule"
+   ]
+  },
+  {
+   "call": "KABC",
+   "market": "Los Angeles",
+   "owner": "ABC O&O",
+   "site": "https://abc7.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://abc7.com/feed/"
+   ]
+  },
+  {
+   "call": "KCBS",
+   "market": "Los Angeles",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/losangeles",
+   "aliases": [],
+   "siblings": [
+    "KCAL"
+   ],
+   "feeds": [
+    "https://www.cbsnews.com/losangeles/latest/rss/main"
+   ]
+  },
+  {
+   "call": "KNBC",
+   "market": "Los Angeles",
+   "owner": "NBC O&O",
+   "site": "https://nbclosangeles.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbclosangeles.com/?rss=y"
+   ]
+  },
+  {
+   "call": "KTTV",
+   "market": "Los Angeles",
+   "owner": "FOX O&O",
+   "site": "https://foxla.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.foxla.com/rss/category/news",
+    "https://www.foxla.com/rss/category/local-news"
+   ]
+  },
+  {
+   "call": "WLS",
+   "market": "Chicago",
+   "owner": "ABC O&O",
+   "site": "https://abc7chicago.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://abc7chicago.com/feed/"
+   ]
+  },
+  {
+   "call": "WBBM",
+   "market": "Chicago",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/chicago",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/chicago/latest/rss/main"
+   ]
+  },
+  {
+   "call": "WMAQ",
+   "market": "Chicago",
+   "owner": "NBC O&O",
+   "site": "https://nbcchicago.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbcchicago.com/?rss=y"
+   ]
+  },
+  {
+   "call": "WFLD",
+   "market": "Chicago",
+   "owner": "FOX O&O",
+   "site": "https://fox32chicago.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox32chicago.com/rss/category/news",
+    "https://www.fox32chicago.com/rss/category/local-news"
+   ]
+  },
+  {
+   "call": "WPVI",
+   "market": "Philadelphia",
+   "owner": "ABC O&O",
+   "site": "https://6abc.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://6abc.com/feed/"
+   ]
+  },
+  {
+   "call": "KYW",
+   "market": "Philadelphia",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/philadelphia",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/philadelphia/latest/rss/main"
+   ]
+  },
+  {
+   "call": "WCAU",
+   "market": "Philadelphia",
+   "owner": "NBC O&O",
+   "site": "https://nbcphiladelphia.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbcphiladelphia.com/?rss=y"
+   ]
+  },
+  {
+   "call": "WTXF",
+   "market": "Philadelphia",
+   "owner": "FOX O&O",
+   "site": "https://fox29.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox29.com/rss/category/news",
+    "https://www.fox29.com/rss/tags/us,pa,philadelphia"
+   ]
+  },
+  {
+   "call": "KGO",
+   "market": "San Francisco-Oak-San Jose",
+   "owner": "ABC O&O",
+   "site": "https://abc7news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://abc7news.com/feed/"
+   ]
+  },
+  {
+   "call": "KPIX",
+   "market": "San Francisco-Oak-San Jose",
+   "owner": "",
+   "site": "https://www.cbsnews.com/sanfrancisco",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/sanfrancisco/latest/rss/main"
+   ]
+  },
+  {
+   "call": "KNTV",
+   "market": "San Francisco-Oak-San Jose",
+   "owner": "NBC O&O",
+   "site": "https://nbcbayarea.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbcbayarea.com/?rss=y"
+   ]
+  },
+  {
+   "call": "KTVU",
+   "market": "San Francisco-Oak-San Jose",
+   "owner": "FOX O&O",
+   "site": "https://ktvu.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ktvu.com/rss/category/local-news",
+    "https://www.ktvu.com/rss/category/national-news"
+   ]
+  },
+  {
+   "call": "WPLG",
+   "market": "Miami-Ft. Lauderdale",
+   "owner": "Berkshire Hathaway",
+   "site": "https://local10.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.local10.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WFOR",
+   "market": "Miami-Ft. Lauderdale",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/miami",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/miami/latest/rss/main"
+   ]
+  },
+  {
+   "call": "WTVJ",
+   "market": "Miami-Ft. Lauderdale",
+   "owner": "NBC O&O",
+   "site": "https://nbcmiami.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbcmiami.com/?rss=y"
+   ]
+  },
+  {
+   "call": "WSVN",
+   "market": "Miami-Ft. Lauderdale",
+   "owner": "Sunbeam",
+   "site": "https://wsvn.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://wsvn.com/feed/",
+    "https://wsvn.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "WHIO",
+   "market": "Dayton",
+   "owner": "Cox",
+   "site": "https://whio.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.whio.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WDTN",
+   "market": "Dayton",
+   "owner": "",
+   "site": "https://wdtn.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wdtn.com/feed/"
+   ]
+  },
+  {
+   "call": "WKEF",
+   "market": "Dayton",
+   "owner": "Sinclair",
+   "site": "https://dayton247now.com",
+   "aliases": [],
+   "siblings": [
+    "WRGT"
+   ],
+   "feeds": [
+    "https://dayton247now.com/news.rss"
+   ]
+  },
+  {
+   "call": "KXLY",
+   "market": "Spokane",
+   "owner": "",
+   "site": "https://kxly.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kxly.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "KREM",
+   "market": "Spokane",
+   "owner": "",
+   "site": "https://krem.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.krem.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KHQ",
+   "market": "Spokane",
+   "owner": "",
+   "site": "https://khq.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.khq.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+   ]
+  },
+  {
+   "call": "KAYU",
+   "market": "Spokane",
+   "owner": "",
+   "site": "https://fox28spokane.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WTVC",
+   "market": "Chattanooga",
+   "owner": "Sinclair",
+   "site": "https://newschannel9.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WDEF",
+   "market": "Chattanooga",
+   "owner": "",
+   "site": "https://wdef.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WRCB",
+   "market": "Chattanooga",
+   "owner": "Sarkes Tarzian",
+   "site": "https://local3news.com",
+   "aliases": [
+    "wrcbtv.com"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KRGV",
+   "market": "Harlingen-Weslaco-McAllen",
+   "owner": "Manship",
+   "site": "https://krgv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KVEO",
+   "market": "Harlingen-Weslaco-McAllen",
+   "owner": "Nexstar",
+   "site": "https://valleycentral.com",
+   "aliases": [],
+   "siblings": [
+    "KFXV"
+   ],
+   "feeds": [
+    "https://www.valleycentral.com/feed/"
+   ]
+  },
+  {
+   "call": "WWTV",
+   "market": "Traverse City-Cadillac",
+   "owner": "",
+   "site": "https://9and10news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.9and10news.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WPBN",
+   "market": "Traverse City-Cadillac",
+   "owner": "Sinclair",
+   "site": "https://upnorthlive.com",
+   "aliases": [],
+   "siblings": [
+    "WGTU",
+    "WFQX"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WGTU",
+   "market": "Traverse City-Cadillac",
+   "owner": "Sinclair",
+   "site": "https://upnorthlive.com",
+   "aliases": [],
+   "siblings": [
+    "WPBN",
+    "WFQX"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KAPP",
+   "market": "Yakima-Pasco-Richland",
+   "owner": "",
+   "site": "https://kapptv.com",
+   "aliases": [],
+   "siblings": [
+    "KFFX"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KIMA",
+   "market": "Yakima-Pasco-Richland",
+   "owner": "Sinclair",
+   "site": "https://kimatv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KNDO",
+   "market": "Yakima-Pasco-Richland",
+   "owner": "",
+   "site": "https://nonstoplocal.com",
+   "aliases": [
+    "kndo.com"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KEYT",
+   "market": "Santa Barbara-San Luis Obispo",
+   "owner": "",
+   "site": "https://keyt.com",
+   "aliases": [],
+   "siblings": [
+    "KCOY",
+    "KKFX"
+   ],
+   "feeds": [
+    "https://keyt.com/feed/",
+    "https://keyt.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "KSBY",
+   "market": "Santa Barbara-San Luis Obispo",
+   "owner": "",
+   "site": "https://ksby.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ksby.com/index.rss"
+   ]
+  },
+  {
+   "call": "KATC",
+   "market": "Lafayette, LA",
+   "owner": "Gray (ex-Scripps)",
+   "site": "https://katc.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KLFY",
+   "market": "Lafayette, LA",
+   "owner": "",
+   "site": "https://klfy.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.klfy.com/feed/"
+   ]
+  },
+  {
+   "call": "KADN",
+   "market": "Lafayette, LA",
+   "owner": "Gray (ex-Allen)",
+   "site": "https://kadn.com",
+   "aliases": [],
+   "siblings": [
+    "KLAF"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KMIZ",
+   "market": "Columbia-Jefferson City",
+   "owner": "",
+   "site": "https://abc17news.com",
+   "aliases": [],
+   "siblings": [
+    "KQFX"
+   ],
+   "feeds": [
+    "https://abc17news.com/feed/",
+    "https://abc17news.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "KRCG",
+   "market": "Columbia-Jefferson City",
+   "owner": "Sinclair",
+   "site": "https://krcgtv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KOMU",
+   "market": "Columbia-Jefferson City",
+   "owner": "University of Missouri",
+   "site": "https://komu.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.komu.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+   ]
+  },
+  {
+   "call": "WBOC",
+   "market": "Salisbury",
+   "owner": "",
+   "site": "https://wboc.com",
+   "aliases": [],
+   "siblings": [
+    "WRDE"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WMDT",
+   "market": "Salisbury",
+   "owner": "",
+   "site": "https://wmdt.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wmdt.com/feed/"
+   ]
+  },
+  {
+   "call": "KESQ",
+   "market": "Palm Springs",
+   "owner": "News-Press & Gazette",
+   "site": "https://kesq.com",
+   "aliases": [],
+   "siblings": [
+    "KPSP",
+    "KDFX"
+   ],
+   "feeds": [
+    "https://kesq.com/feed/"
+   ]
+  },
+  {
+   "call": "KMIR",
+   "market": "Palm Springs",
+   "owner": "Sunbeam",
+   "site": "https://kmir6.com",
+   "aliases": [
+    "nbcpalmsprings.com"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KODE",
+   "market": "Joplin-Pittsburg",
+   "owner": "",
+   "site": "https://fourstateshomepage.com",
+   "aliases": [],
+   "siblings": [
+    "KSNF"
+   ],
+   "feeds": [
+    "https://www.fourstateshomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "KSNF",
+   "market": "Joplin-Pittsburg",
+   "owner": "",
+   "site": "https://fourstateshomepage.com",
+   "aliases": [],
+   "siblings": [
+    "KODE"
+   ],
+   "feeds": [
+    "https://www.fourstateshomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "KOAM",
+   "market": "Joplin-Pittsburg",
+   "owner": "",
+   "site": "https://koamnewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KFJX"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WCJB",
+   "market": "Gainesville",
+   "owner": "",
+   "site": "https://wcjb.com",
+   "aliases": [],
+   "siblings": [
+    "WNBW"
+   ],
+   "feeds": [
+    "https://www.wcjb.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KIFI",
+   "market": "Idaho Falls-Pocatello",
+   "owner": "",
+   "site": "https://localnews8.com",
+   "aliases": [],
+   "siblings": [
+    "KIDK",
+    "KXPI"
+   ],
+   "feeds": [
+    "https://localnews8.com/feed/",
+    "https://localnews8.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "KPVI",
+   "market": "Idaho Falls-Pocatello",
+   "owner": "",
+   "site": "https://kpvi.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KYMA",
+   "market": "Yuma-El Centro",
+   "owner": "News-Press & Gazette",
+   "site": "https://kyma.com",
+   "aliases": [],
+   "siblings": [
+    "KECY"
+   ],
+   "feeds": [
+    "https://kyma.com/feed/",
+    "https://kyma.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "WBBJ",
+   "market": "Jackson, TN",
+   "owner": "Gray",
+   "site": "https://wbbjtv.com",
+   "aliases": [],
+   "siblings": [
+    "WNBJ",
+    "WJKT"
+   ],
+   "feeds": [
+    "https://www.wbbjtv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WETM",
+   "market": "Elmira-Corning",
+   "owner": "",
+   "site": "https://mytwintiers.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.mytwintiers.com/feed/"
+   ]
+  },
+  {
+   "call": "WENY",
+   "market": "Elmira-Corning",
+   "owner": "",
+   "site": "https://weny.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KTVZ",
+   "market": "Bend",
+   "owner": "",
+   "site": "https://ktvz.com",
+   "aliases": [],
+   "siblings": [
+    "KFXO"
+   ],
+   "feeds": [
+    "https://ktvz.com/feed/",
+    "https://ktvz.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "KOHD",
+   "market": "Bend",
+   "owner": "",
+   "site": "https://centraloregondaily.com",
+   "aliases": [],
+   "siblings": [
+    "KBNZ"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KIEM",
+   "market": "Eureka",
+   "owner": "Marquee",
+   "site": "https://redwoodnewschannel.com",
+   "aliases": [],
+   "siblings": [
+    "KVIQ"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WLIO",
+   "market": "Lima",
+   "owner": "Gray",
+   "site": "https://hometownstations.com",
+   "aliases": [],
+   "siblings": [
+    "WLQP",
+    "WOHL"
+   ],
+   "feeds": [
+    "https://www.hometownstations.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KGWN",
+   "market": "Cheyenne-Scottsbluff",
+   "owner": "Marquee",
+   "site": "https://wyomingnewsnow.com",
+   "aliases": [
+    "kgwn.tv"
+   ],
+   "siblings": [
+    "KCWY",
+    "KGWC",
+    "KCHY",
+    "KLWY",
+    "KFNB"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KCWY",
+   "market": "Casper-Riverton",
+   "owner": "Marquee",
+   "site": "https://wyomingnewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KGWN",
+    "KGWC",
+    "KCHY",
+    "KLWY",
+    "KFNB"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KQTV",
+   "market": "St. Joseph",
+   "owner": "Heartland Media",
+   "site": "https://kq2.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kq2.com/feed/",
+    "https://www.kq2.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "KNPN",
+   "market": "St. Joseph",
+   "owner": "News-Press & Gazette",
+   "site": "https://newspressnow.com",
+   "aliases": [],
+   "siblings": [
+    "KCJO",
+    "KNPG"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WHIZ",
+   "market": "Zanesville",
+   "owner": "Marquee",
+   "site": "https://whiznews.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.whiznews.com/feed/"
+   ]
+  },
+  {
+   "call": "KAVU",
+   "market": "Victoria",
+   "owner": "Morgan Murphy",
+   "site": "https://crossroadstoday.com",
+   "aliases": [],
+   "siblings": [
+    "KXTS",
+    "KMOL",
+    "KVCT"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KTVH",
+   "market": "Helena",
+   "owner": "",
+   "site": "https://ktvh.com",
+   "aliases": [],
+   "siblings": [
+    "KHBB"
+   ],
+   "feeds": [
+    "https://www.ktvh.com/index.rss"
+   ]
+  },
+  {
+   "call": "KXLH",
+   "market": "Helena",
+   "owner": "Scripps",
+   "site": "https://kxlh.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kxlh.com/index.rss"
+   ]
+  },
+  {
+   "call": "KJUD",
+   "market": "Juneau",
+   "owner": "Gray",
+   "site": "https://alaskasnewssource.com",
+   "aliases": [],
+   "siblings": [
+    "KTUU",
+    "KAUU",
+    "KATN",
+    "KXLJ"
+   ],
+   "feeds": [
+    "https://www.alaskasnewssource.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KXGN",
+   "market": "Glendive",
+   "owner": "Marks Group (sale to Montana PBS filed 2025)",
+   "site": "https://kxgn.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://web.kxgn.com/feed/"
+   ]
+  },
+  {
+   "call": "WABG",
+   "market": "Greenwood-Greenville",
+   "owner": "Deltavision",
+   "site": "https://deltanews.tv",
+   "aliases": [],
+   "siblings": [
+    "WXVT",
+    "WNBD"
+   ],
+   "feeds": [
+    "https://www.deltanews.tv/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "WXVT",
+   "market": "Greenwood-Greenville",
+   "owner": "Deltavision",
+   "site": "https://deltanews.tv",
+   "aliases": [],
+   "siblings": [
+    "WABG",
+    "WNBD"
+   ],
+   "feeds": [
+    "https://www.deltanews.tv/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "KABB",
+   "market": "San Antonio",
+   "owner": "Sinclair",
+   "site": "https://foxsanantonio.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KEYE",
+   "market": "Austin",
+   "owner": "Sinclair",
+   "site": "https://cbsaustin.com",
+   "aliases": [
+    "keyetv.com"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KDBC",
+   "market": "El Paso",
+   "owner": "Sinclair",
+   "site": "https://cbs4local.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KFOX",
+   "market": "El Paso",
+   "owner": "Sinclair",
+   "site": "https://kfoxtv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KMPH",
+   "market": "Fresno-Visalia",
+   "owner": "Sinclair",
+   "site": "https://kmph.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KATV",
+   "market": "Little Rock-Pine Bluff",
+   "owner": "Sinclair",
+   "site": "https://katv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KBOI",
+   "market": "Boise",
+   "owner": "Sinclair",
+   "site": "https://idahonews.com",
+   "aliases": [],
+   "siblings": [
+    "KIVI"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WSBT",
+   "market": "South Bend-Elkhart",
+   "owner": "Sinclair",
+   "site": "https://wsbt.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://wsbt.com/news.rss"
+   ]
+  },
+  {
+   "call": "KGAN",
+   "market": "Cedar Rapids-Waterloo-Dubuque",
+   "owner": "Sinclair",
+   "site": "https://cbs2iowa.com",
+   "aliases": [],
+   "siblings": [
+    "KFXA"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WEYI",
+   "market": "Flint-Saginaw-Bay City",
+   "owner": "Sinclair",
+   "site": "https://nbc25news.com",
+   "aliases": [],
+   "siblings": [
+    "WSMH"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WWMT",
+   "market": "Grand Rapids-Kalamazoo",
+   "owner": "Sinclair",
+   "site": "https://wwmt.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KSNV",
+   "market": "Las Vegas",
+   "owner": "Sinclair",
+   "site": "https://news3lv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://news3lv.com/news.rss"
+   ]
+  },
+  {
+   "call": "WRGB",
+   "market": "Albany-Schenectady-Troy",
+   "owner": "Sinclair",
+   "site": "https://cbs6albany.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WSTM",
+   "market": "Syracuse",
+   "owner": "Sinclair",
+   "site": "https://cnycentral.com",
+   "aliases": [],
+   "siblings": [
+    "WTVH",
+    "WSYT"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WCHS",
+   "market": "Charleston-Huntington, WV",
+   "owner": "Sinclair",
+   "site": "https://wchstv.com",
+   "aliases": [],
+   "siblings": [
+    "WVAH"
+   ],
+   "feeds": [
+    "https://wchstv.com/news.rss"
+   ]
+  },
+  {
+   "call": "WLUK",
+   "market": "Green Bay-Appleton",
+   "owner": "Sinclair",
+   "site": "https://fox11online.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WEAR",
+   "market": "Mobile-Pensacola",
+   "owner": "Sinclair",
+   "site": "https://weartv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WPMI",
+   "market": "Mobile-Pensacola",
+   "owner": "Sinclair",
+   "site": "https://local15tv.com",
+   "aliases": [
+    "wpmi.com"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WBMA",
+   "market": "Birmingham",
+   "owner": "Sinclair",
+   "site": "https://abc3340.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WPDE",
+   "market": "Myrtle Beach-Florence",
+   "owner": "Sinclair",
+   "site": "https://wpde.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WACH",
+   "market": "Columbia, SC",
+   "owner": "Sinclair",
+   "site": "https://wach.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WCIV",
+   "market": "Charleston, SC",
+   "owner": "Sinclair",
+   "site": "https://abcnews4.com",
+   "aliases": [],
+   "siblings": [
+    "WTAT"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WZTV",
+   "market": "Nashville",
+   "owner": "Sinclair",
+   "site": "https://fox17.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KOKH",
+   "market": "Oklahoma City",
+   "owner": "Sinclair",
+   "site": "https://okcfox.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WNWO",
+   "market": "Toledo",
+   "owner": "Sinclair",
+   "site": "https://nbc24.com",
+   "aliases": [],
+   "siblings": [
+    "WUPW"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WHP",
+   "market": "Harrisburg-Lancaster-York",
+   "owner": "Sinclair",
+   "site": "https://local21news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KEPR",
+   "market": "",
+   "owner": "",
+   "site": "https://keprtv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WGXA",
+   "market": "Macon",
+   "owner": "Sinclair",
+   "site": "https://wgxa.tv",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://wgxa.tv/news.rss"
+   ]
+  },
+  {
+   "call": "WFXL",
+   "market": "Albany, GA",
+   "owner": "Sinclair",
+   "site": "https://wfxl.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KECI",
+   "market": "Missoula",
+   "owner": "",
+   "site": "https://nbcmontana.com",
+   "aliases": [],
+   "siblings": [
+    "KTVM",
+    "KCFW",
+    "KTGF",
+    "KTMF"
+   ],
+   "feeds": [
+    "https://nbcmontana.com/news.rss"
+   ]
+  },
+  {
+   "call": "KMTR",
+   "market": "Eugene",
+   "owner": "Sinclair",
+   "site": "https://nbc16.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KRNV",
+   "market": "Reno",
+   "owner": "Sinclair",
+   "site": "https://mynews4.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KRXI",
+   "market": "Reno",
+   "owner": "Sinclair",
+   "site": "https://foxreno.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KDNL",
+   "market": "St. Louis",
+   "owner": "Sinclair",
+   "site": "https://abcstlouis.com",
+   "aliases": [
+    "kdnl.com"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WDBD",
+   "market": "Jackson, MS",
+   "owner": "Gray",
+   "site": "https://wlbt.com",
+   "aliases": [],
+   "siblings": [
+    "WLBT",
+    "WLOO"
+   ],
+   "feeds": [
+    "https://www.wlbt.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WLOO",
+   "market": "",
+   "owner": "",
+   "site": "https://wlbt.com",
+   "aliases": [],
+   "siblings": [
+    "WLBT",
+    "WDBD"
+   ],
+   "feeds": [
+    "https://www.wlbt.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KWES",
+   "market": "Odessa-Midland",
+   "owner": "Gray",
+   "site": "https://newswest9.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.newswest9.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WCTI",
+   "market": "Greenville-New Bern-Washington",
+   "owner": "Sinclair",
+   "site": "https://wcti12.com",
+   "aliases": [],
+   "siblings": [
+    "WFXI"
+   ],
+   "feeds": [
+    "https://wcti12.com/news.rss"
+   ]
+  },
+  {
+   "call": "KGWC",
+   "market": "Casper-Riverton",
+   "owner": "",
+   "site": "https://wyomingnewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KGWN",
+    "KCWY",
+    "KCHY",
+    "KLWY",
+    "KFNB"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KTWO",
+   "market": "Casper-Riverton",
+   "owner": "",
+   "site": "https://k2radio.com",
+   "aliases": [
+    "k2tv.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://k2radio.com/feed/"
+   ]
+  },
+  {
+   "call": "WISE",
+   "market": "",
+   "owner": "",
+   "site": "https://wpta21.com",
+   "aliases": [],
+   "siblings": [
+    "WPTA"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KTVM",
+   "market": "Butte-Bozeman",
+   "owner": "",
+   "site": "https://nbcmontana.com",
+   "aliases": [],
+   "siblings": [
+    "KECI",
+    "KCFW",
+    "KTGF",
+    "KTMF"
+   ],
+   "feeds": [
+    "https://nbcmontana.com/news.rss"
+   ]
+  },
+  {
+   "call": "KCFW",
+   "market": "",
+   "owner": "",
+   "site": "https://nbcmontana.com",
+   "aliases": [],
+   "siblings": [
+    "KECI",
+    "KTVM",
+    "KTGF",
+    "KTMF"
+   ],
+   "feeds": [
+    "https://nbcmontana.com/news.rss"
+   ]
+  },
+  {
+   "call": "KFBB",
+   "market": "Great Falls",
+   "owner": "",
+   "site": "https://kfbb.com",
+   "aliases": [],
+   "siblings": [
+    "KBGF"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KTGF",
+   "market": "",
+   "owner": "",
+   "site": "https://nbcmontana.com",
+   "aliases": [],
+   "siblings": [
+    "KECI",
+    "KTVM",
+    "KCFW",
+    "KTMF"
+   ],
+   "feeds": [
+    "https://nbcmontana.com/news.rss"
+   ]
+  },
+  {
+   "call": "KSTP",
+   "market": "Minneapolis-St. Paul",
+   "owner": "Hubbard",
+   "site": "https://kstp.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://kstp.com/feed/"
+   ]
+  },
+  {
+   "call": "KAAL",
+   "market": "Rochester-Mason City-Austin",
+   "owner": "Hubbard",
+   "site": "https://kaaltv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kaaltv.com/feed/"
+   ]
+  },
+  {
+   "call": "WDIO",
+   "market": "Duluth-Superior",
+   "owner": "Hubbard",
+   "site": "https://wdio.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wdio.com/feed/"
+   ]
+  },
+  {
+   "call": "KOB",
+   "market": "Albuquerque-Santa Fe",
+   "owner": "Hubbard",
+   "site": "https://kob.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kob.com/feed/"
+   ]
+  },
+  {
+   "call": "WNYT",
+   "market": "Albany-Schenectady-Troy",
+   "owner": "Hubbard",
+   "site": "https://wnyt.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://wnyt.com/feed/"
+   ]
+  },
+  {
+   "call": "WHEC",
+   "market": "Rochester, NY",
+   "owner": "",
+   "site": "https://whec.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.whec.com/feed/"
+   ]
+  },
+  {
+   "call": "WDAY",
+   "market": "Fargo-Valley City",
+   "owner": "Forum",
+   "site": "https://wday.com",
+   "aliases": [],
+   "siblings": [
+    "WDAZ"
+   ],
+   "feeds": [
+    "https://www.wday.com/feed/"
+   ]
+  },
+  {
+   "call": "WDAZ",
+   "market": "",
+   "owner": "",
+   "site": "https://wday.com",
+   "aliases": [],
+   "siblings": [
+    "WDAY"
+   ],
+   "feeds": [
+    "https://www.wday.com/feed/"
+   ]
+  },
+  {
+   "call": "KBMY",
+   "market": "Minot-Bismarck-Dickinson",
+   "owner": "Forum",
+   "site": "https://kbmy.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KNBN",
+   "market": "Rapid City",
+   "owner": "Forum",
+   "site": "https://newscenter1.tv",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.newscenter1.tv/index.rss"
+   ]
+  },
+  {
+   "call": "WKBT",
+   "market": "La Crosse-Eau Claire",
+   "owner": "Morgan Murphy",
+   "site": "https://wkbt.com",
+   "aliases": [
+    "news8000.com"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WBUP",
+   "market": "Marquette",
+   "owner": "Morgan Murphy",
+   "site": "https://abc10up.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KJNB",
+   "market": "Jonesboro",
+   "owner": "Coastal Television",
+   "site": "https://kjnbtv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KTBY",
+   "market": "Anchorage",
+   "owner": "Coastal Television",
+   "site": "https://youralaskalink.com",
+   "aliases": [],
+   "siblings": [
+    "KYUR"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KYUR",
+   "market": "Anchorage",
+   "owner": "Vision Alaska (Coastal-operated)",
+   "site": "https://youralaskalink.com",
+   "aliases": [],
+   "siblings": [
+    "KTBY"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WGBC",
+   "market": "Meridian",
+   "owner": "Coastal Television",
+   "site": "https://wgbctv.com",
+   "aliases": [],
+   "siblings": [
+    "WMDN"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WSB",
+   "market": "Atlanta",
+   "owner": "Cox",
+   "site": "https://wsbtv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wsbtv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WFTV",
+   "market": "Orlando-Daytona-Melbourne",
+   "owner": "Cox",
+   "site": "https://wftv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wftv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KIRO",
+   "market": "Seattle-Tacoma",
+   "owner": "Cox",
+   "site": "https://kiro7.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kiro7.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WPXI",
+   "market": "Pittsburgh",
+   "owner": "Cox",
+   "site": "https://wpxi.com",
+   "aliases": [],
+   "siblings": [
+    "WPGH"
+   ],
+   "feeds": [
+    "https://www.wpxi.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WSOC",
+   "market": "Charlotte",
+   "owner": "Cox",
+   "site": "https://wsoctv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wsoctv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WJAX",
+   "market": "Jacksonville",
+   "owner": "Cox",
+   "site": "https://actionnewsjax.com",
+   "aliases": [],
+   "siblings": [
+    "WFOX"
+   ],
+   "feeds": [
+    "https://www.actionnewsjax.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WFOX",
+   "market": "Jacksonville",
+   "owner": "",
+   "site": "https://actionnewsjax.com",
+   "aliases": [],
+   "siblings": [
+    "WJAX"
+   ],
+   "feeds": [
+    "https://www.actionnewsjax.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WHBQ",
+   "market": "Memphis",
+   "owner": "Cox",
+   "site": "https://fox13memphis.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KWTV",
+   "market": "Oklahoma City",
+   "owner": "Griffin Communications",
+   "site": "https://news9.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.news9.com/index.rss"
+   ]
+  },
+  {
+   "call": "KEZI",
+   "market": "Eugene",
+   "owner": "Allen Media",
+   "site": "https://kezi.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kezi.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "KDRV",
+   "market": "Medford-Klamath Falls",
+   "owner": "",
+   "site": "https://kdrv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kdrv.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "KTVT",
+   "market": "Dallas-Ft. Worth",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/texas",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/texas/latest/rss/main"
+   ]
+  },
+  {
+   "call": "KXAS",
+   "market": "Dallas-Ft. Worth",
+   "owner": "NBC O&O",
+   "site": "https://nbcdfw.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbcdfw.com/?rss=y"
+   ]
+  },
+  {
+   "call": "KDFW",
+   "market": "Dallas-Ft. Worth",
+   "owner": "FOX O&O",
+   "site": "https://fox4news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox4news.com/rss/category/news",
+    "https://www.fox4news.com/rss/category/local-news"
+   ]
+  },
+  {
+   "call": "KTRK",
+   "market": "Houston",
+   "owner": "ABC O&O",
+   "site": "https://abc13.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://abc13.com/feed/"
+   ]
+  },
+  {
+   "call": "KPRC",
+   "market": "Houston",
+   "owner": "Graham Media",
+   "site": "https://click2houston.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.click2houston.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KRIV",
+   "market": "Houston",
+   "owner": "FOX O&O",
+   "site": "https://fox26houston.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox26houston.com/rss/category/news",
+    "https://www.fox26houston.com/rss/category/local-news"
+   ]
+  },
+  {
+   "call": "WAGA",
+   "market": "Atlanta",
+   "owner": "FOX O&O",
+   "site": "https://fox5atlanta.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox5atlanta.com/rss/category/news",
+    "https://www.fox5atlanta.com/rss/category/local-news"
+   ]
+  },
+  {
+   "call": "WRC",
+   "market": "Washington DC",
+   "owner": "NBC O&O",
+   "site": "https://nbcwashington.com",
+   "aliases": [
+    "nbc4dc.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbcwashington.com/?rss=y"
+   ]
+  },
+  {
+   "call": "WTTG",
+   "market": "Washington DC",
+   "owner": "FOX O&O",
+   "site": "https://fox5dc.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox5dc.com/rss/category/news",
+    "https://www.fox5dc.com/rss/tags/us,dc"
+   ]
+  },
+  {
+   "call": "WBZ",
+   "market": "Boston",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/boston",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/boston/latest/rss/main"
+   ]
+  },
+  {
+   "call": "WBTS",
+   "market": "Boston",
+   "owner": "NBC O&O",
+   "site": "https://nbcboston.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbcboston.com/?rss=y"
+   ]
+  },
+  {
+   "call": "WFXT",
+   "market": "Boston",
+   "owner": "",
+   "site": "https://boston25news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.boston25news.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KSAZ",
+   "market": "Phoenix",
+   "owner": "FOX O&O",
+   "site": "https://fox10phoenix.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox10phoenix.com/rss/category/news",
+    "https://www.fox10phoenix.com/rss/category/local-news"
+   ]
+  },
+  {
+   "call": "WFLA",
+   "market": "Tampa-St. Petersburg",
+   "owner": "Nexstar",
+   "site": "https://wfla.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wfla.com/feed/"
+   ]
+  },
+  {
+   "call": "WTVT",
+   "market": "Tampa-St. Petersburg",
+   "owner": "FOX O&O",
+   "site": "https://fox13news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox13news.com/rss/category/news",
+    "https://www.fox13news.com/rss/category/local-news"
+   ]
+  },
+  {
+   "call": "KCPQ",
+   "market": "Seattle-Tacoma",
+   "owner": "FOX O&O",
+   "site": "https://fox13seattle.com",
+   "aliases": [
+    "q13fox.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox13seattle.com/rss/category/apps",
+    "https://www.fox13seattle.com/rss/category/whats-on-fox"
+   ]
+  },
+  {
+   "call": "WWJ",
+   "market": "Detroit",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/detroit",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/detroit/latest/rss/main"
+   ]
+  },
+  {
+   "call": "WDIV",
+   "market": "Detroit",
+   "owner": "Graham Media",
+   "site": "https://clickondetroit.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.clickondetroit.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WJBK",
+   "market": "Detroit",
+   "owner": "FOX O&O",
+   "site": "https://fox2detroit.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox2detroit.com/rss/category/news",
+    "https://www.fox2detroit.com/rss/category/local-news"
+   ]
+  },
+  {
+   "call": "WCCO",
+   "market": "Minneapolis-St. Paul",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/minnesota",
+   "aliases": [
+    "wcco.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/minnesota/latest/rss/main"
+   ]
+  },
+  {
+   "call": "KMSP",
+   "market": "Minneapolis-St. Paul",
+   "owner": "FOX O&O",
+   "site": "https://fox9.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox9.com/rss/category/news",
+    "https://www.fox9.com/rss/category/local-news"
+   ]
+  },
+  {
+   "call": "KCNC",
+   "market": "Denver",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/colorado",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/colorado/latest/rss/main"
+   ]
+  },
+  {
+   "call": "WKMG",
+   "market": "Orlando-Daytona-Melbourne",
+   "owner": "Graham Media",
+   "site": "https://clickorlando.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.clickorlando.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WOFL",
+   "market": "Orlando-Daytona-Melbourne",
+   "owner": "FOX O&O",
+   "site": "https://fox35orlando.com",
+   "aliases": [],
+   "siblings": [
+    "WOGX"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WJW",
+   "market": "Cleveland-Akron",
+   "owner": "FOX O&O",
+   "site": "https://fox8.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://fox8.com/feed/"
+   ]
+  },
+  {
+   "call": "KXTV",
+   "market": "Sacramento-Stockton-Modesto",
+   "owner": "",
+   "site": "https://abc10.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.abc10.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KOVR",
+   "market": "Sacramento-Stockton-Modesto",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/sacramento",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/sacramento/latest/rss/main"
+   ]
+  },
+  {
+   "call": "KTXL",
+   "market": "Sacramento-Stockton-Modesto",
+   "owner": "FOX O&O",
+   "site": "https://fox40.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://fox40.com/feed/"
+   ]
+  },
+  {
+   "call": "WJZY",
+   "market": "Charlotte",
+   "owner": "",
+   "site": "https://qcnews.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.qcnews.com/feed/"
+   ]
+  },
+  {
+   "call": "KMOV",
+   "market": "St. Louis",
+   "owner": "Gray",
+   "site": "https://firstalert4.com",
+   "aliases": [
+    "kmov.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.firstalert4.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTVI",
+   "market": "St. Louis",
+   "owner": "",
+   "site": "https://fox2now.com",
+   "aliases": [
+    "ktvi.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://fox2now.com/feed/"
+   ]
+  },
+  {
+   "call": "KDKA",
+   "market": "Pittsburgh",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/pittsburgh",
+   "aliases": [
+    "kdka.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/pittsburgh/latest/rss/main"
+   ]
+  },
+  {
+   "call": "WTVD",
+   "market": "Raleigh-Durham",
+   "owner": "ABC O&O",
+   "site": "https://abc11.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://abc11.com/feed/"
+   ]
+  },
+  {
+   "call": "WRAL",
+   "market": "Raleigh-Durham",
+   "owner": "Capitol Broadcasting",
+   "site": "https://wral.com",
+   "aliases": [],
+   "siblings": [
+    "WRAZ"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WRAZ",
+   "market": "Raleigh-Durham",
+   "owner": "Capitol Broadcasting",
+   "site": "https://wral.com",
+   "aliases": [],
+   "siblings": [
+    "WRAL"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WXIN",
+   "market": "Indianapolis",
+   "owner": "",
+   "site": "https://fox59.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://fox59.com/feed/"
+   ]
+  },
+  {
+   "call": "KNSD",
+   "market": "San Diego",
+   "owner": "NBC O&O",
+   "site": "https://nbcsandiego.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbcsandiego.com/?rss=y"
+   ]
+  },
+  {
+   "call": "KSWB",
+   "market": "San Diego",
+   "owner": "FOX O&O",
+   "site": "https://fox5sandiego.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://fox5sandiego.com/feed/"
+   ]
+  },
+  {
+   "call": "WKRN",
+   "market": "Nashville",
+   "owner": "Nexstar",
+   "site": "https://wkrn.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wkrn.com/feed/"
+   ]
+  },
+  {
+   "call": "WTVF",
+   "market": "Nashville",
+   "owner": "Scripps",
+   "site": "https://newschannel5.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.newschannel5.com/index.rss"
+   ]
+  },
+  {
+   "call": "WJZ",
+   "market": "Baltimore",
+   "owner": "CBS O&O",
+   "site": "https://www.cbsnews.com/baltimore",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbsnews.com/baltimore/latest/rss/main"
+   ]
+  },
+  {
+   "call": "KTVX",
+   "market": "Salt Lake City",
+   "owner": "",
+   "site": "https://abc4.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.abc4.com/feed/"
+   ]
+  },
+  {
+   "call": "KSL",
+   "market": "Salt Lake City",
+   "owner": "Bonneville",
+   "site": "https://ksl.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ksl.com/rss/news"
+   ]
+  },
+  {
+   "call": "KSTU",
+   "market": "Salt Lake City",
+   "owner": "",
+   "site": "https://fox13now.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox13now.com/index.rss"
+   ]
+  },
+  {
+   "call": "KSAT",
+   "market": "San Antonio",
+   "owner": "Graham Media",
+   "site": "https://ksat.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ksat.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WBNS",
+   "market": "Columbus, OH",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://10tv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.10tv.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WCMH",
+   "market": "Columbus, OH",
+   "owner": "",
+   "site": "https://nbc4i.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbc4i.com/feed/"
+   ]
+  },
+  {
+   "call": "WDAF",
+   "market": "Kansas City",
+   "owner": "",
+   "site": "https://fox4kc.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://fox4kc.com/feed/"
+   ]
+  },
+  {
+   "call": "WDJT",
+   "market": "Milwaukee",
+   "owner": "",
+   "site": "https://cbs58.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://cbs58.com/rss/"
+   ]
+  },
+  {
+   "call": "WITI",
+   "market": "Milwaukee",
+   "owner": "",
+   "site": "https://fox6now.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox6now.com/rss/category/news",
+    "https://www.fox6now.com/rss/category/local-news"
+   ]
+  },
+  {
+   "call": "WTNH",
+   "market": "Hartford-New Haven",
+   "owner": "",
+   "site": "https://wtnh.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wtnh.com/feed/"
+   ]
+  },
+  {
+   "call": "WVIT",
+   "market": "Hartford-New Haven",
+   "owner": "",
+   "site": "https://nbcconnecticut.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbcconnecticut.com/?rss=y"
+   ]
+  },
+  {
+   "call": "WTIC",
+   "market": "Hartford-New Haven",
+   "owner": "",
+   "site": "https://fox61.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox61.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KTNV",
+   "market": "Las Vegas",
+   "owner": "",
+   "site": "https://ktnv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ktnv.com/index.rss"
+   ]
+  },
+  {
+   "call": "WHNS",
+   "market": "Greenville-Spartanburg-Asheville",
+   "owner": "Gray",
+   "site": "https://foxcarolina.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.foxcarolina.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KXAN",
+   "market": "Austin",
+   "owner": "",
+   "site": "https://kxan.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kxan.com/feed/"
+   ]
+  },
+  {
+   "call": "KTBC",
+   "market": "Austin",
+   "owner": "",
+   "site": "https://fox7austin.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox7austin.com/rss/category/news",
+    "https://www.fox7austin.com/rss/category/local-news"
+   ]
+  },
+  {
+   "call": "WPEC",
+   "market": "West Palm Beach-Ft. Pierce",
+   "owner": "Sinclair",
+   "site": "https://cbs12.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WJXX",
+   "market": "Jacksonville",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://firstcoastnews.com",
+   "aliases": [],
+   "siblings": [
+    "WTLV"
+   ],
+   "feeds": [
+    "https://www.firstcoastnews.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WXMI",
+   "market": "Grand Rapids-Kalamazoo",
+   "owner": "",
+   "site": "https://fox17online.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox17online.com/index.rss"
+   ]
+  },
+  {
+   "call": "WTKR",
+   "market": "Norfolk-Portsmouth-Newport News",
+   "owner": "",
+   "site": "https://wtkr.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wtkr.com/index.rss"
+   ]
+  },
+  {
+   "call": "WFMY",
+   "market": "Greensboro-Winston-Salem",
+   "owner": "",
+   "site": "https://wfmynews2.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wfmynews2.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WXLV",
+   "market": "Greensboro-Winston-Salem",
+   "owner": "Sinclair",
+   "site": "https://abc45.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WDRB",
+   "market": "Louisville",
+   "owner": "",
+   "site": "https://wdrb.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WLNE",
+   "market": "Providence-New Bedford",
+   "owner": "Sinclair (2025)",
+   "site": "https://abc6.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KFSN",
+   "market": "Fresno-Visalia",
+   "owner": "ABC O&O",
+   "site": "https://abc30.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://abc30.com/feed/"
+   ]
+  },
+  {
+   "call": "WTVR",
+   "market": "Richmond-Petersburg",
+   "owner": "",
+   "site": "https://wtvr.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wtvr.com/index.rss"
+   ]
+  },
+  {
+   "call": "WOLF",
+   "market": "Wilkes-Barre-Scranton",
+   "owner": "Sinclair",
+   "site": "https://fox56.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WXXA",
+   "market": "Albany-Schenectady-Troy",
+   "owner": "",
+   "site": "https://fox23news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WATE",
+   "market": "Knoxville",
+   "owner": "",
+   "site": "https://wate.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wate.com/feed/"
+   ]
+  },
+  {
+   "call": "WLEX",
+   "market": "Lexington",
+   "owner": "",
+   "site": "https://lex18.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.lex18.com/index.rss"
+   ]
+  },
+  {
+   "call": "WDKY",
+   "market": "Lexington",
+   "owner": "",
+   "site": "https://foxlexington.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KGUN",
+   "market": "Tucson",
+   "owner": "",
+   "site": "https://kgun9.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kgun9.com/index.rss"
+   ]
+  },
+  {
+   "call": "KVOA",
+   "market": "Tucson",
+   "owner": "",
+   "site": "https://kvoa.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KITV",
+   "market": "Honolulu",
+   "owner": "",
+   "site": "https://kitv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WOI",
+   "market": "Des Moines-Ames",
+   "owner": "",
+   "site": "https://weareiowa.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.weareiowa.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WHO",
+   "market": "Des Moines-Ames",
+   "owner": "",
+   "site": "https://who13.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://who13.com/feed/"
+   ]
+  },
+  {
+   "call": "WGBA",
+   "market": "Green Bay-Appleton",
+   "owner": "",
+   "site": "https://nbc26.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.nbc26.com/index.rss"
+   ]
+  },
+  {
+   "call": "KSNW",
+   "market": "Wichita-Hutchinson",
+   "owner": "",
+   "site": "https://ksn.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ksn.com/feed/"
+   ]
+  },
+  {
+   "call": "WSET",
+   "market": "Roanoke-Lynchburg",
+   "owner": "Sinclair",
+   "site": "https://wset.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WSLS",
+   "market": "Roanoke-Lynchburg",
+   "owner": "",
+   "site": "https://wsls.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wsls.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WFXR",
+   "market": "Roanoke-Lynchburg",
+   "owner": "",
+   "site": "https://wfxrtv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wfxrtv.com/feed/"
+   ]
+  },
+  {
+   "call": "WKOW",
+   "market": "Madison",
+   "owner": "",
+   "site": "https://wkow.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WISC",
+   "market": "Madison",
+   "owner": "Morgan Murphy",
+   "site": "https://channel3000.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KMTV",
+   "market": "Omaha",
+   "owner": "",
+   "site": "https://3newsnow.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.3newsnow.com/index.rss"
+   ]
+  },
+  {
+   "call": "WJRT",
+   "market": "Flint-Saginaw-Bay City",
+   "owner": "",
+   "site": "https://abc12.com",
+   "aliases": [
+    "wjrt.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.abc12.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+   ]
+  },
+  {
+   "call": "KOLR",
+   "market": "Springfield, MO",
+   "owner": "",
+   "site": "https://ozarksfirst.com",
+   "aliases": [],
+   "siblings": [
+    "KSPR",
+    "KRBK"
+   ],
+   "feeds": [
+    "https://www.ozarksfirst.com/feed/"
+   ]
+  },
+  {
+   "call": "KSPR",
+   "market": "Springfield, MO",
+   "owner": "Gray",
+   "site": "https://ozarksfirst.com",
+   "aliases": [],
+   "siblings": [
+    "KOLR",
+    "KRBK"
+   ],
+   "feeds": [
+    "https://www.ozarksfirst.com/feed/"
+   ]
+  },
+  {
+   "call": "WLTX",
+   "market": "Columbia, SC",
+   "owner": "",
+   "site": "https://wltx.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wltx.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WOLO",
+   "market": "Columbia, SC",
+   "owner": "Bahakel",
+   "site": "https://wolo.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WROC",
+   "market": "Rochester, NY",
+   "owner": "",
+   "site": "https://rochesterfirst.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.rochesterfirst.com/feed/"
+   ]
+  },
+  {
+   "call": "WOWK",
+   "market": "Charleston-Huntington, WV",
+   "owner": "",
+   "site": "https://wowktv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wowktv.com/feed/"
+   ]
+  },
+  {
+   "call": "WTOL",
+   "market": "Toledo",
+   "owner": "",
+   "site": "https://wtol.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wtol.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WHNT",
+   "market": "Huntsville-Decatur",
+   "owner": "",
+   "site": "https://whnt.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://whnt.com/feed/"
+   ]
+  },
+  {
+   "call": "WZDX",
+   "market": "Huntsville-Decatur",
+   "owner": "",
+   "site": "https://rocketcitynow.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.rocketcitynow.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "WPSD",
+   "market": "Paducah-Cape Girardeau-Harrisburg",
+   "owner": "",
+   "site": "https://wpsdlocal6.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KXXV",
+   "market": "Waco-Temple-Bryan",
+   "owner": "",
+   "site": "https://kxxv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kxxv.com/index.rss"
+   ]
+  },
+  {
+   "call": "KWKT",
+   "market": "Waco-Temple-Bryan",
+   "owner": "",
+   "site": "https://fox44news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox44news.com/feed/"
+   ]
+  },
+  {
+   "call": "WTVH",
+   "market": "Syracuse",
+   "owner": "Sinclair",
+   "site": "https://cnycentral.com",
+   "aliases": [],
+   "siblings": [
+    "WSTM",
+    "WSYT"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KRDO",
+   "market": "Colorado Springs-Pueblo",
+   "owner": "",
+   "site": "https://krdo.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://krdo.com/feed/",
+    "https://krdo.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "KXRM",
+   "market": "Colorado Springs-Pueblo",
+   "owner": "",
+   "site": "https://fox21news.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.fox21news.com/feed/"
+   ]
+  },
+  {
+   "call": "WICS",
+   "market": "Champaign-Springfield-Decatur",
+   "owner": "",
+   "site": "https://newschannel20.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WAND",
+   "market": "Champaign-Springfield-Decatur",
+   "owner": "",
+   "site": "https://wandtv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wandtv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WRSP",
+   "market": "Champaign-Springfield-Decatur",
+   "owner": "",
+   "site": "https://foxillinois.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KTBS",
+   "market": "Shreveport",
+   "owner": "KTBS Inc.",
+   "site": "https://ktbs.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KTAL",
+   "market": "Shreveport",
+   "owner": "",
+   "site": "https://ktalnews.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.ktalnews.com/feed/"
+   ]
+  },
+  {
+   "call": "KMSS",
+   "market": "Shreveport",
+   "owner": "",
+   "site": "https://arklatexhomepage.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KIVI",
+   "market": "Boise",
+   "owner": "",
+   "site": "https://idahonews.com",
+   "aliases": [
+    "kivitv.com"
+   ],
+   "siblings": [
+    "KBOI"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WJCL",
+   "market": "Savannah",
+   "owner": "",
+   "site": "https://wjcl.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WSAV",
+   "market": "Savannah",
+   "owner": "",
+   "site": "https://wsav.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wsav.com/feed/"
+   ]
+  },
+  {
+   "call": "KWWL",
+   "market": "Cedar Rapids-Waterloo-Dubuque",
+   "owner": "Allen Media",
+   "site": "https://kwwl.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KVIA",
+   "market": "El Paso",
+   "owner": "",
+   "site": "https://kvia.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://kvia.com/feed/",
+    "https://kvia.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "WBRZ",
+   "market": "Baton Rouge",
+   "owner": "Manship",
+   "site": "https://wbrz.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WVLA",
+   "market": "Baton Rouge",
+   "owner": "",
+   "site": "https://louisianafirstnews.com",
+   "aliases": [],
+   "siblings": [
+    "WGMB"
+   ],
+   "feeds": [
+    "https://www.louisianafirstnews.com/feed/"
+   ]
+  },
+  {
+   "call": "WBND",
+   "market": "South Bend-Elkhart",
+   "owner": "",
+   "site": "https://abc57.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://abc57.com/rss/"
+   ]
+  },
+  {
+   "call": "WCBD",
+   "market": "Charleston, SC",
+   "owner": "",
+   "site": "https://counton2.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.counton2.com/feed/"
+   ]
+  },
+  {
+   "call": "KNWA",
+   "market": "Ft. Smith-Fayetteville",
+   "owner": "Nexstar",
+   "site": "https://nwahomepage.com",
+   "aliases": [],
+   "siblings": [
+    "KFTA"
+   ],
+   "feeds": [
+    "https://www.nwahomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "KFTA",
+   "market": "Ft. Smith-Fayetteville",
+   "owner": "Nexstar",
+   "site": "https://nwahomepage.com",
+   "aliases": [],
+   "siblings": [
+    "KNWA"
+   ],
+   "feeds": [
+    "https://www.nwahomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "WVNY",
+   "market": "Burlington-Plattsburgh",
+   "owner": "",
+   "site": "https://mychamplainvalley.com",
+   "aliases": [],
+   "siblings": [
+    "WFFF"
+   ],
+   "feeds": [
+    "https://www.mychamplainvalley.com/feed/"
+   ]
+  },
+  {
+   "call": "WFFF",
+   "market": "Burlington-Plattsburgh",
+   "owner": "",
+   "site": "https://mychamplainvalley.com",
+   "aliases": [],
+   "siblings": [
+    "WVNY"
+   ],
+   "feeds": [
+    "https://www.mychamplainvalley.com/feed/"
+   ]
+  },
+  {
+   "call": "WBTW",
+   "market": "Myrtle Beach-Florence",
+   "owner": "",
+   "site": "https://wbtw.com",
+   "aliases": [],
+   "siblings": [
+    "WFXB"
+   ],
+   "feeds": [
+    "https://www.wbtw.com/feed/"
+   ]
+  },
+  {
+   "call": "WJHL",
+   "market": "Tri-Cities, TN-VA",
+   "owner": "",
+   "site": "https://wjhl.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wjhl.com/feed/"
+   ]
+  },
+  {
+   "call": "KTVN",
+   "market": "Reno",
+   "owner": "Sarkes Tarzian",
+   "site": "https://2news.com",
+   "aliases": [
+    "ktvn.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.2news.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+   ]
+  },
+  {
+   "call": "WINK",
+   "market": "Ft. Myers-Naples",
+   "owner": "Fort Myers Broadcasting",
+   "site": "https://winknews.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WZVN",
+   "market": "Ft. Myers-Naples",
+   "owner": "Waterman",
+   "site": "https://abc-7.com",
+   "aliases": [
+    "gulfcoastnewsnow.com"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WFTX",
+   "market": "Ft. Myers-Naples",
+   "owner": "",
+   "site": "https://fox4now.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WEHT",
+   "market": "Evansville",
+   "owner": "",
+   "site": "https://tristatehomepage.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.tristatehomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "KLKN",
+   "market": "Lincoln-Hastings-Kearney",
+   "owner": "",
+   "site": "https://klkntv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.klkntv.com/feed/"
+   ]
+  },
+  {
+   "call": "WANE",
+   "market": "Ft. Wayne",
+   "owner": "",
+   "site": "https://wane.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wane.com/feed/"
+   ]
+  },
+  {
+   "call": "WJBF",
+   "market": "Augusta-Aiken",
+   "owner": "",
+   "site": "https://wjbf.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wjbf.com/feed/"
+   ]
+  },
+  {
+   "call": "WFXG",
+   "market": "Augusta-Aiken",
+   "owner": "",
+   "site": "https://wfxg.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KYTX",
+   "market": "Tyler-Longview",
+   "owner": "Tegna (Nexstar subsidiary)",
+   "site": "https://cbs19.tv",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.cbs19.tv/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KVRR",
+   "market": "Fargo-Valley City",
+   "owner": "Red River Broadcast",
+   "site": "https://kvrr.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WFMJ",
+   "market": "Youngstown",
+   "owner": "Maag family",
+   "site": "https://wfmj.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WMGT",
+   "market": "Macon",
+   "owner": "Bahakel",
+   "site": "https://41nbc.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.41nbc.com/feed/"
+   ]
+  },
+  {
+   "call": "WAKA",
+   "market": "Montgomery-Selma",
+   "owner": "",
+   "site": "https://wakatv.com",
+   "aliases": [
+    "alabamanews.net"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WNCF",
+   "market": "Montgomery-Selma",
+   "owner": "",
+   "site": "https://alabamanews.net",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KGET",
+   "market": "Bakersfield",
+   "owner": "",
+   "site": "https://kget.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kget.com/feed/"
+   ]
+  },
+  {
+   "call": "KION",
+   "market": "Monterey-Salinas",
+   "owner": "",
+   "site": "https://kion546.com",
+   "aliases": [
+    "kionrightnow.com"
+   ],
+   "siblings": [
+    "KCBA"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WRBL",
+   "market": "Columbus, GA",
+   "owner": "",
+   "site": "https://wrbl.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wrbl.com/feed/"
+   ]
+  },
+  {
+   "call": "WLTZ",
+   "market": "Columbus, GA",
+   "owner": "Gray",
+   "site": "https://wltz.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WXTX",
+   "market": "Columbus, GA",
+   "owner": "Gray",
+   "site": "https://wtvm.com",
+   "aliases": [],
+   "siblings": [
+    "WTVM"
+   ],
+   "feeds": [
+    "https://www.wtvm.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WEVV",
+   "market": "Evansville",
+   "owner": "Gray (ex-Allen)",
+   "site": "https://wevv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WLAJ",
+   "market": "Lansing",
+   "owner": "Nexstar",
+   "site": "https://wlns.com",
+   "aliases": [],
+   "siblings": [
+    "WLNS"
+   ],
+   "feeds": [
+    "https://www.wlns.com/feed/"
+   ]
+  },
+  {
+   "call": "WSYM",
+   "market": "Lansing",
+   "owner": "Gray (ex-Scripps)",
+   "site": "https://fox47.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://fox47.com/news.rss"
+   ]
+  },
+  {
+   "call": "WFQX",
+   "market": "Traverse City-Cadillac",
+   "owner": "",
+   "site": "https://upnorthlive.com",
+   "aliases": [],
+   "siblings": [
+    "WPBN",
+    "WGTU"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KLSR",
+   "market": "Eugene",
+   "owner": "",
+   "site": "https://kval.com",
+   "aliases": [],
+   "siblings": [
+    "KVAL"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KFFX",
+   "market": "Yakima-Pasco-Richland",
+   "owner": "",
+   "site": "https://kapptv.com",
+   "aliases": [],
+   "siblings": [
+    "KAPP"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KCOY",
+   "market": "Santa Barbara-San Luis Obispo",
+   "owner": "",
+   "site": "https://keyt.com",
+   "aliases": [],
+   "siblings": [
+    "KEYT",
+    "KKFX"
+   ],
+   "feeds": [
+    "https://keyt.com/feed/",
+    "https://keyt.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "KKFX",
+   "market": "Santa Barbara-San Luis Obispo",
+   "owner": "",
+   "site": "https://keyt.com",
+   "aliases": [],
+   "siblings": [
+    "KEYT",
+    "KCOY"
+   ],
+   "feeds": [
+    "https://keyt.com/feed/",
+    "https://keyt.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "KLAF",
+   "market": "Lafayette, LA",
+   "owner": "Gray (ex-Allen)",
+   "site": "https://kadn.com",
+   "aliases": [],
+   "siblings": [
+    "KADN"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KCBA",
+   "market": "Monterey-Salinas",
+   "owner": "",
+   "site": "https://kion546.com",
+   "aliases": [],
+   "siblings": [
+    "KION"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WATM",
+   "market": "Johnstown-Altoona-State College",
+   "owner": "Sinclair",
+   "site": "https://wjactv.com",
+   "aliases": [],
+   "siblings": [
+    "WJAC",
+    "WWCP"
+   ],
+   "feeds": [
+    "https://wjactv.com/news.rss"
+   ]
+  },
+  {
+   "call": "WWCP",
+   "market": "Johnstown-Altoona-State College",
+   "owner": "Sinclair",
+   "site": "https://wjactv.com",
+   "aliases": [],
+   "siblings": [
+    "WJAC",
+    "WATM"
+   ],
+   "feeds": [
+    "https://wjactv.com/news.rss"
+   ]
+  },
+  {
+   "call": "WTLH",
+   "market": "Tallahassee-Thomasville",
+   "owner": "",
+   "site": "https://wtxl.com",
+   "aliases": [],
+   "siblings": [
+    "WTXL"
+   ],
+   "feeds": [
+    "https://www.wtxl.com/index.rss"
+   ]
+  },
+  {
+   "call": "WEMT",
+   "market": "Tri-Cities, TN-VA",
+   "owner": "Sinclair",
+   "site": "https://wcyb.com",
+   "aliases": [],
+   "siblings": [
+    "WCYB"
+   ],
+   "feeds": [
+    "https://wcyb.com/news.rss"
+   ]
+  },
+  {
+   "call": "WFXI",
+   "market": "Greenville-New Bern-Washington",
+   "owner": "",
+   "site": "https://wcti12.com",
+   "aliases": [],
+   "siblings": [
+    "WCTI"
+   ],
+   "feeds": [
+    "https://wcti12.com/news.rss"
+   ]
+  },
+  {
+   "call": "WYFX",
+   "market": "Youngstown",
+   "owner": "",
+   "site": "https://wkbn.com",
+   "aliases": [],
+   "siblings": [
+    "WKBN"
+   ],
+   "feeds": [
+    "https://www.wkbn.com/feed/"
+   ]
+  },
+  {
+   "call": "WYZZ",
+   "market": "Peoria-Bloomington",
+   "owner": "Cunningham (Nexstar-operated)",
+   "site": "https://centralillinoisproud.com",
+   "aliases": [],
+   "siblings": [
+    "WMBD"
+   ],
+   "feeds": [
+    "https://www.centralillinoisproud.com/feed/"
+   ]
+  },
+  {
+   "call": "KBSI",
+   "market": "Paducah-Cape Girardeau-Harrisburg",
+   "owner": "Sinclair (2025)",
+   "site": "https://kbsi23.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kbsi23.com/feed/"
+   ]
+  },
+  {
+   "call": "WSIL",
+   "market": "Paducah-Cape Girardeau-Harrisburg",
+   "owner": "Gray (ex-Allen)",
+   "site": "https://wsiltv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WAAY",
+   "market": "Huntsville-Decatur",
+   "owner": "Gray (ex-Allen)",
+   "site": "https://waaytv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WFFT",
+   "market": "Ft. Wayne",
+   "owner": "Gray (ex-Allen)",
+   "site": "https://wfft.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WCOV",
+   "market": "Montgomery-Selma",
+   "owner": "Gray (ex-Allen)",
+   "site": "https://wcov.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KNIN",
+   "market": "Boise",
+   "owner": "",
+   "site": "https://kivitv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kivitv.com/index.rss"
+   ]
+  },
+  {
+   "call": "KSAS",
+   "market": "Wichita-Hutchinson",
+   "owner": "Sinclair",
+   "site": "https://foxkansas.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://foxkansas.com/news.rss"
+   ]
+  },
+  {
+   "call": "KAKE",
+   "market": "Wichita-Hutchinson",
+   "owner": "Lockwood Broadcast Group",
+   "site": "https://kake.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kake.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "WMSN",
+   "market": "Madison",
+   "owner": "Sinclair",
+   "site": "https://fox47madison.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KPTM",
+   "market": "Omaha",
+   "owner": "Sinclair",
+   "site": "https://fox42kptm.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WSMH",
+   "market": "Flint-Saginaw-Bay City",
+   "owner": "Sinclair",
+   "site": "https://nbc25news.com",
+   "aliases": [],
+   "siblings": [
+    "WEYI"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WUHF",
+   "market": "Rochester, NY",
+   "owner": "Sinclair",
+   "site": "https://13wham.com",
+   "aliases": [],
+   "siblings": [
+    "WHAM"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WSYT",
+   "market": "Syracuse",
+   "owner": "Sinclair",
+   "site": "https://cnycentral.com",
+   "aliases": [],
+   "siblings": [
+    "WSTM",
+    "WTVH"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WTNZ",
+   "market": "Knoxville",
+   "owner": "",
+   "site": "https://fox43knoxville.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WRLH",
+   "market": "Richmond-Petersburg",
+   "owner": "Sinclair",
+   "site": "https://foxrichmond.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://foxrichmond.com/news.rss"
+   ]
+  },
+  {
+   "call": "WUTV",
+   "market": "Buffalo",
+   "owner": "Sinclair",
+   "site": "https://wutv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WPFO",
+   "market": "Portland-Auburn, ME",
+   "owner": "Sinclair",
+   "site": "https://wgme.com",
+   "aliases": [],
+   "siblings": [
+    "WGME"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WUPW",
+   "market": "Toledo",
+   "owner": "",
+   "site": "https://nbc24.com",
+   "aliases": [],
+   "siblings": [
+    "WNWO"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KDSM",
+   "market": "Des Moines-Ames",
+   "owner": "Sinclair",
+   "site": "https://kdsm.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KRBK",
+   "market": "Springfield, MO",
+   "owner": "",
+   "site": "https://ozarksfirst.com",
+   "aliases": [],
+   "siblings": [
+    "KOLR",
+    "KSPR"
+   ],
+   "feeds": [
+    "https://www.ozarksfirst.com/feed/"
+   ]
+  },
+  {
+   "call": "WFXB",
+   "market": "Myrtle Beach-Florence",
+   "owner": "",
+   "site": "https://wbtw.com",
+   "aliases": [],
+   "siblings": [
+    "WBTW"
+   ],
+   "feeds": [
+    "https://www.wbtw.com/feed/"
+   ]
+  },
+  {
+   "call": "KFXV",
+   "market": "Harlingen-Weslaco-McAllen",
+   "owner": "",
+   "site": "https://valleycentral.com",
+   "aliases": [],
+   "siblings": [
+    "KVEO"
+   ],
+   "feeds": [
+    "https://www.valleycentral.com/feed/"
+   ]
+  },
+  {
+   "call": "WGMB",
+   "market": "Baton Rouge",
+   "owner": "",
+   "site": "https://louisianafirstnews.com",
+   "aliases": [],
+   "siblings": [
+    "WVLA"
+   ],
+   "feeds": [
+    "https://www.louisianafirstnews.com/feed/"
+   ]
+  },
+  {
+   "call": "WTTE",
+   "market": "Columbus, OH",
+   "owner": "Cunningham (Sinclair-operated)",
+   "site": "https://abc6onyourside.com",
+   "aliases": [],
+   "siblings": [
+    "WSYX"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WRGT",
+   "market": "Dayton",
+   "owner": "Cunningham (Sinclair-operated)",
+   "site": "https://dayton247now.com",
+   "aliases": [],
+   "siblings": [
+    "WKEF"
+   ],
+   "feeds": [
+    "https://dayton247now.com/news.rss"
+   ]
+  },
+  {
+   "call": "WVAH",
+   "market": "Charleston-Huntington, WV",
+   "owner": "Cunningham (Sinclair-operated)",
+   "site": "https://wchstv.com",
+   "aliases": [],
+   "siblings": [
+    "WCHS"
+   ],
+   "feeds": [
+    "https://wchstv.com/news.rss"
+   ]
+  },
+  {
+   "call": "KFXA",
+   "market": "Cedar Rapids-Waterloo-Dubuque",
+   "owner": "Sinclair",
+   "site": "https://cbs2iowa.com",
+   "aliases": [],
+   "siblings": [
+    "KGAN"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WTAT",
+   "market": "Charleston, SC",
+   "owner": "Sinclair",
+   "site": "https://abcnews4.com",
+   "aliases": [],
+   "siblings": [
+    "WCIV"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WTGS",
+   "market": "Savannah",
+   "owner": "Sinclair",
+   "site": "https://wtgs.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KMSB",
+   "market": "Tucson",
+   "owner": "Tegna (Nexstar) \\u2014 Gray-operated",
+   "site": "https://kold.com",
+   "aliases": [],
+   "siblings": [
+    "KOLD"
+   ],
+   "feeds": [
+    "https://www.kold.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WTWC",
+   "market": "Tallahassee-Thomasville",
+   "owner": "Sinclair",
+   "site": "https://wtwc40.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://wtwc40.com/news.rss"
+   ]
+  },
+  {
+   "call": "KHGI",
+   "market": "",
+   "owner": "",
+   "site": "https://nebraska.tv",
+   "aliases": [],
+   "siblings": [
+    "KFXL"
+   ],
+   "feeds": [
+    "https://nebraska.tv/news.rss"
+   ]
+  },
+  {
+   "call": "KFXL",
+   "market": "Lincoln-Hastings-Kearney",
+   "owner": "Sinclair",
+   "site": "https://nebraska.tv",
+   "aliases": [],
+   "siblings": [
+    "KHGI"
+   ],
+   "feeds": [
+    "https://nebraska.tv/news.rss"
+   ]
+  },
+  {
+   "call": "KBFX",
+   "market": "Bakersfield",
+   "owner": "Sinclair",
+   "site": "https://bakersfieldnow.com",
+   "aliases": [],
+   "siblings": [
+    "KBAK"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WLAX",
+   "market": "La Crosse-Eau Claire",
+   "owner": "",
+   "site": "https://weau.com",
+   "aliases": [],
+   "siblings": [
+    "WEAU",
+    "WEUX"
+   ],
+   "feeds": [
+    "https://www.weau.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WEUX",
+   "market": "",
+   "owner": "",
+   "site": "https://weau.com",
+   "aliases": [],
+   "siblings": [
+    "WEAU",
+    "WLAX"
+   ],
+   "feeds": [
+    "https://www.weau.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WWAY",
+   "market": "Wilmington, NC",
+   "owner": "",
+   "site": "https://wwaytv3.com",
+   "aliases": [],
+   "siblings": [
+    "WILM"
+   ],
+   "feeds": [
+    "https://www.wwaytv3.com/feed/"
+   ]
+  },
+  {
+   "call": "WSFX",
+   "market": "Wilmington, NC",
+   "owner": "Gray",
+   "site": "https://wect.com",
+   "aliases": [],
+   "siblings": [
+    "WECT"
+   ],
+   "feeds": [
+    "https://www.wect.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KZTV",
+   "market": "Corpus Christi",
+   "owner": "",
+   "site": "https://kztv10.com",
+   "aliases": [],
+   "siblings": [
+    "KSCC"
+   ],
+   "feeds": [
+    "https://www.kztv10.com/index.rss"
+   ]
+  },
+  {
+   "call": "KHSL",
+   "market": "Chico-Redding",
+   "owner": "Deerfield Media (Sinclair-operated)",
+   "site": "https://actionnewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KNVN",
+    "KCVU"
+   ],
+   "feeds": [
+    "https://www.actionnewsnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "KNVN",
+   "market": "Chico-Redding",
+   "owner": "Deerfield Media (Sinclair-operated)",
+   "site": "https://actionnewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KHSL",
+    "KCVU"
+   ],
+   "feeds": [
+    "https://www.actionnewsnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "KCVU",
+   "market": "Chico-Redding",
+   "owner": "",
+   "site": "https://actionnewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KHSL",
+    "KNVN"
+   ],
+   "feeds": [
+    "https://www.actionnewsnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "WCBI",
+   "market": "Columbus-Tupelo-West Point",
+   "owner": "",
+   "site": "https://wcbi.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wcbi.com/feed/"
+   ]
+  },
+  {
+   "call": "WLOV",
+   "market": "Columbus-Tupelo-West Point",
+   "owner": "",
+   "site": "https://wtva.com",
+   "aliases": [],
+   "siblings": [
+    "WTVA"
+   ],
+   "feeds": [
+    "https://www.wtva.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WREX",
+   "market": "Rockford",
+   "owner": "Gray (ex-Allen)",
+   "site": "https://wrex.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WAOW",
+   "market": "Wausau-Rhinelander",
+   "owner": "Allen Media",
+   "site": "https://waow.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WJFW",
+   "market": "Wausau-Rhinelander",
+   "owner": "Rockfleet",
+   "site": "https://wjfw.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WZAW",
+   "market": "Wausau-Rhinelander",
+   "owner": "Gray",
+   "site": "https://wsaw.com",
+   "aliases": [],
+   "siblings": [
+    "WSAW"
+   ],
+   "feeds": [
+    "https://www.wsaw.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTMJ",
+   "market": "Topeka",
+   "owner": "Nexstar",
+   "site": "https://ksnt.com",
+   "aliases": [],
+   "siblings": [
+    "KSNT",
+    "KTKA"
+   ],
+   "feeds": [
+    "https://www.ksnt.com/feed/"
+   ]
+  },
+  {
+   "call": "KQFX",
+   "market": "Columbia-Jefferson City",
+   "owner": "",
+   "site": "https://abc17news.com",
+   "aliases": [],
+   "siblings": [
+    "KMIZ"
+   ],
+   "feeds": [
+    "https://abc17news.com/feed/",
+    "https://abc17news.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "KOBI",
+   "market": "Medford-Klamath Falls",
+   "owner": "",
+   "site": "https://kobi5.com",
+   "aliases": [],
+   "siblings": [
+    "KMVU"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KMVU",
+   "market": "Medford-Klamath Falls",
+   "owner": "",
+   "site": "https://kobi5.com",
+   "aliases": [],
+   "siblings": [
+    "KOBI"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KBMT",
+   "market": "Beaumont-Port Arthur",
+   "owner": "",
+   "site": "https://12newsnow.com",
+   "aliases": [
+    "kbmt.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.12newsnow.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KBTV",
+   "market": "Beaumont-Port Arthur",
+   "owner": "Sinclair",
+   "site": "https://kfdm.com",
+   "aliases": [],
+   "siblings": [
+    "KFDM"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KQDS",
+   "market": "Duluth-Superior",
+   "owner": "",
+   "site": "https://kqdsfox21.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WRDE",
+   "market": "Salisbury",
+   "owner": "",
+   "site": "https://wboc.com",
+   "aliases": [],
+   "siblings": [
+    "WBOC"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KCAU",
+   "market": "Sioux City",
+   "owner": "",
+   "site": "https://siouxlandproud.com",
+   "aliases": [
+    "kcautv.com"
+   ],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KMEG",
+   "market": "Sioux City",
+   "owner": "Sinclair (2025)",
+   "site": "https://siouxlandnews.com",
+   "aliases": [],
+   "siblings": [
+    "KPTH"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KPTH",
+   "market": "Sioux City",
+   "owner": "Sinclair",
+   "site": "https://siouxlandnews.com",
+   "aliases": [],
+   "siblings": [
+    "KMEG"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KPSP",
+   "market": "Palm Springs",
+   "owner": "",
+   "site": "https://kesq.com",
+   "aliases": [],
+   "siblings": [
+    "KESQ",
+    "KDFX"
+   ],
+   "feeds": [
+    "https://kesq.com/feed/"
+   ]
+  },
+  {
+   "call": "KDFX",
+   "market": "Palm Springs",
+   "owner": "",
+   "site": "https://kesq.com",
+   "aliases": [],
+   "siblings": [
+    "KESQ",
+    "KPSP"
+   ],
+   "feeds": [
+    "https://kesq.com/feed/"
+   ]
+  },
+  {
+   "call": "WSEE",
+   "market": "Erie",
+   "owner": "",
+   "site": "https://erienewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "WICU"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WICU",
+   "market": "Erie",
+   "owner": "",
+   "site": "https://erienewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "WSEE"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KFJX",
+   "market": "Joplin-Pittsburg",
+   "owner": "",
+   "site": "https://koamnewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KOAM"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KJTV",
+   "market": "Lubbock",
+   "owner": "Gray",
+   "site": "https://kcbd.com",
+   "aliases": [],
+   "siblings": [
+    "KCBD"
+   ],
+   "feeds": [
+    "https://www.kcbd.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WSWG",
+   "market": "Albany, GA",
+   "owner": "Gray",
+   "site": "https://wctv.tv",
+   "aliases": [],
+   "siblings": [
+    "WCTV"
+   ],
+   "feeds": [
+    "https://www.wctv.tv/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WTWO",
+   "market": "Terre Haute",
+   "owner": "",
+   "site": "https://mywabashvalley.com",
+   "aliases": [],
+   "siblings": [
+    "WAWV"
+   ],
+   "feeds": [
+    "https://www.mywabashvalley.com/feed/"
+   ]
+  },
+  {
+   "call": "WAWV",
+   "market": "Terre Haute",
+   "owner": "",
+   "site": "https://mywabashvalley.com",
+   "aliases": [],
+   "siblings": [
+    "WTWO"
+   ],
+   "feeds": [
+    "https://www.mywabashvalley.com/feed/"
+   ]
+  },
+  {
+   "call": "WOAY",
+   "market": "Bluefield-Beckley-Oak Hill",
+   "owner": "Thomas family",
+   "site": "https://woay.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://woay.com/feed/",
+    "https://woay.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "WVNS",
+   "market": "Bluefield-Beckley-Oak Hill",
+   "owner": "",
+   "site": "https://wvnstv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wvnstv.com/feed/"
+   ]
+  },
+  {
+   "call": "WVII",
+   "market": "Bangor",
+   "owner": "",
+   "site": "https://foxbangor.com",
+   "aliases": [],
+   "siblings": [
+    "WFVX"
+   ],
+   "feeds": [
+    "https://www.foxbangor.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "WFVX",
+   "market": "Bangor",
+   "owner": "",
+   "site": "https://foxbangor.com",
+   "aliases": [],
+   "siblings": [
+    "WVII"
+   ],
+   "feeds": [
+    "https://www.foxbangor.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "KIMT",
+   "market": "Rochester-Mason City-Austin",
+   "owner": "Allen Media",
+   "site": "https://kimt.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KXLT",
+   "market": "Rochester-Mason City-Austin",
+   "owner": "",
+   "site": "https://kttc.com",
+   "aliases": [],
+   "siblings": [
+    "KTTC"
+   ],
+   "feeds": [
+    "https://www.kttc.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WTOV",
+   "market": "Wheeling-Steubenville",
+   "owner": "Sinclair",
+   "site": "https://wtov9.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WIVT",
+   "market": "Binghamton",
+   "owner": "Nexstar",
+   "site": "https://binghamtonhomepage.com",
+   "aliases": [],
+   "siblings": [
+    "WBGH"
+   ],
+   "feeds": [
+    "https://www.binghamtonhomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "WBGH",
+   "market": "Binghamton",
+   "owner": "Nexstar",
+   "site": "https://binghamtonhomepage.com",
+   "aliases": [],
+   "siblings": [
+    "WIVT"
+   ],
+   "feeds": [
+    "https://www.binghamtonhomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "WICZ",
+   "market": "Binghamton",
+   "owner": "Vaughan Media (Nexstar-operated)",
+   "site": "https://wicz.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wicz.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "WMBB",
+   "market": "Panama City",
+   "owner": "",
+   "site": "https://mypanhandle.com",
+   "aliases": [],
+   "siblings": [
+    "WECP"
+   ],
+   "feeds": [
+    "https://www.mypanhandle.com/feed/"
+   ]
+  },
+  {
+   "call": "WECP",
+   "market": "Panama City",
+   "owner": "",
+   "site": "https://mypanhandle.com",
+   "aliases": [],
+   "siblings": [
+    "WMBB"
+   ],
+   "feeds": [
+    "https://www.mypanhandle.com/feed/"
+   ]
+  },
+  {
+   "call": "WPGX",
+   "market": "Panama City",
+   "owner": "Gray",
+   "site": "https://wjhg.com",
+   "aliases": [],
+   "siblings": [
+    "WJHG"
+   ],
+   "feeds": [
+    "https://www.wjhg.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WXXV",
+   "market": "Biloxi-Gulfport",
+   "owner": "",
+   "site": "https://wxxv25.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wxxv25.com/feed/"
+   ]
+  },
+  {
+   "call": "KNDX",
+   "market": "Minot-Bismarck-Dickinson",
+   "owner": "",
+   "site": "https://kfyrtv.com",
+   "aliases": [],
+   "siblings": [
+    "KFYR",
+    "KXND"
+   ],
+   "feeds": [
+    "https://www.kfyrtv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KXND",
+   "market": "",
+   "owner": "",
+   "site": "https://kfyrtv.com",
+   "aliases": [],
+   "siblings": [
+    "KFYR",
+    "KNDX"
+   ],
+   "feeds": [
+    "https://www.kfyrtv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTEN",
+   "market": "Sherman-Ada",
+   "owner": "Lockwood Broadcast Group",
+   "site": "https://kten.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WOGX",
+   "market": "Gainesville",
+   "owner": "FOX O&O",
+   "site": "https://fox35orlando.com",
+   "aliases": [],
+   "siblings": [
+    "WOFL"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WGFL",
+   "market": "Gainesville",
+   "owner": "",
+   "site": "https://wgfltv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KIDK",
+   "market": "Idaho Falls-Pocatello",
+   "owner": "",
+   "site": "https://localnews8.com",
+   "aliases": [],
+   "siblings": [
+    "KIFI",
+    "KXPI"
+   ],
+   "feeds": [
+    "https://localnews8.com/feed/",
+    "https://localnews8.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "KXPI",
+   "market": "Idaho Falls-Pocatello",
+   "owner": "",
+   "site": "https://localnews8.com",
+   "aliases": [],
+   "siblings": [
+    "KIFI",
+    "KIDK"
+   ],
+   "feeds": [
+    "https://localnews8.com/feed/",
+    "https://localnews8.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "WVFX",
+   "market": "Clarksburg-Weston",
+   "owner": "Gray",
+   "site": "https://wdtv.com",
+   "aliases": [],
+   "siblings": [
+    "WDTV"
+   ],
+   "feeds": [
+    "https://www.wdtv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WUTR",
+   "market": "Utica",
+   "owner": "",
+   "site": "https://cnyhomepage.com",
+   "aliases": [],
+   "siblings": [
+    "WFXV"
+   ],
+   "feeds": [
+    "https://www.cnyhomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "WFXV",
+   "market": "Utica",
+   "owner": "",
+   "site": "https://cnyhomepage.com",
+   "aliases": [],
+   "siblings": [
+    "WUTR"
+   ],
+   "feeds": [
+    "https://www.cnyhomepage.com/feed/"
+   ]
+  },
+  {
+   "call": "KIDY",
+   "market": "San Angelo",
+   "owner": "",
+   "site": "https://foxwesttexas.com",
+   "aliases": [],
+   "siblings": [
+    "KXVA"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KXVA",
+   "market": "Abilene-Sweetwater",
+   "owner": "",
+   "site": "https://foxwesttexas.com",
+   "aliases": [],
+   "siblings": [
+    "KIDY"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WYDC",
+   "market": "Elmira-Corning",
+   "owner": "",
+   "site": "https://wetmtv.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KECY",
+   "market": "Yuma-El Centro",
+   "owner": "News-Press & Gazette",
+   "site": "https://kyma.com",
+   "aliases": [],
+   "siblings": [
+    "KYMA"
+   ],
+   "feeds": [
+    "https://kyma.com/feed/",
+    "https://kyma.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "WNBW",
+   "market": "Gainesville",
+   "owner": "",
+   "site": "https://wcjb.com",
+   "aliases": [],
+   "siblings": [
+    "WCJB"
+   ],
+   "feeds": [
+    "https://www.wcjb.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KSCC",
+   "market": "Corpus Christi",
+   "owner": "Sinclair",
+   "site": "https://kztv10.com",
+   "aliases": [],
+   "siblings": [
+    "KZTV"
+   ],
+   "feeds": [
+    "https://www.kztv10.com/index.rss"
+   ]
+  },
+  {
+   "call": "WILM",
+   "market": "Wilmington, NC",
+   "owner": "",
+   "site": "https://wwaytv3.com",
+   "aliases": [],
+   "siblings": [
+    "WWAY"
+   ],
+   "feeds": [
+    "https://www.wwaytv3.com/feed/"
+   ]
+  },
+  {
+   "call": "KOKI",
+   "market": "Tulsa",
+   "owner": "Sinclair (acquired 2026)",
+   "site": "https://fox23.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://fox23.com/news.rss"
+   ]
+  },
+  {
+   "call": "WHLT",
+   "market": "Hattiesburg-Laurel",
+   "owner": "Nexstar \\u2014 WJTV semi-satellite",
+   "site": "https://wjtv.com",
+   "aliases": [],
+   "siblings": [
+    "WJTV"
+   ],
+   "feeds": [
+    "https://www.wjtv.com/feed/"
+   ]
+  },
+  {
+   "call": "WHPM",
+   "market": "Hattiesburg-Laurel",
+   "owner": "",
+   "site": "https://wdam.com",
+   "aliases": [],
+   "siblings": [
+    "WDAM"
+   ],
+   "feeds": [
+    "https://www.wdam.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTMF",
+   "market": "Missoula",
+   "owner": "",
+   "site": "https://nbcmontana.com",
+   "aliases": [],
+   "siblings": [
+    "KECI",
+    "KTVM",
+    "KCFW",
+    "KTGF"
+   ],
+   "feeds": [
+    "https://nbcmontana.com/news.rss"
+   ]
+  },
+  {
+   "call": "KSVI",
+   "market": "Billings",
+   "owner": "",
+   "site": "https://yourbigsky.com",
+   "aliases": [],
+   "siblings": [
+    "KHMT"
+   ],
+   "feeds": [
+    "https://www.yourbigsky.com/feed/"
+   ]
+  },
+  {
+   "call": "KHMT",
+   "market": "Billings",
+   "owner": "",
+   "site": "https://yourbigsky.com",
+   "aliases": [],
+   "siblings": [
+    "KSVI"
+   ],
+   "feeds": [
+    "https://www.yourbigsky.com/feed/"
+   ]
+  },
+  {
+   "call": "KULR",
+   "market": "Billings",
+   "owner": "",
+   "site": "https://kulr8.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kulr8.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+   ]
+  },
+  {
+   "call": "KHQA",
+   "market": "Quincy-Hannibal-Keokuk",
+   "owner": "",
+   "site": "https://khqa.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.khqa.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "WDHN",
+   "market": "Dothan",
+   "owner": "",
+   "site": "https://wdhn.com",
+   "aliases": [],
+   "siblings": [
+    "WDFX"
+   ],
+   "feeds": [
+    "https://www.wdhn.com/feed/"
+   ]
+  },
+  {
+   "call": "WRGX",
+   "market": "Dothan",
+   "owner": "",
+   "site": "https://wsfa.com",
+   "aliases": [],
+   "siblings": [
+    "WSFA"
+   ],
+   "feeds": [
+    "https://www.wsfa.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WDFX",
+   "market": "Dothan",
+   "owner": "",
+   "site": "https://wdhn.com",
+   "aliases": [],
+   "siblings": [
+    "WDHN"
+   ],
+   "feeds": [
+    "https://www.wdhn.com/feed/"
+   ]
+  },
+  {
+   "call": "WNBJ",
+   "market": "Jackson, TN",
+   "owner": "",
+   "site": "https://wbbjtv.com",
+   "aliases": [],
+   "siblings": [
+    "WBBJ",
+    "WJKT"
+   ],
+   "feeds": [
+    "https://www.wbbjtv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WJKT",
+   "market": "Jackson, TN",
+   "owner": "",
+   "site": "https://wbbjtv.com",
+   "aliases": [],
+   "siblings": [
+    "WBBJ",
+    "WNBJ"
+   ],
+   "feeds": [
+    "https://www.wbbjtv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WVNC",
+   "market": "Watertown",
+   "owner": "",
+   "site": "https://wwnytv.com",
+   "aliases": [],
+   "siblings": [
+    "WWNY",
+    "WNYF"
+   ],
+   "feeds": [
+    "https://www.wwnytv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WNYF",
+   "market": "Watertown",
+   "owner": "Gray",
+   "site": "https://wwnytv.com",
+   "aliases": [],
+   "siblings": [
+    "WWNY",
+    "WVNC"
+   ],
+   "feeds": [
+    "https://www.wwnytv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WSVF",
+   "market": "Harrisonburg",
+   "owner": "Gray",
+   "site": "https://whsv.com",
+   "aliases": [],
+   "siblings": [
+    "WHSV"
+   ],
+   "feeds": [
+    "https://www.whsv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KLAX",
+   "market": "Alexandria, LA",
+   "owner": "Deltavision",
+   "site": "https://klax-tv.com",
+   "aliases": [],
+   "siblings": [
+    "WNTZ"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WNTZ",
+   "market": "Alexandria, LA",
+   "owner": "",
+   "site": "https://klax-tv.com",
+   "aliases": [],
+   "siblings": [
+    "KLAX"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WZMQ",
+   "market": "Marquette",
+   "owner": "",
+   "site": "https://uppermichiganssource.com",
+   "aliases": [],
+   "siblings": [
+    "WLUC"
+   ],
+   "feeds": [
+    "https://www.uppermichiganssource.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WNKY",
+   "market": "Bowling Green",
+   "owner": "",
+   "site": "https://wnky.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.wnky.com/feed/"
+   ]
+  },
+  {
+   "call": "WCAV",
+   "market": "Charlottesville",
+   "owner": "Gray",
+   "site": "https://cbs19news.com",
+   "aliases": [],
+   "siblings": [
+    "WVAW",
+    "WAHU"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WVAW",
+   "market": "Charlottesville",
+   "owner": "Gray",
+   "site": "https://cbs19news.com",
+   "aliases": [],
+   "siblings": [
+    "WCAV",
+    "WAHU"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WAHU",
+   "market": "Charlottesville",
+   "owner": "Gray",
+   "site": "https://cbs19news.com",
+   "aliases": [],
+   "siblings": [
+    "WCAV",
+    "WVAW"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KFQX",
+   "market": "Grand Junction-Montrose",
+   "owner": "Nexstar \\u2014 KREX satellite",
+   "site": "https://westernslopenow.com",
+   "aliases": [],
+   "siblings": [
+    "KREX"
+   ],
+   "feeds": [
+    "https://www.westernslopenow.com/feed/"
+   ]
+  },
+  {
+   "call": "WMDN",
+   "market": "Meridian",
+   "owner": "Coastal Television",
+   "site": "https://wgbctv.com",
+   "aliases": [],
+   "siblings": [
+    "WGBC"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KYLX",
+   "market": "Laredo",
+   "owner": "",
+   "site": "https://kgns.tv",
+   "aliases": [],
+   "siblings": [
+    "KGNS",
+    "KXOF"
+   ],
+   "feeds": [
+    "https://www.kgns.tv/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KXOF",
+   "market": "Laredo",
+   "owner": "",
+   "site": "https://kgns.tv",
+   "aliases": [],
+   "siblings": [
+    "KGNS",
+    "KYLX"
+   ],
+   "feeds": [
+    "https://www.kgns.tv/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KVHP",
+   "market": "Lake Charles",
+   "owner": "",
+   "site": "https://kplctv.com",
+   "aliases": [],
+   "siblings": [
+    "KPLC",
+    "KSWL"
+   ],
+   "feeds": [
+    "https://www.kplctv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KSWL",
+   "market": "Lake Charles",
+   "owner": "",
+   "site": "https://kplctv.com",
+   "aliases": [],
+   "siblings": [
+    "KPLC",
+    "KVHP"
+   ],
+   "feeds": [
+    "https://www.kplctv.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KWYB",
+   "market": "Butte-Bozeman",
+   "owner": "",
+   "site": "https://abcfoxmontana.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WNBD",
+   "market": "Greenwood-Greenville",
+   "owner": "Deltavision",
+   "site": "https://deltanews.tv",
+   "aliases": [],
+   "siblings": [
+    "WABG",
+    "WXVT"
+   ],
+   "feeds": [
+    "https://www.deltanews.tv/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
+  },
+  {
+   "call": "KBNZ",
+   "market": "Bend",
+   "owner": "",
+   "site": "https://centraloregondaily.com",
+   "aliases": [],
+   "siblings": [
+    "KOHD"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KFXO",
+   "market": "Bend",
+   "owner": "",
+   "site": "https://ktvz.com",
+   "aliases": [],
+   "siblings": [
+    "KTVZ"
+   ],
+   "feeds": [
+    "https://ktvz.com/feed/",
+    "https://ktvz.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "WOVA",
+   "market": "Parkersburg",
+   "owner": "Gray",
+   "site": "https://wtap.com",
+   "aliases": [],
+   "siblings": [
+    "WTAP"
+   ],
+   "feeds": [
+    "https://www.wtap.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTFT",
+   "market": "Twin Falls",
+   "owner": "Tegna \\u2014 KTVB satellite",
+   "site": "https://ktvb.com",
+   "aliases": [],
+   "siblings": [
+    "KTVB"
+   ],
+   "feeds": [
+    "https://www.ktvb.com/feeds/syndication/rss/news"
+   ]
+  },
+  {
+   "call": "KSVT",
+   "market": "Twin Falls",
+   "owner": "Scripps",
+   "site": "https://kmvt.com",
+   "aliases": [],
+   "siblings": [
+    "KMVT"
+   ],
+   "feeds": [
+    "https://www.kmvt.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KAEF",
+   "market": "Eureka",
+   "owner": "Sinclair",
+   "site": "https://krcrtv.com",
+   "aliases": [],
+   "siblings": [
+    "KRCR",
+    "KBVU"
+   ],
+   "feeds": [
+    "https://krcrtv.com/news.rss"
+   ]
+  },
+  {
+   "call": "KVIQ",
+   "market": "Eureka",
+   "owner": "Marquee",
+   "site": "https://redwoodnewschannel.com",
+   "aliases": [],
+   "siblings": [
+    "KIEM"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KBVU",
+   "market": "Eureka",
+   "owner": "Sinclair",
+   "site": "https://krcrtv.com",
+   "aliases": [],
+   "siblings": [
+    "KRCR",
+    "KAEF"
+   ],
+   "feeds": [
+    "https://krcrtv.com/news.rss"
+   ]
+  },
+  {
+   "call": "KBGF",
+   "market": "Great Falls",
+   "owner": "",
+   "site": "https://kfbb.com",
+   "aliases": [],
+   "siblings": [
+    "KFBB"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "WLQP",
+   "market": "Lima",
+   "owner": "",
+   "site": "https://hometownstations.com",
+   "aliases": [],
+   "siblings": [
+    "WLIO",
+    "WOHL"
+   ],
+   "feeds": [
+    "https://www.hometownstations.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WOHL",
+   "market": "Lima",
+   "owner": "Gray",
+   "site": "https://hometownstations.com",
+   "aliases": [],
+   "siblings": [
+    "WLIO",
+    "WLQP"
+   ],
+   "feeds": [
+    "https://www.hometownstations.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KCHY",
+   "market": "Cheyenne-Scottsbluff",
+   "owner": "",
+   "site": "https://wyomingnewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KGWN",
+    "KCWY",
+    "KGWC",
+    "KLWY",
+    "KFNB"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KLWY",
+   "market": "Cheyenne-Scottsbluff",
+   "owner": "",
+   "site": "https://wyomingnewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KGWN",
+    "KCWY",
+    "KGWC",
+    "KCHY",
+    "KFNB"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KTXE",
+   "market": "San Angelo",
+   "owner": "Sinclair \\u2014 KTXS satellite",
+   "site": "https://ktxs.com",
+   "aliases": [],
+   "siblings": [
+    "KTXS"
+   ],
+   "feeds": [
+    "https://ktxs.com/news.rss"
+   ]
+  },
+  {
+   "call": "KFNB",
+   "market": "Casper-Riverton",
+   "owner": "",
+   "site": "https://wyomingnewsnow.com",
+   "aliases": [],
+   "siblings": [
+    "KGWN",
+    "KCWY",
+    "KGWC",
+    "KCHY",
+    "KLWY"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KMNF",
+   "market": "Mankato",
+   "owner": "",
+   "site": "https://keyc.com",
+   "aliases": [],
+   "siblings": [
+    "KEYC"
+   ],
+   "feeds": [
+    "https://www.keyc.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KTVO",
+   "market": "Ottumwa-Kirksville",
+   "owner": "",
+   "site": "https://ktvo.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KCJO",
+   "market": "St. Joseph",
+   "owner": "News-Press & Gazette",
+   "site": "https://newspressnow.com",
+   "aliases": [],
+   "siblings": [
+    "KNPN",
+    "KNPG"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KNPG",
+   "market": "St. Joseph",
+   "owner": "News-Press & Gazette",
+   "site": "https://newspressnow.com",
+   "aliases": [],
+   "siblings": [
+    "KNPN",
+    "KCJO"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KATN",
+   "market": "Fairbanks",
+   "owner": "Gray",
+   "site": "https://alaskasnewssource.com",
+   "aliases": [],
+   "siblings": [
+    "KTUU",
+    "KAUU",
+    "KJUD",
+    "KXLJ"
+   ],
+   "feeds": [
+    "https://www.alaskasnewssource.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KXDF",
+   "market": "Fairbanks",
+   "owner": "Gray",
+   "site": "https://webcenterfairbanks.com",
+   "aliases": [],
+   "siblings": [
+    "KTVF"
+   ],
+   "feeds": [
+    "https://www.webcenterfairbanks.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KXTS",
+   "market": "Victoria",
+   "owner": "Morgan Murphy",
+   "site": "https://crossroadstoday.com",
+   "aliases": [],
+   "siblings": [
+    "KAVU",
+    "KMOL",
+    "KVCT"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KMOL",
+   "market": "Victoria",
+   "owner": "Morgan Murphy",
+   "site": "https://crossroadstoday.com",
+   "aliases": [],
+   "siblings": [
+    "KAVU",
+    "KXTS",
+    "KVCT"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KVCT",
+   "market": "Victoria",
+   "owner": "Morgan Murphy",
+   "site": "https://crossroadstoday.com",
+   "aliases": [],
+   "siblings": [
+    "KAVU",
+    "KXTS",
+    "KMOL"
+   ],
+   "feeds": []
+  },
+  {
+   "call": "KHBB",
+   "market": "Helena",
+   "owner": "",
+   "site": "https://ktvh.com",
+   "aliases": [],
+   "siblings": [
+    "KTVH"
+   ],
+   "feeds": [
+    "https://www.ktvh.com/index.rss"
+   ]
+  },
+  {
+   "call": "KXLJ",
+   "market": "Juneau",
+   "owner": "",
+   "site": "https://alaskasnewssource.com",
+   "aliases": [],
+   "siblings": [
+    "KTUU",
+    "KAUU",
+    "KJUD",
+    "KATN"
+   ],
+   "feeds": [
+    "https://www.alaskasnewssource.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KNPL",
+   "market": "North Platte",
+   "owner": "Gray",
+   "site": "https://knopnews2.com",
+   "aliases": [],
+   "siblings": [
+    "KNOP",
+    "KIIT"
+   ],
+   "feeds": [
+    "https://www.knopnews2.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "KIIT",
+   "market": "North Platte",
+   "owner": "",
+   "site": "https://knopnews2.com",
+   "aliases": [],
+   "siblings": [
+    "KNOP",
+    "KNPL"
+   ],
+   "feeds": [
+    "https://www.knopnews2.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WJXT",
+   "market": "Jacksonville",
+   "owner": "Graham Media",
+   "site": "https://news4jax.com",
+   "aliases": [
+    "wjxt.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://www.news4jax.com/arc/outboundfeeds/rss/?outputType=xml"
+   ]
+  },
+  {
+   "call": "WHDH",
+   "market": "Boston",
+   "owner": "Sunbeam",
+   "site": "https://whdh.com",
+   "aliases": [
+    "7news.com"
+   ],
+   "siblings": [],
+   "feeds": [
+    "https://whdh.com/feed/",
+    "https://whdh.com/comments/feed/"
+   ]
+  },
+  {
+   "call": "KCAL",
+   "market": "",
+   "owner": "",
+   "site": "https://www.cbsnews.com/losangeles",
+   "aliases": [],
+   "siblings": [
+    "KCBS"
+   ],
+   "feeds": [
+    "https://www.cbsnews.com/losangeles/latest/rss/main"
+   ]
+  },
+  {
+   "call": "KMEX",
+   "market": "",
+   "owner": "",
+   "site": "https://www.univision.com/local/los-angeles-kmex",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WXTV",
+   "market": "",
+   "owner": "",
+   "site": "https://www.univision.com/local/nueva-york-wxtv",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KUSI",
+   "market": "San Diego",
+   "owner": "Nexstar",
+   "site": "https://kusi.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KRON",
+   "market": "San Francisco-Oak-San Jose",
+   "owner": "Nexstar",
+   "site": "https://kron4.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.kron4.com/feed/"
+   ]
+  },
+  {
+   "call": "WLTV",
+   "market": "",
+   "owner": "",
+   "site": "https://www.univision.com/local/miami-wltv",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WSCV",
+   "market": "",
+   "owner": "",
+   "site": "https://telemundo51.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": [
+    "https://www.telemundo51.com/?rss=y"
+   ]
+  },
+  {
+   "call": "KXLN",
+   "market": "Houston",
+   "owner": "Univision",
+   "site": "https://www.univision.com/local/houston-kxln",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KUVN",
+   "market": "Dallas-Ft. Worth",
+   "owner": "Univision",
+   "site": "https://www.univision.com/local/dallas-kuvn",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "KTVW",
+   "market": "Phoenix",
+   "owner": "Univision",
+   "site": "https://www.univision.com/local/phoenix-ktvw",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WFMZ",
+   "market": "Philadelphia",
+   "owner": "Maranatha Broadcasting",
+   "site": "https://wfmz.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  },
+  {
+   "call": "WBKB",
+   "market": "Alpena",
+   "owner": "Morgan Murphy",
+   "site": "https://wbkb11.com",
+   "aliases": [],
+   "siblings": [],
+   "feeds": []
+  }
+ ]
+}
