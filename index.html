@@ -121,6 +121,12 @@ aside h2{font:600 17px/1.2 var(--cond);margin:14px 16px 8px;color:var(--muted)}
 .spcbox b{font:700 19px/1.2 var(--cond)}
 .spcbox p{margin:2px 0;font-size:13.5px;color:var(--muted)}
 .legend .head{font:600 14px/1.6 var(--cond);color:var(--muted);margin-top:4px}
+.radar{position:relative;width:100%;aspect-ratio:340/210;background:#0b1626;border:1px solid var(--panel-edge);border-radius:4px;overflow:hidden;margin:10px 0 4px}
+.radar img{position:absolute;display:block;max-width:none}
+.radar svg{position:absolute;inset:0;width:100%;height:100%}
+.radar .wait{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--muted)}
+.rcap{font-size:12.5px;color:var(--muted);margin:0 0 4px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.rcap a{color:var(--text)}
 .hidden-note{font-size:13px;color:var(--muted);margin:-6px 0 12px}
 
 footer{padding:5px 18px;font-size:12px;color:var(--muted);border-top:1px solid var(--panel-edge);background:#0f1d31}
@@ -197,6 +203,12 @@ const SPC_SOURCES = {
   3: ['https://www.spc.noaa.gov/products/outlook/day3otlk_cat.lyr.geojson']
 };
 const SPC_REFRESH_MS = 900000;
+/* Radar snippets */
+const RADAR_SITES  = 'https://api.weather.gov/radar/stations';
+const NOAA_RADAR   = 'https://opengeo.ncep.noaa.gov/geoserver';        // per-site reflectivity, airport-radar velocity, national mosaic
+const IEM_TILES    = 'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0';  // NEXRAD single-site velocity
+const COUNTY_LINES = 'https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json'; // unprojected county outlines for the snippet
+const RADAR_EVENTS = /^(Tornado Warning|Tornado Emergency|Severe Thunderstorm Warning|Flash Flood Warning|Flash Flood Emergency|Extreme Wind Warning)$/;
 const SPC_CATS = [   // lowest to highest, SPC's standard colours
   {code:'TSTM', name:'General thunderstorms', level:0, color:'#c1e9c1'},
   {code:'MRGL', name:'Marginal risk',  level:1, color:'#66a366'},
@@ -307,6 +319,9 @@ let polygons = [];               // storm-based warning shapes: [{ geometry, cls
 let levels = new Set(['warning','watch']);
 let spcDay = 1;                  // 0 = off
 try { const d = +localStorage.getItem('dsm-spc'); if ([0,1,2,3].includes(d) && localStorage.getItem('dsm-spc') !== null) spcDay = d; } catch(e){}
+let radarSites = [];             // [{ id, name, type, lonlat }]
+let radarSitesReady = Promise.resolve();
+let countyOutlines = null;       // [{ geometry, bounds }] once loaded
 const spcData = {};              // day -> { features: [{ cat, geometry, rings }], issued, valid, expires } or { failed:true }
 const spcByMarket = new Map();   // market id -> highest SPC category for the day shown
 let countyCentroids = new Map(); // county fips -> [x, y] on the map
@@ -562,7 +577,7 @@ async function loadAlerts(){
     if (f.geometry && /Polygon/.test(f.geometry.type)) nextPolys.push({geometry: rewind(f.geometry), cls});
     for (const [m, set] of hit){
       if (!next.has(m)) next.set(m, []);
-      next.get(m).push({p, cls, fips:[...set]});
+      next.get(m).push({p, cls, fips:[...set], geom: f.geometry && /Polygon/.test(f.geometry.type) ? f.geometry : null});
       for (const f of set){
         if (!nextCounty.has(f)) nextCounty.set(f, []);
         nextCounty.get(f).push({p, cls});
@@ -699,6 +714,164 @@ function paint(){
   if (selected) renderPanel(selected);
 }
 
+/* ---------- Radar snippets ---------- */
+async function loadRadarSites(){
+  try {
+    const r = await fetch(RADAR_SITES, {headers:{Accept:'application/geo+json'}});
+    if (!r.ok) return;
+    const gj = await r.json();
+    radarSites = (gj.features || []).map(f => ({
+      id: String(f.properties?.id || '').toUpperCase(),
+      name: f.properties?.name || '',
+      type: /TDWR/i.test(f.properties?.stationType || '') ? 'TDWR' : 'NEXRAD',
+      lonlat: f.geometry?.coordinates
+    })).filter(x => x.id && Array.isArray(x.lonlat));
+  } catch(e){ /* snippets fall back to the national mosaic */ }
+}
+async function loadCountyOutlines(){
+  if (countyOutlines) return countyOutlines;
+  try {
+    const t = await (await fetch(COUNTY_LINES)).json();
+    countyOutlines = topojson.feature(t, t.objects.counties).features.map(f => ({geometry: f.geometry, bounds: d3.geoBounds(f)}));
+  } catch(e){ countyOutlines = []; }
+  return countyOutlines;
+}
+const kmBetween = (a, b) => d3.geoDistance(a, b) * 6371;
+function nearestSite(pt, type, maxKm){
+  let best = null;
+  for (const s of radarSites){
+    if (s.type !== type) continue;
+    const km = kmBetween(pt, s.lonlat);
+    if (km <= maxKm && (!best || km < best.km)) best = {...s, km};
+  }
+  return best;
+}
+
+/* NWS storm motion: "...storm...232DEG...27KT...33.95,-98.55" (direction the storm comes FROM) */
+function stormMotion(p){
+  const d = (p.parameters?.eventMotionDescription || [])[0] || '';
+  const m = /(\d{1,3})DEG\.\.\.(\d+)KT\.\.\.([-\d., ]+)$/.exec(d);
+  if (!m) return null;
+  const pts = m[3].trim().split(/\s+/).map(x => x.split(',').map(Number)).filter(x => x.length === 2 && !x.some(isNaN)).map(([lat, lon]) => [lon, lat]);
+  return pts.length ? {from: +m[1], kt: +m[2], pts} : null;
+}
+
+const R_EARTH = 6378137, HALF = Math.PI * R_EARTH;
+const merc = ([lon, lat]) => [R_EARTH * lon * Math.PI / 180, R_EARTH * Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360))];
+const unmerc = ([x, y]) => [x / R_EARTH * 180 / Math.PI, (2 * Math.atan(Math.exp(y / R_EARTH)) - Math.PI / 2) * 180 / Math.PI];
+
+function radarSources(entry, centre, bbox, W, H, tick){
+  const wms = (ws, layer) => `${NOAA_RADAR}/${ws}/${layer}/ows?service=WMS&version=1.1.1&request=GetMap&layers=${layer}&styles=&format=image/png&transparent=true&srs=EPSG:3857&bbox=${bbox.join(',')}&width=${W*2}&height=${H*2}&t=${tick}`;
+  const nexrad = nearestSite(centre, 'NEXRAD', 230);
+  const out = [];
+  if (/^Tornado/.test(entry.cls.event)){
+    const tdwr = nearestSite(centre, 'TDWR', 90);
+    if (tdwr) out.push({kind:'wms', url: wms(tdwr.id.toLowerCase(), tdwr.id.toLowerCase() + '_bvel'), label:`Base velocity, ${tdwr.id} airport radar`, site: tdwr, vel:true});
+    if (nexrad) out.push({kind:'tiles', template: `${IEM_TILES}/ridge::${nexrad.id.slice(1)}-N0U-0/{z}/{x}/{y}.png?t=${tick}`, label:`Base velocity, ${nexrad.id} (via Iowa Mesonet)`, site: nexrad, vel:true});
+  }
+  if (nexrad) out.push({kind:'wms', url: wms(nexrad.id.toLowerCase(), nexrad.id.toLowerCase() + '_sr_bref'), label:`Base reflectivity, ${nexrad.id}`, site: nexrad});
+  out.push({kind:'wms', url: wms('conus', 'conus_bref_qcd'), label:'Reflectivity, national mosaic', site: nexrad});
+  return out;
+}
+
+function drawRadar(box, entry){
+  const W = 340, H = 210, tick = Math.floor(Date.now() / 120000);
+  const geom = entry.geom;
+  const rings = geom.type === 'Polygon' ? [geom.coordinates[0]] : geom.coordinates.map(pl => pl[0]);
+  const mpts = rings.flat().map(merc);
+  let [x0, y0, x1, y1] = [d3.min(mpts, d => d[0]), d3.min(mpts, d => d[1]), d3.max(mpts, d => d[0]), d3.max(mpts, d => d[1])];
+  const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+  let sx = Math.max((x1 - x0) * 1.6, 70000), sy = Math.max((y1 - y0) * 1.6, 70000 * H / W);
+  if (sx / sy < W / H) sx = sy * W / H; else sy = sx * H / W;
+  const bbox = [cx - sx/2, cy - sy/2, cx + sx/2, cy + sy/2];
+  const px = ll => { const [x, y] = merc(ll); return [(x - bbox[0]) / sx * W, (bbox[3] - y) / sy * H]; };
+  const centre = unmerc([cx, cy]);
+  const sources = radarSources(entry, centre, bbox, W, H, tick);
+  const cap = box.nextElementSibling;
+  const pct = (v, of) => (v / of * 100) + '%';
+
+  const tryNext = i => {
+    box.querySelectorAll('img, .wait').forEach(n => n.remove());
+    const src = sources[i];
+    if (!src){
+      box.insertAdjacentHTML('afterbegin', '<div class="wait">Radar image unavailable</div>');
+      const site = sources[0] && sources[0].site;
+      cap.innerHTML = `<span>No radar image could be loaded</span>` +
+        (site ? `<a href="https://radar.weather.gov/station/${esc(site.id.toLowerCase())}/standard" target="_blank" rel="noopener">Open ${esc(site.id)} on radar.weather.gov</a>` : '');
+      return;
+    }
+    const done = () => {
+      const site = src.site;
+      cap.innerHTML = `<span>${esc(src.label)}${site ? `, ${Math.round(site.km)} km away` : ''}, latest scan</span>` +
+        (site ? `<a href="https://radar.weather.gov/station/${esc(site.id.toLowerCase())}/standard" target="_blank" rel="noopener">Full radar loop</a>` : '');
+    };
+    if (src.kind === 'wms'){
+      const img = new Image();
+      img.alt = src.label;
+      Object.assign(img.style, {left:0, top:0, width:'100%', height:'100%'});
+      img.onload = done;
+      img.onerror = () => tryNext(i + 1);
+      img.src = src.url;
+      box.prepend(img);
+    } else {
+      // Map tiles covering the box
+      const z = Math.max(4, Math.min(11, Math.floor(Math.log2((2 * HALF) / (256 * sx / W)))));
+      const span = (2 * HALF) / 2 ** z;
+      const tx0 = Math.floor((bbox[0] + HALF) / span), tx1 = Math.floor((bbox[2] + HALF) / span);
+      const ty0 = Math.floor((HALF - bbox[3]) / span), ty1 = Math.floor((HALF - bbox[1]) / span);
+      let pending = 0, failed = 0, loaded = 0;
+      for (let tx = tx0; tx <= tx1; tx++) for (let ty = ty0; ty <= ty1; ty++){
+        pending++;
+        const img = new Image();
+        const left = (tx * span - HALF - bbox[0]) / sx * W, top = (bbox[3] - (HALF - ty * span)) / sy * H, size = span / sx * W;
+        Object.assign(img.style, {left: pct(left, W), top: pct(top, H), width: pct(size, W), height: pct(span / sy * H, H)});
+        img.onload = () => { loaded++; if (loaded + failed === pending && loaded) done(); };
+        img.onerror = () => { failed++; if (failed === pending) tryNext(i + 1); else if (loaded + failed === pending) done(); };
+        img.src = src.template.replace('{z}', z).replace('{x}', tx).replace('{y}', ty);
+        box.prepend(img);
+      }
+    }
+  };
+
+  // Overlay: county lines, the warning polygon, storm position and motion, radar site
+  const line = d3.geoPath(d3.geoTransform({point(lon, lat){ const [x, y] = px([lon, lat]); this.stream.point(x, y); }}));
+  const svgNode = d3.select(box).append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('preserveAspectRatio','xMidYMid meet').attr('aria-hidden','true');
+  const gLines = svgNode.append('g');
+  const [lonA, latA] = unmerc([bbox[0], bbox[1]]), [lonB, latB] = unmerc([bbox[2], bbox[3]]);
+  loadCountyOutlines().then(list => {
+    const near = list.filter(c => !(c.bounds[1][0] < lonA || c.bounds[0][0] > lonB || c.bounds[1][1] < latA || c.bounds[0][1] > latB));
+    gLines.selectAll('path').data(near).join('path').attr('d', d => line(d.geometry))
+      .attr('fill','none').attr('stroke','rgba(255,255,255,.28)').attr('stroke-width',.7);
+  });
+  const ringPath = rings.map(r => 'M' + r.map(px).map(q => q.map(v => v.toFixed(1)).join(',')).join('L') + 'Z').join('');
+  svgNode.append('path').attr('d', ringPath).attr('fill','none').attr('stroke','#000').attr('stroke-width',4).attr('stroke-opacity',.5);
+  svgNode.append('path').attr('d', ringPath).attr('fill','none').attr('stroke', entry.cls.color).attr('stroke-width',2.2);
+  const mo = stormMotion(entry.p);
+  if (mo){
+    const toward = (mo.from + 180) % 360 * Math.PI / 180;
+    for (const pt of mo.pts){
+      const [ax, ay] = px(pt);
+      // arrow shows about 20 minutes of travel
+      const dist = mo.kt * 1852 * (20 / 60) / Math.cos(pt[1] * Math.PI / 180);
+      const bx = ax + Math.sin(toward) * dist / sx * W, by = ay - Math.cos(toward) * dist / sy * H;
+      if (mo.kt > 0) svgNode.append('line').attr('x1',ax).attr('y1',ay).attr('x2',bx).attr('y2',by)
+        .attr('stroke','#fff').attr('stroke-width',2).attr('marker-end','url(#arrowhead)');
+      svgNode.append('circle').attr('cx',ax).attr('cy',ay).attr('r',4).attr('fill','#fff').attr('stroke','#000').attr('stroke-width',1.2);
+    }
+    svgNode.append('defs').html('<marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#fff"/></marker>');
+  }
+  tryNext(0);
+}
+
+function fillRadars(list){
+  const boxes = [...document.querySelectorAll('#pbody .radar[data-i]')];
+  radarSitesReady.then(() => boxes.forEach(box => {
+    if (!box.isConnected) return;       // the panel was redrawn in the meantime
+    const entry = list[+box.dataset.i];
+    if (entry && entry.geom) drawRadar(box, entry);
+  }));
+}
+
 /* ---------- Market panel ---------- */
 const NET_ORDER = ['ABC','CBS','NBC','FOX'];
 function ago(iso){
@@ -751,7 +924,8 @@ function renderPanel(id){
 
   const picked = pickedCounty && countyToMarket.get(pickedCounty) === id ? pickedCounty : null;
   const pickedName = picked ? `${countyName.get(picked) || picked} County` : '';
-  const warnings = list.length ? list.map(({p, cls, fips}) => {
+  let radarCount = 0;
+  const warnings = list.length ? list.map(({p, cls, fips, geom}, i) => {
     const names = fips.map(f => countyName.get(f) || f).sort();
     const end = p.ends || p.expires;
     const others = (alertMarkets.get(p.id) || []).filter(x => x !== id);
@@ -763,6 +937,7 @@ function renderPanel(id){
       <p class="issued">Issued ${esc(marketTime(p.sent, m.tz))}, ${esc(ago(p.sent))}</p>
       <p class="small">${mode === 'counties' ? '' : esc(names.join(', ')) + '<br>'}${esc(p.senderName || '')}</p>
       ${also}
+      ${geom && RADAR_EVENTS.test(cls.event) && radarCount++ < 3 ? `<div class="radar" data-i="${i}"></div><p class="rcap">Loading radar…</p>` : ''}
       ${p.description ? `<details><summary>Full text</summary><pre>${esc(p.description)}${p.instruction ? '\n\n' + esc(p.instruction) : ''}</pre></details>` : ''}
     </div>`;
   }).join('') : `<p class="later">No active NWS alerts at the levels shown.</p>`;
@@ -778,6 +953,7 @@ function renderPanel(id){
     ${warnings}
     ${hidden}
     ${mode === 'counties' ? '' : watchHTML(m.name)}`;
+  fillRadars(list);
 }
 
 function select(id, zoomTo){
@@ -871,6 +1047,7 @@ $('zreset').addEventListener('click', () => svg.transition().call(zoom.transform
   await loadAlerts();
   setInterval(loadAlerts, REFRESH_MS);
   refreshSPC();
+  radarSitesReady = loadRadarSites();
   setInterval(refreshSPC, SPC_REFRESH_MS);
 })();
 </script>
