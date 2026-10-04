@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-02T02:06:55.828Z",
+ "generated": "2026-10-04T21:17:14.388Z",
  "stations": [
   {
    "call": "KFDX",
@@ -2279,9 +2279,7 @@
    "site": "https://wqow.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.wqow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WXOW",
@@ -3635,8 +3633,8 @@
    "aliases": [],
    "siblings": [],
    "feeds": [
-    "https://www.foxla.com/rss/category/news",
-    "https://www.foxla.com/rss/category/local-news"
+    "https://www.foxla.com/rss/category/local-news",
+    "https://www.foxla.com/rss/tags/us,ca"
    ]
   },
   {
@@ -3861,9 +3859,7 @@
    "site": "https://kxly.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.kxly.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KREM",
@@ -3923,7 +3919,9 @@
     "wrcbtv.com"
    ],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.local3news.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+   ]
   },
   {
    "call": "KRGV",
@@ -4464,9 +4462,7 @@
     "WXVT",
     "WNBD"
    ],
-   "feeds": [
-    "https://www.deltanews.tv/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WXVT",
@@ -4478,9 +4474,7 @@
     "WABG",
     "WNBD"
    ],
-   "feeds": [
-    "https://www.deltanews.tv/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KABB",
@@ -5113,7 +5107,9 @@
    "site": "https://kjnbtv.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.kjnbtv.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KTBY",
@@ -5124,7 +5120,9 @@
    "siblings": [
     "KYUR"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.youralaskalink.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KYUR",
@@ -5135,7 +5133,9 @@
    "siblings": [
     "KTBY"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.youralaskalink.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WGBC",
@@ -5258,9 +5258,7 @@
    "site": "https://kezi.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.kezi.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KDRV",
@@ -5269,9 +5267,7 @@
    "site": "https://kdrv.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.kdrv.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KTVT",
@@ -5550,7 +5546,10 @@
    "siblings": [
     "WOGX"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.fox35orlando.com/rss/category/news",
+    "https://www.fox35orlando.com/rss/tags/us,fl"
+   ]
   },
   {
    "call": "WJW",
@@ -6643,7 +6642,9 @@
    "site": "https://winknews.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.winknews.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WZVN",
@@ -7123,9 +7124,7 @@
    "site": "https://kake.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.kake.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WMSN",
@@ -7498,9 +7497,7 @@
     "KNVN",
     "KCVU"
    ],
-   "feeds": [
-    "https://www.actionnewsnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KNVN",
@@ -7512,9 +7509,7 @@
     "KHSL",
     "KCVU"
    ],
-   "feeds": [
-    "https://www.actionnewsnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KCVU",
@@ -7526,9 +7521,7 @@
     "KHSL",
     "KNVN"
    ],
-   "feeds": [
-    "https://www.actionnewsnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WCBI",
@@ -7947,9 +7940,7 @@
    "site": "https://wicz.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.wicz.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WMBB",
@@ -8047,7 +8038,10 @@
    "siblings": [
     "WOFL"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.fox35orlando.com/rss/category/news",
+    "https://www.fox35orlando.com/rss/tags/us,fl"
+   ]
   },
   {
    "call": "WGFL",
@@ -8308,9 +8302,7 @@
    "site": "https://khqa.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.khqa.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WDHN",
@@ -8601,9 +8593,7 @@
     "WABG",
     "WXVT"
    ],
-   "feeds": [
-    "https://www.deltanews.tv/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KBNZ",

@@ -1,15 +1,16 @@
 # Station feed report
 
-Run 2026-10-02T02:06:55.833Z. 555 of 794 stations have a station feed.
-They cover 201 of 210 markets. 32 stations have no market yet.
+Run 2026-10-04T21:17:14.393Z. 549 of 794 stations have a station feed.
+They cover 200 of 210 markets. 32 stations have no market yet.
 
-## Markets with no station feed (9)
+## Markets with no station feed (10)
 - Alpena
 - Charlottesville
-- Chattanooga
 - Cheyenne-Scottsbluff
-- Ft. Myers-Naples
+- Eugene
+- Greenwood-Greenville
 - Madison
+- Medford-Klamath Falls
 - Monterey-Salinas
 - Victoria
 - Yakima-Pasco-Richland
@@ -49,7 +50,7 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - WLTV (www.univision.com/local/miami-wltv)
 - WSCV (telemundo51.com)
 
-## Stations with no feed (239)
+## Stations with no feed (245)
 ### WGAL (wgal.com)
 - https://www.wgal.com/feed/: HTTP 404
 - https://www.wgal.com/rss/: not a feed
@@ -58,7 +59,7 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://www.wgal.com/news/local/index.rss: HTTP 404
 
 ### WKTV (wktv.com)
-- http://www.wktv.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- http://www.wktv.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
 - https://www.wktv.com/feed/: HTTP 429
 - https://www.wktv.com/rss/: HTTP 429
 - https://www.wktv.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
@@ -157,10 +158,17 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://pahomepage.com/arc/outboundfeeds/rss/?outputType=xml: feed is empty
 - https://pahomepage.com/?rss=y: HTTP 403
 
+### WQOW (wqow.com)
+- http://www.wqow.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
+- https://www.wqow.com/feed/: HTTP 404
+- https://www.wqow.com/?feed=rss2: HTTP 429
+- https://www.wqow.com/rss/: HTTP 429
+- https://www.wqow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+
 ### WXOW (wxow.com)
-- http://www.wxow.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
+- http://www.wxow.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
 - https://www.wxow.com/feed/: HTTP 404
-- https://www.wxow.com/rss/: HTTP 429
+- https://www.wxow.com/rss/: HTTP 404
 - https://www.wxow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.wxow.com/?rss=y: HTTP 429
 
@@ -482,6 +490,13 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://abc7amarillo.com/rss/: HTTP 404
 - https://abc7amarillo.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
 
+### KXLY (kxly.com)
+- http://www.kxly.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
+- https://www.kxly.com/feed/: HTTP 404
+- https://www.kxly.com/rss/: HTTP 404
+- https://www.kxly.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.kxly.com/?rss=y: HTTP 429
+
 ### KAYU (fox28spokane.com)
 - http://www.kxly.com/search/?f=rss&t=article&c=fox28&l=50&s=start_time&sd=desc: hosted on kxly.com
 - https://www.kxly.com/feed/: hosted on kxly.com
@@ -502,13 +517,6 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://wdef.com/rss/: HTTP 403
 - https://wdef.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 403
 - https://wdef.com/?rss=y: HTTP 403
-
-### WRCB (local3news.com)
-- http://www.local3news.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
-- https://www.local3news.com/feed/: HTTP 404
-- https://www.local3news.com/rss/: HTTP 404
-- https://www.local3news.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
-- https://www.local3news.com/?rss=y: HTTP 429
 
 ### KRGV (krgv.com)
 - https://www.krgv.com/feed/: HTTP 404
@@ -544,8 +552,8 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 ### KNDO (nonstoplocal.com)
 - http://www.nonstoplocal.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
 - https://www.nonstoplocal.com/feed/: HTTP 429
-- https://www.nonstoplocal.com/rss/: HTTP 404
-- https://www.nonstoplocal.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
+- https://www.nonstoplocal.com/rss/: HTTP 429
+- https://www.nonstoplocal.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.nonstoplocal.com/?rss=y: HTTP 429
 
 ### KATC (katc.com)
@@ -583,12 +591,12 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - http://www.koamnewsnow.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
 - https://www.koamnewsnow.com/feed/: not a feed
 - https://www.koamnewsnow.com/rss/: HTTP 404
-- https://www.koamnewsnow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
+- https://www.koamnewsnow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.koamnewsnow.com/?rss=y: HTTP 429
 
 ### KPVI (kpvi.com)
 - http://www.kpvi.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
-- https://www.kpvi.com/feed/: HTTP 429
+- https://www.kpvi.com/feed/: HTTP 404
 - https://www.kpvi.com/rss/: HTTP 429
 - https://www.kpvi.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.kpvi.com/?rss=y: HTTP 429
@@ -597,15 +605,15 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - http://www.weny.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
 - https://www.weny.com/feed/: HTTP 429
 - https://www.weny.com/rss/: HTTP 429
-- https://www.weny.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
-- https://www.weny.com/?rss=y: HTTP 429
+- https://www.weny.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.weny.com/?rss=y: not a feed
 
 ### KOHD (centraloregondaily.com)
-- https://centraloregondaily.com: homepage HTTP 429
-- https://centraloregondaily.com/feed/: HTTP 404
-- https://centraloregondaily.com/rss/: HTTP 429
-- https://centraloregondaily.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
-- https://centraloregondaily.com/?rss=y: not a feed
+- http://www.centraloregondaily.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.centraloregondaily.com/feed/: HTTP 404
+- https://www.centraloregondaily.com/rss/: HTTP 429
+- https://www.centraloregondaily.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.centraloregondaily.com/?rss=y: HTTP 429
 
 ### KIEM (redwoodnewschannel.com)
 - https://redwoodnewschannel.com: homepage ENOTFOUND
@@ -626,7 +634,7 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 
 ### KNPN (newspressnow.com)
 - http://www.newspressnow.com//?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: not a feed
-- https://www.newspressnow.com/feed/: HTTP 404
+- https://www.newspressnow.com/feed/: HTTP 429
 - https://www.newspressnow.com/rss/: HTTP 404
 - https://www.newspressnow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.newspressnow.com/?rss=y: HTTP 429
@@ -637,6 +645,20 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://www.crossroadstoday.com/rss/: HTTP 429
 - https://www.crossroadstoday.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.crossroadstoday.com/?rss=y: HTTP 429
+
+### WABG (deltanews.tv)
+- http://www.deltanews.tv/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.deltanews.tv/feed/: HTTP 404
+- https://www.deltanews.tv/rss/: HTTP 404
+- https://www.deltanews.tv/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.deltanews.tv/?rss=y: HTTP 429
+
+### WXVT (deltanews.tv)
+- http://www.deltanews.tv/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.deltanews.tv/feed/: HTTP 404
+- https://www.deltanews.tv/rss/: HTTP 404
+- https://www.deltanews.tv/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.deltanews.tv/?rss=y: HTTP 429
 
 ### KABB (foxsanantonio.com)
 - https://foxsanantonio.com/news/local/index.rss: HTTP 400
@@ -835,11 +857,11 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://foxreno.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
 
 ### KDNL (abcstlouis.com)
-- https://abcstlouis.com/news/local/index.rss: HTTP 400
-- https://abcstlouis.com/news/index.rss: HTTP 400
-- https://abcstlouis.com/feed/: HTTP 404
-- https://abcstlouis.com/rss/: HTTP 404
-- https://abcstlouis.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
+- https://stl30.com/news/local/index.rss: hosted on stl30.com
+- https://stl30.com/news/index.rss: hosted on stl30.com
+- https://stl30.com/feed/: hosted on stl30.com
+- https://stl30.com/rss/: hosted on stl30.com
+- https://stl30.com/arc/outboundfeeds/rss/?outputType=xml: hosted on stl30.com
 
 ### KGWC (wyomingnewsnow.com)
 - http://www.wyomingnewsnow.tv/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: hosted on wyomingnewsnow.tv
@@ -863,15 +885,15 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://www.montanarightnow.com/?rss=y: hosted on montanarightnow.com
 
 ### KBMY (kbmy.com)
-- https://www.kbmy.com/feed/: not a feed
-- https://www.kbmy.com/rss/: not a feed
-- https://www.kbmy.com/arc/outboundfeeds/rss/?outputType=xml: not a feed
-- https://www.kbmy.com/?rss=y: not a feed
-- https://www.kbmy.com/news/local/index.rss: not a feed
+- https://kbmy.com/feed/: not a feed
+- https://kbmy.com/rss/: not a feed
+- https://kbmy.com/arc/outboundfeeds/rss/?outputType=xml: not a feed
+- https://kbmy.com/?rss=y: not a feed
+- https://kbmy.com/news/local/index.rss: not a feed
 
 ### WKBT (wkbt.com)
-- http://www.news8000.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
-- https://www.news8000.com/feed/: HTTP 404
+- http://www.news8000.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.news8000.com/feed/: HTTP 429
 - https://www.news8000.com/rss/: HTTP 429
 - https://www.news8000.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.news8000.com/?rss=y: not a feed
@@ -879,43 +901,33 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 ### WBUP (abc10up.com)
 - https://abc10up.com: homepage ERR_TLS_CERT_ALTNAME_INVALID
 
-### KJNB (kjnbtv.com)
-- http://www.kjnbtv.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
-- https://www.kjnbtv.com/feed/: HTTP 404
-- https://www.kjnbtv.com/rss/: HTTP 429
-- https://www.kjnbtv.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
-- https://www.kjnbtv.com/?rss=y: HTTP 429
-
-### KTBY (youralaskalink.com)
-- http://www.youralaskalink.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
-- https://www.youralaskalink.com/feed/: HTTP 429
-- https://www.youralaskalink.com/rss/: HTTP 429
-- https://www.youralaskalink.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
-- https://www.youralaskalink.com/?rss=y: HTTP 429
-
-### KYUR (youralaskalink.com)
-- http://www.youralaskalink.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
-- https://www.youralaskalink.com/feed/: HTTP 429
-- https://www.youralaskalink.com/rss/: HTTP 429
-- https://www.youralaskalink.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
-- https://www.youralaskalink.com/?rss=y: HTTP 429
-
 ### WGBC (wgbctv.com)
-- http://www.twinstates.news/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: hosted on twinstates.news
-- https://www.twinstates.news/feed/: hosted on twinstates.news
-- https://www.twinstates.news/rss/: hosted on twinstates.news
-- https://www.twinstates.news/arc/outboundfeeds/rss/?outputType=xml: hosted on twinstates.news
-- https://www.twinstates.news/?rss=y: hosted on twinstates.news
+- https://wgbctv.com: homepage HTTP 429
+- https://twinstates.news/feed/: hosted on twinstates.news
+- https://twinstates.news/rss/: hosted on twinstates.news
+- https://twinstates.news/arc/outboundfeeds/rss/?outputType=xml: hosted on twinstates.news
+- https://twinstates.news/?rss=y: hosted on twinstates.news
 
 ### WHBQ (fox13memphis.com)
-- https://fox13memphis.com: homepage HTTP 429
+- http://www.fox13memphis.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
 - https://www.fox13memphis.com/feed/: HTTP 429
 - https://www.fox13memphis.com/rss/: HTTP 429
-- https://www.fox13memphis.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
+- https://www.fox13memphis.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.fox13memphis.com/?rss=y: HTTP 429
 
-### WOFL (fox35orlando.com)
-- https://fox35orlando.com: homepage timed out
+### KEZI (kezi.com)
+- http://www.kezi.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.kezi.com/feed/: HTTP 404
+- https://www.kezi.com/rss/: HTTP 404
+- https://www.kezi.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.kezi.com/?rss=y: HTTP 429
+
+### KDRV (kdrv.com)
+- http://www.kdrv.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.kdrv.com/feed/: HTTP 429
+- https://www.kdrv.com/rss/: HTTP 429
+- https://www.kdrv.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.kdrv.com/?rss=y: HTTP 429
 
 ### WRAL (wral.com)
 - https://www.wral.com/feed/: HTTP 404
@@ -1005,7 +1017,7 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://www.wkow.com/?rss=y: HTTP 429
 
 ### WISC (channel3000.com)
-- http://www.channel3000.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- http://www.channel3000.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
 - https://www.channel3000.com/feed/: HTTP 404
 - https://www.channel3000.com/rss/: not a feed
 - https://www.channel3000.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
@@ -1020,9 +1032,9 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 
 ### WPSD (wpsdlocal6.com)
 - http://www.wpsdlocal6.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
-- https://www.wpsdlocal6.com/feed/: HTTP 404
+- https://www.wpsdlocal6.com/feed/: HTTP 429
 - https://www.wpsdlocal6.com/rss/: HTTP 429
-- https://www.wpsdlocal6.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
+- https://www.wpsdlocal6.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.wpsdlocal6.com/?rss=y: HTTP 429
 
 ### WTVH (cnycentral.com)
@@ -1033,23 +1045,23 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://cnycentral.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
 
 ### WICS (newschannel20.com)
-- http://www.newschannel20.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
-- https://www.newschannel20.com/feed/: HTTP 429
-- https://www.newschannel20.com/rss/: HTTP 429
+- http://www.newschannel20.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.newschannel20.com/feed/: HTTP 404
+- https://www.newschannel20.com/rss/: HTTP 404
 - https://www.newschannel20.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.newschannel20.com/?rss=y: HTTP 429
 
 ### WRSP (foxillinois.com)
-- http://www.foxillinois.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
+- http://www.foxillinois.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
 - https://www.foxillinois.com/feed/: HTTP 404
 - https://www.foxillinois.com/rss/: HTTP 404
 - https://www.foxillinois.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
-- https://www.foxillinois.com/?rss=y: HTTP 429
+- https://www.foxillinois.com/?rss=y: not a feed
 
 ### KTBS (ktbs.com)
 - http://www.ktbs.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
-- https://www.ktbs.com/feed/: HTTP 404
-- https://www.ktbs.com/rss/: HTTP 404
+- https://www.ktbs.com/feed/: HTTP 429
+- https://www.ktbs.com/rss/: HTTP 429
 - https://www.ktbs.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.ktbs.com/?rss=y: HTTP 429
 
@@ -1079,7 +1091,7 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://www.kwwl.com/feed/: HTTP 404
 - https://www.kwwl.com/rss/: HTTP 429
 - https://www.kwwl.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
-- https://www.kwwl.com/?rss=y: HTTP 429
+- https://www.kwwl.com/?rss=y: not a feed
 
 ### WBRZ (wbrz.com)
 - https://feeds.feedburner.com/wbrz/news: not a station source
@@ -1087,13 +1099,6 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://feeds.feedburner.com/wbrz/sports: not a station source
 - https://feeds.feedburner.com/wbrz/video: not a station source
 - https://feeds.feedburner.com/wbrz/health: not a station source
-
-### WINK (winknews.com)
-- https://www.winknews.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
-- https://www.winknews.com/feed/: HTTP 404
-- https://www.winknews.com/rss/: HTTP 429
-- https://www.winknews.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
-- https://www.winknews.com/?rss=y: HTTP 429
 
 ### WZVN (abc-7.com)
 - https://www.gulfcoastnewsnow.com/feed/: HTTP 404
@@ -1113,15 +1118,15 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - http://www.wfxg.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
 - https://www.wfxg.com/feed/: HTTP 404
 - https://www.wfxg.com/rss/: HTTP 404
-- https://www.wfxg.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.wfxg.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
 - https://www.wfxg.com/?rss=y: HTTP 429
 
 ### KVRR (kvrr.com)
-- http://www.kvrr.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
+- https://kvrr.com: homepage HTTP 429
 - https://www.kvrr.com/feed/: HTTP 404
-- https://www.kvrr.com/rss/: HTTP 429
+- https://www.kvrr.com/rss/: HTTP 404
 - https://www.kvrr.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
-- https://www.kvrr.com/?rss=y: HTTP 429
+- https://www.kvrr.com/?rss=y: not a feed
 
 ### WFMJ (wfmj.com)
 - http://www.wfmj.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
@@ -1220,6 +1225,13 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://www.wsfa.com/?rss=y: hosted on wsfa.com
 - https://www.wsfa.com/news/local/index.rss: hosted on wsfa.com
 
+### KAKE (kake.com)
+- http://www.kake.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
+- https://www.kake.com/feed/: HTTP 404
+- https://www.kake.com/rss/: HTTP 429
+- https://www.kake.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
+- https://www.kake.com/?rss=y: not a feed
+
 ### WMSN (fox47madison.com)
 - https://fox47madison.com: homepage ENOTFOUND
 
@@ -1317,6 +1329,27 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://bakersfieldnow.com/rss/: HTTP 404
 - https://bakersfieldnow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
 
+### KHSL (actionnewsnow.com)
+- http://www.actionnewsnow.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.actionnewsnow.com/news/local/index.rss: HTTP 429
+- https://www.actionnewsnow.com/news/index.rss: not a feed
+- https://www.actionnewsnow.com/feed/: HTTP 429
+- https://www.actionnewsnow.com/rss/: HTTP 429
+
+### KNVN (actionnewsnow.com)
+- http://www.actionnewsnow.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.actionnewsnow.com/news/local/index.rss: HTTP 429
+- https://www.actionnewsnow.com/news/index.rss: not a feed
+- https://www.actionnewsnow.com/feed/: HTTP 429
+- https://www.actionnewsnow.com/rss/: HTTP 429
+
+### KCVU (actionnewsnow.com)
+- http://www.actionnewsnow.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.actionnewsnow.com/feed/: HTTP 429
+- https://www.actionnewsnow.com/rss/: HTTP 429
+- https://www.actionnewsnow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.actionnewsnow.com/?rss=y: HTTP 429
+
 ### WREX (wrex.com)
 - https://www.rockfordnewsfirst.com/arc/outboundfeeds/rss/?outputType=xml: hosted on rockfordnewsfirst.com
 - https://www.rockfordnewsfirst.com/rss/: hosted on rockfordnewsfirst.com
@@ -1327,15 +1360,15 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 ### WAOW (waow.com)
 - http://www.waow.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
 - https://www.waow.com/feed/: HTTP 404
-- https://www.waow.com/rss/: HTTP 429
+- https://www.waow.com/rss/: HTTP 404
 - https://www.waow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.waow.com/?rss=y: HTTP 429
 
 ### WJFW (wjfw.com)
-- https://wjfw.com: homepage HTTP 429
+- http://www.wjfw.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
 - https://www.wjfw.com/feed/: HTTP 404
-- https://www.wjfw.com/rss/: HTTP 429
-- https://www.wjfw.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
+- https://www.wjfw.com/rss/: HTTP 404
+- https://www.wjfw.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.wjfw.com/?rss=y: HTTP 429
 
 ### KOBI (kobi5.com)
@@ -1392,15 +1425,15 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 
 ### WSEE (erienewsnow.com)
 - http://www.erienewsnow.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
-- https://www.erienewsnow.com/feed/: HTTP 429
-- https://www.erienewsnow.com/rss/: HTTP 429
+- https://www.erienewsnow.com/feed/: HTTP 404
+- https://www.erienewsnow.com/rss/: HTTP 404
 - https://www.erienewsnow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.erienewsnow.com/?rss=y: HTTP 429
 
 ### WICU (erienewsnow.com)
 - http://www.erienewsnow.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
-- https://www.erienewsnow.com/feed/: HTTP 429
-- https://www.erienewsnow.com/rss/: HTTP 429
+- https://www.erienewsnow.com/feed/: HTTP 404
+- https://www.erienewsnow.com/rss/: HTTP 404
 - https://www.erienewsnow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.erienewsnow.com/?rss=y: HTTP 429
 
@@ -1408,14 +1441,14 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - http://www.koamnewsnow.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
 - https://www.koamnewsnow.com/feed/: not a feed
 - https://www.koamnewsnow.com/rss/: HTTP 404
-- https://www.koamnewsnow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
+- https://www.koamnewsnow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.koamnewsnow.com/?rss=y: HTTP 429
 
 ### KIMT (kimt.com)
-- http://www.kimt.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- http://www.kimt.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
 - https://www.kimt.com/feed/: HTTP 404
-- https://www.kimt.com/rss/: HTTP 404
-- https://www.kimt.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.kimt.com/rss/: HTTP 429
+- https://www.kimt.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
 - https://www.kimt.com/?rss=y: HTTP 429
 
 ### WTOV (wtov9.com)
@@ -1425,15 +1458,19 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - https://wtov9.com/rss/: HTTP 404
 - https://wtov9.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
 
+### WICZ (wicz.com)
+- https://wicz.com: homepage HTTP 429
+- https://www.wicz.com/feed/: HTTP 404
+- https://www.wicz.com/?feed=rss2: not a feed
+- https://www.wicz.com/rss/: HTTP 404
+- https://www.wicz.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+
 ### KTEN (kten.com)
-- http://www.kten.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://kten.com: homepage HTTP 429
 - https://www.kten.com/feed/: HTTP 404
 - https://www.kten.com/rss/: HTTP 404
 - https://www.kten.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
-- https://www.kten.com/?rss=y: not a feed
-
-### WOGX (fox35orlando.com)
-- https://fox35orlando.com: homepage timed out
+- https://www.kten.com/?rss=y: HTTP 429
 
 ### WGFL (wgfltv.com)
 - https://wgfltv.com: homepage ENOTFOUND
@@ -1447,61 +1484,75 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 ### WYDC (wetmtv.com)
 - https://wetmtv.com: homepage UND_ERR_CONNECT_TIMEOUT
 
+### KHQA (khqa.com)
+- http://www.khqa.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
+- https://www.khqa.com/feed/: HTTP 404
+- https://www.khqa.com/rss/: HTTP 404
+- https://www.khqa.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
+- https://www.khqa.com/?rss=y: not a feed
+
 ### KLAX (klax-tv.com)
 - http://www.klax-tv.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
 - https://www.klax-tv.com/feed/: HTTP 404
 - https://www.klax-tv.com/rss/: HTTP 429
-- https://www.klax-tv.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
+- https://www.klax-tv.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.klax-tv.com/?rss=y: HTTP 429
 
 ### WNTZ (klax-tv.com)
 - http://www.klax-tv.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
 - https://www.klax-tv.com/feed/: HTTP 404
 - https://www.klax-tv.com/rss/: HTTP 429
-- https://www.klax-tv.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
+- https://www.klax-tv.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.klax-tv.com/?rss=y: HTTP 429
 
 ### WCAV (cbs19news.com)
-- https://cbs19news.com: homepage HTTP 429
+- http://www.cbs19news.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
 - https://www.cbs19news.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.cbs19news.com/rss/: HTTP 404
 - https://www.cbs19news.com/feed/: HTTP 404
 - https://www.cbs19news.com/?rss=y: HTTP 429
 
 ### WVAW (cbs19news.com)
-- https://cbs19news.com: homepage HTTP 429
+- http://www.cbs19news.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
 - https://www.cbs19news.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.cbs19news.com/rss/: HTTP 404
 - https://www.cbs19news.com/feed/: HTTP 404
 - https://www.cbs19news.com/?rss=y: HTTP 429
 
 ### WAHU (cbs19news.com)
-- https://cbs19news.com: homepage HTTP 429
+- http://www.cbs19news.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
 - https://www.cbs19news.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.cbs19news.com/rss/: HTTP 404
 - https://www.cbs19news.com/feed/: HTTP 404
 - https://www.cbs19news.com/?rss=y: HTTP 429
 
 ### WMDN (wgbctv.com)
-- http://www.twinstates.news/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: hosted on twinstates.news
-- https://www.twinstates.news/feed/: hosted on twinstates.news
-- https://www.twinstates.news/rss/: hosted on twinstates.news
-- https://www.twinstates.news/arc/outboundfeeds/rss/?outputType=xml: hosted on twinstates.news
-- https://www.twinstates.news/?rss=y: hosted on twinstates.news
+- https://wgbctv.com: homepage HTTP 429
+- https://twinstates.news/feed/: hosted on twinstates.news
+- https://twinstates.news/rss/: hosted on twinstates.news
+- https://twinstates.news/arc/outboundfeeds/rss/?outputType=xml: hosted on twinstates.news
+- https://twinstates.news/?rss=y: hosted on twinstates.news
 
 ### KWYB (abcfoxmontana.com)
-- https://abcfoxmontana.com: homepage HTTP 429
+- http://www.montanarightnow.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: hosted on montanarightnow.com
 - https://www.montanarightnow.com/feed/: hosted on montanarightnow.com
 - https://www.montanarightnow.com/rss/: hosted on montanarightnow.com
 - https://www.montanarightnow.com/arc/outboundfeeds/rss/?outputType=xml: hosted on montanarightnow.com
 - https://www.montanarightnow.com/?rss=y: hosted on montanarightnow.com
 
+### WNBD (deltanews.tv)
+- http://www.deltanews.tv/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.deltanews.tv/feed/: HTTP 404
+- https://www.deltanews.tv/rss/: HTTP 404
+- https://www.deltanews.tv/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.deltanews.tv/?rss=y: HTTP 429
+
 ### KBNZ (centraloregondaily.com)
-- https://centraloregondaily.com: homepage HTTP 429
-- https://centraloregondaily.com/feed/: HTTP 404
-- https://centraloregondaily.com/rss/: HTTP 429
-- https://centraloregondaily.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
-- https://centraloregondaily.com/?rss=y: not a feed
+- http://www.centraloregondaily.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.centraloregondaily.com/feed/: HTTP 404
+- https://www.centraloregondaily.com/rss/: HTTP 429
+- https://www.centraloregondaily.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.centraloregondaily.com/?rss=y: HTTP 429
 
 ### KVIQ (redwoodnewschannel.com)
 - https://redwoodnewschannel.com: homepage ENOTFOUND
@@ -1538,19 +1589,19 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 - http://www.ktvo.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
 - https://www.ktvo.com/feed/: HTTP 429
 - https://www.ktvo.com/rss/: HTTP 429
-- https://www.ktvo.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 404
+- https://www.ktvo.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.ktvo.com/?rss=y: HTTP 429
 
 ### KCJO (newspressnow.com)
 - http://www.newspressnow.com//?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: not a feed
-- https://www.newspressnow.com/feed/: HTTP 404
+- https://www.newspressnow.com/feed/: HTTP 429
 - https://www.newspressnow.com/rss/: HTTP 404
 - https://www.newspressnow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.newspressnow.com/?rss=y: HTTP 429
 
 ### KNPG (newspressnow.com)
 - http://www.newspressnow.com//?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: not a feed
-- https://www.newspressnow.com/feed/: HTTP 404
+- https://www.newspressnow.com/feed/: HTTP 429
 - https://www.newspressnow.com/rss/: HTTP 404
 - https://www.newspressnow.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
 - https://www.newspressnow.com/?rss=y: HTTP 429
@@ -1627,14 +1678,14 @@ These are in the Hyperlocal register but not in station-markets.json, so their s
 
 ### WFMZ (wfmz.com)
 - http://www.wfmz.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: feed is empty
-- https://www.wfmz.com/feed/: HTTP 429
+- https://www.wfmz.com/feed/: HTTP 404
 - https://www.wfmz.com/rss/: HTTP 404
 - https://www.wfmz.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
-- https://www.wfmz.com/?rss=y: HTTP 429
+- https://www.wfmz.com/?rss=y: not a feed
 
 ### WBKB (wbkb11.com)
-- https://wbkb11.com: homepage HTTP 429
-- https://wbkb11.com/feed/: HTTP 429
-- https://wbkb11.com/rss/: HTTP 429
-- https://wbkb11.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
-- https://wbkb11.com/?rss=y: not a feed
+- http://www.wbkb11.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory: HTTP 429
+- https://www.wbkb11.com/feed/: HTTP 404
+- https://www.wbkb11.com/rss/: not a feed
+- https://www.wbkb11.com/arc/outboundfeeds/rss/?outputType=xml: HTTP 429
+- https://www.wbkb11.com/?rss=y: HTTP 429
