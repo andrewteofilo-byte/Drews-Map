@@ -112,7 +112,7 @@ aside h2{font:600 17px/1.2 var(--cond);margin:14px 16px 8px;color:var(--muted)}
 .watch:hover{border-color:var(--text)}
 .watch .net{color:var(--muted);font-weight:500}
 .outlook{display:flex;gap:6px;align-items:center}
-.outlook span{font:600 15px/1 var(--cond);color:var(--muted);margin-right:2px}
+.outlook span{font:600 15px/1 var(--cond);color:var(--muted);margin:0 0 0 8px}
 .outlook button{background:transparent;border:1px solid var(--panel-edge);border-radius:4px;padding:5px 9px;cursor:pointer;font:600 15px/1 var(--cond);color:var(--muted)}
 .outlook button[aria-pressed="true"]{background:var(--text);color:var(--sky);border-color:var(--text)}
 .outlook button:disabled{opacity:.4;cursor:not-allowed}
@@ -149,12 +149,21 @@ footer{padding:5px 18px;font-size:12px;color:var(--muted);border-top:1px solid v
     <button type="button" data-level="watch" aria-pressed="true">Watches</button>
     <button type="button" data-level="other" aria-pressed="false">Advisories</button>
   </div>
-  <div class="outlook" role="group" aria-label="SPC convective outlook">
-    <span>SPC</span>
-    <button type="button" data-day="0">Off</button>
-    <button type="button" data-day="1">Day 1</button>
-    <button type="button" data-day="2">Day 2</button>
-    <button type="button" data-day="3">Day 3</button>
+  <div class="outlook" role="group" aria-label="Outlook shaded on the map">
+    <button type="button" data-o="off">Off</button>
+    <span>Severe</span>
+    <button type="button" data-o="spc1" aria-label="SPC Day 1">D1</button>
+    <button type="button" data-o="spc2" aria-label="SPC Day 2">D2</button>
+    <button type="button" data-o="spc3" aria-label="SPC Day 3">D3</button>
+    <span>Winter</span>
+    <button type="button" data-o="wssi1" aria-label="Winter Day 1">D1</button>
+    <button type="button" data-o="wssi2" aria-label="Winter Day 2">D2</button>
+    <button type="button" data-o="wssi3" aria-label="Winter Day 3">D3</button>
+    <button type="button" data-o="wssi4" aria-label="Winter Days 1 to 3">1–3</button>
+    <span>Rain</span>
+    <button type="button" data-o="ero1" aria-label="Excessive rainfall Day 1">D1</button>
+    <button type="button" data-o="ero2" aria-label="Excessive rainfall Day 2">D2</button>
+    <button type="button" data-o="ero3" aria-label="Excessive rainfall Day 3">D3</button>
   </div>
   <div class="clock">
     <span>Sydney <span class="syd" id="syd">--:--</span></span>
@@ -196,13 +205,26 @@ const ALERTS_URL = 'https://api.weather.gov/alerts/active?status=actual';
 const REFRESH_MS = 120000;
 const SYD        = 'Australia/Sydney';
 const STATIONS   = 'data/station-markets.json';
-/* SPC categorical outlooks: SPC's own files first, NOAA's map server copy if those are blocked */
-const SPC_SOURCES = {
-  1: ['https://www.spc.noaa.gov/products/outlook/day1otlk_cat.lyr.geojson', 'https://mapservices.weather.noaa.gov/vector/rest/services/outlooks/SPC_wx_outlks/MapServer/1/query?where=1%3D1&outFields=*&f=geojson'],
-  2: ['https://www.spc.noaa.gov/products/outlook/day2otlk_cat.lyr.geojson', 'https://mapservices.weather.noaa.gov/vector/rest/services/outlooks/SPC_wx_outlks/MapServer/9/query?where=1%3D1&outFields=*&f=geojson'],
-  3: ['https://www.spc.noaa.gov/products/outlook/day3otlk_cat.lyr.geojson']
+/* Outlooks shaded under the warnings: SPC severe (SPC's own files first, NOAA's map server copy as backup)
+   and WPC's Winter Storm Severity Index */
+const SPC_MS  = 'https://mapservices.weather.noaa.gov/vector/rest/services/outlooks/SPC_wx_outlks/MapServer';
+const WSSI_MS = 'https://mapservices.weather.noaa.gov/vector/rest/services/outlooks/wpc_wssi/MapServer';
+const ERO_MS  = 'https://mapservices.weather.noaa.gov/vector/rest/services/hazards/wpc_precip_hazards/MapServer';
+// outSR=4326 asks for latitude/longitude back (the rainfall service stores web-map coordinates)
+const msQuery = (base, layer) => `${base}/${layer}/query?where=1%3D1&outFields=*&outSR=4326&f=geojson`;
+const OUTLOOKS = {
+  spc1:  {kind:'spc',  title:'SPC Day 1 outlook', short:'SPC Day 1', sources:['https://www.spc.noaa.gov/products/outlook/day1otlk_cat.lyr.geojson', msQuery(SPC_MS, 1)]},
+  spc2:  {kind:'spc',  title:'SPC Day 2 outlook', short:'SPC Day 2', sources:['https://www.spc.noaa.gov/products/outlook/day2otlk_cat.lyr.geojson', msQuery(SPC_MS, 9)]},
+  spc3:  {kind:'spc',  title:'SPC Day 3 outlook', short:'SPC Day 3', sources:['https://www.spc.noaa.gov/products/outlook/day3otlk_cat.lyr.geojson']},
+  wssi1: {kind:'wssi', title:'Winter Storm Severity Index, Day 1',    short:'Winter Day 1',    sources:[msQuery(WSSI_MS, 1)]},
+  wssi2: {kind:'wssi', title:'Winter Storm Severity Index, Day 2',    short:'Winter Day 2',    sources:[msQuery(WSSI_MS, 2)]},
+  wssi3: {kind:'wssi', title:'Winter Storm Severity Index, Day 3',    short:'Winter Day 3',    sources:[msQuery(WSSI_MS, 3)]},
+  wssi4: {kind:'wssi', title:'Winter Storm Severity Index, Days 1–3', short:'Winter Days 1–3', sources:[msQuery(WSSI_MS, 4)]},
+  ero1:  {kind:'ero',  title:'Excessive Rainfall Outlook, Day 1', short:'Rain Day 1', sources:[msQuery(ERO_MS, 0)]},
+  ero2:  {kind:'ero',  title:'Excessive Rainfall Outlook, Day 2', short:'Rain Day 2', sources:[msQuery(ERO_MS, 1)]},
+  ero3:  {kind:'ero',  title:'Excessive Rainfall Outlook, Day 3', short:'Rain Day 3', sources:[msQuery(ERO_MS, 2)]}
 };
-const SPC_REFRESH_MS = 900000;
+const OUTLOOK_REFRESH_MS = 900000;
 /* Radar snippets */
 const RADAR_SITES  = 'https://api.weather.gov/radar/stations';
 const NOAA_RADAR   = 'https://opengeo.ncep.noaa.gov/geoserver';        // per-site reflectivity, airport-radar velocity, national mosaic
@@ -216,7 +238,25 @@ const SPC_CATS = [   // lowest to highest, SPC's standard colours
   {code:'ENH',  name:'Enhanced risk',  level:3, color:'#e6c27f'},
   {code:'MDT',  name:'Moderate risk',  level:4, color:'#e67f7f'},
   {code:'HIGH', name:'High risk',      level:5, color:'#ff7fff'}
-];  // Drew's Secret station list: networks, rank, stream links
+];
+const WSSI_CATS = [  // lowest to highest, WPC's colours
+  {code:'WINTER WEATHER AREA', name:'Winter weather area', level:0, color:'#d2dfe7', note:'Winter driving conditions; drive carefully'},
+  {code:'MINOR',    name:'Minor impacts',    level:1, color:'#faf5a3', note:'A few inconveniences to daily life'},
+  {code:'MODERATE', name:'Moderate impacts', level:2, color:'#f7962f', note:'Disruptions to daily life; hazardous driving; some closures possible'},
+  {code:'MAJOR',    name:'Major impacts',    level:3, color:'#e61f26', note:'Considerable disruptions; dangerous or impossible driving; widespread closures'},
+  {code:'EXTREME',  name:'Extreme impacts',  level:4, color:'#7853a1', note:'Substantial disruptions; travel not advised; life-saving actions may be needed'}
+];
+const ERO_CATS = [   // WPC's numbering (dn) and colours; percentages are the chance of rain beyond flash flood guidance within 25 miles
+  {code:1, name:'Marginal risk', level:1, color:'#38a800', note:'At least 5% chance. Isolated flash floods possible, mainly where runoff is quick.'},
+  {code:2, name:'Slight risk',   level:2, color:'#fffe00', note:'At least 15% chance. Scattered flash floods possible; urban areas, roads, small streams and washes most at risk.'},
+  {code:3, name:'Moderate risk', level:3, color:'#f50000', note:'At least 40% chance. Numerous flash floods likely, some significant.'},
+  {code:4, name:'High risk',     level:4, color:'#ff00ff', note:'At least 70% chance. Widespread, severe flash flooding expected, including places that rarely flood.'}
+];
+const KINDS = {
+  spc:  {cats: SPC_CATS,  outOf: 5, none: 'No severe risk outlined'},
+  wssi: {cats: WSSI_CATS, outOf: 4, none: 'No winter weather expected'},
+  ero:  {cats: ERO_CATS,  outOf: 4, none: 'Flash floods generally not expected'}
+};
 
 /* County code changes between the map's boundary year and newer data.
    Connecticut's planning regions (Census 2022+) fold back to the old counties;
@@ -317,13 +357,18 @@ let marketInfo = new Map();      // market name -> { rank, stations: [{ call, ne
 let alertMarkets = new Map();    // alert id -> [market ids], for "also covers"
 let polygons = [];               // storm-based warning shapes: [{ geometry, cls }]
 let levels = new Set(['warning','watch']);
-let spcDay = 1;                  // 0 = off
-try { const d = +localStorage.getItem('dsm-spc'); if ([0,1,2,3].includes(d) && localStorage.getItem('dsm-spc') !== null) spcDay = d; } catch(e){}
+let outlookKey = 'spc1';         // 'off' or a key of OUTLOOKS
+try {
+  const saved = localStorage.getItem('dsm-outlook');
+  const old = localStorage.getItem('dsm-spc');   // from the severe-only version
+  if (saved && (saved === 'off' || OUTLOOKS[saved])) outlookKey = saved;
+  else if (old !== null) outlookKey = +old ? 'spc' + (+old) : 'off';
+} catch(e){}
 let radarSites = [];             // [{ id, name, type, lonlat }]
 let radarSitesReady = Promise.resolve();
 let countyOutlines = null;       // [{ geometry, bounds }] once loaded
-const spcData = {};              // day -> { features: [{ cat, geometry, rings }], issued, valid, expires } or { failed:true }
-const spcByMarket = new Map();   // market id -> highest SPC category for the day shown
+const outlookData = {};          // key -> { features: [{ cat, geometry, rings }], issued, valid, expires } or { failed:true }
+const outlookByMarket = new Map(); // market id -> highest category in the outlook shown
 let countyCentroids = new Map(); // county fips -> [x, y] on the map
 try { const saved = JSON.parse(localStorage.getItem('dsm-levels')); if (Array.isArray(saved)) levels = new Set(saved); } catch(e){}
 
@@ -464,9 +509,24 @@ function spcCategory(props){
   const dn = +(props.DN ?? props.dn);   // SPC numbering: 2 thunder, 3 marginal ... 6 moderate, 8 high
   return {2:SPC_CATS[0],3:SPC_CATS[1],4:SPC_CATS[2],5:SPC_CATS[3],6:SPC_CATS[4],8:SPC_CATS[5]}[dn] || null;
 }
+function eroCategory(props){
+  const dn = +(props?.dn ?? props?.DN);
+  if (ERO_CATS.some(c => c.code === dn)) return ERO_CATS.find(c => c.code === dn);
+  const t = String(props?.outlook ?? props?.OUTLOOK ?? '');
+  return ERO_CATS.find(c => new RegExp('^' + c.name.split(' ')[0], 'i').test(t)) || null;
+}
+function wssiCategory(props){
+  const t = String(props?.impact ?? props?.IMPACT ?? '').trim().toUpperCase();
+  return WSSI_CATS.find(c => c.code === t) || null;
+}
 function spcTime(v){
   if (v == null || v === '') return null;
   if (typeof v === 'number') return new Date(v);
+  const iso = /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):?(\d{2})?/.exec(String(v));
+  if (iso && !/(Z|[+-]\d{2}:?\d{2})$/.test(String(v).trim()))   // no zone given: these products are in UTC
+    return new Date(Date.UTC(+iso[1], iso[2]-1, +iso[3], +iso[4], +(iso[5] || 0)));
+  const short = /^(\d{4})(\d{2})(\d{2})(\d{2})$/.exec(String(v));        // 2026100712
+  if (short) return new Date(Date.UTC(+short[1], short[2]-1, +short[3], +short[4]));
   const m = /^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})$/.exec(String(v));   // 202610021200, in UTC
   if (m) return new Date(Date.UTC(+m[1], m[2]-1, +m[3], +m[4], +m[5]));
   const d = new Date(v);
@@ -474,34 +534,36 @@ function spcTime(v){
 }
 const spcProj = d3.geoAlbersUsa().scale(1300).translate([487.5, 305]);
 
-async function loadSPC(day){
-  for (const url of SPC_SOURCES[day]){
+async function loadOutlook(key){
+  const o = OUTLOOKS[key];
+  for (const url of o.sources){
     try {
       const r = await fetch(url, {cache:'no-cache'});
       if (!r.ok) continue;
       const gj = await r.json();
+      if (!Array.isArray(gj.features)) continue;   // an error message, not data
       const features = [];
       let issued = null, valid = null, expires = null;
-      for (const f of (gj.features || [])){
+      for (const f of gj.features){
         if (!f.geometry || !/Polygon/.test(f.geometry.type)) continue;
-        const cat = spcCategory(f.properties);
+        const cat = o.kind === 'wssi' ? wssiCategory(f.properties) : o.kind === 'ero' ? eroCategory(f.properties) : spcCategory(f.properties);
         if (!cat) continue;
         const p = f.properties || {};
-        issued  ||= spcTime(p.ISSUE  ?? p.issue  ?? p.idp_issueddate);
-        valid   ||= spcTime(p.VALID  ?? p.valid  ?? p.idp_validtime);
-        expires ||= spcTime(p.EXPIRE ?? p.expire ?? p.idp_expiretime);
+        issued  ||= spcTime(p.ISSUE  ?? p.issue  ?? p.issue_time ?? p.idp_issueddate);
+        valid   ||= spcTime(p.VALID  ?? p.valid  ?? p.start_time ?? p.idp_validtime);
+        expires ||= spcTime(p.EXPIRE ?? p.expire ?? p.end_time   ?? p.idp_expiretime);
         const geometry = rewind(f.geometry);
         // Rings projected onto the map, for working out which markets sit inside
         const polys = geometry.type === 'Polygon' ? [geometry.coordinates] : geometry.coordinates;
         const rings = polys.map(poly => poly.map(ring => ring.map(pt => spcProj(pt)).filter(Boolean)));
         features.push({cat, geometry, rings});
       }
-      features.sort((a, b) => a.cat.level - b.cat.level);   // higher risks drawn on top
-      spcData[day] = {features, issued, valid, expires, source: url};
+      features.sort((a, b) => a.cat.level - b.cat.level);   // higher levels drawn on top
+      outlookData[key] = {features, issued, valid, expires, source: url, loaded: Date.now()};
       return;
     } catch(e){ /* try the next source */ }
   }
-  spcData[day] = {failed: true};
+  outlookData[key] = {failed: true, loaded: Date.now()};
 }
 
 function inRings(pt, polyRings){
@@ -509,10 +571,10 @@ function inRings(pt, polyRings){
   if (!polyRings[0] || polyRings[0].length < 3 || !d3.polygonContains(polyRings[0], pt)) return false;
   return !polyRings.slice(1).some(h => h.length > 2 && d3.polygonContains(h, pt));
 }
-function computeSPCByMarket(){
-  spcByMarket.clear();
-  const data = spcData[spcDay];
-  if (!spcDay || !data || data.failed) return;
+function computeOutlookByMarket(){
+  outlookByMarket.clear();
+  const data = outlookData[outlookKey];
+  if (outlookKey === 'off' || !data || data.failed) return;
   for (const [id, m] of markets){
     let best = null;
     for (const f of m.fips){
@@ -524,20 +586,21 @@ function computeSPCByMarket(){
         if (ft.rings.some(pr => inRings(c, pr))){ best = ft.cat; break; }
       }
     }
-    if (best) spcByMarket.set(id, best);
+    if (best) outlookByMarket.set(id, best);
   }
 }
 
-async function refreshSPC(){
-  await Promise.all([1,2,3].map(loadSPC));
-  document.querySelectorAll('.outlook button[data-day]').forEach(b => {
-    const d = +b.dataset.day;
-    if (d && spcData[d]?.failed){ b.disabled = true; b.title = "Couldn't load this outlook"; }
-    else { b.disabled = false; b.title = ''; }
+/* Loads the outlook being shown (others load when you pick them), then redraws */
+async function refreshOutlook(force){
+  const key = outlookKey;
+  if (key !== 'off' && (force || !outlookData[key] || Date.now() - outlookData[key].loaded > OUTLOOK_REFRESH_MS)) await loadOutlook(key);
+  document.querySelectorAll('.outlook button[data-o]').forEach(b => {
+    const failed = outlookData[b.dataset.o]?.failed;
+    b.disabled = !!failed;
+    b.title = failed ? "Couldn't load this outlook" : '';
   });
-  if (spcDay && spcData[spcDay]?.failed) notice("The SPC outlook couldn't be loaded. Warnings are unaffected.", false);
-  computeSPCByMarket();
-  paint();
+  if (key !== 'off' && outlookData[key]?.failed) notice(`The ${OUTLOOKS[key].short} outlook couldn't be loaded. Warnings are unaffected.`, false);
+  if (key === outlookKey){ computeOutlookByMarket(); paint(); }
 }
 
 async function loadAlerts(){
@@ -667,7 +730,8 @@ function paint(){
   gMarkets.selectAll('path').classed('sel', d => d.id === selected);
   gMarkets.selectAll('path.sel').raise();
 
-  const spc = spcDay && spcData[spcDay] && !spcData[spcDay].failed ? spcData[spcDay].features : [];
+  const od = outlookKey !== 'off' ? outlookData[outlookKey] : null;
+  const spc = od && !od.failed ? od.features : [];
   gSPC.selectAll('path').data(spc).join('path').attr('class','spc')
     .attr('d', d => polyPath(d.geometry)).style('fill', d => d.cat.color);
 
@@ -704,12 +768,13 @@ function paint(){
     }
   }
   const spcCounts = new Map();
-  for (const c of spcByMarket.values()) spcCounts.set(c.code, (spcCounts.get(c.code) || 0) + 1);
-  const spcRows = SPC_CATS.filter(c => spc.some(f => f.cat.code === c.code)).reverse()
+  for (const c of outlookByMarket.values()) spcCounts.set(c.code, (spcCounts.get(c.code) || 0) + 1);
+  const kindCats = outlookKey !== 'off' ? KINDS[OUTLOOKS[outlookKey].kind].cats : [];
+  const spcRows = kindCats.filter(c => spc.some(f => f.cat.code === c.code)).reverse()
     .map(c => `<div><span class="swatch" style="background:${c.color}"></span>${esc(c.name)}<span class="c">${spcCounts.get(c.code) || 0}</span></div>`).join('');
   $('legend').innerHTML = [...counts].sort((a,b) => a[1].p - b[1].p)
     .map(([ev, v]) => `<div><span class="swatch" style="background:${v.color}"></span>${esc(ev)}<span class="c">${v.n}</span></div>`).join('')
-    + (spcRows ? `<div class="head">SPC Day ${spcDay} outlook, markets</div>${spcRows}` : '');
+    + (spcRows ? `<div class="head">${esc(OUTLOOKS[outlookKey].short)}, markets</div>${spcRows}` : '');
 
   if (selected) renderPanel(selected);
 }
@@ -899,15 +964,16 @@ function watchHTML(name){
 }
 
 function spcHTML(id){
-  if (!spcDay) return '';
-  const data = spcData[spcDay];
-  if (!data) return '';
-  if (data.failed) return `<h3>SPC Day ${spcDay} outlook</h3><p class="later">Couldn't load the outlook.</p>`;
-  const c = spcByMarket.get(id);
+  if (outlookKey === 'off') return '';
+  const o = OUTLOOKS[outlookKey], data = outlookData[outlookKey], kind = KINDS[o.kind];
+  if (!data) return `<h3>${esc(o.title)}</h3><p class="later">Loading…</p>`;
+  if (data.failed) return `<h3>${esc(o.title)}</h3><p class="later">Couldn't load the outlook.</p>`;
+  const c = outlookByMarket.get(id);
   const times = [data.valid && `Valid from ${sydDayFmt.format(data.valid)}`, data.expires && `to ${sydDayFmt.format(data.expires)} Sydney`].filter(Boolean).join(' ');
-  return `<h3>SPC Day ${spcDay} outlook</h3>
+  return `<h3>${esc(o.title)}</h3>
     <div class="spcbox" style="border-color:${c ? c.color : 'var(--panel-edge)'}">
-      <b>${c ? esc(c.name) + (c.level ? ` (${c.level} of 5)` : '') : 'No severe risk outlined'}</b>
+      <b>${c ? esc(c.name) + (c.level ? ` (${c.level} of ${kind.outOf})` : '') : esc(kind.none)}</b>
+      ${c && c.note ? `<p>${esc(c.note)}</p>` : ''}
       ${times ? `<p>${esc(times)}</p>` : ''}
     </div>`;
 }
@@ -1003,19 +1069,21 @@ document.querySelector('.levels').addEventListener('click', e => {
 });
 syncLevels();
 
-function syncSPC(){
-  document.querySelectorAll('.outlook button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.day === spcDay));
+function syncOutlook(){
+  document.querySelectorAll('.outlook button[data-o]').forEach(b => b.setAttribute('aria-pressed', b.dataset.o === outlookKey));
 }
 document.querySelector('.outlook').addEventListener('click', e => {
-  const b = e.target.closest('button[data-day]');
+  const b = e.target.closest('button[data-o]');
   if (!b || b.disabled) return;
-  spcDay = +b.dataset.day;
-  try { localStorage.setItem('dsm-spc', spcDay); } catch(err){}
-  syncSPC();
-  computeSPCByMarket();
+  outlookKey = b.dataset.o;
+  try { localStorage.setItem('dsm-outlook', outlookKey); } catch(err){}
+  syncOutlook();
+  notice('');
+  computeOutlookByMarket();
   paint();
+  refreshOutlook();
 });
-syncSPC();
+syncOutlook();
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && selected) closePanel(); });
 $('refresh').addEventListener('click', loadAlerts);
 $('zin').addEventListener('click', () => svg.transition().call(zoom.scaleBy, 1.6));
@@ -1046,9 +1114,9 @@ $('zreset').addEventListener('click', () => svg.transition().call(zoom.transform
   drawBase();
   await loadAlerts();
   setInterval(loadAlerts, REFRESH_MS);
-  refreshSPC();
+  refreshOutlook();
   radarSitesReady = loadRadarSites();
-  setInterval(refreshSPC, SPC_REFRESH_MS);
+  setInterval(() => refreshOutlook(true), OUTLOOK_REFRESH_MS);
 })();
 </script>
 </body>
