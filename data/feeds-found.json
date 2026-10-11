@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-04T21:17:14.388Z",
+ "generated": "2026-10-11T21:49:47.291Z",
  "stations": [
   {
    "call": "KFDX",
@@ -3633,8 +3633,8 @@
    "aliases": [],
    "siblings": [],
    "feeds": [
-    "https://www.foxla.com/rss/category/local-news",
-    "https://www.foxla.com/rss/tags/us,ca"
+    "https://www.foxla.com/rss/category/news",
+    "https://www.foxla.com/rss/category/local-news"
    ]
   },
   {
@@ -3920,7 +3920,7 @@
    ],
    "siblings": [],
    "feeds": [
-    "https://www.local3news.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+    "https://www.local3news.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
    ]
   },
   {
@@ -4233,8 +4233,7 @@
     "KECY"
    ],
    "feeds": [
-    "https://kyma.com/feed/",
-    "https://kyma.com/comments/feed/"
+    "https://kyma.com/feed/"
    ]
   },
   {
@@ -4269,7 +4268,9 @@
    "site": "https://weny.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.weny.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KTVZ",
@@ -5107,9 +5108,7 @@
    "site": "https://kjnbtv.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.kjnbtv.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KTBY",
@@ -5120,9 +5119,7 @@
    "siblings": [
     "KYUR"
    ],
-   "feeds": [
-    "https://www.youralaskalink.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KYUR",
@@ -5133,9 +5130,7 @@
    "siblings": [
     "KTBY"
    ],
-   "feeds": [
-    "https://www.youralaskalink.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WGBC",
@@ -5258,7 +5253,9 @@
    "site": "https://kezi.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.kezi.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KDRV",
@@ -6217,9 +6214,7 @@
     "wjrt.com"
    ],
    "siblings": [],
-   "feeds": [
-    "https://www.abc12.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
-   ]
+   "feeds": []
   },
   {
    "call": "KOLR",
@@ -6642,9 +6637,7 @@
    "site": "https://winknews.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.winknews.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WZVN",
@@ -6717,7 +6710,9 @@
    "site": "https://wfxg.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.wfxg.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KYTX",
@@ -7124,7 +7119,9 @@
    "site": "https://kake.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.kake.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WMSN",
@@ -8162,8 +8159,7 @@
     "KYMA"
    ],
    "feeds": [
-    "https://kyma.com/feed/",
-    "https://kyma.com/comments/feed/"
+    "https://kyma.com/feed/"
    ]
   },
   {
@@ -8815,7 +8811,9 @@
    "site": "https://ktvo.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.ktvo.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KCJO",
