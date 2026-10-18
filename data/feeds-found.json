@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11T21:49:47.291Z",
+ "generated": "2026-10-18T20:31:26.049Z",
  "stations": [
   {
    "call": "KFDX",
@@ -2288,7 +2288,9 @@
    "site": "https://wxow.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.wxow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WCIA",
@@ -3859,7 +3861,9 @@
    "site": "https://kxly.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.kxly.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KREM",
@@ -3920,7 +3924,7 @@
    ],
    "siblings": [],
    "feeds": [
-    "https://www.local3news.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+    "https://www.local3news.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
    ]
   },
   {
@@ -4098,9 +4102,7 @@
    "site": "https://komu.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.komu.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
-   ]
+   "feeds": []
   },
   {
    "call": "WBOC",
@@ -4184,7 +4186,9 @@
    "siblings": [
     "KFJX"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.koamnewsnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WCJB",
@@ -4268,9 +4272,7 @@
    "site": "https://weny.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.weny.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KTVZ",
@@ -5390,7 +5392,7 @@
    "aliases": [],
    "siblings": [],
    "feeds": [
-    "https://www.nbcboston.com/?rss=y"
+    "https://www.nbcboston.com/news/feed/"
    ]
   },
   {
@@ -6090,7 +6092,9 @@
    "site": "https://kvoa.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.kvoa.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KITV",
@@ -6326,7 +6330,9 @@
    "site": "https://wpsdlocal6.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.wpsdlocal6.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+   ]
   },
   {
    "call": "KXXV",
@@ -6392,7 +6398,9 @@
    "site": "https://newschannel20.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.newschannel20.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WAND",
@@ -6637,7 +6645,9 @@
    "site": "https://winknews.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.winknews.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WZVN",
@@ -6710,9 +6720,7 @@
    "site": "https://wfxg.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.wfxg.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KYTX",
@@ -7119,9 +7127,7 @@
    "site": "https://kake.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.kake.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WMSN",
@@ -7770,7 +7776,9 @@
    "siblings": [
     "KOAM"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.koamnewsnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KJTV",
@@ -8298,7 +8306,9 @@
    "site": "https://khqa.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.khqa.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WDHN",
@@ -8811,9 +8821,7 @@
    "site": "https://ktvo.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.ktvo.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KCJO",
@@ -9096,7 +9104,9 @@
    "site": "https://wfmz.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.wfmz.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WBKB",
