@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T20:31:26.049Z",
+ "generated": "2026-10-25T20:46:17.618Z",
  "stations": [
   {
    "call": "KFDX",
@@ -3736,9 +3736,7 @@
    "site": "https://abc7news.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://abc7news.com/feed/"
-   ]
+   "feeds": []
   },
   {
    "call": "KPIX",
@@ -3883,9 +3881,7 @@
    "site": "https://khq.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.khq.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
-   ]
+   "feeds": []
   },
   {
    "call": "KAYU",
@@ -4102,7 +4098,9 @@
    "site": "https://komu.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.komu.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+   ]
   },
   {
    "call": "WBOC",
@@ -4186,9 +4184,7 @@
    "siblings": [
     "KFJX"
    ],
-   "feeds": [
-    "https://www.koamnewsnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WCJB",
@@ -4297,7 +4293,9 @@
    "siblings": [
     "KBNZ"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.centraloregondaily.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KIEM",
@@ -4378,7 +4376,9 @@
     "KCJO",
     "KNPG"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.newspressnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WHIZ",
@@ -5235,7 +5235,9 @@
    "site": "https://fox13memphis.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.fox13memphis.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KWTV",
@@ -5255,9 +5257,7 @@
    "site": "https://kezi.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.kezi.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KDRV",
@@ -5392,7 +5392,7 @@
    "aliases": [],
    "siblings": [],
    "feeds": [
-    "https://www.nbcboston.com/news/feed/"
+    "https://www.nbcboston.com/?rss=y"
    ]
   },
   {
@@ -6010,9 +6010,7 @@
    "site": "https://abc30.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://abc30.com/feed/"
-   ]
+   "feeds": []
   },
   {
    "call": "WTVR",
@@ -6092,9 +6090,7 @@
    "site": "https://kvoa.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.kvoa.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KITV",
@@ -6196,7 +6192,9 @@
    "site": "https://channel3000.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.channel3000.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KMTV",
@@ -6218,7 +6216,9 @@
     "wjrt.com"
    ],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.abc12.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+   ]
   },
   {
    "call": "KOLR",
@@ -6330,9 +6330,7 @@
    "site": "https://wpsdlocal6.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.wpsdlocal6.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
-   ]
+   "feeds": []
   },
   {
    "call": "KXXV",
@@ -6398,9 +6396,7 @@
    "site": "https://newschannel20.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.newschannel20.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WAND",
@@ -6645,9 +6641,7 @@
    "site": "https://winknews.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.winknews.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WZVN",
@@ -7776,9 +7770,7 @@
    "siblings": [
     "KOAM"
    ],
-   "feeds": [
-    "https://www.koamnewsnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KJTV",
@@ -8295,9 +8287,7 @@
    "site": "https://kulr8.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.kulr8.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
-   ]
+   "feeds": []
   },
   {
    "call": "KHQA",
@@ -8306,9 +8296,7 @@
    "site": "https://khqa.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.khqa.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WDHN",
@@ -8610,7 +8598,9 @@
    "siblings": [
     "KOHD"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.centraloregondaily.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KFXO",
@@ -8833,7 +8823,9 @@
     "KNPN",
     "KNPG"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.newspressnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KNPG",
@@ -8845,7 +8837,9 @@
     "KNPN",
     "KCJO"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.newspressnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KATN",
@@ -9104,9 +9098,7 @@
    "site": "https://wfmz.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.wfmz.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WBKB",
