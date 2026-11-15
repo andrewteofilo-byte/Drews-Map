@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T21:59:41.425Z",
+ "generated": "2026-11-15T22:46:04.255Z",
  "stations": [
   {
    "call": "KFDX",
@@ -2760,7 +2760,7 @@
    "aliases": [],
    "siblings": [],
    "feeds": [
-    "https://www.wthr.com/feeds/syndication/rss/news"
+    "https://www.wthr.com/feeds/syndication/rss/news/local"
    ]
   },
   {
@@ -3866,7 +3866,7 @@
    "aliases": [],
    "siblings": [],
    "feeds": [
-    "https://www.krem.com/feeds/syndication/rss/news"
+    "https://www.krem.com/feeds/syndication/rss/news/local"
    ]
   },
   {
@@ -3877,7 +3877,7 @@
    "aliases": [],
    "siblings": [],
    "feeds": [
-    "https://www.khq.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+    "https://www.khq.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
    ]
   },
   {
@@ -4095,9 +4095,7 @@
    "site": "https://komu.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.komu.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
-   ]
+   "feeds": []
   },
   {
    "call": "WBOC",
@@ -4108,9 +4106,7 @@
    "siblings": [
     "WRDE"
    ],
-   "feeds": [
-    "https://www.wboc.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WMDT",
@@ -4397,7 +4393,9 @@
     "KMOL",
     "KVCT"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.crossroadstoday.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KTVH",
@@ -5259,7 +5257,9 @@
    "site": "https://kdrv.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.kdrv.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KTVT",
@@ -6094,7 +6094,9 @@
    "site": "https://kitv.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.kitv.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WOI",
@@ -6209,7 +6211,9 @@
     "wjrt.com"
    ],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.abc12.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+   ]
   },
   {
    "call": "KOLR",
@@ -6630,9 +6634,7 @@
    "site": "https://winknews.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.winknews.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WZVN",
@@ -7551,9 +7553,7 @@
    "site": "https://waow.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.waow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WJFW",
@@ -7669,9 +7669,7 @@
    "siblings": [
     "WBOC"
    ],
-   "feeds": [
-    "https://www.wboc.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KCAU",
@@ -8019,9 +8017,7 @@
    "site": "https://kten.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.kten.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WOGX",
@@ -8872,7 +8868,9 @@
     "KMOL",
     "KVCT"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.crossroadstoday.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KMOL",
@@ -8885,7 +8883,9 @@
     "KXTS",
     "KVCT"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.crossroadstoday.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KVCT",
@@ -8898,7 +8898,9 @@
     "KXTS",
     "KMOL"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.crossroadstoday.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KHBB",
@@ -9051,9 +9053,7 @@
    "site": "https://telemundo51.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.telemundo51.com/?rss=y"
-   ]
+   "feeds": []
   },
   {
    "call": "KXLN",
@@ -9098,7 +9098,9 @@
    "site": "https://wbkb11.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.wbkb11.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   }
  ]
 }
