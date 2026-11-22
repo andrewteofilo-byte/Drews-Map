@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T22:46:04.255Z",
+ "generated": "2026-11-22T23:33:45.186Z",
  "stations": [
   {
    "call": "KFDX",
@@ -2332,9 +2332,7 @@
    "site": "https://wearegreenbay.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.wearegreenbay.com/feed/"
-   ]
+   "feeds": []
   },
   {
    "call": "KOIN",
@@ -2760,7 +2758,7 @@
    "aliases": [],
    "siblings": [],
    "feeds": [
-    "https://www.wthr.com/feeds/syndication/rss/news/local"
+    "https://www.wthr.com/feeds/syndication/rss/news"
    ]
   },
   {
@@ -3866,7 +3864,7 @@
    "aliases": [],
    "siblings": [],
    "feeds": [
-    "https://www.krem.com/feeds/syndication/rss/news/local"
+    "https://www.krem.com/feeds/syndication/rss/news"
    ]
   },
   {
@@ -3916,9 +3914,7 @@
     "wrcbtv.com"
    ],
    "siblings": [],
-   "feeds": [
-    "https://www.local3news.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
-   ]
+   "feeds": []
   },
   {
    "call": "KRGV",
@@ -4106,7 +4102,9 @@
    "siblings": [
     "WRDE"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.wboc.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WMDT",
@@ -4179,7 +4177,9 @@
    "siblings": [
     "KFJX"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.koamnewsnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "WCJB",
@@ -4216,7 +4216,9 @@
    "site": "https://kpvi.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.kpvi.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KYMA",
@@ -4355,8 +4357,7 @@
    "aliases": [],
    "siblings": [],
    "feeds": [
-    "https://www.kq2.com/feed/",
-    "https://www.kq2.com/comments/feed/"
+    "https://www.kq2.com/feed/"
    ]
   },
   {
@@ -4393,9 +4394,7 @@
     "KMOL",
     "KVCT"
    ],
-   "feeds": [
-    "https://www.crossroadstoday.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KTVH",
@@ -5257,9 +5256,7 @@
    "site": "https://kdrv.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.kdrv.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KTVT",
@@ -5385,7 +5382,7 @@
    "aliases": [],
    "siblings": [],
    "feeds": [
-    "https://www.nbcboston.com/?rss=y"
+    "https://www.nbcboston.com/news/feed/"
    ]
   },
   {
@@ -6094,9 +6091,7 @@
    "site": "https://kitv.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.kitv.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "WOI",
@@ -6211,9 +6206,7 @@
     "wjrt.com"
    ],
    "siblings": [],
-   "feeds": [
-    "https://www.abc12.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
-   ]
+   "feeds": []
   },
   {
    "call": "KOLR",
@@ -6325,7 +6318,9 @@
    "site": "https://wpsdlocal6.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.wpsdlocal6.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+   ]
   },
   {
    "call": "KXXV",
@@ -6420,7 +6415,9 @@
    "site": "https://ktbs.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.ktbs.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KTAL",
@@ -6625,7 +6622,9 @@
     "ktvn.com"
    ],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.2news.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+   ]
   },
   {
    "call": "WINK",
@@ -7669,7 +7668,9 @@
    "siblings": [
     "WBOC"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.wboc.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KCAU",
@@ -7763,7 +7764,9 @@
    "siblings": [
     "KOAM"
    ],
-   "feeds": []
+   "feeds": [
+    "https://www.koamnewsnow.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KJTV",
@@ -7873,7 +7876,9 @@
    "site": "https://kimt.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.kimt.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
+   ]
   },
   {
    "call": "KXLT",
@@ -8868,9 +8873,7 @@
     "KMOL",
     "KVCT"
    ],
-   "feeds": [
-    "https://www.crossroadstoday.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KMOL",
@@ -8883,9 +8886,7 @@
     "KXTS",
     "KVCT"
    ],
-   "feeds": [
-    "https://www.crossroadstoday.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KVCT",
@@ -8898,9 +8899,7 @@
     "KXTS",
     "KMOL"
    ],
-   "feeds": [
-    "https://www.crossroadstoday.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   },
   {
    "call": "KHBB",
@@ -9053,7 +9052,9 @@
    "site": "https://telemundo51.com",
    "aliases": [],
    "siblings": [],
-   "feeds": []
+   "feeds": [
+    "https://www.telemundo51.com/?rss=y"
+   ]
   },
   {
    "call": "KXLN",
@@ -9098,9 +9099,7 @@
    "site": "https://wbkb11.com",
    "aliases": [],
    "siblings": [],
-   "feeds": [
-    "https://www.wbkb11.com/search/?q=&t=article&l=25&s=start_time&sd=desc&f=rss"
-   ]
+   "feeds": []
   }
  ]
 }
